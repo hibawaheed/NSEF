@@ -42,5 +42,13 @@
   {
     "speaker": "assistant",
     "summary": "Completed 1,940 new evaluation streams, ten revised figures, a measured findings/limitations guide and public browser-local CSV analyzer. Recorded AI assistance, tests, source/result hashes, deployment verification and generated-download verification limits. Preserved v1 evidence and did not claim novelty or general PSI superiority."
+  },
+  {
+    "speaker": "user",
+    "verbatim": "push it all onto githug, the whole project and its code should be on the repo"
+  },
+  {
+    "speaker": "assistant",
+    "summary": "Prepared publication of the complete local history and project to the existing private hibawaheed/NSEF GitHub repository, including licensed Adult source data and its attribution. Terminal Git has no credentials; using the authorized GitHub connector and a one-time import job. Verification follows the import."
   }
 ]
