@@ -1,0 +1,21 @@
+{
+  "original_outlier_fixture": {
+    "reference": [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "current": [
+      100.0,
+      101.0,
+      102.0,
+      103.0
+    ],
+    "counted_current": 0,
+    "actual_current": 4,
+    "psi": 8.515489752777954
+  },
+  "empty_reference_exception": "IndexError('index -1 is out of bounds for axis 0 with size 0')",
+  "zero_pvalue_fixture": 0.0
+}

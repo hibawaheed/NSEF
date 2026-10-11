@@ -1,0 +1,38 @@
+[
+  {
+    "started_at_utc": "2026-10-11T11:34:19.793956+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.3590153230002215
+  },
+  {
+    "started_at_utc": "2026-10-11T11:34:40.881034+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/audit_original.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.3744412729997748
+  },
+  {
+    "started_at_utc": "2026-10-11T11:34:41.328021+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/run_synthetic.py",
+      "--config",
+      "configs/smoke.json",
+      "--out",
+      "results/raw/smoke-v1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.334399466999912
+  }
+]
