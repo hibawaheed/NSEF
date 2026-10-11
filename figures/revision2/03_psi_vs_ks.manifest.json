@@ -1,0 +1,14 @@
+{
+  "caption": "Paired complete streams; both methods use the same groups and a 5% horizon budget. Percentile bootstrap intervals use 5,000 paired resamples. Positive favors PSI; negative favors KS. Degenerate intervals at identical paired outcomes do not prove population equality.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "6c2b5d056dfb8a283a49db878ccdb79aadecab3d52a2d1782b6c65693158b293",
+  "formats": {
+    "pdf": "99896beeb2f91e228762bcf338092f2556df42de21c6e0228a9544039e4db419",
+    "png": "0e2fea69289c59128cf9af59707e5812bf1ffd0f3f1721dce1f44c0cbb2a36aa",
+    "svg": "24ad26ff9c41638ae183755a118e0deb02ab874c0526c673bf2ca0494cab2fea"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Does PSI add value beyond subgrouping?"
+}

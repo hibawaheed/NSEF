@@ -1,0 +1,81 @@
+case,repeat,window,group,psi,corrected_alert,reference_n,current_n,raw_file,raw_sha256
+cancel_1,0,1,Overall population,0.011454906028694773,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,2,Overall population,0.004649436494549462,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,3,Overall population,0.00604334881551352,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,4,Overall population,0.010733867497663106,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,5,Overall population,0.0038245289898179297,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,6,Overall population,0.0020749928948504337,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,7,Overall population,0.008747767230616673,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,8,Overall population,0.0036571878300301636,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,9,Overall population,0.0016368490202665752,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,10,Overall population,0.0037059526878258156,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,11,Overall population,0.002889724568567568,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,12,Overall population,0.004109141444394285,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,13,Overall population,0.006498135888615963,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,14,Overall population,0.0018199610436915978,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,15,Overall population,0.002998170573788749,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,16,Overall population,0.005536393108607452,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,17,Overall population,0.0056305829441180896,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,18,Overall population,0.005250129252617636,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,19,Overall population,0.0028059112936696723,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,20,Overall population,0.016211077523305216,False,10000,1000,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,1,"Intersection A=1, B=1",0.024290164421513667,False,2542,270,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,2,"Intersection A=1, B=1",0.021592663479992672,False,2542,258,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,3,"Intersection A=1, B=1",0.02411936175928966,False,2542,259,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,4,"Intersection A=1, B=1",0.03058985375778272,False,2542,250,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,5,"Intersection A=1, B=1",0.013928172794454907,False,2542,242,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,6,"Intersection A=1, B=1",2.3903456484029433,True,2542,264,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,7,"Intersection A=1, B=1",2.003313199229715,True,2542,232,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,8,"Intersection A=1, B=1",2.5157642014216997,True,2542,238,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,9,"Intersection A=1, B=1",2.5995497112233954,True,2542,253,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,10,"Intersection A=1, B=1",2.587197349465867,True,2542,230,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,11,"Intersection A=1, B=1",2.25274330208354,True,2542,243,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,12,"Intersection A=1, B=1",2.1096040313671844,True,2542,292,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,13,"Intersection A=1, B=1",2.289521235758954,True,2542,228,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,14,"Intersection A=1, B=1",2.1915732595833743,True,2542,228,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,15,"Intersection A=1, B=1",2.3577493036501154,True,2542,250,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,16,"Intersection A=1, B=1",2.672492810069285,True,2542,229,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,17,"Intersection A=1, B=1",2.1500578781901156,True,2542,261,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,18,"Intersection A=1, B=1",2.1010286274041046,True,2542,251,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,19,"Intersection A=1, B=1",2.257072054201184,True,2542,241,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+cancel_1,0,20,"Intersection A=1, B=1",2.2532642695558693,True,2542,255,results/raw/revision2/cancel_1_0000.json.gz,a93210e58e1b5cf0497197161ae73933b402158e29a55ef5bd0b161e43c5f93b
+gradual,0,1,Overall population,0.007148480970612749,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,2,Overall population,0.0013698924039315797,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,3,Overall population,0.003570629861434445,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,4,Overall population,0.004588737466883482,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,5,Overall population,0.004662002670744558,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,6,Overall population,0.005182969855486499,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,7,Overall population,0.011731923947774682,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,8,Overall population,0.0059026243481233205,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,9,Overall population,0.007724844194977046,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,10,Overall population,0.008121498830127496,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,11,Overall population,0.0543346363265135,True,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,12,Overall population,0.02174454700462551,True,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,13,Overall population,0.028148655108649827,True,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,14,Overall population,0.007460258766102488,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,15,Overall population,0.014199042891767414,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,16,Overall population,0.014709341327375532,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,17,Overall population,0.017710093913454444,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,18,Overall population,0.014897106753127934,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,19,Overall population,0.025516255855708055,True,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,20,Overall population,0.01736802961568544,False,10000,1000,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,1,"Intersection A=1, B=1",0.033369440711674345,False,988,111,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,2,"Intersection A=1, B=1",0.02096463044465588,False,988,99,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,3,"Intersection A=1, B=1",0.05378902419067046,False,988,100,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,4,"Intersection A=1, B=1",0.011855556520587441,False,988,105,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,5,"Intersection A=1, B=1",0.06706639118984689,False,988,97,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,6,"Intersection A=1, B=1",0.028798824221358647,False,988,117,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,7,"Intersection A=1, B=1",0.288700822478245,True,988,98,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,8,"Intersection A=1, B=1",0.5463441563674811,True,988,104,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,9,"Intersection A=1, B=1",0.6685577560030328,True,988,92,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,10,"Intersection A=1, B=1",0.9048451191124932,True,988,99,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,11,"Intersection A=1, B=1",1.961057768018391,True,988,97,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,12,"Intersection A=1, B=1",1.4857826857674583,True,988,111,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,13,"Intersection A=1, B=1",1.786681756198342,True,988,110,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,14,"Intersection A=1, B=1",1.5044365182724178,True,988,101,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,15,"Intersection A=1, B=1",1.3936417486725043,True,988,91,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,16,"Intersection A=1, B=1",2.0027783962135914,True,988,95,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,17,"Intersection A=1, B=1",1.3539416693645492,True,988,103,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,18,"Intersection A=1, B=1",1.3197710764736665,True,988,93,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,19,"Intersection A=1, B=1",1.705557179055315,True,988,105,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4
+gradual,0,20,"Intersection A=1, B=1",1.761794940665649,True,988,92,results/raw/revision2/gradual_0000.json.gz,f9b1f178988160c80e6cf7210e7ff2aa641bbd7b895c8c2a130a3ac844b75be4

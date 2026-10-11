@@ -1,10 +1,20 @@
 # SubPSI
 
-**SubPSI: Detecting Hidden Bias Drift in Machine Learning Through Subgroup-Decomposed Population Stability Analysis**
+**SubPSI: Subgroup drift monitoring under limited data — false alarms, coverage and outcome relevance**
 
-This repository compares aggregate and predefined subgroup input-drift monitors, with explicit statistics, sample-size coverage, and separate model-outcome measurements. An input-distribution alert is not proof of unfairness. The current implementation is an exploratory evidence package, not a deployed monitoring service or a fairness guarantee.
+This repository compares aggregate and predefined subgroup input-drift monitors, with explicit statistics, sample-size coverage, and separate model-outcome measurements. An input-distribution alert is not proof of unfairness. It includes a research prototype website and a reproducible evaluation; no production monitoring or fairness guarantee is claimed.
 
-## Outputs
+## Revision 2 — current results
+
+Start with `docs/REVISION2_FINDINGS.md` for the plain-language explanation, measured results and guide to every chart. `figures/revision2/SubPSI_revision2.pdf` contains ten revised charts; individual figures have PDF, SVG, 300 dpi PNG, CSV and provenance manifests. `docs/REVISION2_METHODS.md` records fixed settings and assumptions, and `docs/REVISION2_PRIOR_WORK.md` records the novelty boundary. The original v1 study below remains preserved.
+
+Revision 2 adds 1,820 generated streams and 120 conditional Adult resampling streams. Accumulating observations improved small-group detection in the declared grid. PSI did not beat KS overall; Adult did not establish subgroup superiority. Input-only monitoring missed outcome-only changes. See the findings for counts, intervals and limits.
+
+`web/` is a dependency-free browser analyzer. Serve it with `python3 -m http.server 4173 --directory web`, open localhost port 4173, and load the demo or separate reference/current CSVs. Visitor records stay in the browser. The deployed URL and verification status are recorded in `records/WEBSITE_DEPLOYMENT.json`. Run its numerical tests with `node --test web/core.test.mjs`. Browser and research procedures differ as documented in the website methods.
+
+Revision 2 experiment scripts are `run_revision.py` and `run_revision_public.py`; summaries and figures are built by `summarize_revision.py` and `make_revision_figures.py`. Saved raw runs and their source/configuration snapshots are under `results/raw/revision2*`. Rebuilding summaries/figures from the delivered raw runs uses the two latter scripts and does not rerun experiments. Preserve the delivered artifact directories first if you need byte-identical historical graphics. Full reruns should use a separate checkout and the recorded source snapshots; the public runner refuses an existing output directory.
+
+## Original v1 outputs
 
 After running the commands below, open `figures/report/index.html` for the local chart gallery, or `figures/report/SubPSI_chart_pack.pdf` for all figures. Each figure also has an editable SVG, vector PDF, 300 dpi PNG, source CSV and JSON provenance manifest. Figures 7 and 8 are analytical planning/teaching examples; the others summarize saved experiments.
 
@@ -38,7 +48,7 @@ Run commands create new directories and refuse to overwrite existing results. Us
 
 No cloud resources, paid jobs or network access are required after dependencies and Adult have been downloaded. A single local CPU process runs the numerical work. Actual software versions, execution times, source hashes, configuration, seeds, sample counts and failures are saved in the run manifests/results. Source/configuration snapshots accompany the run directories. Scientific reproducibility concerns numerical tables; PDF creation timestamps need not match byte-for-byte across regenerations.
 
-## How the comparisons work
+## How the original v1 comparisons work
 
 A0 uses aggregate PSI ≥0.1. A1 applies Holm to aggregate feature tests. B0 uses the same practical threshold across all predefined groups. B1 includes aggregate and single-attribute tests under Holm; B2 adds four predefined intersections. The statistical families contain 2, 10 and 18 comparisons. These are different monitoring scopes at the same nominal per-window family-wise level. Fixed-threshold methods are contextual baselines, not error-matched competitors.
 
@@ -54,4 +64,4 @@ Becker, B. & Kohavi, R. (1996). *Adult* [Dataset]. UCI Machine Learning Reposito
 
 The analysis removes duplicate predictor rows, splits roles, and samples simulated windows. It preserves source records and labels. There is no real time sequence and no basis for present-day Pakistani population claims. Intervals describe conditional Monte Carlo sampling from one finite historical split, not uncertainty from newly recruited independent people. Raw third-party files are gitignored and retrieved by a reproducible script.
 
-AI assisted code, tests, factual checks and visual production. The student retains responsibility for understanding, interpreting and accurately disclosing the work. No remote publication, submission or signed paperwork is part of this repository task.
+AI assisted code, tests, factual checks and visual production. The student retains responsibility for understanding, interpreting and accurately disclosing the work. The user authorized publication of the prototype website; no fair submission or signed paperwork was performed.

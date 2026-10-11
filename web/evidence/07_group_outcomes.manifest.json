@@ -1,0 +1,14 @@
+{
+  "caption": "Average the 15 post-change batches within each stream, then estimate paired mean changes over 40 independent streams; bars are 95% t intervals, not simultaneous intervals. TPR: actual positives correctly predicted; FPR: actual negatives incorrectly predicted positive. Small denominators remain in the source table.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "d3350bd2b8d907046c3a8952f96cbb20ecc89ebe255a01557b748baaf13bf540",
+  "formats": {
+    "pdf": "e8d4af0998e64235b8d578fec38be87c4c7749e0717ab4bbe24bb048aa3c2ca6",
+    "png": "2dddd5a244f3404e85b1c7bf4c849c23d1bff46aa768c28e858042863d596b0b",
+    "svg": "dbb06338f10c174530eb419c5fdae141b6a6889bc739f4e23c01606e9051744e"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Check what happened to predictions inside each group"
+}

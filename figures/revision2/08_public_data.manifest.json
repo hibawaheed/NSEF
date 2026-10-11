@@ -1,0 +1,14 @@
+{
+  "caption": "UCI Adult (Becker & Kohavi, CC BY 4.0): 20 repeats per condition within each of three fixed role splits. Markers distinguish splits; 95% Wilson intervals are conditional resampling uncertainty. This is an injected sampling shift, not observed chronological drift or new independent populations.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "9d06f183e49e6350978cd0622e32a25c935a6f8f99ef73e82302aeccacb084ad",
+  "formats": {
+    "pdf": "0bc670b3bdbdad6b4cf61aa83c0ab7fcb87e763c81d81585b59889af68a8a276",
+    "png": "e1b13c2df145796fc0fb3dd21b77faab9dcf98f7d660be8e2557a6fdc38d261f",
+    "svg": "ea40fb0918432f4890f7af39a81ef3d605c303e21872700a5493ca2b10a89539"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Does the result persist across public-data splits?"
+}

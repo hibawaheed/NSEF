@@ -11,3 +11,7 @@ Measured results are computed by the saved executable code. Synthetic data are e
 The student should inspect the code, rerun the commands, understand the estimand and limitations, and disclose assistance according to the applicable fair rules. This log itself does not certify eligibility or compliance.
 
 `PROMPT_RESPONSE_LOG.json` records the user requests and a concise response/action summary. It is a task log, not a claimed verbatim transcript of all tool output or hidden reasoning.
+
+## Revision 2 and website
+
+The assistant proposed and implemented the v2 finite-horizon comparison, generated new synthetic evaluation streams, reused the openly licensed Adult data with new role splits, implemented count-triggered accumulation and labelled outcome audits, and authored plot and website code. The assistant also performed technical testing and drafted findings/limitations. These are AI-assisted contributions and must not be represented as unaided student work. The student remains responsible for understanding, choosing and explaining the research and for authoring submission materials under the applicable fair rules. No submission or claim of fair acceptance was made.

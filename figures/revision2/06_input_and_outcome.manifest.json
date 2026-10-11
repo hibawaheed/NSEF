@@ -1,0 +1,14 @@
+{
+  "caption": "250 no-change streams; 40 per other scenario. Outcome audits test TPR decrease, FPR increase and accuracy decrease even when input checks are quiet; labels arrive immediately. The combined monitor splits its 5% budget between channels. 95% Wilson intervals; no universal fairness verdict.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "19aa0c104086b24c7e2fd3cef1885e41b4176236542aa47e6290f9ba5f667dcf",
+  "formats": {
+    "pdf": "6203bfce84808222a58a6e052e95a0537b4e577dd7b9a14115b889e011a7c44b",
+    "png": "57238259fa1f7d8593cd4ff2a1756d667cf40effe8426985bd202d99b7dad20f",
+    "svg": "e9180a7b72070eedbadcd16c681b2a6f1b8dc83c6660cfee12fd163dcb947d1e"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Input change and prediction deterioration are different signals"
+}

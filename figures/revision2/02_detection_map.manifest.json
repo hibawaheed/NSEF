@@ -1,0 +1,14 @@
+{
+  "caption": "Forty independent streams per cell; color is the probability of any alert during 15 post-change batches. A=1,B=1 alone shifts. Zero can reflect inadequate subgroup counts, weak effects, or the error-control cost. Cell intervals are in the source CSV.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "199d99731f8cca0c2c99ab546f82c31457a728e98025e712119966066b6332af",
+  "formats": {
+    "pdf": "a120717832052d2019d538986b069dfca9d8895b0c2f8c0765969de66f89b0ab",
+    "png": "522cb472837d0480982b1ebacbf52edfd3c4084dae854867c6282f0803c3347d",
+    "svg": "4cc15cb26f51c0f5b923b2ec440372dc9fcebbf9b3e87a8d554f8c50547ed2ca"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Where does input-drift monitoring work?"
+}

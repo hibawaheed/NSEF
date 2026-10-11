@@ -1,0 +1,41 @@
+[
+  {
+    "id": "null_n250",
+    "kind": "null",
+    "n": 250,
+    "repeats": 1,
+    "share": 0.1
+  },
+  {
+    "id": "grid_n250_s0.25_m1.4",
+    "kind": "shift",
+    "magnitude": 1.4,
+    "n": 250,
+    "repeats": 1,
+    "share": 0.25
+  },
+  {
+    "id": "benign",
+    "kind": "benign",
+    "magnitude": 1.4,
+    "n": 1000,
+    "repeats": 1,
+    "share": 0.1
+  },
+  {
+    "id": "outcome",
+    "kind": "outcome",
+    "magnitude": 1.0,
+    "n": 1000,
+    "repeats": 1,
+    "share": 0.1
+  },
+  {
+    "id": "correlation",
+    "kind": "correlation",
+    "magnitude": 1.0,
+    "n": 1000,
+    "repeats": 1,
+    "share": 0.1
+  }
+]
