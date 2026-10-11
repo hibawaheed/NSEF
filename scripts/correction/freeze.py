@@ -87,7 +87,8 @@ def main():
     for n in [250,1000]:
         vals=[row(n,k,m,metric) for k,m,metric in [('shift','PSI','post_alert'),('shift','KS','post_alert'),('null','PSI','stream_alert'),('null','KS','stream_alert')]]
         report.append(f'| {n} | '+' | '.join(f'{int(r.successes)}/{r.n_streams} ({r.estimate:.1%})' for r in vals)+' |')
-    report += ['', 'Grid denominators give equal weight to the original 12 settings per batch size. Any alert is not exact target identification. The source table contains stratified paired bootstrap intervals; null rates have Wilson intervals. The methods are separate 5% monitors, not a combined 5% PSI-or-KS rule.','']
+    report += ['', 'On the completed shift grid, accumulated KS has more observed post-onset alerts at both batch sizes. This does not establish universal superiority; false alerts, exact localization, support and delay must also be read alongside it. The old PSI counts are reproduced, rather than replaced.','',
+               'Grid denominators give equal weight to the original 12 settings per batch size. Any alert is not exact target identification. The source table contains stratified paired bootstrap intervals; null rates have Wilson intervals. The methods are separate 5% monitors, not a combined 5% PSI-or-KS rule.','']
     for share in [.05,.02]:
         part=cell[cell.id.eq(f'grid_n250_s{share}_m1.4')]
         lines=[]
