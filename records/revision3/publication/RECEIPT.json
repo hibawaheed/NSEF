@@ -1,0 +1,34 @@
+{
+  "verified_utc": "2026-10-11T16:41:17.586373+00:00",
+  "repository": "https://github.com/hibawaheed/NSEF",
+  "visibility": "private",
+  "published_branch": "version-3",
+  "finalized_version": null,
+  "final_selection": "Pending the user; publishing version 3 does not finalize it.",
+  "imported_source_commit": "03cb69d82c8d0b981befd35ec31be015849cd46f",
+  "imported_source_tree": "b04f39cbe3eee031aeb6668735e3cad88e27b9b0",
+  "imported_tracked_files": 3010,
+  "bundle_sha256": "96128bfdec34d917ee0a9beab879bb4d5df8a8652c85a0c231f41bac4585a9c4",
+  "verified_transfer_chunks": 79,
+  "import_run": "https://github.com/hibawaheed/NSEF/actions/runs/38156361391",
+  "import_job_conclusion": "success",
+  "checked_chart_exports": {
+    "png": 12,
+    "svg": 12,
+    "individual_pdf": 12,
+    "combined_pdf": 1,
+    "source_csv": 12
+  },
+  "preserved_refs": {
+    "version-1": "787c5f6046121492bdb203c78d5bab738afe527c",
+    "version-2": "646bfea7f30d3a52be8ab40cff99590baea4650a",
+    "main": "646bfea7f30d3a52be8ab40cff99590baea4650a",
+    "codex/subpsi-foundation": "247c87fc353668ef0af408e20445607172950ea3"
+  },
+  "verification": "Clean local import rehearsal and GitHub import both matched source commit, complete root tree and 3,010 files. GitHub API independently confirmed the source tree, successful job, prior branch heads and all checked chart files. All 2,662 baseline files and 61 preparation deliverables remained byte-identical. This receipt and its log update are added after the source import.",
+  "temporary_transfer_branch_removed": true,
+  "website_redeployed": false,
+  "submission_performed": false,
+  "private_raw_cache_uploaded": false,
+  "raw_data_note": "Computed experiment results, figures, source tables, retrieval scripts and provenance are published. Original ACS/OULAD downloads and private row/draw lineage remain ignored local files as specified in the approved plan."
+}
