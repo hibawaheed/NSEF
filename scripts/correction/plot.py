@@ -68,6 +68,7 @@ def natural_figures(e,ou,summary):
             ax.set_title(('Previous attempts' if row==0 else 'Studied credits')+' · '+('PSI' if col==0 else 'KS'))
             for i,r in enumerate(part.itertuples()):
                 if not r.eligible_new: ax.text(.001,i,f'not assessed (reference n={r.n_reference_new})',fontsize=8,color='#6C7883',va='center')
+            ax.set_ylim(len(groups)-.5,-.5)  # NaNs must not autoscale unsupported rows out of view.
             ax.legend(fontsize=8,loc='upper right')
     e.save(fig,'02_oulad_corrected_distances',d,'OULAD: changed bins, unchanged records and KS',
            'NATURAL OBSERVATIONAL COMPARISON; post-result correction. BBB 2013J reference → 2014J monitoring. Both statistics use exactly the same group records. Minimum support 100; four of nine views qualify. Batch-50, batch-100 and accumulated-100 yield the same supported scores here. PSI and KS have different scales. No drift onset, accuracy, significance or harm is established. The small original attempt PSI came from smoothing unequal sample sizes across empty bins, not separation of attempt counts.')
@@ -150,7 +151,7 @@ def benchmark_figures(e,summary):
     e.save(fig,'09_all_robustness_cases',p,'Keep cancellation and every robustness case visible',
            'MATHEMATICAL SIMULATIONS. All 120 cancellation and 240 robustness streams are retained. Bars are 95% Wilson intervals. An input alert is not necessarily successful detection of outcome deterioration: the outcome-only and correlation scenarios do not change the monitored marginal inputs. A benign feature change need not harm the predictor. No new scenarios or algorithms were added in this follow-up.')
     p=cells[cells.metric.isin(['test_seconds','maximum_logical_payload_bytes','shared_input_frame_bytes','maximum_block_age'])]
-    fig,axes=plt.subplots(1,2,figsize=(13,8));ids=p.id.drop_duplicates().tolist();y=np.arange(len(ids))
+    fig,axes=plt.subplots(1,2,figsize=(13,12));ids=p.id.drop_duplicates().tolist();y=np.arange(len(ids))
     for ax,metric,title in zip(axes,['test_seconds','maximum_logical_payload_bytes'],['Mean summed statistic time per stream','Mean maximum logical test-input payload']):
         for method,color,marker in [('PSI',BLUE,'o'),('KS',ORANGE,'x')]:
             q=p[p.method.eq(method)&p.metric.eq(metric)].set_index('id').loc[ids]
