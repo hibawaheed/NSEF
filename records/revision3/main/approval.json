@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-11T15:36:29.671179+00:00",
+  "user_message": "YES WE APPROVE GO ON WITH EVERYTHIUNG",
+  "scope": "Run the consolidated methodological plan and produce local implementation, evaluation, tables, figures and explanations. No push, deploy, submit or purchase.",
+  "mentor_status": "User reports collective approval; no independent mentor approval or identity is asserted.",
+  "plan_sha256": "05be40887ad9dff9ea48132214ee374d26ac443eee72eef11bce00a05a5516ea",
+  "approved_config_sha256": "74888cf1cf3e07c436b293f0a5474e4a4d5fe4ae174479f7d30d6637cb456a8b",
+  "preparation_commit": "64619ae",
+  "decision_record": "Configuration implementation details frozen before main scores or fitted-model outcomes were evaluated."
+}
