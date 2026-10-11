@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-11T18:32:18.969411+00:00",
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "files": {
+    "01_oulad_representation.csv": "a64fd112325ceaffcee8a635e15b0f011df962220a31b1a3d16b065a11a6bc9e",
+    "01_oulad_representation.pdf": "82655920e12df540cbc9e71b6c65f596fffc466abac835e1690ffc18df5e1484",
+    "01_oulad_representation.png": "e60a470017e3e28e65495cfde15cd83558221ae9f2e5f82f520bb58dfe4b017e",
+    "01_oulad_representation.svg": "b5b85701a68c4e484c583cabd839df33313ee3739e1ad02deef9bbeb069227a2",
+    "02_oulad_prediction_baseline.csv": "545e0ae0d3411985e7a458cecd5083692a13b717877a0a09dff910e4e90d7a04",
+    "02_oulad_prediction_baseline.pdf": "33e966c52eda9bee0045dda99c8e92fe38eea9a85cb36baeb7ed7ba1c24d53b2",
+    "02_oulad_prediction_baseline.png": "28d04b91dd9df2471bd9fbd1a9a48291b6b6fa2ab18e53aa457a95afc82df1be",
+    "02_oulad_prediction_baseline.svg": "ac3876ac2dfd1ec0e1cf1afc64bf16707da84d90d6e6dcd8fd019c49583d080b",
+    "figure_index.json": "59511cdade9266cf53958a2d5076d9a79bd83feca496c18148f7f6bf2ddd9517",
+    "index.html": "0847920d72a90c12eb9a1e9fe8dee0b82c1edeb4ef7dc45300dbf6cdb2ef3136",
+    "source_snapshot.zip": "5792a5870608bac222ab110d93f74d63fa643e4f5b246634074380bcb0a6504b"
+  },
+  "git_head": "7ddcc02c4bf458b68617bbd5b1f184cbfb82e1c5",
+  "new_calibration_or_evaluation": false,
+  "plot_code_sha256": "b8ad7b9a26acd83b86389265e3fb34f52424b74013f6a06357d19cd9ded6e03b",
+  "purpose": "Corrected reporting of historical design and already saved outcome counts",
+  "source_manifest_sha256": "62d2e849d4403c7e69e78eda5f96c97622f291479c89f8878abd86db06c76a91",
+  "source_snapshot_sha256": "5792a5870608bac222ab110d93f74d63fa643e4f5b246634074380bcb0a6504b"
+}

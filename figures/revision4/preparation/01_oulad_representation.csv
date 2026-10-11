@@ -1,0 +1,8 @@
+rule,category,count,n_design,occupied_numeric_bins,nonconstant_collapse
+v3_quantile,Below zero,0,372,1,True
+v3_quantile,0 or more,372,372,1,True
+v3_quantile,Missing,0,372,1,True
+corrected_counts,0,314,372,3,False
+corrected_counts,1,45,372,3,False
+corrected_counts,2 or more,13,372,3,False
+corrected_counts,Missing,0,372,3,False

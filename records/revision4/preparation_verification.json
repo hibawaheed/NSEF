@@ -1,0 +1,34 @@
+{
+  "balanced_accuracy_rows_verified": 288,
+  "chart_csvs_match_saved_tables": 2,
+  "images": [
+    {
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "file": "figures/revision4/preparation/01_oulad_representation.png",
+      "pixels": [
+        3300,
+        1620
+      ]
+    },
+    {
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "file": "figures/revision4/preparation/02_oulad_prediction_baseline.png",
+      "pixels": [
+        3240,
+        1710
+      ]
+    }
+  ],
+  "main_calibration_or_evaluation_executed": false,
+  "new_artifact_hashes": 29,
+  "old_freeze_hashes": 1990,
+  "starting_files_unchanged": 4997,
+  "status": "PASS",
+  "utc": "2026-10-11T18:40:14.315531+00:00"
+}

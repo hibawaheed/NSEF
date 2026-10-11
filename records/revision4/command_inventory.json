@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-11T18:42:57.847148+00:00",
+  "timing_note": "Retrospective sequence, not invented per-command timestamps. Routine reads/edits summarized; exact final-check times separately captured.",
+  "actions": [
+    "git status --short --branch; git branch -avv; git log -3 --oneline (read-only inspection)",
+    "Read full /home/hiba_w/Downloads/SubPSI_Revision4_Codex_Prompt.txt",
+    "GitHub GET /repos/hibawaheed/NSEF/branches?per_page=100 (read-only connector)",
+    "git switch -c codex/subpsi-r4-calibrated-collection",
+    "python -m pytest tests/test_revision4.py -q (26 passed before two lineage tests were added)",
+    "python scripts/revision4/inspect_preparation.py",
+    "python scripts/correction/verify.py --out records/revision4/legacy_verification.json",
+    "Six fixed compare_block timing fixtures; exact parameters/results in fixture_cost_check.json",
+    "python scripts/revision4/inspect_preparation.py --out results/summary/revision4/preparation-02 --private-out data/raw/revision4/preparation-lineage-02",
+    "python -m pytest -q (117 passed in 1.47 seconds before final validation-input tightening)",
+    "MPLCONFIGDIR=/home/hiba_w/Documents/Codex/2026-10-11/hey/work/mpl-cache python scripts/revision4/plot_corrections.py",
+    "Final python -m pytest -q and python scripts/revision4/verify_preparation.py; precise argv/timestamps/output in final_check_commands.json",
+    "Visual inspection via view_image of both new exported PNG files",
+    "git add (only new revision4 files); git diff --cached --check (generated SVG whitespace retained; claim CSV newline normalized)",
+    "git diff --cached --check restricted to source/tests/scripts/docs/configs/records and new entry document"
+  ]
+}

@@ -1,0 +1,31 @@
+group,level,design_people,calibration_people,calibration_households,evaluation_source_households,selection_households,validation_households
+Everyone,aggregate,14320,14422,7868,15584,3924,3944
+SEX=1,single,6834,6883,3779,7557,1860,1919
+SEX=2,single,7486,7539,4089,8027,2064,2025
+RAC1P=1,single,11811,11890,6549,13041,3265,3284
+RAC1P=2,single,868,843,472,940,227,245
+RAC1P=3,single,12,19,15,20,7,8
+RAC1P=4,single,0,0,0,1,0,0
+RAC1P=5,single,8,14,3,8,1,2
+RAC1P=6,single,840,874,423,825,208,215
+RAC1P=7,single,10,3,2,3,2,0
+RAC1P=8,single,478,460,234,427,122,112
+RAC1P=9,single,293,319,170,319,92,78
+SEX=1 & RAC1P=1,intersection,5624,5694,3165,6283,1559,1606
+SEX=1 & RAC1P=2,intersection,405,391,194,428,88,106
+SEX=1 & RAC1P=3,intersection,8,11,9,12,4,5
+SEX=1 & RAC1P=4,intersection,0,0,0,1,0,0
+SEX=1 & RAC1P=5,intersection,3,8,2,4,1,1
+SEX=1 & RAC1P=6,intersection,402,390,223,484,110,113
+SEX=1 & RAC1P=7,intersection,3,1,1,3,1,0
+SEX=1 & RAC1P=8,intersection,248,225,109,211,58,51
+SEX=1 & RAC1P=9,intersection,141,163,76,131,39,37
+SEX=2 & RAC1P=1,intersection,6187,6196,3384,6758,1706,1678
+SEX=2 & RAC1P=2,intersection,463,452,278,512,139,139
+SEX=2 & RAC1P=3,intersection,4,8,6,8,3,3
+SEX=2 & RAC1P=4,intersection,0,0,0,0,0,0
+SEX=2 & RAC1P=5,intersection,5,6,1,4,0,1
+SEX=2 & RAC1P=6,intersection,438,484,200,341,98,102
+SEX=2 & RAC1P=7,intersection,7,2,1,0,1,0
+SEX=2 & RAC1P=8,intersection,230,235,125,216,64,61
+SEX=2 & RAC1P=9,intersection,152,156,94,188,53,41

@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-11T18:29:25.965237+00:00",
+  "purpose": "software cost estimate only; six fixed arrays, not an experiment or collected records",
+  "rows": [
+    {
+      "fixture": "equal_fixture",
+      "repeat": 0,
+      "n_reference": 400,
+      "n_current": 800,
+      "wall_seconds": 0.0008135509997373447,
+      "psi_seconds": 0.00015325499771279283,
+      "ks_seconds": 0.000613354000961408,
+      "permutations_used": 64
+    },
+    {
+      "fixture": "equal_fixture",
+      "repeat": 1,
+      "n_reference": 400,
+      "n_current": 800,
+      "wall_seconds": 0.0005559250021178741,
+      "psi_seconds": 0.0001138320003519766,
+      "ks_seconds": 0.00042175400085397996,
+      "permutations_used": 64
+    },
+    {
+      "fixture": "equal_fixture",
+      "repeat": 2,
+      "n_reference": 400,
+      "n_current": 800,
+      "wall_seconds": 0.0004943040003126953,
+      "psi_seconds": 0.00010381099855294451,
+      "ks_seconds": 0.0003725479982676916,
+      "permutations_used": 64
+    },
+    {
+      "fixture": "separated_fixture",
+      "repeat": 0,
+      "n_reference": 400,
+      "n_current": 800,
+      "wall_seconds": 0.02272582699879422,
+      "psi_seconds": 0.02120340300098178,
+      "ks_seconds": 0.0015035600008559413,
+      "permutations_used": 23999
+    },
+    {
+      "fixture": "separated_fixture",
+      "repeat": 1,
+      "n_reference": 400,
+      "n_current": 800,
+      "wall_seconds": 0.021213797001109924,
+      "psi_seconds": 0.01958427900171955,
+      "ks_seconds": 0.001608998001756845,
+      "permutations_used": 23999
+    },
+    {
+      "fixture": "separated_fixture",
+      "repeat": 2,
+      "n_reference": 400,
+      "n_current": 800,
+      "wall_seconds": 0.02169533699998283,
+      "psi_seconds": 0.020206162000249606,
+      "ks_seconds": 0.0014655329978268128,
+      "permutations_used": 23999
+    }
+  ]
+}

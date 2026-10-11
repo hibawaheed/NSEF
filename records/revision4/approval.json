@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-11T18:34:45.456834+00:00",
+  "status": "AWAITING_USER_APPROVAL",
+  "user_approval": null,
+  "mentor_approval_evidence": null,
+  "fair_or_SRC_approval_evidence": null,
+  "scope": "New Revision 4 calibration and follow-up evaluation; earlier approvals apply only to their earlier scope.",
+  "push_merge_deploy_submit_purchase_authorized": false,
+  "proposed_protocol_sha256": "33dd0b058bc4c12d4f5eebc59abea220511c66661ccd1fca9bd63129524cf662",
+  "proposed_config_sha256": "cafec453963d0459a55f542a7abed760ba2ebe4a133a34b8c4e32f74e7686565"
+}

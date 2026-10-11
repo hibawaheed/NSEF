@@ -1,0 +1,9 @@
+model,time,group,level,period,subset,metric,numerator,denominator,positives,negatives,tp,fp,tn,fn,n,value,mathematically_defined,status
+Frozen logistic,2014,Everyone,aggregate,current,group,Accuracy,541.0,973.0,547,426,484,369,57,63,973,0.5560123329907503,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,group,TPR,484.0,547.0,547,426,484,369,57,63,973,0.8848263254113345,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,group,FPR,369.0,426.0,547,426,484,369,57,63,973,0.8661971830985915,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,group,Balanced accuracy,,,547,426,484,369,57,63,973,0.5093145711563716,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,Accuracy,547.0,973.0,547,426,547,426,0,0,973,0.5621788283658787,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,TPR,547.0,547.0,547,426,547,426,0,0,973,1.0,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,FPR,426.0,426.0,547,426,547,426,0,0,973,1.0,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,Balanced accuracy,,,547,426,547,426,0,0,973,0.5,True,assessed

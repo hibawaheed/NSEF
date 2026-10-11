@@ -1,0 +1,64 @@
+{
+  "calibration_run": false,
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "files": {
+    "acs_candidate_support.csv": "8939f0eb89bbff1072ce36689925eeb062e01e7710c232e575e80a1d21a45b7e",
+    "oulad_before_after.csv": "e1a8d3991f6590083a415a0f7d3a98d62febc86d2abbe7a1dae6f520abf9159c",
+    "oulad_outcomes_extended.csv": "754f129b25e852ddb20ed4324c6215d9750a63ca00984895051aaa8fbcf1caa8",
+    "preserved_inventory.json": "7e11914c7bf8d132d35c02f30a26094d08edc425629fa7d60978dccd874b0685",
+    "representation_audit.csv": "ff4e7b5722680d9eae6045d4d1253e08f69fb8712548a8b0b9ff05c1a84208e6",
+    "representation_audit.json": "9a9cda378ad2c8d320f60027c64cae7ca53c092050d761affbd13f16ec31165a",
+    "role_checks.json": "2cbcb4d90ee93d1b44b2c530dcb46f0d51f882025b5e32a1e232e9e475f624ca",
+    "source_snapshot.zip": "0bec5d4b09244b3d1f825762fd485699524f92f301cd4b3d288da4840eed0e2e",
+    "started.json": "3e00279e159f927aa8667d7273481afd6217391a626333b46902bb4573609dfc"
+  },
+  "finished_utc": "2026-10-11T18:30:40.012950+00:00",
+  "git_head": "7ddcc02c4bf458b68617bbd5b1f184cbfb82e1c5",
+  "git_status": [
+    "?? records/revision4/",
+    "?? results/summary/revision4/",
+    "?? scripts/revision4/",
+    "?? src/subpsi/revision4.py",
+    "?? tests/test_revision4.py"
+  ],
+  "main_evaluation_run": false,
+  "peak_process_rss_kib": 295904,
+  "preserved_base_files": 4997,
+  "private_lineage_sha256": "fcb3d7ec7febd294302ded98124c9fc267e2e9faaef8bc32ade66e586b19e0e8",
+  "purpose": "PREPARATION ONLY: support counts, historical representation, saved-outcome arithmetic",
+  "source_hashes": {
+    "data/raw/revision3/acs/2015/csv_pma.zip": "8d7acacbf600dd91132043fcafe8523d026479a18748fbdb0a7d341745235f2a",
+    "data/raw/revision3/acs/2016/csv_pma.zip": "d8e1b1a36c02d495c86528fe78279d10d0c4d3d2af0adfeb24ff0ef8830f8849",
+    "data/raw/revision3/acs/2017/csv_pma.zip": "9473b33a4cacaf223de376b595f809b808d3ae898b8a50858537686d3ba789c4",
+    "data/raw/revision3/acs/2018/csv_pma.zip": "2b08c2d74bd8b782f8d9c602947bd0c058387b5b2c5a2237ad9fefc671a00570",
+    "data/raw/revision3/acs/2019/csv_pma.zip": "b3d986e2d872eee455bf0c983ac916073dea9281c3781933bc40cffe1dc6447a",
+    "data/raw/revision3/lineage/acs_2015_proposed_roles.csv": "fbb9794784ff32e73e6c385b016ef3378a0705f11f13a6d049875372c94af7a6",
+    "data/raw/revision3/lineage/acs_2016_proposed_roles.csv": "5efb4281fd2a110271eb8515dc8440a772afd08b84d6b27a4f3420c06b985271",
+    "data/raw/revision3/lineage/acs_2017_proposed_roles.csv": "c74432af306b24e9dd99808c859fba84364bdd5ac4fcf752675b62989adc4c6d",
+    "data/raw/revision3/lineage/acs_2018_proposed_roles.csv": "da240c7f31083e74e939df8ea959ccbf338e3ea1991283daad2eb0d58c2e9743",
+    "data/raw/revision3/lineage/acs_2019_proposed_roles.csv": "f0daf7ed6f47f9376dbdbf103e8781bd8d7c92044b692fd7c73ce2dd7470cac4",
+    "data/raw/revision3/lineage/oulad_proposed_roles.csv": "77e517dd40bad2c1ce152b4bdad5f78976ea5400fb7591ce4a0e39c7ab322415",
+    "data/raw/revision3/oulad/metadata/courses.csv": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+    "data/raw/revision3/oulad/metadata/studentInfo.csv": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60",
+    "data/raw/revision3/oulad/metadata/studentRegistration.csv": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47",
+    "results/raw/correction/oulad/old_vs_corrected.csv": "4d1f69c7bdf5170e8443b26f40507d6336fb1bf6d1c60609747ae3e0d638bce5",
+    "results/raw/correction/oulad/outcomes.csv": "abb06e59b6ee8da4d2aaa88a5d0deb130880504f866094b412fc62f50fb17660"
+  },
+  "source_snapshot_sha256": "0bec5d4b09244b3d1f825762fd485699524f92f301cd4b3d288da4840eed0e2e",
+  "started_utc": "2026-10-11T18:30:37.927223+00:00",
+  "verified_correction_freeze_sha256": "ba20f6e6cbd88d3770654a95e990d837c541c15c899a03f52b6935b862636d3f",
+  "verified_frozen_files": 1990,
+  "wall_seconds": 2.107205410997267
+}

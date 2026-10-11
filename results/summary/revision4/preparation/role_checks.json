@@ -1,0 +1,18 @@
+{
+  "acs_original_household_roles": {
+    "conflicts": 0,
+    "rows": 289981,
+    "units": 157650
+  },
+  "calibration_evaluation_household_overlap": 0,
+  "oulad_student_roles": {
+    "conflicts": 0,
+    "rows": 3835,
+    "units": 3835
+  },
+  "r4_candidate_calibration_roles": {
+    "conflicts": 0,
+    "rows": 7868,
+    "units": 7868
+  }
+}

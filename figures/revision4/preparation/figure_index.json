@@ -1,0 +1,20 @@
+[
+  {
+    "evidence": "Previously examined records; reporting correction, not untouched validation",
+    "explanation": "The old rule put all nonnegative counts together. The retained correction separates 0, 1 and 2+; the underlying records did not change.",
+    "source_csv": "01_oulad_representation.csv",
+    "source_tables": {
+      "results/summary/revision4/preparation-02/representation_audit.json": "9a9cda378ad2c8d320f60027c64cae7ca53c092050d761affbd13f16ec31165a"
+    },
+    "stem": "01_oulad_representation"
+  },
+  {
+    "evidence": "Previously examined records; reporting correction, not untouched validation",
+    "explanation": "The majority baseline is slightly more accurate; the frozen model has about 50.9% balanced accuracy. This limits outcome conclusions, without invalidating the separate input study.",
+    "source_csv": "02_oulad_prediction_baseline.csv",
+    "source_tables": {
+      "results/summary/revision4/preparation-02/oulad_outcomes_extended.csv": "754f129b25e852ddb20ed4324c6215d9750a63ca00984895051aaa8fbcf1caa8"
+    },
+    "stem": "02_oulad_prediction_baseline"
+  }
+]

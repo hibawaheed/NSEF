@@ -1,0 +1,289 @@
+model,time,group,level,period,subset,metric,numerator,denominator,positives,negatives,tp,fp,tn,fn,n,value,mathematically_defined,status
+Frozen logistic,2014,Everyone,aggregate,baseline,group,Accuracy,229.0,392.0,211,181,185,137,44,26,392,0.5841836734693877,True,assessed
+Frozen logistic,2014,Everyone,aggregate,baseline,group,TPR,185.0,211.0,211,181,185,137,44,26,392,0.8767772511848341,True,assessed
+Frozen logistic,2014,Everyone,aggregate,baseline,group,FPR,137.0,181.0,211,181,185,137,44,26,392,0.7569060773480663,True,assessed
+Frozen logistic,2014,Everyone,aggregate,baseline,group,Balanced accuracy,,,211,181,185,137,44,26,392,0.5599355869183839,True,assessed
+Frozen logistic,2014,Everyone,aggregate,baseline,complement,Accuracy,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,baseline,complement,TPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,baseline,complement,FPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,baseline,complement,Balanced accuracy,,,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,current,group,Accuracy,541.0,973.0,547,426,484,369,57,63,973,0.5560123329907503,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,group,TPR,484.0,547.0,547,426,484,369,57,63,973,0.8848263254113345,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,group,FPR,369.0,426.0,547,426,484,369,57,63,973,0.8661971830985915,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,group,Balanced accuracy,,,547,426,484,369,57,63,973,0.5093145711563716,True,assessed
+Frozen logistic,2014,Everyone,aggregate,current,complement,Accuracy,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,current,complement,TPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,current,complement,FPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,Everyone,aggregate,current,complement,Balanced accuracy,,,0,0,0,0,0,0,0,,False,insufficient_denominator
+Frozen logistic,2014,gender='F',single,baseline,group,Accuracy,212.0,350.0,191,159,172,119,40,19,350,0.6057142857142858,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,group,TPR,172.0,191.0,191,159,172,119,40,19,350,0.900523560209424,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,group,FPR,119.0,159.0,191,159,172,119,40,19,350,0.7484276729559748,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,group,Balanced accuracy,,,191,159,172,119,40,19,350,0.5760479436267245,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,complement,Accuracy,17.0,42.0,20,22,13,18,4,7,42,0.40476190476190477,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,complement,TPR,13.0,20.0,20,22,13,18,4,7,42,0.65,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,complement,FPR,18.0,22.0,20,22,13,18,4,7,42,0.8181818181818182,True,assessed
+Frozen logistic,2014,gender='F',single,baseline,complement,Balanced accuracy,,,20,22,13,18,4,7,42,0.41590909090909084,True,assessed
+Frozen logistic,2014,gender='F',single,current,group,Accuracy,478.0,857.0,486,371,426,319,52,60,857,0.5577596266044341,True,assessed
+Frozen logistic,2014,gender='F',single,current,group,TPR,426.0,486.0,486,371,426,319,52,60,857,0.8765432098765432,True,assessed
+Frozen logistic,2014,gender='F',single,current,group,FPR,319.0,371.0,486,371,426,319,52,60,857,0.8598382749326146,True,assessed
+Frozen logistic,2014,gender='F',single,current,group,Balanced accuracy,,,486,371,426,319,52,60,857,0.5083524674719643,True,assessed
+Frozen logistic,2014,gender='F',single,current,complement,Accuracy,63.0,116.0,61,55,58,50,5,3,116,0.5431034482758621,True,assessed
+Frozen logistic,2014,gender='F',single,current,complement,TPR,58.0,61.0,61,55,58,50,5,3,116,0.9508196721311475,True,assessed
+Frozen logistic,2014,gender='F',single,current,complement,FPR,50.0,55.0,61,55,58,50,5,3,116,0.9090909090909091,True,assessed
+Frozen logistic,2014,gender='F',single,current,complement,Balanced accuracy,,,61,55,58,50,5,3,116,0.5208643815201193,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,group,Accuracy,17.0,42.0,20,22,13,18,4,7,42,0.40476190476190477,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,group,TPR,13.0,20.0,20,22,13,18,4,7,42,0.65,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,group,FPR,18.0,22.0,20,22,13,18,4,7,42,0.8181818181818182,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,group,Balanced accuracy,,,20,22,13,18,4,7,42,0.41590909090909084,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,complement,Accuracy,212.0,350.0,191,159,172,119,40,19,350,0.6057142857142858,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,complement,TPR,172.0,191.0,191,159,172,119,40,19,350,0.900523560209424,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,complement,FPR,119.0,159.0,191,159,172,119,40,19,350,0.7484276729559748,True,assessed
+Frozen logistic,2014,gender='M',single,baseline,complement,Balanced accuracy,,,191,159,172,119,40,19,350,0.5760479436267245,True,assessed
+Frozen logistic,2014,gender='M',single,current,group,Accuracy,63.0,116.0,61,55,58,50,5,3,116,0.5431034482758621,True,assessed
+Frozen logistic,2014,gender='M',single,current,group,TPR,58.0,61.0,61,55,58,50,5,3,116,0.9508196721311475,True,assessed
+Frozen logistic,2014,gender='M',single,current,group,FPR,50.0,55.0,61,55,58,50,5,3,116,0.9090909090909091,True,assessed
+Frozen logistic,2014,gender='M',single,current,group,Balanced accuracy,,,61,55,58,50,5,3,116,0.5208643815201193,True,assessed
+Frozen logistic,2014,gender='M',single,current,complement,Accuracy,478.0,857.0,486,371,426,319,52,60,857,0.5577596266044341,True,assessed
+Frozen logistic,2014,gender='M',single,current,complement,TPR,426.0,486.0,486,371,426,319,52,60,857,0.8765432098765432,True,assessed
+Frozen logistic,2014,gender='M',single,current,complement,FPR,319.0,371.0,486,371,426,319,52,60,857,0.8598382749326146,True,assessed
+Frozen logistic,2014,gender='M',single,current,complement,Balanced accuracy,,,486,371,426,319,52,60,857,0.5083524674719643,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,group,Accuracy,204.0,352.0,191,161,168,125,36,23,352,0.5795454545454546,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,group,TPR,168.0,191.0,191,161,168,125,36,23,352,0.8795811518324608,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,group,FPR,125.0,161.0,191,161,168,125,36,23,352,0.7763975155279503,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,group,Balanced accuracy,,,191,161,168,125,36,23,352,0.5515918181522552,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,complement,Accuracy,25.0,40.0,20,20,17,12,8,3,40,0.625,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,complement,TPR,17.0,20.0,20,20,17,12,8,3,40,0.85,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,complement,FPR,12.0,20.0,20,20,17,12,8,3,40,0.6,True,assessed
+Frozen logistic,2014,disability='N',single,baseline,complement,Balanced accuracy,,,20,20,17,12,8,3,40,0.625,True,assessed
+Frozen logistic,2014,disability='N',single,current,group,Accuracy,496.0,889.0,503,386,447,337,49,56,889,0.5579302587176603,True,assessed
+Frozen logistic,2014,disability='N',single,current,group,TPR,447.0,503.0,503,386,447,337,49,56,889,0.8886679920477137,True,assessed
+Frozen logistic,2014,disability='N',single,current,group,FPR,337.0,386.0,503,386,447,337,49,56,889,0.8730569948186528,True,assessed
+Frozen logistic,2014,disability='N',single,current,group,Balanced accuracy,,,503,386,447,337,49,56,889,0.5078054986145304,True,assessed
+Frozen logistic,2014,disability='N',single,current,complement,Accuracy,45.0,84.0,44,40,37,32,8,7,84,0.5357142857142857,True,assessed
+Frozen logistic,2014,disability='N',single,current,complement,TPR,37.0,44.0,44,40,37,32,8,7,84,0.8409090909090909,True,assessed
+Frozen logistic,2014,disability='N',single,current,complement,FPR,32.0,40.0,44,40,37,32,8,7,84,0.8,True,assessed
+Frozen logistic,2014,disability='N',single,current,complement,Balanced accuracy,,,44,40,37,32,8,7,84,0.5204545454545454,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,group,Accuracy,25.0,40.0,20,20,17,12,8,3,40,0.625,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,group,TPR,17.0,20.0,20,20,17,12,8,3,40,0.85,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,group,FPR,12.0,20.0,20,20,17,12,8,3,40,0.6,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,group,Balanced accuracy,,,20,20,17,12,8,3,40,0.625,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,complement,Accuracy,204.0,352.0,191,161,168,125,36,23,352,0.5795454545454546,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,complement,TPR,168.0,191.0,191,161,168,125,36,23,352,0.8795811518324608,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,complement,FPR,125.0,161.0,191,161,168,125,36,23,352,0.7763975155279503,True,assessed
+Frozen logistic,2014,disability='Y',single,baseline,complement,Balanced accuracy,,,191,161,168,125,36,23,352,0.5515918181522552,True,assessed
+Frozen logistic,2014,disability='Y',single,current,group,Accuracy,45.0,84.0,44,40,37,32,8,7,84,0.5357142857142857,True,assessed
+Frozen logistic,2014,disability='Y',single,current,group,TPR,37.0,44.0,44,40,37,32,8,7,84,0.8409090909090909,True,assessed
+Frozen logistic,2014,disability='Y',single,current,group,FPR,32.0,40.0,44,40,37,32,8,7,84,0.8,True,assessed
+Frozen logistic,2014,disability='Y',single,current,group,Balanced accuracy,,,44,40,37,32,8,7,84,0.5204545454545454,True,assessed
+Frozen logistic,2014,disability='Y',single,current,complement,Accuracy,496.0,889.0,503,386,447,337,49,56,889,0.5579302587176603,True,assessed
+Frozen logistic,2014,disability='Y',single,current,complement,TPR,447.0,503.0,503,386,447,337,49,56,889,0.8886679920477137,True,assessed
+Frozen logistic,2014,disability='Y',single,current,complement,FPR,337.0,386.0,503,386,447,337,49,56,889,0.8730569948186528,True,assessed
+Frozen logistic,2014,disability='Y',single,current,complement,Balanced accuracy,,,503,386,447,337,49,56,889,0.5078054986145304,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,group,Accuracy,187.0,313.0,172,141,155,109,32,17,313,0.597444089456869,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,group,TPR,155.0,172.0,172,141,155,109,32,17,313,0.9011627906976745,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,group,FPR,109.0,141.0,172,141,155,109,32,17,313,0.7730496453900709,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,group,Balanced accuracy,,,172,141,155,109,32,17,313,0.5640565726538018,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,complement,Accuracy,42.0,79.0,39,40,30,28,12,9,79,0.5316455696202531,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,complement,TPR,30.0,39.0,39,40,30,28,12,9,79,0.7692307692307693,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,complement,FPR,28.0,40.0,39,40,30,28,12,9,79,0.7,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,baseline,complement,Balanced accuracy,,,39,40,30,28,12,9,79,0.5346153846153846,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,group,Accuracy,438.0,786.0,448,338,394,294,44,54,786,0.5572519083969466,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,group,TPR,394.0,448.0,448,338,394,294,44,54,786,0.8794642857142857,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,group,FPR,294.0,338.0,448,338,394,294,44,54,786,0.8698224852071006,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,group,Balanced accuracy,,,448,338,394,294,44,54,786,0.5048209002535925,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,complement,Accuracy,103.0,187.0,99,88,90,75,13,9,187,0.5508021390374331,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,complement,TPR,90.0,99.0,99,88,90,75,13,9,187,0.9090909090909091,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,complement,FPR,75.0,88.0,99,88,90,75,13,9,187,0.8522727272727273,True,assessed
+Frozen logistic,2014,gender='F' & disability='N',intersection,current,complement,Balanced accuracy,,,99,88,90,75,13,9,187,0.5284090909090909,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,group,Accuracy,25.0,37.0,19,18,17,10,8,2,37,0.6756756756756757,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,group,TPR,17.0,19.0,19,18,17,10,8,2,37,,True,insufficient_denominator
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,group,FPR,10.0,18.0,19,18,17,10,8,2,37,,True,insufficient_denominator
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,group,Balanced accuracy,,,19,18,17,10,8,2,37,,True,insufficient_denominator
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,complement,Accuracy,204.0,355.0,192,163,168,127,36,24,355,0.5746478873239437,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,complement,TPR,168.0,192.0,192,163,168,127,36,24,355,0.875,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,complement,FPR,127.0,163.0,192,163,168,127,36,24,355,0.7791411042944786,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,baseline,complement,Balanced accuracy,,,192,163,168,127,36,24,355,0.5479294478527608,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,group,Accuracy,40.0,71.0,38,33,32,25,8,6,71,0.5633802816901409,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,group,TPR,32.0,38.0,38,33,32,25,8,6,71,0.8421052631578947,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,group,FPR,25.0,33.0,38,33,32,25,8,6,71,0.7575757575757576,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,group,Balanced accuracy,,,38,33,32,25,8,6,71,0.5422647527910686,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,complement,Accuracy,501.0,902.0,509,393,452,344,49,57,902,0.5554323725055432,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,complement,TPR,452.0,509.0,509,393,452,344,49,57,902,0.888015717092338,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,complement,FPR,344.0,393.0,509,393,452,344,49,57,902,0.8753180661577609,True,assessed
+Frozen logistic,2014,gender='F' & disability='Y',intersection,current,complement,Balanced accuracy,,,509,393,452,344,49,57,902,0.5063488254672885,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,group,Accuracy,17.0,39.0,19,20,13,16,4,6,39,0.4358974358974359,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,group,TPR,13.0,19.0,19,20,13,16,4,6,39,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,group,FPR,16.0,20.0,19,20,13,16,4,6,39,0.8,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,group,Balanced accuracy,,,19,20,13,16,4,6,39,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,complement,Accuracy,212.0,353.0,192,161,172,121,40,20,353,0.6005665722379604,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,complement,TPR,172.0,192.0,192,161,172,121,40,20,353,0.8958333333333334,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,complement,FPR,121.0,161.0,192,161,172,121,40,20,353,0.7515527950310559,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,baseline,complement,Balanced accuracy,,,192,161,172,121,40,20,353,0.5721402691511388,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,group,Accuracy,58.0,103.0,55,48,53,43,5,2,103,0.5631067961165048,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,group,TPR,53.0,55.0,55,48,53,43,5,2,103,0.9636363636363636,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,group,FPR,43.0,48.0,55,48,53,43,5,2,103,0.8958333333333334,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,group,Balanced accuracy,,,55,48,53,43,5,2,103,0.5339015151515152,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,complement,Accuracy,483.0,870.0,492,378,431,326,52,61,870,0.5551724137931034,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,complement,TPR,431.0,492.0,492,378,431,326,52,61,870,0.8760162601626016,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,complement,FPR,326.0,378.0,492,378,431,326,52,61,870,0.8624338624338624,True,assessed
+Frozen logistic,2014,gender='M' & disability='N',intersection,current,complement,Balanced accuracy,,,492,378,431,326,52,61,870,0.5067911988643696,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,group,Accuracy,0.0,3.0,1,2,0,2,0,1,3,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,group,TPR,0.0,1.0,1,2,0,2,0,1,3,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,group,FPR,2.0,2.0,1,2,0,2,0,1,3,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,group,Balanced accuracy,,,1,2,0,2,0,1,3,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,complement,Accuracy,229.0,389.0,210,179,185,135,44,25,389,0.5886889460154242,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,complement,TPR,185.0,210.0,210,179,185,135,44,25,389,0.8809523809523809,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,complement,FPR,135.0,179.0,210,179,185,135,44,25,389,0.7541899441340782,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,baseline,complement,Balanced accuracy,,,210,179,185,135,44,25,389,0.5633812184091513,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,group,Accuracy,5.0,13.0,6,7,5,7,0,1,13,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,group,TPR,5.0,6.0,6,7,5,7,0,1,13,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,group,FPR,7.0,7.0,6,7,5,7,0,1,13,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,group,Balanced accuracy,,,6,7,5,7,0,1,13,,True,insufficient_denominator
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,complement,Accuracy,536.0,960.0,541,419,479,362,57,62,960,0.5583333333333333,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,complement,TPR,479.0,541.0,541,419,479,362,57,62,960,0.8853974121996303,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,complement,FPR,362.0,419.0,541,419,479,362,57,62,960,0.863961813842482,True,assessed
+Frozen logistic,2014,gender='M' & disability='Y',intersection,current,complement,Balanced accuracy,,,541,419,479,362,57,62,960,0.5107177991785741,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,baseline,group,Accuracy,211.0,392.0,211,181,211,181,0,0,392,0.5382653061224489,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,baseline,group,TPR,211.0,211.0,211,181,211,181,0,0,392,1.0,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,baseline,group,FPR,181.0,181.0,211,181,211,181,0,0,392,1.0,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,baseline,group,Balanced accuracy,,,211,181,211,181,0,0,392,0.5,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,baseline,complement,Accuracy,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,baseline,complement,TPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,baseline,complement,FPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,baseline,complement,Balanced accuracy,,,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,current,group,Accuracy,547.0,973.0,547,426,547,426,0,0,973,0.5621788283658787,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,TPR,547.0,547.0,547,426,547,426,0,0,973,1.0,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,FPR,426.0,426.0,547,426,547,426,0,0,973,1.0,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,group,Balanced accuracy,,,547,426,547,426,0,0,973,0.5,True,assessed
+Training-majority baseline,2014,Everyone,aggregate,current,complement,Accuracy,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,current,complement,TPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,current,complement,FPR,0.0,0.0,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,Everyone,aggregate,current,complement,Balanced accuracy,,,0,0,0,0,0,0,0,,False,insufficient_denominator
+Training-majority baseline,2014,gender='F',single,baseline,group,Accuracy,191.0,350.0,191,159,191,159,0,0,350,0.5457142857142857,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,group,TPR,191.0,191.0,191,159,191,159,0,0,350,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,group,FPR,159.0,159.0,191,159,191,159,0,0,350,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,group,Balanced accuracy,,,191,159,191,159,0,0,350,0.5,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,complement,Accuracy,20.0,42.0,20,22,20,22,0,0,42,0.47619047619047616,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,complement,TPR,20.0,20.0,20,22,20,22,0,0,42,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,complement,FPR,22.0,22.0,20,22,20,22,0,0,42,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,baseline,complement,Balanced accuracy,,,20,22,20,22,0,0,42,0.5,True,assessed
+Training-majority baseline,2014,gender='F',single,current,group,Accuracy,486.0,857.0,486,371,486,371,0,0,857,0.5670945157526255,True,assessed
+Training-majority baseline,2014,gender='F',single,current,group,TPR,486.0,486.0,486,371,486,371,0,0,857,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,current,group,FPR,371.0,371.0,486,371,486,371,0,0,857,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,current,group,Balanced accuracy,,,486,371,486,371,0,0,857,0.5,True,assessed
+Training-majority baseline,2014,gender='F',single,current,complement,Accuracy,61.0,116.0,61,55,61,55,0,0,116,0.5258620689655172,True,assessed
+Training-majority baseline,2014,gender='F',single,current,complement,TPR,61.0,61.0,61,55,61,55,0,0,116,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,current,complement,FPR,55.0,55.0,61,55,61,55,0,0,116,1.0,True,assessed
+Training-majority baseline,2014,gender='F',single,current,complement,Balanced accuracy,,,61,55,61,55,0,0,116,0.5,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,group,Accuracy,20.0,42.0,20,22,20,22,0,0,42,0.47619047619047616,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,group,TPR,20.0,20.0,20,22,20,22,0,0,42,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,group,FPR,22.0,22.0,20,22,20,22,0,0,42,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,group,Balanced accuracy,,,20,22,20,22,0,0,42,0.5,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,complement,Accuracy,191.0,350.0,191,159,191,159,0,0,350,0.5457142857142857,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,complement,TPR,191.0,191.0,191,159,191,159,0,0,350,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,complement,FPR,159.0,159.0,191,159,191,159,0,0,350,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,baseline,complement,Balanced accuracy,,,191,159,191,159,0,0,350,0.5,True,assessed
+Training-majority baseline,2014,gender='M',single,current,group,Accuracy,61.0,116.0,61,55,61,55,0,0,116,0.5258620689655172,True,assessed
+Training-majority baseline,2014,gender='M',single,current,group,TPR,61.0,61.0,61,55,61,55,0,0,116,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,current,group,FPR,55.0,55.0,61,55,61,55,0,0,116,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,current,group,Balanced accuracy,,,61,55,61,55,0,0,116,0.5,True,assessed
+Training-majority baseline,2014,gender='M',single,current,complement,Accuracy,486.0,857.0,486,371,486,371,0,0,857,0.5670945157526255,True,assessed
+Training-majority baseline,2014,gender='M',single,current,complement,TPR,486.0,486.0,486,371,486,371,0,0,857,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,current,complement,FPR,371.0,371.0,486,371,486,371,0,0,857,1.0,True,assessed
+Training-majority baseline,2014,gender='M',single,current,complement,Balanced accuracy,,,486,371,486,371,0,0,857,0.5,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,group,Accuracy,191.0,352.0,191,161,191,161,0,0,352,0.5426136363636364,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,group,TPR,191.0,191.0,191,161,191,161,0,0,352,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,group,FPR,161.0,161.0,191,161,191,161,0,0,352,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,group,Balanced accuracy,,,191,161,191,161,0,0,352,0.5,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,complement,Accuracy,20.0,40.0,20,20,20,20,0,0,40,0.5,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,complement,TPR,20.0,20.0,20,20,20,20,0,0,40,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,complement,FPR,20.0,20.0,20,20,20,20,0,0,40,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,baseline,complement,Balanced accuracy,,,20,20,20,20,0,0,40,0.5,True,assessed
+Training-majority baseline,2014,disability='N',single,current,group,Accuracy,503.0,889.0,503,386,503,386,0,0,889,0.5658042744656918,True,assessed
+Training-majority baseline,2014,disability='N',single,current,group,TPR,503.0,503.0,503,386,503,386,0,0,889,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,current,group,FPR,386.0,386.0,503,386,503,386,0,0,889,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,current,group,Balanced accuracy,,,503,386,503,386,0,0,889,0.5,True,assessed
+Training-majority baseline,2014,disability='N',single,current,complement,Accuracy,44.0,84.0,44,40,44,40,0,0,84,0.5238095238095238,True,assessed
+Training-majority baseline,2014,disability='N',single,current,complement,TPR,44.0,44.0,44,40,44,40,0,0,84,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,current,complement,FPR,40.0,40.0,44,40,44,40,0,0,84,1.0,True,assessed
+Training-majority baseline,2014,disability='N',single,current,complement,Balanced accuracy,,,44,40,44,40,0,0,84,0.5,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,group,Accuracy,20.0,40.0,20,20,20,20,0,0,40,0.5,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,group,TPR,20.0,20.0,20,20,20,20,0,0,40,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,group,FPR,20.0,20.0,20,20,20,20,0,0,40,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,group,Balanced accuracy,,,20,20,20,20,0,0,40,0.5,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,complement,Accuracy,191.0,352.0,191,161,191,161,0,0,352,0.5426136363636364,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,complement,TPR,191.0,191.0,191,161,191,161,0,0,352,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,complement,FPR,161.0,161.0,191,161,191,161,0,0,352,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,baseline,complement,Balanced accuracy,,,191,161,191,161,0,0,352,0.5,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,group,Accuracy,44.0,84.0,44,40,44,40,0,0,84,0.5238095238095238,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,group,TPR,44.0,44.0,44,40,44,40,0,0,84,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,group,FPR,40.0,40.0,44,40,44,40,0,0,84,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,group,Balanced accuracy,,,44,40,44,40,0,0,84,0.5,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,complement,Accuracy,503.0,889.0,503,386,503,386,0,0,889,0.5658042744656918,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,complement,TPR,503.0,503.0,503,386,503,386,0,0,889,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,complement,FPR,386.0,386.0,503,386,503,386,0,0,889,1.0,True,assessed
+Training-majority baseline,2014,disability='Y',single,current,complement,Balanced accuracy,,,503,386,503,386,0,0,889,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,group,Accuracy,172.0,313.0,172,141,172,141,0,0,313,0.549520766773163,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,group,TPR,172.0,172.0,172,141,172,141,0,0,313,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,group,FPR,141.0,141.0,172,141,172,141,0,0,313,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,group,Balanced accuracy,,,172,141,172,141,0,0,313,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,complement,Accuracy,39.0,79.0,39,40,39,40,0,0,79,0.4936708860759494,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,complement,TPR,39.0,39.0,39,40,39,40,0,0,79,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,complement,FPR,40.0,40.0,39,40,39,40,0,0,79,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,baseline,complement,Balanced accuracy,,,39,40,39,40,0,0,79,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,group,Accuracy,448.0,786.0,448,338,448,338,0,0,786,0.5699745547073791,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,group,TPR,448.0,448.0,448,338,448,338,0,0,786,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,group,FPR,338.0,338.0,448,338,448,338,0,0,786,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,group,Balanced accuracy,,,448,338,448,338,0,0,786,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,complement,Accuracy,99.0,187.0,99,88,99,88,0,0,187,0.5294117647058824,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,complement,TPR,99.0,99.0,99,88,99,88,0,0,187,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,complement,FPR,88.0,88.0,99,88,99,88,0,0,187,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='N',intersection,current,complement,Balanced accuracy,,,99,88,99,88,0,0,187,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,group,Accuracy,19.0,37.0,19,18,19,18,0,0,37,0.5135135135135135,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,group,TPR,19.0,19.0,19,18,19,18,0,0,37,,True,insufficient_denominator
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,group,FPR,18.0,18.0,19,18,19,18,0,0,37,,True,insufficient_denominator
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,group,Balanced accuracy,,,19,18,19,18,0,0,37,,True,insufficient_denominator
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,complement,Accuracy,192.0,355.0,192,163,192,163,0,0,355,0.5408450704225352,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,complement,TPR,192.0,192.0,192,163,192,163,0,0,355,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,complement,FPR,163.0,163.0,192,163,192,163,0,0,355,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,baseline,complement,Balanced accuracy,,,192,163,192,163,0,0,355,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,group,Accuracy,38.0,71.0,38,33,38,33,0,0,71,0.5352112676056338,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,group,TPR,38.0,38.0,38,33,38,33,0,0,71,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,group,FPR,33.0,33.0,38,33,38,33,0,0,71,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,group,Balanced accuracy,,,38,33,38,33,0,0,71,0.5,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,complement,Accuracy,509.0,902.0,509,393,509,393,0,0,902,0.5643015521064302,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,complement,TPR,509.0,509.0,509,393,509,393,0,0,902,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,complement,FPR,393.0,393.0,509,393,509,393,0,0,902,1.0,True,assessed
+Training-majority baseline,2014,gender='F' & disability='Y',intersection,current,complement,Balanced accuracy,,,509,393,509,393,0,0,902,0.5,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,group,Accuracy,19.0,39.0,19,20,19,20,0,0,39,0.48717948717948717,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,group,TPR,19.0,19.0,19,20,19,20,0,0,39,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,group,FPR,20.0,20.0,19,20,19,20,0,0,39,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,group,Balanced accuracy,,,19,20,19,20,0,0,39,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,complement,Accuracy,192.0,353.0,192,161,192,161,0,0,353,0.5439093484419264,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,complement,TPR,192.0,192.0,192,161,192,161,0,0,353,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,complement,FPR,161.0,161.0,192,161,192,161,0,0,353,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,baseline,complement,Balanced accuracy,,,192,161,192,161,0,0,353,0.5,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,group,Accuracy,55.0,103.0,55,48,55,48,0,0,103,0.5339805825242718,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,group,TPR,55.0,55.0,55,48,55,48,0,0,103,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,group,FPR,48.0,48.0,55,48,55,48,0,0,103,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,group,Balanced accuracy,,,55,48,55,48,0,0,103,0.5,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,complement,Accuracy,492.0,870.0,492,378,492,378,0,0,870,0.5655172413793104,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,complement,TPR,492.0,492.0,492,378,492,378,0,0,870,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,complement,FPR,378.0,378.0,492,378,492,378,0,0,870,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='N',intersection,current,complement,Balanced accuracy,,,492,378,492,378,0,0,870,0.5,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,group,Accuracy,1.0,3.0,1,2,1,2,0,0,3,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,group,TPR,1.0,1.0,1,2,1,2,0,0,3,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,group,FPR,2.0,2.0,1,2,1,2,0,0,3,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,group,Balanced accuracy,,,1,2,1,2,0,0,3,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,complement,Accuracy,210.0,389.0,210,179,210,179,0,0,389,0.5398457583547558,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,complement,TPR,210.0,210.0,210,179,210,179,0,0,389,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,complement,FPR,179.0,179.0,210,179,210,179,0,0,389,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,baseline,complement,Balanced accuracy,,,210,179,210,179,0,0,389,0.5,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,group,Accuracy,6.0,13.0,6,7,6,7,0,0,13,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,group,TPR,6.0,6.0,6,7,6,7,0,0,13,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,group,FPR,7.0,7.0,6,7,6,7,0,0,13,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,group,Balanced accuracy,,,6,7,6,7,0,0,13,,True,insufficient_denominator
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,complement,Accuracy,541.0,960.0,541,419,541,419,0,0,960,0.5635416666666667,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,complement,TPR,541.0,541.0,541,419,541,419,0,0,960,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,complement,FPR,419.0,419.0,541,419,541,419,0,0,960,1.0,True,assessed
+Training-majority baseline,2014,gender='M' & disability='Y',intersection,current,complement,Balanced accuracy,,,541,419,541,419,0,0,960,0.5,True,assessed

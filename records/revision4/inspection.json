@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-10-11T18:34:45.456834+00:00",
+  "recorded_local": "2026-10-11T23:34:45.457115+05:00",
+  "working_tree_before_revision": "clean",
+  "local_base": "7ddcc02c4bf458b68617bbd5b1f184cbfb82e1c5",
+  "branch": "codex/subpsi-r4-calibrated-collection",
+  "old_correction_branch": "codex/subpsi-r3-corrections",
+  "remote_heads_verified_via": "GitHub read-only branches API",
+  "remote_heads": {
+    "main": "646bfea7f30d3a52be8ab40cff99590baea4650a",
+    "version-1": "787c5f6046121492bdb203c78d5bab738afe527c",
+    "version-2": "646bfea7f30d3a52be8ab40cff99590baea4650a",
+    "version-3": "27288575028181baae90f68d30d4e3dc5e363a53",
+    "codex/subpsi-foundation": "247c87fc353668ef0af408e20445607172950ea3"
+  },
+  "specification_sha256": "3a99e615b0b400d4fabd5f58236e68b64e65785b4cc66f60c20574d9f26ac438",
+  "specification_read": "Full TXT; instructions explicitly adopted by current user request. No full private conversation transcript copied.",
+  "baseline_tests": {
+    "passed": 89,
+    "seconds": 1.33
+  },
+  "current_tests": {
+    "passed": 117,
+    "seconds": 1.47
+  },
+  "schedule": "October 18 supersedes the earlier October 20 target; previous correction/V2 comparison already completed before October 14. No current schedule conflict.",
+  "agent_instructions": "No AGENTS.md found in repository or checked ancestors; no subagents used.",
+  "final_tests": {
+    "passed": 117,
+    "seconds": 1.42,
+    "receipt": "records/revision4/tests_final.txt"
+  }
+}
