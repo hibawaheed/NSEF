@@ -127,3 +127,18 @@ def test_minimum_100_sensitivity_separates_support_from_accumulation():
     for result in [ordinary,accum]:
         assert all(d['alert'] is None for d in result['decisions'])
         assert all(r['p'] is None and r['ks_p'] is None for r in result['tests'])
+
+
+def test_input_outcome_export_has_two_features_times_three_metrics():
+    import runpy
+    from pathlib import Path
+    join=runpy.run_path(str(Path(__file__).resolve().parents[1]/'scripts/revision3/summarize_main.py'))['join_input_outcome']
+    common=dict(dataset='A',period=2017,group='Everyone',level='aggregate')
+    a=pd.DataFrame([dict(**common,feature=f,psi=.1) for f in ['age','school']])
+    b=pd.DataFrame([dict(**common,metric=m,rate_change=.02) for m in ['TPR','FPR','Accuracy']])
+    joined=join(a,b)
+    assert len(joined)==6 and joined.groupby('feature').size().eq(3).all()
+    with pytest.raises(ValueError,match='Duplicate'):
+        join(pd.concat([a,a.iloc[:1]]),b)
+    with pytest.raises(ValueError,match='Missing'):
+        join(a,b.iloc[:2])

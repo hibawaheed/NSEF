@@ -8,6 +8,19 @@ from subpsi.realdata import wilson,paired_interval
 from subpsi.provenance import sha256,manifest,write_json,save_snapshot
 
 
+def join_input_outcome(pairs,outcomes):
+    keys=['dataset','period','group','level']
+    if pairs.duplicated(keys+['feature']).any() or outcomes.duplicated(keys+['metric']).any():
+        raise ValueError('Duplicate input-feature or outcome-metric key')
+    # Each feature has one input row and three distinct outcome metrics per view.
+    parts=[part.merge(outcomes,on=keys,how='left',validate='one_to_many')
+           for _,part in pairs.groupby('feature',sort=False)]
+    joined=pd.concat(parts,ignore_index=True)
+    if len(joined)!=3*len(pairs) or joined.metric.isna().any():
+        raise ValueError('Missing outcome metric in input/outcome pairing')
+    return joined
+
+
 def summarize(raw,out):
     raw=Path(raw);out=Path(out);out.mkdir(parents=True,exist_ok=False);start=time.perf_counter()
     source=json.loads((raw/'manifest.json').read_text())
@@ -85,7 +98,7 @@ def summarize(raw,out):
                           psi_identical=bool(eligible and a.psi.nunique()==1),ks_identical=bool(eligible and a.ks_d.nunique()==1)))
     pd.DataFrame(agree).to_csv(out/'natural_policy_agreement.csv',index=False)
     pairs=nt.loc[nt.variant.eq('batch100'),['dataset','time','group','feature','level','status','psi','ks_d','n_reference','n_current']].rename(columns={'time':'period','status':'input_status'})
-    pairs=pairs.merge(no,on=['dataset','period','group','level'],how='left',validate='one_to_many')
+    pairs=join_input_outcome(pairs,no)
     pairs['pair_status']=np.where(pairs.input_status.ne('assessed'),'input_unsupported',np.where(pairs.gap_status.eq('assessed'),'descriptive_pair',pairs.gap_status))
     pairs.to_csv(out/'input_outcome_pairs.csv',index=False)
     m=manifest(ROOT,config);m.update(status='COMPLETE',raw_manifest_sha256=sha256(raw/'manifest.json'),raw_directory=str(raw.relative_to(ROOT)),
