@@ -1,0 +1,112 @@
+[
+  {
+    "alert_windows": 0,
+    "alert_windows_with_gap_increase_ge_5pp": 0,
+    "eligible_runs_with_alert": 0,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": null,
+    "method": "A0",
+    "pooled_descriptive_warning_precision": null,
+    "post_onset_windows": 120,
+    "scenario": "null"
+  },
+  {
+    "alert_windows": 6,
+    "alert_windows_with_gap_increase_ge_5pp": 0,
+    "eligible_runs_with_alert": 6,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.0,
+    "method": "A1",
+    "pooled_descriptive_warning_precision": 0.0,
+    "post_onset_windows": 120,
+    "scenario": "null"
+  },
+  {
+    "alert_windows": 0,
+    "alert_windows_with_gap_increase_ge_5pp": 0,
+    "eligible_runs_with_alert": 0,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": null,
+    "method": "B0",
+    "pooled_descriptive_warning_precision": null,
+    "post_onset_windows": 120,
+    "scenario": "null"
+  },
+  {
+    "alert_windows": 2,
+    "alert_windows_with_gap_increase_ge_5pp": 0,
+    "eligible_runs_with_alert": 2,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.0,
+    "method": "B1",
+    "pooled_descriptive_warning_precision": 0.0,
+    "post_onset_windows": 120,
+    "scenario": "null"
+  },
+  {
+    "alert_windows": 5,
+    "alert_windows_with_gap_increase_ge_5pp": 0,
+    "eligible_runs_with_alert": 5,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.0,
+    "method": "B2",
+    "pooled_descriptive_warning_precision": 0.0,
+    "post_onset_windows": 120,
+    "scenario": "null"
+  },
+  {
+    "alert_windows": 0,
+    "alert_windows_with_gap_increase_ge_5pp": 0,
+    "eligible_runs_with_alert": 0,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": null,
+    "method": "A0",
+    "pooled_descriptive_warning_precision": null,
+    "post_onset_windows": 120,
+    "scenario": "female_hours_tilt"
+  },
+  {
+    "alert_windows": 110,
+    "alert_windows_with_gap_increase_ge_5pp": 16,
+    "eligible_runs_with_alert": 40,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.14166666666666666,
+    "method": "A1",
+    "pooled_descriptive_warning_precision": 0.14545454545454545,
+    "post_onset_windows": 120,
+    "scenario": "female_hours_tilt"
+  },
+  {
+    "alert_windows": 120,
+    "alert_windows_with_gap_increase_ge_5pp": 16,
+    "eligible_runs_with_alert": 40,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.13333333333333333,
+    "method": "B0",
+    "pooled_descriptive_warning_precision": 0.13333333333333333,
+    "post_onset_windows": 120,
+    "scenario": "female_hours_tilt"
+  },
+  {
+    "alert_windows": 120,
+    "alert_windows_with_gap_increase_ge_5pp": 16,
+    "eligible_runs_with_alert": 40,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.13333333333333333,
+    "method": "B1",
+    "pooled_descriptive_warning_precision": 0.13333333333333333,
+    "post_onset_windows": 120,
+    "scenario": "female_hours_tilt"
+  },
+  {
+    "alert_windows": 120,
+    "alert_windows_with_gap_increase_ge_5pp": 16,
+    "eligible_runs_with_alert": 40,
+    "interpretation": "No binomial window interval: windows share a stream/reference. No alerts yields undefined precision, not zero.",
+    "mean_run_warning_precision": 0.13333333333333333,
+    "method": "B2",
+    "pooled_descriptive_warning_precision": 0.13333333333333333,
+    "post_onset_windows": 120,
+    "scenario": "female_hours_tilt"
+  }
+]

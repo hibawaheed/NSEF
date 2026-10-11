@@ -30,3 +30,5 @@ Updated during the task. Status describes actual scope, not promised successful 
 ## Conditions that would undermine the idea
 
 Report a problem if repeated no-change experiments show materially excessive error at the declared criterion; if subgroup monitoring offers no useful detection advantage in the tested settings after error correction; if coverage becomes too low for useful groups; if alerts fail to predict the declared outcome change; or if prior work leaves no defensible empirical contribution. A failure of outcome prediction restricts the bias-warning claim even if distribution-change detection works. Input-only monitoring inherently cannot detect every change in the outcome relationship.
+
+Observed outcome: the first run set supports the constructed intersection case, but does not show higher horizon detection than calibrated aggregate PSI in S1 or Adult. Complete-stream false alerts and the outcome-only blind spot remain material limitations. See `FINDINGS_AND_NEXT_STEPS.md` for counts and intervals.

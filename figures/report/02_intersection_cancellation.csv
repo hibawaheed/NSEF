@@ -1,0 +1,10 @@
+group,estimate,low,high,n,interval
+all,0.00643634076928,0.00559686021094,0.00727582132762,60,95% Student t across independent run summaries; descriptive pointwise interval
+A=0,0.0132144339911,0.0115794697414,0.0148493982409,60,95% Student t across independent run summaries; descriptive pointwise interval
+A=1,0.0126098736588,0.0108734382618,0.0143463090559,60,95% Student t across independent run summaries; descriptive pointwise interval
+B=0,0.0126245247302,0.0110107359769,0.0142383134835,60,95% Student t across independent run summaries; descriptive pointwise interval
+B=1,0.0133255501196,0.0115441686626,0.0151069315767,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=0,B=0",2.42772199047,2.36760510832,2.48783887263,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=0,B=1",2.36683086591,2.30771041639,2.42595131542,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=1,B=0",2.45711775728,2.39087116663,2.52336434794,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=1,B=1",2.40822598163,2.35837116417,2.45808079908,60,95% Student t across independent run summaries; descriptive pointwise interval

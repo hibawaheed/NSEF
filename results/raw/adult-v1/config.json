@@ -1,0 +1,42 @@
+{
+  "age_cutoff": 40,
+  "alpha": 0.05,
+  "deduplicate": "all original predictor fields, ignoring income label; keep first occurrence",
+  "groups": "A=1 recorded Female, A=0 recorded Male; B=1 age >=40, B=0 age <40",
+  "high_hours_cutoff": 40,
+  "high_hours_weight": 6.0,
+  "label": "income >50K",
+  "min_n": 50,
+  "model_features": [
+    "age",
+    "education-num",
+    "hours-per-week",
+    "capital-gain",
+    "capital-loss"
+  ],
+  "monitored_features": [
+    "hours-per-week",
+    "education-num"
+  ],
+  "n_audit": 5000,
+  "n_bins": 8,
+  "n_design": 5000,
+  "n_fit": 12000,
+  "n_reference": 5000,
+  "n_resamples": 1999,
+  "n_window": 2000,
+  "onset_window": 2,
+  "practical_threshold": 0.1,
+  "pseudocount": 0.5,
+  "purpose": "Conditional Monte Carlo check on one historical finite public dataset; semi-synthetic windows",
+  "reference_policy": "fixed across all repeats; intervals conditional on this fixed split",
+  "repeats": 40,
+  "sampling": "no replacement within each complete run; group counts drawn from fixed monitor-pool proportions; weight hours>40 by 6 inside Female strata only after onset",
+  "scenarios": [
+    "null",
+    "female_hours_tilt"
+  ],
+  "seed": 20261012,
+  "split_seed": 61011,
+  "windows": 4
+}

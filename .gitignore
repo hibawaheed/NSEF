@@ -5,3 +5,4 @@ __pycache__/
 *.egg-info/
 private_paperwork/
 data/raw/
+records/.validation.lock

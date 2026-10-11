@@ -34,3 +34,11 @@ def test_adult_no_reused_rows_within_run():
     ids=[i for w in windows for i in w.id]
     assert len(ids)==len(set(ids))==320
     assert all(set(w['hours-per-week'])<=set(pool['hours-per-week']) for w in windows)
+
+
+def test_wilson_endpoints_are_valid_plot_intervals():
+    m=load_script('make_figures')
+    for values in [[0]*60,[1]*60,[0,1,1]]:
+        r=m.wilson(values)
+        assert 0<=r['low']<=r['estimate']<=r['high']<=1
+        assert r['estimate']-r['low']>=0 and r['high']-r['estimate']>=0

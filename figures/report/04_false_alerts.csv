@@ -1,0 +1,11 @@
+method,metric,estimate,low,high,n,k,interval
+A0,first_window,0,0,0.0601718521421,60,0,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+A1,first_window,0.0333333333333,0.0091893192562,0.113637742743,60,2,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+B0,first_window,0.966666666667,0.886362257257,0.990810680744,60,58,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+B1,first_window,0.0166666666667,0.00294815979479,0.0885512972759,60,1,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+B2,first_window,0.0166666666667,0.00294815979479,0.0885512972759,60,1,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+A0,complete_stream,0,0,0.0601718521421,60,0,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+A1,complete_stream,0.216666666667,0.131230440482,0.336200275732,60,13,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+B0,complete_stream,1,0.939828147858,1,60,60,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+B1,complete_stream,0.183333333333,0.105577968892,0.299197537465,60,11,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+B2,complete_stream,0.2,0.118285053229,0.317818058056,60,12,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"

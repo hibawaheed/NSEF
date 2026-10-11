@@ -25,7 +25,7 @@ def wilson(values):
     if not n: raise ValueError('No successful runs')
     k=int(x.sum()); p=k/n; z=1.959963984540054; den=1+z*z/n
     center=(p+z*z/(2*n))/den; half=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/den
-    return {'estimate':p,'low':max(0,center-half),'high':min(1,center+half),'n':n,'k':k,'interval':'95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)'}
+    return {'estimate':p,'low':0.0 if k==0 else min(p,max(0,center-half)),'high':1.0 if k==n else max(p,min(1,center+half)),'n':n,'k':k,'interval':'95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)'}
 
 
 def mean_interval(values):
@@ -51,7 +51,7 @@ def setup(title,ylabel):
     return fig,ax
 
 
-def note(fig,text): fig.text(.10,.025,text,fontsize=8.5,color='#444444',va='bottom')
+def note(fig,text): fig.text(.10,.025,text+'\nAI-assisted code and plotting; source tables and methods accompany each figure.',fontsize=8,color='#444444',va='bottom')
 
 
 def main():
@@ -106,6 +106,7 @@ def main():
             vals.append(stats); table.append({'scenario':s,'method':method,**stats})
         ax.errorbar(xs+(j-2)*.13,[v['estimate'] for v in vals],yerr=[[v['estimate']-v['low'] for v in vals],[v['high']-v['estimate'] for v in vals]],fmt=['o','s','^','D','P'][j],capsize=2,color=COLORS[method],label=LABELS[method],markersize=5)
     ax.set_xticks(xs,['S0\nNo change','S1\nOne group','S2\nIntersections','S3\nBenign input','S4\nOutcome only','S5\nComposition'],fontsize=10); ax.set_ylim(-.035,1.05)
+    fig.subplots_adjust(bottom=.32)
     ax.legend(loc='upper center',bbox_to_anchor=(.5,-.16),ncols=2,fontsize=9)
     note(fig,f"{sc['repeats']} runs/scenario • 95% Wilson intervals • horizon: {sc['windows']-sc['onset_window']+1} windows • Holm α=0.05 per window\nS0 and S4 have unchanged input distributions. An S5 aggregate alert can be correct composition drift.")
     save(fig,'03_alert_probability',table,'Run-level probability of any post-onset input alert. All methods see the same data and frozen bins. Fixed PSI thresholds are practical baselines, not matched-error tests; Holm families contain 2, 10 and 18 tests.')
@@ -128,11 +129,12 @@ def main():
         for r in grouped['S1']:
             hit=next((w['window']-sc['onset_window'] for w in r['windows'] if w['active'] and w['methods'][m]['alert']),horizon); delays.append(hit)
         rates=[np.mean(np.array(delays)==i) for i in range(horizon+1)]
-        ax.bar(np.arange(horizon+1)+(j-1)*.24,rates,width=.23,label=LABELS[m],color=COLORS[m])
+        intervals=[wilson(np.array(delays)==i) for i in range(horizon+1)]
+        ax.bar(np.arange(horizon+1)+(j-1)*.24,rates,width=.23,label=LABELS[m],color=COLORS[m],yerr=[[v['estimate']-v['low'] for v in intervals],[v['high']-v['estimate'] for v in intervals]],capsize=2,error_kw={'elinewidth':.8})
         for i in range(horizon+1): table.append({'scenario':'S1','method':m,'delay_windows':i if i<horizon else 'not_detected',**wilson(np.array(delays)==i)})
     ax.set_xticks(range(horizon+1),delaylabels); ax.set_xlabel('Windows after onset (0 = first changed window)'); ax.set_ylim(0,1.05); ax.legend(fontsize=10)
-    note(fig,f"Synthetic S1 • {sc['repeats']} runs • each run appears exactly once per method\nCounts and Wilson intervals are in the source CSV. Pre-onset alerts do not remove runs from this diagnostic.")
-    save(fig,'05_detection_delay',table,'Full delay distribution under S1, including non-detections. Bars show descriptive proportions; source data includes binomial uncertainty for each delay category.')
+    note(fig,f"Synthetic S1 • {sc['repeats']} runs • each run appears exactly once per method\nBars: rates with 95% Wilson intervals. Pre-onset alerts do not remove runs from this diagnostic.")
+    save(fig,'05_detection_delay',table,'Full delay distribution under S1, including non-detections. Bars show proportions and Wilson intervals for each delay category; coverage is not simultaneous across categories.')
 
     table=[]; fig,ax=setup('Input alerts and outcome disparities answer different questions','Change in absolute A-group TPR gap (percentage points)')
     for i,s in enumerate(sc['scenarios']):
@@ -166,7 +168,7 @@ def main():
     note(fig,"Constructed two-bin example • reference high-bin probability 0.50; affected group changes to 0.80\nExact population calculation, not a research trial. This demonstrates dilution, not real-world detection power.")
     save(fig,'08_explain_dilution',table,'A teaching example calculated directly from two-bin population probabilities. There are no sample counts, seeds or uncertainty intervals because no random experiment is represented.','constructed analytical example')
 
-    table=[]; fig,ax=setup('Paired comparisons show how much intersections add','Difference in alert probability (percentage points)')
+    table=[]; fig,ax=setup('Paired comparisons quantify the subgroup-monitoring difference','Difference in alert probability (percentage points)')
     for i,s in enumerate(sc['scenarios']):
         differences=np.array([int(any(w['methods']['B2']['alert'] for w in r['windows'] if w['active']))-int(any(w['methods']['A1']['alert'] for w in r['windows'] if w['active'])) for r in grouped[s]])
         rng=np.random.default_rng([sc['seed'],991,i]); boot=rng.choice(differences,size=(5000,len(differences)),replace=True).mean(axis=1)
@@ -185,6 +187,7 @@ def main():
                 runs=[r for r in ar if r['scenario']==scenario]; stats=wilson([any(w['methods'][m]['alert'] for w in r['windows'] if w['active']) for r in runs]); vals.append(stats); table.append({'scenario':scenario,'method':m,**stats})
             ax.errorbar(np.arange(2)+(j-2)*.1,[v['estimate'] for v in vals],yerr=[[v['estimate']-v['low'] for v in vals],[v['high']-v['estimate'] for v in vals]],fmt=['o','s','^','D','P'][j],capsize=4,color=COLORS[m],label=LABELS[m])
         ax.set_xticks([0,1],['Unweighted sampling','Within-Female high-hours enrichment']); ax.set_ylim(-.035,1.05); ax.set_xlim(-.45,1.45)
+        fig.subplots_adjust(bottom=.32)
         ax.legend(loc='upper center',bbox_to_anchor=(.5,-.16),ncols=2,fontsize=9)
         note(fig,f"Adult (UCI, CC BY 4.0) • {ac['repeats']} Monte Carlo runs per condition • 95% conditional Wilson intervals\nHistorical cross-sectional records; simulated order. Reusing a finite pool does not create new independent people.")
         save(fig,'10_public_data_check',table,'Semi-synthetic Adult check, conditional on one deduplicated fixed split, classifier and monitoring pool. Within selected Female/age strata, records with hours>40 receive 6× sampling weight after onset. Labels and records are unchanged; composition counts use the original pool proportions. Becker & Kohavi (1996), DOI 10.24432/C5XW20, CC BY 4.0.')

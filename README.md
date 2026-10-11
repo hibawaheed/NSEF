@@ -8,6 +8,7 @@ This repository compares aggregate and predefined subgroup input-drift monitors,
 
 After running the commands below, open `figures/report/index.html` for the local chart gallery, or `figures/report/SubPSI_chart_pack.pdf` for all figures. Each figure also has an editable SVG, vector PDF, 300 dpi PNG, source CSV and JSON provenance manifest. Figures 7 and 8 are analytical planning/teaching examples; the others summarize saved experiments.
 
+- `docs/FINDINGS_AND_NEXT_STEPS.md`: measured findings, limits and next additions.
 - `docs/STARTING_STATE.md`: original code audit and actual initial state.
 - `docs/EXPERIMENT_SETTINGS.md`: all experimental choices and limits.
 - `docs/ADDITIONS_AND_LIMITATIONS.md`: additions, unfinished work and failure criteria.

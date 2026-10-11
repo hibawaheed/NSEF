@@ -1,0 +1,7 @@
+scenario,comparison,estimate,low,high,n,interval
+S0,B2 minus A1,0.0333333333333,-0.0666666666667,0.133333333333,60,"paired run-level percentile bootstrap, 5000 resamples; degenerate bounds possible"
+S1,B2 minus A1,0,0,0,60,"paired run-level percentile bootstrap, 5000 resamples; degenerate bounds possible"
+S2,B2 minus A1,0.766666666667,0.65,0.866666666667,60,"paired run-level percentile bootstrap, 5000 resamples; degenerate bounds possible"
+S3,B2 minus A1,0,0,0,60,"paired run-level percentile bootstrap, 5000 resamples; degenerate bounds possible"
+S4,B2 minus A1,-0.0666666666667,-0.183333333333,0.05,60,"paired run-level percentile bootstrap, 5000 resamples; degenerate bounds possible"
+S5,B2 minus A1,0,0,0,60,"paired run-level percentile bootstrap, 5000 resamples; degenerate bounds possible"

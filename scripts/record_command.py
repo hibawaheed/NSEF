@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Run a local check and append its actual command, timing, output and exit code."""
-import argparse,datetime,json,subprocess,sys,time
+import argparse,datetime,json,subprocess,sys,time,fcntl
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 p=argparse.ArgumentParser();p.add_argument('command',nargs=argparse.REMAINDER);args=p.parse_args()
@@ -14,7 +14,10 @@ for line in process.stdout:
 returncode=process.wait()
 result=subprocess.CompletedProcess(command,returncode,''.join(lines))
 record={'started_at_utc':started,'cwd':str(ROOT),'argv':command,'exit_code':result.returncode,'elapsed_seconds':time.perf_counter()-start}
-log=ROOT/'records/validation_commands.json';existing=json.loads(log.read_text()) if log.exists() else [];existing.append(record);log.write_text(json.dumps(existing,indent=2)+'\n')
-with (ROOT/'records/validation_output.txt').open('a') as output:
- output.write(json.dumps(record)+'\n'+result.stdout.rstrip()+'\n')
+with (ROOT/'records/.validation.lock').open('a') as lock:
+ fcntl.flock(lock,fcntl.LOCK_EX)
+ log=ROOT/'records/validation_commands.json';existing=json.loads(log.read_text()) if log.exists() else [];existing.append(record);log.write_text(json.dumps(existing,indent=2)+'\n')
+ with (ROOT/'records/validation_output.txt').open('a') as output:
+  output.write(json.dumps(record)+'\n'+result.stdout.rstrip()+'\n')
+ fcntl.flock(lock,fcntl.LOCK_UN)
 raise SystemExit(result.returncode)

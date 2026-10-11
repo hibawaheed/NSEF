@@ -1,0 +1,14 @@
+{
+  "failed_runs": 0,
+  "input_comparisons": 38880,
+  "label_access": "Detector receives no outcomes. Outcome measurements do not alter alerts/model/reference.",
+  "minimum_current_group_n": 63,
+  "minimum_reference_group_n": 70,
+  "planned_runs": 360,
+  "runs": 360,
+  "runtime_seconds": 96.2381411309998,
+  "smallest_outcome_negative_n": 11,
+  "smallest_outcome_positive_n": 17,
+  "source_manifest_sha256": "4f6b5ac16a94f95a385ddd893cb0b82e80c984db1e839353b823fb5a93eb06fc",
+  "unsupported_comparisons": 0
+}

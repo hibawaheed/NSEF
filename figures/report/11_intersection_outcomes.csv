@@ -1,0 +1,15 @@
+group,phase,estimate,low,high,n,interval
+all,baseline,0.778348809001,0.774937598332,0.78176001967,60,95% Student t across independent run summaries; descriptive pointwise interval
+A=0,baseline,0.778189947519,0.774348828577,0.782031066461,60,95% Student t across independent run summaries; descriptive pointwise interval
+A=1,baseline,0.778392120789,0.773965939548,0.78281830203,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=0,B=0",baseline,0.904743798203,0.901768398072,0.907719198335,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=0,B=1",baseline,0.480408645676,0.470780354605,0.490036936747,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=1,B=0",baseline,0.484421373794,0.474802852494,0.494039895093,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=1,B=1",baseline,0.902120930481,0.898681702469,0.905560158492,60,95% Student t across independent run summaries; descriptive pointwise interval
+all,post_onset,0.488808950287,0.486168377261,0.491449523313,60,95% Student t across independent run summaries; descriptive pointwise interval
+A=0,post_onset,0.488930961905,0.485379664776,0.492482259034,60,95% Student t across independent run summaries; descriptive pointwise interval
+A=1,post_onset,0.488708062252,0.485023861004,0.492392263499,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=0,B=0",post_onset,0.288518954804,0.284603491865,0.292434417743,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=0,B=1",post_onset,0.968669261374,0.966383718403,0.970954804344,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=1,B=0",post_onset,0.968360601075,0.966439185954,0.970282016197,60,95% Student t across independent run summaries; descriptive pointwise interval
+"A=1,B=1",post_onset,0.285379730702,0.280961720907,0.289797740497,60,95% Student t across independent run summaries; descriptive pointwise interval
