@@ -1,0 +1,42 @@
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision4/verify_evaluation.py", line 93, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision4/verify_evaluation.py", line 57, in main
+    pd.testing.assert_frame_equal(actual,expected,check_dtype=False,atol=1e-12,rtol=0)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/util/_decorators.py", line 220, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/_testing/asserters.py", line 1347, in assert_frame_equal
+    assert_series_equal(
+    ~~~~~~~~~~~~~~~~~~~^
+        lcol,
+        ^^^^^
+    ...<12 lines>...
+        check_flags=False,
+        ^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/util/_decorators.py", line 193, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/_testing/asserters.py", line 1121, in assert_series_equal
+    _testing.assert_almost_equal(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        left._values,
+        ^^^^^^^^^^^^^
+    ...<5 lines>...
+        index_values=left.index,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "pandas/_libs/testing.pyx", line 53, in pandas._libs.testing.assert_almost_equal
+  File "pandas/_libs/testing.pyx", line 171, in pandas._libs.testing.assert_almost_equal
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/_testing/asserters.py", line 619, in raise_assert_detail
+    raise AssertionError(msg)
+AssertionError: DataFrame.iloc[:, 5] (column name="first_detection") are different
+
+DataFrame.iloc[:, 5] (column name="first_detection") values are different (100.0 %)
+[index]: [0, 1, 2, 3, 4, 5]
+[left]:  [nan, nan, nan, nan, nan, nan]
+[right]: [None, None, None, None, None, None]
+At positional index 0, first diff: nan != None

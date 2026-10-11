@@ -1,0 +1,50 @@
+{
+  "records/correction/FREEZE.json": 1990,
+  "records/revision4/PREPARATION_MANIFEST.json": 55,
+  "selection_replays": [
+    {
+      "cell": {
+        "cell": 0,
+        "group": "Everyone",
+        "incoming_n": 50,
+        "level": "aggregate",
+        "reference_n": 100,
+        "scenario": "unchanged",
+        "stage": "selection"
+      },
+      "raw_sha256": "8231af49156926c78ffbac12103d1b4f097a766cae64bb8db72ebf91b0a49013",
+      "reproduced_feature_comparisons": 200,
+      "reproduced_repetitions": 100
+    },
+    {
+      "cell": {
+        "cell": 44,
+        "group": "Everyone",
+        "incoming_n": 800,
+        "level": "aggregate",
+        "reference_n": 800,
+        "scenario": "age_up4",
+        "stage": "selection"
+      },
+      "raw_sha256": "5dcfadd7f6aa41173e96aff04d9d3e32175b0d0cbcc1e2a76d4bacd0b1b57c6c",
+      "reproduced_feature_comparisons": 200,
+      "reproduced_repetitions": 100
+    },
+    {
+      "cell": {
+        "cell": 1012,
+        "group": "SEX=2 & RAC1P=2",
+        "incoming_n": 200,
+        "level": "intersection",
+        "reference_n": 400,
+        "scenario": "age_up2",
+        "stage": "selection"
+      },
+      "raw_sha256": "5b9c61fb1820d52cad12d82c9db163b433a8a3a840ccc8b5dc2f61a645136a5d",
+      "reproduced_feature_comparisons": 200,
+      "reproduced_repetitions": 100
+    }
+  ],
+  "unchanged_starting_files": 4997,
+  "wall_seconds": 5.152554989999771
+}

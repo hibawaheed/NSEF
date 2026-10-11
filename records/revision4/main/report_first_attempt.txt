@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision4/report_study.py", line 300, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision4/report_study.py", line 132, in main
+    ax.errorbar(x,part.rate,yerr=np.vstack([part.rate-part.lower,part.upper-part.rate]),fmt='o',capsize=3,label=method,color=color)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/matplotlib/_api/deprecation.py", line 477, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/matplotlib/__init__.py", line 1531, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/matplotlib/axes/_axes.py", line 4232, in errorbar
+    raise ValueError(
+        f"'{dep_axis}err' must not contain negative values")
+ValueError: 'yerr' must not contain negative values

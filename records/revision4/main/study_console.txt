@@ -1,0 +1,319 @@
+selection: 15/1350 cells, 9.1s
+selection: 30/1350 cells, 25.6s
+selection: 45/1350 cells, 43.2s
+selection: 60/1350 cells, 51.3s
+selection: 75/1350 cells, 65.1s
+selection: 90/1350 cells, 81.0s
+selection: 105/1350 cells, 89.2s
+selection: 120/1350 cells, 103.8s
+selection: 135/1350 cells, 120.5s
+selection: 150/1350 cells, 129.1s
+selection: 165/1350 cells, 143.0s
+selection: 180/1350 cells, 159.4s
+selection: 195/1350 cells, 167.0s
+selection: 210/1350 cells, 180.1s
+selection: 225/1350 cells, 196.0s
+selection: 240/1350 cells, 196.0s
+selection: 255/1350 cells, 196.0s
+selection: 270/1350 cells, 196.0s
+selection: 285/1350 cells, 196.0s
+selection: 300/1350 cells, 196.0s
+selection: 315/1350 cells, 196.1s
+selection: 330/1350 cells, 196.1s
+selection: 345/1350 cells, 196.1s
+selection: 360/1350 cells, 196.1s
+selection: 375/1350 cells, 203.0s
+selection: 390/1350 cells, 215.0s
+selection: 405/1350 cells, 229.1s
+selection: 420/1350 cells, 229.1s
+selection: 435/1350 cells, 229.1s
+selection: 450/1350 cells, 229.1s
+selection: 465/1350 cells, 232.9s
+selection: 480/1350 cells, 241.4s
+selection: 495/1350 cells, 252.1s
+selection: 510/1350 cells, 260.1s
+selection: 525/1350 cells, 273.3s
+selection: 540/1350 cells, 289.1s
+selection: 555/1350 cells, 297.1s
+selection: 570/1350 cells, 311.7s
+selection: 585/1350 cells, 328.6s
+selection: 600/1350 cells, 335.8s
+selection: 615/1350 cells, 349.0s
+selection: 630/1350 cells, 364.1s
+selection: 645/1350 cells, 364.2s
+selection: 660/1350 cells, 364.2s
+selection: 675/1350 cells, 364.2s
+selection: 690/1350 cells, 364.2s
+selection: 705/1350 cells, 364.2s
+selection: 720/1350 cells, 364.2s
+selection: 735/1350 cells, 364.2s
+selection: 750/1350 cells, 364.2s
+selection: 765/1350 cells, 364.2s
+selection: 780/1350 cells, 371.6s
+selection: 795/1350 cells, 385.9s
+selection: 810/1350 cells, 432.5s
+selection: 825/1350 cells, 432.5s
+selection: 840/1350 cells, 432.5s
+selection: 855/1350 cells, 432.5s
+selection: 870/1350 cells, 432.5s
+selection: 885/1350 cells, 432.5s
+selection: 900/1350 cells, 432.5s
+selection: 915/1350 cells, 432.5s
+selection: 930/1350 cells, 432.5s
+selection: 945/1350 cells, 432.5s
+selection: 960/1350 cells, 440.1s
+selection: 975/1350 cells, 452.8s
+selection: 990/1350 cells, 471.6s
+selection: 1005/1350 cells, 497.9s
+selection: 1020/1350 cells, 562.3s
+selection: 1035/1350 cells, 584.5s
+selection: 1050/1350 cells, 584.5s
+selection: 1065/1350 cells, 584.5s
+selection: 1080/1350 cells, 584.5s
+selection: 1095/1350 cells, 584.5s
+selection: 1110/1350 cells, 584.5s
+selection: 1125/1350 cells, 584.6s
+selection: 1140/1350 cells, 584.6s
+selection: 1155/1350 cells, 584.6s
+selection: 1170/1350 cells, 584.6s
+selection: 1185/1350 cells, 590.4s
+selection: 1200/1350 cells, 601.6s
+selection: 1215/1350 cells, 614.5s
+selection: 1230/1350 cells, 614.5s
+selection: 1245/1350 cells, 614.5s
+selection: 1260/1350 cells, 614.6s
+selection: 1275/1350 cells, 618.5s
+selection: 1290/1350 cells, 627.5s
+selection: 1305/1350 cells, 638.6s
+selection: 1320/1350 cells, 638.6s
+selection: 1335/1350 cells, 638.7s
+selection: 1350/1350 cells, 638.7s
+Frozen maps: {"group_targets": [{"group": "Everyone", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=1", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=2", "target": 800, "status": "target_not_met_within_grid"}, {"group": "RAC1P=1", "target": 800, "status": "target_not_met_within_grid"}, {"group": "RAC1P=2", "target": 800, "status": "target_not_met_within_grid"}, {"group": "RAC1P=3", "target": 800, "status": "historical_calibration_shortage"}, {"group": "RAC1P=4", "target": 800, "status": "historical_calibration_shortage"}, {"group": "RAC1P=5", "target": 800, "status": "historical_calibration_shortage"}, {"group": "RAC1P=6", "target": 800, "status": "target_not_met_within_grid"}, {"group": "RAC1P=7", "target": 800, "status": "historical_calibration_shortage"}, {"group": "RAC1P=8", "target": 800, "status": "target_not_met_within_grid"}, {"group": "RAC1P=9", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=1 & RAC1P=1", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=1 & RAC1P=2", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=1 & RAC1P=3", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=1 & RAC1P=4", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=1 & RAC1P=5", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=1 & RAC1P=6", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=1 & RAC1P=7", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=1 & RAC1P=8", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=1 & RAC1P=9", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=2 & RAC1P=1", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=2 & RAC1P=2", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=2 & RAC1P=3", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=2 & RAC1P=4", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=2 & RAC1P=5", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=2 & RAC1P=6", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=2 & RAC1P=7", "target": 800, "status": "historical_calibration_shortage"}, {"group": "SEX=2 & RAC1P=8", "target": 800, "status": "target_not_met_within_grid"}, {"group": "SEX=2 & RAC1P=9", "target": 800, "status": "historical_calibration_shortage"}], "global_target": 800, "global_status": "criterion_unmet_fallback", "confidence": 0.95, "criterion": 0.8, "reference_n": 400, "selection_input_sha256": "a4f958c1e52d00ef22c8a0af7bfbc5e228f6e2b1d9998cd4b04eab348a7bbfd3", "limitations": "Pointwise selected estimates are optimistic; independent validation required. No stream-power guarantee."}
+validation: 15/120 cells, 24.7s
+validation: 30/120 cells, 33.7s
+validation: 45/120 cells, 46.8s
+validation: 60/120 cells, 65.0s
+validation: 75/120 cells, 72.4s
+validation: 90/120 cells, 84.3s
+validation: 105/120 cells, 91.8s
+validation: 120/120 cells, 106.3s
+evaluation: 1/220 paired streams (all 5 policies)
+evaluation: 2/220 paired streams (all 5 policies)
+evaluation: 3/220 paired streams (all 5 policies)
+evaluation: 4/220 paired streams (all 5 policies)
+evaluation: 5/220 paired streams (all 5 policies)
+evaluation: 6/220 paired streams (all 5 policies)
+evaluation: 7/220 paired streams (all 5 policies)
+evaluation: 8/220 paired streams (all 5 policies)
+evaluation: 9/220 paired streams (all 5 policies)
+evaluation: 10/220 paired streams (all 5 policies)
+evaluation: 11/220 paired streams (all 5 policies)
+evaluation: 12/220 paired streams (all 5 policies)
+evaluation: 13/220 paired streams (all 5 policies)
+evaluation: 14/220 paired streams (all 5 policies)
+evaluation: 15/220 paired streams (all 5 policies)
+evaluation: 16/220 paired streams (all 5 policies)
+evaluation: 17/220 paired streams (all 5 policies)
+evaluation: 18/220 paired streams (all 5 policies)
+evaluation: 19/220 paired streams (all 5 policies)
+evaluation: 20/220 paired streams (all 5 policies)
+evaluation: 21/220 paired streams (all 5 policies)
+evaluation: 22/220 paired streams (all 5 policies)
+evaluation: 23/220 paired streams (all 5 policies)
+evaluation: 24/220 paired streams (all 5 policies)
+evaluation: 25/220 paired streams (all 5 policies)
+evaluation: 26/220 paired streams (all 5 policies)
+evaluation: 27/220 paired streams (all 5 policies)
+evaluation: 28/220 paired streams (all 5 policies)
+evaluation: 29/220 paired streams (all 5 policies)
+evaluation: 30/220 paired streams (all 5 policies)
+evaluation: 31/220 paired streams (all 5 policies)
+evaluation: 32/220 paired streams (all 5 policies)
+evaluation: 33/220 paired streams (all 5 policies)
+evaluation: 34/220 paired streams (all 5 policies)
+evaluation: 35/220 paired streams (all 5 policies)
+evaluation: 36/220 paired streams (all 5 policies)
+evaluation: 37/220 paired streams (all 5 policies)
+evaluation: 38/220 paired streams (all 5 policies)
+evaluation: 39/220 paired streams (all 5 policies)
+evaluation: 40/220 paired streams (all 5 policies)
+evaluation: 41/220 paired streams (all 5 policies)
+evaluation: 42/220 paired streams (all 5 policies)
+evaluation: 43/220 paired streams (all 5 policies)
+evaluation: 44/220 paired streams (all 5 policies)
+evaluation: 45/220 paired streams (all 5 policies)
+evaluation: 46/220 paired streams (all 5 policies)
+evaluation: 47/220 paired streams (all 5 policies)
+evaluation: 48/220 paired streams (all 5 policies)
+evaluation: 49/220 paired streams (all 5 policies)
+evaluation: 50/220 paired streams (all 5 policies)
+evaluation: 51/220 paired streams (all 5 policies)
+evaluation: 52/220 paired streams (all 5 policies)
+evaluation: 53/220 paired streams (all 5 policies)
+evaluation: 54/220 paired streams (all 5 policies)
+evaluation: 55/220 paired streams (all 5 policies)
+evaluation: 56/220 paired streams (all 5 policies)
+evaluation: 57/220 paired streams (all 5 policies)
+evaluation: 58/220 paired streams (all 5 policies)
+evaluation: 59/220 paired streams (all 5 policies)
+evaluation: 60/220 paired streams (all 5 policies)
+evaluation: 61/220 paired streams (all 5 policies)
+evaluation: 62/220 paired streams (all 5 policies)
+evaluation: 63/220 paired streams (all 5 policies)
+evaluation: 64/220 paired streams (all 5 policies)
+evaluation: 65/220 paired streams (all 5 policies)
+evaluation: 66/220 paired streams (all 5 policies)
+evaluation: 67/220 paired streams (all 5 policies)
+evaluation: 68/220 paired streams (all 5 policies)
+evaluation: 69/220 paired streams (all 5 policies)
+evaluation: 70/220 paired streams (all 5 policies)
+evaluation: 71/220 paired streams (all 5 policies)
+evaluation: 72/220 paired streams (all 5 policies)
+evaluation: 73/220 paired streams (all 5 policies)
+evaluation: 74/220 paired streams (all 5 policies)
+evaluation: 75/220 paired streams (all 5 policies)
+evaluation: 76/220 paired streams (all 5 policies)
+evaluation: 77/220 paired streams (all 5 policies)
+evaluation: 78/220 paired streams (all 5 policies)
+evaluation: 79/220 paired streams (all 5 policies)
+evaluation: 80/220 paired streams (all 5 policies)
+evaluation: 81/220 paired streams (all 5 policies)
+evaluation: 82/220 paired streams (all 5 policies)
+evaluation: 83/220 paired streams (all 5 policies)
+evaluation: 84/220 paired streams (all 5 policies)
+evaluation: 85/220 paired streams (all 5 policies)
+evaluation: 86/220 paired streams (all 5 policies)
+evaluation: 87/220 paired streams (all 5 policies)
+evaluation: 88/220 paired streams (all 5 policies)
+evaluation: 89/220 paired streams (all 5 policies)
+evaluation: 90/220 paired streams (all 5 policies)
+evaluation: 91/220 paired streams (all 5 policies)
+evaluation: 92/220 paired streams (all 5 policies)
+evaluation: 93/220 paired streams (all 5 policies)
+evaluation: 94/220 paired streams (all 5 policies)
+evaluation: 95/220 paired streams (all 5 policies)
+evaluation: 96/220 paired streams (all 5 policies)
+evaluation: 97/220 paired streams (all 5 policies)
+evaluation: 98/220 paired streams (all 5 policies)
+evaluation: 99/220 paired streams (all 5 policies)
+evaluation: 100/220 paired streams (all 5 policies)
+evaluation: 101/220 paired streams (all 5 policies)
+evaluation: 102/220 paired streams (all 5 policies)
+evaluation: 103/220 paired streams (all 5 policies)
+evaluation: 104/220 paired streams (all 5 policies)
+evaluation: 105/220 paired streams (all 5 policies)
+evaluation: 106/220 paired streams (all 5 policies)
+evaluation: 107/220 paired streams (all 5 policies)
+evaluation: 108/220 paired streams (all 5 policies)
+evaluation: 109/220 paired streams (all 5 policies)
+evaluation: 110/220 paired streams (all 5 policies)
+evaluation: 111/220 paired streams (all 5 policies)
+evaluation: 112/220 paired streams (all 5 policies)
+evaluation: 113/220 paired streams (all 5 policies)
+evaluation: 114/220 paired streams (all 5 policies)
+evaluation: 115/220 paired streams (all 5 policies)
+evaluation: 116/220 paired streams (all 5 policies)
+evaluation: 117/220 paired streams (all 5 policies)
+evaluation: 118/220 paired streams (all 5 policies)
+evaluation: 119/220 paired streams (all 5 policies)
+evaluation: 120/220 paired streams (all 5 policies)
+evaluation: 121/220 paired streams (all 5 policies)
+evaluation: 122/220 paired streams (all 5 policies)
+evaluation: 123/220 paired streams (all 5 policies)
+evaluation: 124/220 paired streams (all 5 policies)
+evaluation: 125/220 paired streams (all 5 policies)
+evaluation: 126/220 paired streams (all 5 policies)
+evaluation: 127/220 paired streams (all 5 policies)
+evaluation: 128/220 paired streams (all 5 policies)
+evaluation: 129/220 paired streams (all 5 policies)
+evaluation: 130/220 paired streams (all 5 policies)
+evaluation: 131/220 paired streams (all 5 policies)
+evaluation: 132/220 paired streams (all 5 policies)
+evaluation: 133/220 paired streams (all 5 policies)
+evaluation: 134/220 paired streams (all 5 policies)
+evaluation: 135/220 paired streams (all 5 policies)
+evaluation: 136/220 paired streams (all 5 policies)
+evaluation: 137/220 paired streams (all 5 policies)
+evaluation: 138/220 paired streams (all 5 policies)
+evaluation: 139/220 paired streams (all 5 policies)
+evaluation: 140/220 paired streams (all 5 policies)
+evaluation: 141/220 paired streams (all 5 policies)
+evaluation: 142/220 paired streams (all 5 policies)
+evaluation: 143/220 paired streams (all 5 policies)
+evaluation: 144/220 paired streams (all 5 policies)
+evaluation: 145/220 paired streams (all 5 policies)
+evaluation: 146/220 paired streams (all 5 policies)
+evaluation: 147/220 paired streams (all 5 policies)
+evaluation: 148/220 paired streams (all 5 policies)
+evaluation: 149/220 paired streams (all 5 policies)
+evaluation: 150/220 paired streams (all 5 policies)
+evaluation: 151/220 paired streams (all 5 policies)
+evaluation: 152/220 paired streams (all 5 policies)
+evaluation: 153/220 paired streams (all 5 policies)
+evaluation: 154/220 paired streams (all 5 policies)
+evaluation: 155/220 paired streams (all 5 policies)
+evaluation: 156/220 paired streams (all 5 policies)
+evaluation: 157/220 paired streams (all 5 policies)
+evaluation: 158/220 paired streams (all 5 policies)
+evaluation: 159/220 paired streams (all 5 policies)
+evaluation: 160/220 paired streams (all 5 policies)
+evaluation: 161/220 paired streams (all 5 policies)
+evaluation: 162/220 paired streams (all 5 policies)
+evaluation: 163/220 paired streams (all 5 policies)
+evaluation: 164/220 paired streams (all 5 policies)
+evaluation: 165/220 paired streams (all 5 policies)
+evaluation: 166/220 paired streams (all 5 policies)
+evaluation: 167/220 paired streams (all 5 policies)
+evaluation: 168/220 paired streams (all 5 policies)
+evaluation: 169/220 paired streams (all 5 policies)
+evaluation: 170/220 paired streams (all 5 policies)
+evaluation: 171/220 paired streams (all 5 policies)
+evaluation: 172/220 paired streams (all 5 policies)
+evaluation: 173/220 paired streams (all 5 policies)
+evaluation: 174/220 paired streams (all 5 policies)
+evaluation: 175/220 paired streams (all 5 policies)
+evaluation: 176/220 paired streams (all 5 policies)
+evaluation: 177/220 paired streams (all 5 policies)
+evaluation: 178/220 paired streams (all 5 policies)
+evaluation: 179/220 paired streams (all 5 policies)
+evaluation: 180/220 paired streams (all 5 policies)
+evaluation: 181/220 paired streams (all 5 policies)
+evaluation: 182/220 paired streams (all 5 policies)
+evaluation: 183/220 paired streams (all 5 policies)
+evaluation: 184/220 paired streams (all 5 policies)
+evaluation: 185/220 paired streams (all 5 policies)
+evaluation: 186/220 paired streams (all 5 policies)
+evaluation: 187/220 paired streams (all 5 policies)
+evaluation: 188/220 paired streams (all 5 policies)
+evaluation: 189/220 paired streams (all 5 policies)
+evaluation: 190/220 paired streams (all 5 policies)
+evaluation: 191/220 paired streams (all 5 policies)
+evaluation: 192/220 paired streams (all 5 policies)
+evaluation: 193/220 paired streams (all 5 policies)
+evaluation: 194/220 paired streams (all 5 policies)
+evaluation: 195/220 paired streams (all 5 policies)
+evaluation: 196/220 paired streams (all 5 policies)
+evaluation: 197/220 paired streams (all 5 policies)
+evaluation: 198/220 paired streams (all 5 policies)
+evaluation: 199/220 paired streams (all 5 policies)
+evaluation: 200/220 paired streams (all 5 policies)
+evaluation: 201/220 paired streams (all 5 policies)
+evaluation: 202/220 paired streams (all 5 policies)
+evaluation: 203/220 paired streams (all 5 policies)
+evaluation: 204/220 paired streams (all 5 policies)
+evaluation: 205/220 paired streams (all 5 policies)
+evaluation: 206/220 paired streams (all 5 policies)
+evaluation: 207/220 paired streams (all 5 policies)
+evaluation: 208/220 paired streams (all 5 policies)
+evaluation: 209/220 paired streams (all 5 policies)
+evaluation: 210/220 paired streams (all 5 policies)
+evaluation: 211/220 paired streams (all 5 policies)
+evaluation: 212/220 paired streams (all 5 policies)
+evaluation: 213/220 paired streams (all 5 policies)
+evaluation: 214/220 paired streams (all 5 policies)
+evaluation: 215/220 paired streams (all 5 policies)
+evaluation: 216/220 paired streams (all 5 policies)
+evaluation: 217/220 paired streams (all 5 policies)
+evaluation: 218/220 paired streams (all 5 policies)
+evaluation: 219/220 paired streams (all 5 policies)
+evaluation: 220/220 paired streams (all 5 policies)

@@ -1,0 +1,29 @@
+Checked 40/220 stream sets
+Checked 80/220 stream sets
+Checked 120/220 stream sets
+Checked 160/220 stream sets
+Checked 200/220 stream sets
+{
+  "verified_policy_engines": 1100,
+  "verified_declared_feature_tests": 1320000,
+  "exact_global_group_tied_streams": 220,
+  "key_stream_replays": [
+    {
+      "condition": "unchanged",
+      "policy": "ordinary_50",
+      "repeat": 0,
+      "feature_tests": 1200,
+      "raw_sha256": "325aa81b9e10ad97d6b56ce00702b810ea02100f68ff6451837c5c37a47dc3be"
+    },
+    {
+      "condition": "age_up4",
+      "policy": "fixed_400",
+      "repeat": 0,
+      "feature_tests": 1200,
+      "raw_sha256": "1ebb2da201e67a07f0d6d1d5f088feeda4870bbb8c3eca0469914e22d2244ef6"
+    }
+  ],
+  "ks_warning_count": 0,
+  "wall_seconds": 20.54322835700077,
+  "limitation": "Private year/household key disjointness is not a guarantee of distinct respondents across survey years."
+}
