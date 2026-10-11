@@ -1,0 +1,4 @@
+null_n250_0000.json.gz matched 180 group-feature opportunities; 0.819 s
+grid_n250_s0.05_m1.4_0000.json.gz matched 180 group-feature opportunities; 0.989 s
+correlation_0000.json.gz matched 360 group-feature opportunities; 2.038 s
+Software checks passed; no main natural-data evaluation run.

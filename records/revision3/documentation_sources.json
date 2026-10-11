@@ -1,0 +1,142 @@
+{
+  "initial_attempts": [
+    {
+      "name": "acs_2015_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2015.txt",
+      "accessed_utc": "2026-10-11T15:00:10.525476+00:00",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "acs_2016_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2016.txt",
+      "accessed_utc": "2026-10-11T15:00:11.359298+00:00",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "acs_2017_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2017.txt",
+      "accessed_utc": "2026-10-11T15:00:12.284527+00:00",
+      "status": "downloaded",
+      "sha256": "ea5bcde2a07b0c76ac145fac108e9013480b686a9d70afc4e3f4a6512ccbfd69",
+      "bytes": 294848
+    },
+    {
+      "name": "acs_2018_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2018.txt",
+      "accessed_utc": "2026-10-11T15:00:13.698181+00:00",
+      "status": "downloaded",
+      "sha256": "843a18e15b6cb7c7326261d478947a1415c4674c62419a8d01946a5a5df4d5fd",
+      "bytes": 298670
+    },
+    {
+      "name": "acs_2019_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMS_Data_Dictionary_2019.txt",
+      "accessed_utc": "2026-10-11T15:00:15.316634+00:00",
+      "status": "downloaded",
+      "sha256": "2ecbd86e979aa4e94945012e7537e53c37a4deff7f0435adb000b98b5a50ce77",
+      "bytes": 300134
+    },
+    {
+      "name": "acs2019_accuracy.pdf",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/accuracy/2019AccuracyPUMS.pdf",
+      "accessed_utc": "2026-10-11T15:00:16.628818+00:00",
+      "status": "downloaded",
+      "sha256": "1b927c501d40b7f4b78e80d4b2023e7677a71c12f3fb336358f94ae2131da41d",
+      "bytes": 200242
+    },
+    {
+      "name": "folktables_acs.py",
+      "url": "https://raw.githubusercontent.com/socialfoundations/folktables/main/folktables/acs.py",
+      "accessed_utc": "2026-10-11T15:00:17.839728+00:00",
+      "status": "downloaded",
+      "sha256": "5946ac913930c464e35cbf6288b96746f232cded2966925be79b04e2d082907d",
+      "bytes": 8357
+    },
+    {
+      "name": "folktables.pdf",
+      "url": "https://arxiv.org/pdf/2108.04884",
+      "accessed_utc": "2026-10-11T15:00:18.403975+00:00",
+      "status": "downloaded",
+      "sha256": "f6fea43c7488ff870c0a5a919ad88057aa04a6417e7ac08d84d51582c8dcffe0",
+      "bytes": 1712935
+    },
+    {
+      "name": "msd.pdf",
+      "url": "https://arxiv.org/pdf/2502.02221v2",
+      "accessed_utc": "2026-10-11T15:00:21.425645+00:00",
+      "status": "downloaded",
+      "sha256": "9c11e72b7d0e9d6b7d01f538431cf96f7d602b8f2b98c91f4f49451d29e95046",
+      "bytes": 1046943
+    },
+    {
+      "name": "monitoring.pdf",
+      "url": "https://arxiv.org/pdf/2506.05701v3",
+      "accessed_utc": "2026-10-11T15:00:24.051014+00:00",
+      "status": "downloaded",
+      "sha256": "caeb3b6a51ebe5d498c5fe3fcf019dbd7afea7ae1f46d2313935d259ea1a3084",
+      "bytes": 3234728
+    },
+    {
+      "name": "fairfeddrift.pdf",
+      "url": "https://arxiv.org/pdf/2402.07586v4",
+      "accessed_utc": "2026-10-11T15:00:29.575823+00:00",
+      "status": "downloaded",
+      "sha256": "91d8371f76de6cd4a658a5752058b3fc05e2525e03c2bf5c379fc72d6e2cf7bf",
+      "bytes": 10715728
+    },
+    {
+      "name": "adwin.pdf",
+      "url": "https://www.cs.upc.edu/~gavalda/papers/adwin07.pdf",
+      "accessed_utc": "2026-10-11T15:01:37.484411+00:00",
+      "status": "failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "kswin.html",
+      "url": "https://riverml.xyz/latest/api/drift/KSWIN/",
+      "accessed_utc": "2026-10-11T15:01:38.579935+00:00",
+      "status": "downloaded",
+      "sha256": "c89f39597b2c55d4a090fe258dace5dafea244430ebe307fff84d6a103dd6b78",
+      "bytes": 61643
+    }
+  ],
+  "resolved_and_additional": [
+    {
+      "name": "acs_2015_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMSDataDict15.txt",
+      "accessed_utc": "2026-10-11T15:05:31.944551+00:00",
+      "status": "downloaded",
+      "sha256": "0b6b75d176dcb8572972d11d303ff1f02a11d1b58ca40702508ab3b834dade53"
+    },
+    {
+      "name": "acs_2016_dictionary.txt",
+      "url": "https://www2.census.gov/programs-surveys/acs/tech_docs/pums/data_dict/PUMSDataDict16.txt",
+      "accessed_utc": "2026-10-11T15:05:33.890600+00:00",
+      "status": "downloaded",
+      "sha256": "b21a4dd6500b03fe61de92f5433a3b25b635b07492a9806b51db2d8a49e2b89b"
+    },
+    {
+      "name": "adwin.pdf",
+      "url": "https://www.cs.upc.edu/~gavalda/papers/adwin06.pdf",
+      "accessed_utc": "2026-10-11T15:05:35.078433+00:00",
+      "status": "downloaded",
+      "sha256": "3cee0ab3882a72e7f17750dbfeb7ba5db6e0b81b46e5576d6b4c499a04f45bd3"
+    },
+    {
+      "name": "kswin.pdf",
+      "url": "https://arxiv.org/pdf/2007.05432",
+      "accessed_utc": "2026-10-11T15:05:37.146054+00:00",
+      "status": "downloaded",
+      "sha256": "9369cea17861eac4e3fc51fbb52a1b15c86319bcf139588260c57a2f4c1bb7a5"
+    },
+    {
+      "name": "folktables_datasheet.md",
+      "url": "https://raw.githubusercontent.com/socialfoundations/folktables/main/datasheet.md",
+      "accessed_utc": "2026-10-11T15:05:44.477695+00:00",
+      "status": "downloaded",
+      "sha256": "7b6da9227420fdbfba14b6d4c6df3332c7fea43df960896915726c8c69f421b0"
+    }
+  ]
+}

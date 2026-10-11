@@ -1,0 +1,73 @@
+dataset,period,role,group,level,n,positive_n,negative_n,support50,support100,label_support20
+OULAD_BBB,2013J,all_eligible,Everyone,aggregate,1883,1062,821,True,True,True
+OULAD_BBB,2013J,all_eligible,gender='F',single,1670,949,721,True,True,True
+OULAD_BBB,2013J,all_eligible,gender='M',single,213,113,100,True,True,True
+OULAD_BBB,2013J,all_eligible,disability='N',single,1696,973,723,True,True,True
+OULAD_BBB,2013J,all_eligible,disability='Y',single,187,89,98,True,True,True
+OULAD_BBB,2013J,all_eligible,gender='F' & disability='N',intersection,1503,869,634,True,True,True
+OULAD_BBB,2013J,all_eligible,gender='F' & disability='Y',intersection,167,80,87,True,True,True
+OULAD_BBB,2013J,all_eligible,gender='M' & disability='N',intersection,193,104,89,True,True,True
+OULAD_BBB,2013J,all_eligible,gender='M' & disability='Y',intersection,20,9,11,False,False,False
+OULAD_BBB,2013J,audit,Everyone,aggregate,392,211,181,True,True,True
+OULAD_BBB,2013J,audit,gender='F',single,350,191,159,True,True,True
+OULAD_BBB,2013J,audit,gender='M',single,42,20,22,False,False,True
+OULAD_BBB,2013J,audit,disability='N',single,352,191,161,True,True,True
+OULAD_BBB,2013J,audit,disability='Y',single,40,20,20,False,False,True
+OULAD_BBB,2013J,audit,gender='F' & disability='N',intersection,313,172,141,True,True,True
+OULAD_BBB,2013J,audit,gender='F' & disability='Y',intersection,37,19,18,False,False,False
+OULAD_BBB,2013J,audit,gender='M' & disability='N',intersection,39,19,20,False,False,False
+OULAD_BBB,2013J,audit,gender='M' & disability='Y',intersection,3,1,2,False,False,False
+OULAD_BBB,2013J,design,Everyone,aggregate,372,224,148,True,True,True
+OULAD_BBB,2013J,design,gender='F',single,335,202,133,True,True,True
+OULAD_BBB,2013J,design,gender='M',single,37,22,15,False,False,False
+OULAD_BBB,2013J,design,disability='N',single,333,201,132,True,True,True
+OULAD_BBB,2013J,design,disability='Y',single,39,23,16,False,False,False
+OULAD_BBB,2013J,design,gender='F' & disability='N',intersection,300,181,119,True,True,True
+OULAD_BBB,2013J,design,gender='F' & disability='Y',intersection,35,21,14,False,False,False
+OULAD_BBB,2013J,design,gender='M' & disability='N',intersection,33,20,13,False,False,False
+OULAD_BBB,2013J,design,gender='M' & disability='Y',intersection,4,2,2,False,False,False
+OULAD_BBB,2013J,fit,Everyone,aggregate,757,438,319,True,True,True
+OULAD_BBB,2013J,fit,gender='F',single,660,384,276,True,True,True
+OULAD_BBB,2013J,fit,gender='M',single,97,54,43,True,False,True
+OULAD_BBB,2013J,fit,disability='N',single,694,413,281,True,True,True
+OULAD_BBB,2013J,fit,disability='Y',single,63,25,38,True,False,True
+OULAD_BBB,2013J,fit,gender='F' & disability='N',intersection,607,365,242,True,True,True
+OULAD_BBB,2013J,fit,gender='F' & disability='Y',intersection,53,19,34,True,False,False
+OULAD_BBB,2013J,fit,gender='M' & disability='N',intersection,87,48,39,True,False,True
+OULAD_BBB,2013J,fit,gender='M' & disability='Y',intersection,10,6,4,False,False,False
+OULAD_BBB,2013J,reference,Everyone,aggregate,362,189,173,True,True,True
+OULAD_BBB,2013J,reference,gender='F',single,325,172,153,True,True,True
+OULAD_BBB,2013J,reference,gender='M',single,37,17,20,False,False,False
+OULAD_BBB,2013J,reference,disability='N',single,317,168,149,True,True,True
+OULAD_BBB,2013J,reference,disability='Y',single,45,21,24,False,False,True
+OULAD_BBB,2013J,reference,gender='F' & disability='N',intersection,283,151,132,True,True,True
+OULAD_BBB,2013J,reference,gender='F' & disability='Y',intersection,42,21,21,False,False,True
+OULAD_BBB,2013J,reference,gender='M' & disability='N',intersection,34,17,17,False,False,False
+OULAD_BBB,2013J,reference,gender='M' & disability='Y',intersection,3,0,3,False,False,False
+OULAD_BBB,2014J,all_eligible,Everyone,aggregate,1952,1093,859,True,True,True
+OULAD_BBB,2014J,all_eligible,gender='F',single,1720,971,749,True,True,True
+OULAD_BBB,2014J,all_eligible,gender='M',single,232,122,110,True,True,True
+OULAD_BBB,2014J,all_eligible,disability='N',single,1797,1021,776,True,True,True
+OULAD_BBB,2014J,all_eligible,disability='Y',single,155,72,83,True,True,True
+OULAD_BBB,2014J,all_eligible,gender='F' & disability='N',intersection,1590,910,680,True,True,True
+OULAD_BBB,2014J,all_eligible,gender='F' & disability='Y',intersection,130,61,69,True,True,True
+OULAD_BBB,2014J,all_eligible,gender='M' & disability='N',intersection,207,111,96,True,True,True
+OULAD_BBB,2014J,all_eligible,gender='M' & disability='Y',intersection,25,11,14,False,False,False
+OULAD_BBB,2014J,audit,Everyone,aggregate,973,547,426,True,True,True
+OULAD_BBB,2014J,audit,gender='F',single,857,486,371,True,True,True
+OULAD_BBB,2014J,audit,gender='M',single,116,61,55,True,True,True
+OULAD_BBB,2014J,audit,disability='N',single,889,503,386,True,True,True
+OULAD_BBB,2014J,audit,disability='Y',single,84,44,40,True,False,True
+OULAD_BBB,2014J,audit,gender='F' & disability='N',intersection,786,448,338,True,True,True
+OULAD_BBB,2014J,audit,gender='F' & disability='Y',intersection,71,38,33,True,False,True
+OULAD_BBB,2014J,audit,gender='M' & disability='N',intersection,103,55,48,True,True,True
+OULAD_BBB,2014J,audit,gender='M' & disability='Y',intersection,13,6,7,False,False,False
+OULAD_BBB,2014J,monitor,Everyone,aggregate,979,546,433,True,True,True
+OULAD_BBB,2014J,monitor,gender='F',single,863,485,378,True,True,True
+OULAD_BBB,2014J,monitor,gender='M',single,116,61,55,True,True,True
+OULAD_BBB,2014J,monitor,disability='N',single,908,518,390,True,True,True
+OULAD_BBB,2014J,monitor,disability='Y',single,71,28,43,True,False,True
+OULAD_BBB,2014J,monitor,gender='F' & disability='N',intersection,804,462,342,True,True,True
+OULAD_BBB,2014J,monitor,gender='F' & disability='Y',intersection,59,23,36,True,False,True
+OULAD_BBB,2014J,monitor,gender='M' & disability='N',intersection,104,56,48,True,True,True
+OULAD_BBB,2014J,monitor,gender='M' & disability='Y',intersection,12,5,7,False,False,False

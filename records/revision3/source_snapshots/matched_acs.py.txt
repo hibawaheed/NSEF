@@ -1,0 +1,257 @@
+"""Revision 3 matched PSI/KS engine. No outcomes enter the collection schedule.
+
+Natural observational data default to descriptive scores (no p-values/alerts).
+Inferential mode is for designs with a justified independent exchangeable null.
+Old revision.py and all v1/v2 artifacts are deliberately unchanged.
+"""
+from dataclasses import dataclass
+import hashlib
+import json
+import time
+import warnings
+import numpy as np
+from scipy.stats import ks_2samp
+from .core import Group, NumericBins, psi_counts, adjust_pvalues, validate_resolution
+from .revision import count_test, ks_missing
+
+
+def declared_groups(levels):
+    """Fixed, named schema levels, never discovered by searching current values."""
+    if len(levels) > 2:
+        raise ValueError('At most two prespecified grouping attributes')
+    groups = [Group('Everyone')]
+    for col, values in levels.items():
+        if not values or len(set(values)) != len(values):
+            raise ValueError('Unique nonempty declared levels required')
+        groups += [Group(f'{col}={v!r}', ((col, v),), 'single') for v in values]
+    if len(levels) == 2:
+        (a, av), (b, bv) = levels.items()
+        groups += [Group(f'{a}={x!r} & {b}={y!r}', ((a, x), (b, y)), 'intersection')
+                   for x in av for y in bv]
+    return groups
+
+
+@dataclass(frozen=True)
+class Block:
+    group: str
+    look: int
+    time: int
+    ids: tuple
+    ready: bool
+    reference_n: int
+    opened_look: int
+    opened_time: int
+    oldest: int | None
+    newest: int | None
+    dropped_old: int
+    dropped_total: int
+
+    def metadata(self):
+        # Only a digest is exported; private row identifiers stay local.
+        return {'group': self.group, 'look': self.look, 'time': self.time,
+                'block_sha256': hashlib.sha256(json.dumps(self.ids).encode()).hexdigest(),
+                'n_current': len(self.ids), 'n_reference': self.reference_n,
+                'eligible': self.ready, 'opened_look': self.opened_look,
+                'waiting_looks': self.look-self.opened_look,
+                'waiting_time': self.time-self.opened_time,
+                'oldest_time': self.oldest, 'newest_time': self.newest,
+                'maximum_age': None if self.oldest is None else self.time-self.oldest,
+                'dropped_old': self.dropped_old, 'dropped_total': self.dropped_total}
+
+
+class CollectionScheduler:
+    """One metadata-only schedule supplies both statistics.
+
+Consume whole input batches; never truncate a block at min_n. Reset *all*
+features at the boundary once supported, independent of test results. An age
+cap retains time >= current_time-max_age (inclusive). Expiration never resets
+look spending or the initial waiting clock. Empty observations still use a look.
+"""
+    def __init__(self, reference_counts, *, min_n, horizon, max_age=None):
+        if min_n < 1 or int(min_n) != min_n or horizon < 1 or int(horizon) != horizon:
+            raise ValueError('Positive integer support and horizon required')
+        if not reference_counts or any(n < 0 for n in reference_counts.values()):
+            raise ValueError('Nonnegative fixed reference counts required')
+        if max_age is not None and (int(max_age) != max_age or max_age < 0):
+            raise ValueError('Age cap must be a nonnegative integer in declared time units')
+        self.reference_counts = dict(reference_counts)
+        self.min_n, self.horizon, self.max_age = int(min_n), int(horizon), max_age
+        self.buffers = {g: [] for g in reference_counts}
+        self.opened = {g: None for g in reference_counts}
+        self.dropped = {g: 0 for g in reference_counts}
+        self.seen = set()
+        self.look, self.last_time = 0, None
+
+    def advance(self, timestamp, memberships):
+        if self.look >= self.horizon:
+            raise ValueError('Declared horizon exhausted; cannot refresh alpha')
+        if not isinstance(timestamp, (int, np.integer)) or (self.last_time is not None and timestamp <= self.last_time):
+            raise ValueError('Strictly increasing integer times required')
+        if set(memberships) != set(self.buffers):
+            raise ValueError('All declared groups, including absent groups, required')
+        incoming = set()
+        for ids in memberships.values():
+            if any(not isinstance(i, str) for i in ids) or len(ids) != len(set(ids)):
+                raise ValueError('Unique string record IDs required within each group')
+            incoming.update(ids)
+        if self.seen.intersection(incoming):
+            raise ValueError('Records repeated across observation batches')
+        # Validation completes before modifying state.
+        self.seen.update(incoming)
+        self.look += 1
+        self.last_time = int(timestamp)
+        blocks = []
+        for group, ids in memberships.items():
+            if self.opened[group] is None:
+                self.opened[group] = (self.look, int(timestamp))
+            pool = self.buffers[group]
+            before = len(pool)
+            if self.max_age is not None:
+                pool = [(t, i) for t, i in pool if t >= timestamp-self.max_age]
+            dropped = before-len(pool)
+            self.dropped[group] += dropped
+            pool.extend((int(timestamp), i) for i in ids)
+            ready = min(self.reference_counts[group], len(pool)) >= self.min_n
+            blocks.append(Block(group, self.look, int(timestamp), tuple(i for _, i in pool),
+                                ready, self.reference_counts[group], *self.opened[group],
+                                pool[0][0] if pool else None, pool[-1][0] if pool else None,
+                                dropped, self.dropped[group]))
+            self.buffers[group] = [] if ready else pool
+            if ready:
+                self.opened[group] = None
+        return blocks
+
+
+def ks_score(a, b):
+    """Separate ECDF and missing-rate distances, with no arbitrary category order."""
+    a, b = np.asarray(a, float), np.asarray(b, float)
+    x, y = a[~np.isnan(a)], b[~np.isnan(b)]
+    if len(x) and len(y):
+        grid = np.unique(np.r_[x, y])
+        d = float(np.max(np.abs(np.searchsorted(np.sort(x), grid, side='right')/len(x)
+                                 - np.searchsorted(np.sort(y), grid, side='right')/len(y))))
+    else:
+        d = None
+    return {'ks_d': d, 'missing_rate_difference': float(np.isnan(b).mean()-np.isnan(a).mean())}
+
+
+def compare_block(reference, current, binning, *, inferential, seed, draws, cutoff):
+    """Report statistic-only runtime and payload, separate from scheduling/setup.
+
+Payload is a reproducible logical array size, NOT peak RSS. A profiler must
+measure Python overhead/shared scheduler/retained input and temporaries separately.
+"""
+    setup = time.perf_counter()
+    a, b = binning.counts(reference), binning.counts(current)
+    histogram_setup = time.perf_counter()-setup
+    start = time.perf_counter()
+    psi = count_test(a, b, seed=seed, draws=draws, stop_above=cutoff) if inferential else {
+        'psi': float(psi_counts(a, b)), 'p': None, 'draws': 0, 'censored': False}
+    psi_seconds = time.perf_counter()-start
+    out = {**psi, 'histogram_setup_seconds': histogram_setup, 'psi_seconds': psi_seconds,
+           'psi_payload_bytes': int(a.nbytes+b.nbytes), 'ks_p': None, 'ks_d': None,
+           'missing_rate_difference': None, 'ks_seconds': 0., 'ks_payload_bytes': None,
+           'ks_status': 'not_applicable_nominal', 'ks_warning': None,
+           'missing_reference': int(a[-1]), 'missing_current': int(b[-1])}
+    if isinstance(binning, NumericBins):
+        start = time.perf_counter()
+        x, y = np.asarray(reference, float), np.asarray(current, float)
+        out.update(ks_score(x, y))
+        # SciPy may fall back from exact to asymptotic; never silently claim exact.
+        with warnings.catch_warnings(record=True) as caught:
+            warnings.simplefilter('always')
+            p = ks_missing(x, y) if inferential else None
+        out.update(ks_p=1. if caught and inferential else p,
+                   ks_status='conservative_warning' if caught else 'assessed',
+                   ks_warning='; '.join(str(w.message) for w in caught) or None,
+                   ks_seconds=time.perf_counter()-start, ks_payload_bytes=int(x.nbytes+y.nbytes))
+    return out
+
+
+def run_matched(reference, windows, *, bins, groups, min_n=100, alpha=.05,
+                draws=15999, seed=0, max_age=None, inferential=False, channels=1,
+                policy='accumulate'):
+    """windows is [(real_or_declared_control_time, frame), ...], fixed in advance.
+
+String DataFrame indices identify records. Namespaced IDs must be unique across
+reference/current roles. Matched PSI/KS remain separate methods: the union of
+their standalone alerts does not inherit alpha. channels reserves an explicitly
+split budget, rather than granting extra alpha for additional channels.
+"""
+    if policy not in {'accumulate', 'batch'}:
+        raise ValueError('Unknown collection policy')
+    if policy == 'batch' and max_age is not None:
+        raise ValueError('Batch policy has no age cap')
+    if not bins or not groups or len({g.name for g in groups}) != len(groups):
+        raise ValueError('Nonempty fixed features and uniquely named groups required')
+    if channels < 1 or int(channels) != channels or not 0 < alpha < 1:
+        raise ValueError('Invalid error budget')
+    if not len(windows):
+        raise ValueError('Nonempty declared horizon required')
+    if not reference.index.is_unique or any(not isinstance(i, str) for i in reference.index):
+        raise ValueError('Unique string reference IDs required')
+    for frame in [reference, *(frame for _, frame in windows)]:
+        if not frame.index.is_unique or any(not isinstance(i, str) for i in frame.index):
+            raise ValueError('Unique string IDs required')
+        for f, binning in bins.items():
+            binning.encode(frame[f])  # fail before any computation/state change
+    h, family = len(windows), len(groups)*len(bins)
+    cutoff = alpha/(h*channels)
+    if inferential:
+        validate_resolution(draws, family, cutoff)
+    ref_ids = {g.name: tuple(reference.index[g.mask(reference)]) for g in groups}
+    scheduler = CollectionScheduler({g: len(ids) for g, ids in ref_ids.items()},
+                                    min_n=min_n, horizon=h, max_age=max_age)
+    # Shared input retention is explicit, not attributed solely to KS or PSI.
+    all_current = __import__('pandas').concat([frame for _, frame in windows])
+    if not all_current.index.is_unique or set(reference.index).intersection(all_current.index):
+        raise ValueError('Reference/current roles or batches share record IDs')
+    rows, decisions, schedule = [], [], []
+    for w, (timestamp, frame) in enumerate(windows, 1):
+        started = time.perf_counter()
+        memberships = {g.name: tuple(frame.index[g.mask(frame)]) for g in groups}
+        blocks = scheduler.advance(timestamp, memberships)
+        collection_seconds = time.perf_counter()-started
+        look_rows = []
+        for gi, (group, block) in enumerate(zip(groups, blocks)):
+            meta = block.metadata()
+            schedule.append({**meta, 'collection_seconds_all_groups': collection_seconds})
+            for fi, (feature, binning) in enumerate(bins.items()):
+                row = {**meta, 'feature': feature, 'level': group.level,
+                       'status': 'assessed' if block.ready else 'insufficient_support',
+                       'policy': policy, 'psi': None, 'p': 1. if inferential else None,
+                       'ks_p': 1. if inferential else None, 'ks_d': None,
+                       'psi_seconds': 0., 'ks_seconds': 0., 'histogram_setup_seconds': 0.,
+                       'psi_payload_bytes': None, 'ks_payload_bytes': None,
+                       'draws': 0, 'censored': False, 'ks_status': 'insufficient_support'}
+                if block.ready:
+                    row.update(compare_block(reference.loc[list(ref_ids[group.name]), feature].to_numpy(),
+                                             all_current.loc[list(block.ids), feature].to_numpy(), binning,
+                                             inferential=inferential, seed=[seed,w,gi,fi], draws=draws, cutoff=cutoff))
+                look_rows.append(row)
+        for scope, levels in [('aggregate', {'aggregate'}), ('single', {'aggregate','single'}),
+                              ('intersection', {'aggregate','single','intersection'})]:
+            selected = [r for r in look_rows if r['level'] in levels]
+            for method, field in [('PSI','p'), ('KS','ks_p')]:
+                pvals = [r[field] if r[field] is not None else 1. for r in selected]
+                adjusted = adjust_pvalues(pvals) if inferential else [None]*len(selected)
+                hits = [(r['group'], r['feature']) for r,p in zip(selected, adjusted)
+                        if inferential and p <= cutoff and r['eligible']]
+                decisions.append({'look':w,'time':int(timestamp),'scope':scope,'method':method,
+                                  'policy':policy,'alert':bool(hits) if inferential else None,
+                                  'hits':hits,'family_size':len(selected),'cutoff':cutoff if inferential else None,
+                                  'assessed':sum(r['eligible'] and (method=='PSI' or r['ks_status'] in {'assessed','conservative_warning'}) for r in selected),
+                                  'adjusted_pvalues':list(adjusted)})
+        rows.extend(look_rows)
+        if policy == 'batch':
+            # Same scheduler/horizon/seen-ID state; discard unsupported batch too.
+            for group in scheduler.buffers:
+                scheduler.buffers[group] = []
+                scheduler.opened[group] = None
+    return {'tests':rows,'decisions':decisions,'schedule':schedule,
+            'metadata':{'inferential':inferential,'alpha_per_method':alpha/channels,
+                        'horizon':h,'family_size':family,'channels':channels,'max_age':max_age,
+                        'policy':policy,'min_n':min_n,'draws':draws,'seed':seed,
+                        'shared_input_frame_bytes':int(all_current.memory_usage(index=True,deep=True).sum()),
+                        'memory_note':'Payload fields are logical arrays, not measured peak process memory; shared input and ID bookkeeping are additional.',
+                        'natural_accuracy_note':'No change-point or drift-detection accuracy inferred for natural data.'}}

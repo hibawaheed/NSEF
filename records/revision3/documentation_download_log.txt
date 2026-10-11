@@ -1,0 +1,13 @@
+acs_2015_dictionary.txt failed
+acs_2016_dictionary.txt failed
+acs_2017_dictionary.txt downloaded
+acs_2018_dictionary.txt downloaded
+acs_2019_dictionary.txt downloaded
+acs2019_accuracy.pdf downloaded
+folktables_acs.py downloaded
+folktables.pdf downloaded
+msd.pdf downloaded
+monitoring.pdf downloaded
+fairfeddrift.pdf downloaded
+adwin.pdf failed
+kswin.html downloaded

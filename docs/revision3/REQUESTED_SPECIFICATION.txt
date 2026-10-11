@@ -1,0 +1,143 @@
+# Codex prompt: SubPSI real-data-first revision
+
+Work in my existing repository: https://github.com/hibawaheed/NSEF
+
+I am developing SubPSI for NSEF Pakistan with a research mentor. The submission deadline is 26 October 2026. Preserve subgroup-decomposed Population Stability Index (PSI) as the core of my registered project. Improve the research rather than starting over or adding impressive-sounding features. Prioritize actual, documented public observations for the new main evaluation. Do not write my final paper, abstract, poster, or conclusions in my voice.
+
+## 1. Inspect the current work and preserve it
+
+Read README.md, docs/REVISION2_FINDINGS.md, docs/REVISION2_METHODS.md, docs/REVISION2_PRIOR_WORK.md, src/subpsi/core.py, src/subpsi/revision.py, configs/revision2.json, the relevant experiment/figure scripts, tests, and contribution records. Inspect newer changes before assuming these are still the latest files.
+
+Record the current commit and working-tree status. Preserve all v1/v2 results, configurations, source snapshots, figures, and unfavourable findings. Do not overwrite historical evidence or erase AI-use records. Work on a separate local revision branch and use new output directories. Do not push, deploy, submit, pay for services, or change repository visibility without separate permission.
+
+The reviewed v2 had an accumulated-PSI method but no accumulated-KS comparator. It also had synthetic simulations and Adult experiments with imposed sampling shifts. Treat these as starting observations, not assumptions about an updated checkout. The new revision must distinguish newly proposed work from completed work.
+
+## 2. Use genuine public data as the main new evidence
+
+No LLM-generated people, survey answers, outcomes, timestamps, or feature values. No GAN/SMOTE-generated records, AI-filled demographics, or fabricated missing outcomes. Never silently substitute generated data when a download fails.
+
+Preserve existing mathematical simulations as clearly labelled controlled validation, not as observed human records. New primary experiments must use actual released records. Sampling and bootstrap calculations may select existing records, but must be documented as resampling, not new independent observations or real chronology. Keep raw files immutable; save all cleaning and transformations separately.
+
+Investigate these two source families, in this order:
+
+### Primary: American Community Survey PUMS across real survey years
+
+Official entry points:
+https://www.census.gov/programs-surveys/acs/microdata.html
+https://www.census.gov/programs-surveys/acs/microdata/access.html
+https://www.census.gov/programs-surveys/acs/microdata/documentation.html
+https://github.com/socialfoundations/folktables
+https://arxiv.org/abs/2108.04884
+
+Start with one state and one documented task, preferably ACSEmployment unless a documented feasibility issue favours another task. A proposed manageable period is 2015–2019: historical development first, later years held out. These dates/state/task choices require a pre-evaluation rationale, not selection because they produce attractive alerts. Verify availability and year-specific coding first. Prefer distinct 1-year releases, not overlapping 5-year files.
+
+Use actual years as the time axis. Do not invent daily/monthly order from file row order. Artificial within-year chunks must be labelled as a delivery/resampling experiment, not observed within-year change. ACS annual data alone cannot establish fine-grained detection delay.
+
+Preserve household/record identifiers privately where needed for splitting and audit, year, survey weights, and available allocation/imputation information. Separate households between fitting, bin design, calibration, and evaluation where feasible. Check dependence, weighting, code changes, and disclosure protection. State whether results describe released sample records or a survey-weighted population; unweighted permutation p-values are not automatically valid for weighted population claims. Do not expand a survey weight into duplicate independent people. Do not infer true gender identities from the dataset's recorded sex codes. Exclude target-derived features and explain label meaning; these are historical benchmark tasks, not actual hiring or lending decisions.
+
+### Secondary: Open University Learning Analytics Dataset (OULAD)
+
+Verified starting sources:
+https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset
+https://www.nature.com/articles/sdata2017171
+Dataset DOI: 10.24432/C5KK69
+Data-descriptor DOI: 10.1038/sdata.2017.171
+
+Use genuine 2013/2014 course cohorts, recorded demographics, and observed outcomes. Compare the same module and presentation type where possible, for example October cohorts across years; do not treat different courses or February/October schedules as automatically comparable. Choose modules using availability and adequate support, not measured drift success.
+
+Start with a small cohort-level analysis using features available at a defined prediction time. Add early engagement summaries only when they improve the research and can be built without future information. Never leak final_result, later assessments, or future withdrawal information into earlier predictions. Make any mapping of Pass/Distinction/Fail/Withdrawn explicit and substantively justified.
+
+Keep repeated students separated across model-development and held-out evaluation roles. Repeated clicks from the same student are not independent people. Do not concatenate courses or split random rows and claim a genuine deployment sequence. If there are too few comparable cohorts, report a cohort-shift case study, not an extensive temporal-monitoring validation.
+
+For each source, create a data card with collector, citation, original URL, access date, licence/terms, release/version, checksums, row counts, time fields, demographics, labels, missingness, known processing, exclusions, and limitations. Verify both software and dataset licences; they are not interchangeable. Preserve row-level source lineage locally, and do not expose identifying information in public exports.
+
+Attempt one strong ACS study and one compact OULAD check. If either is unsuitable, document why; do not substitute a random benchmark and call it equivalent. No new human recruitment, credential-gated medical datasets, private records, or re-identification. Flag methodology changes for mentor/adult-sponsor review.
+
+## 3. Complete the missing fair comparison first
+
+Implement accumulated KS with the SAME observation blocks as accumulated PSI: identical input rows, groups, support rules, buffer starts/resets, missingness policy, assessment opportunities, and overall false-alarm budget. Share one scheduler so differences cannot quietly arise from different data availability. Apply compatible, justified tests to each feature type; ordinary KS is not a comparator for arbitrary unordered categories.
+
+Replace hard-coded assumptions about nine binary A/B views and target index 8 with explicit named group definitions where necessary. Use at most two prespecified grouping attributes; do not silently turn every multi-category attribute into a binary one. Natural-data experiments have no injected target index.
+
+Retain aggregate PSI/KS, ordinary subgroup PSI/KS, and accumulated subgroup PSI/KS where applicable. Include the existing single-attribute stage when separating the value of intersections from subgrouping itself. Fixed PSI cutoffs may remain as contextual baselines, not error-matched competitors.
+
+Measure memory and runtime honestly: histogram PSI and KS can have different storage needs. Use the same machine and workload, and report setup, testing, accumulation, and outcome-audit costs separately. Rerun matched comparisons in a new directory. Never compare differently generated streams as though they were paired. Saved v2 simulations can be replayed for controlled validation with their original generator/version and seeds; do not expand synthetic evidence into the new main study.
+
+## 4. Investigate one modest extension, not manufactured novelty
+
+Candidate research question:
+"When small groups need more observations, how does limiting the age of accumulated data affect coverage, waiting time, and the relevance of alerts on later observed data?"
+
+Propose a freshness-limited accumulation policy. Keep the existing minimum-count rule, but let a predeclared maximum data age prevent indefinitely retaining old observations. If too few recent observations remain, report insufficient recent evidence instead of no drift. Make the oldest/newest observation time, dropped-old-record count, and support visible.
+
+Implement this as a shared scheduler for BOTH PSI and KS. Specify the age unit and boundary convention; use genuine source time when available. Selection must depend only on group membership, counts, and time, not observed feature changes or outcomes. Do not reset the error budget when records expire or an alert occurs. Add a matched fixed-age rolling-window baseline if needed to distinguish a policy effect from ordinary windowing.
+
+Treat this as a proposed engineering/empirical extension. Do not claim that age caps, sliding windows, accumulation, or alpha spending are new inventions. Inspect prior work first, explain the closest equivalent, and report whether this adds a defensible application or evaluation. If the source's time resolution makes the test meaningless, keep it secondary or omit it rather than invent timestamps. Freeze a small parameter set using historical development data and operational reasoning, never held-out performance. Do not add automatic subgroup discovery, neural architectures, or bias repair in this revision.
+
+## 5. Make the novelty review concrete
+
+Read the relevant methods, not just abstracts, for the four original papers and closer monitoring work. Starting points include:
+https://arxiv.org/abs/2502.02221
+https://arxiv.org/abs/2402.07586
+https://doi.org/10.1093/jamia/ocaf039
+https://doi.org/10.3390/app14198860
+https://arxiv.org/abs/2506.05701
+https://arxiv.org/abs/2108.04884
+
+Search for subgroup/intersectional drift monitoring, limited-sample monitoring, accumulated KS, bounded-age windows, and sequential error control. Follow relevant references and citations, using primary sources. Record search terms, dates, sources checked, and whether full text was available. An inaccessible source is unreviewed, not irrelevant.
+
+Create a comparison table: what each method tests, groups, temporal setting, sampling assumptions, labels required, sample accumulation, error control, public-data evaluation, and exact overlap/difference with SubPSI. ACS/Folktables already appears in the MSD paper: using it is not itself novel. Distinguish MSD's subgroup-mass discrepancy from conditional feature-distribution comparisons; do not rename a different objective as an MSD baseline. Implement a literature baseline only when its target can be aligned and resources permit; otherwise explain the missing comparison.
+
+Deliver a narrow candidate contribution statement and a claims-not-supported list. Never promise uniqueness, first-ever status, significance, better results, or fair selection. No cosmetic novelty claims or claims that commercial tools cannot monitor groups without evidence.
+
+## 6. Keep statistical claims valid on real observations
+
+Separate three evidence types:
+A. Natural year/cohort comparisons: actual periods and unaltered released observations.
+B. Resampling/replay checks: original records sampled under explicitly constructed conditions.
+C. Existing mathematical simulations: controlled ground-truth validation.
+
+Make A the main new evidence. Do not combine their denominators or call all three real-world deployments. In A, true drift onset, affected group, and no-drift status are generally unknown. Report observed changes, disagreement, coverage, and outcome associations. Do not call every year transition a true drift or report detection accuracy without external ground truth. An outcome audit is not a perfect ground-truth drift detector.
+
+Use label-blind input monitoring and independent, prespecified outcome evaluation. Keep actual subgroup TPR/FPR/accuracy and denominators alongside disparities. Pre-existing performance gaps and changes in those gaps are different. Do not infer discrimination, causality, or bias removal from input alerts.
+
+Fit models, encoders, bins, feature selection, and thresholds only on historical development roles. Freeze groups/features before evaluation; retain unsupported groups visibly. Handle nominal categories appropriately. Record and test zero/missing groups, new categories, unequal counts, constant features, bin tails, and missing data.
+
+Apply the same declared horizon and error budget to compared methods. Recalculate required permutation resolution for the full number of tests/features/groups/looks, including combined channels. Preserve plus-one p-values and conservative stopping. Never reuse a fresh 5% budget indefinitely or treat the union of several separately controlled monitors as one 5%-controlled system.
+
+Row-wise exchangeability is not guaranteed by a real timestamp. Choose and justify household/student/cluster-level handling where needed. If a valid reference distribution is unavailable, label that analysis descriptive instead of retaining an unjustified guarantee. Empirical sanity checks do not prove theoretical calibration.
+
+Use complete streams or appropriate independent clusters as uncertainty units. Repeated splits of one finite dataset are conditional repeats, not independent populations. Same-period randomized controls are constructed checks, not certified naturally stationary periods. For natural time comparisons with few cohorts, show the actual limited evidence rather than generating fake statistical precision. Any sampling-only change experiment must be separately labelled semi-synthetic.
+
+## 7. Produce useful, traceable figures
+
+Make a compact new figure set based only on completed runs, not predicted outcomes:
+1. Real-data sources, periods, and subgroup sample counts.
+2. Aggregate versus subgroup observed distribution changes over genuine years/cohorts.
+3. Matched accumulated PSI versus accumulated KS, with coverage and computation cost.
+4. Coverage versus waiting/data age, including insufficient-evidence cases and the age-cap variant if completed.
+5. Actual subgroup prediction performance and gaps on held-out real records.
+6. Input alerts versus outcome deterioration, with uncertain/unassessable cases visible.
+7. Separately labelled calibration/control results where valid.
+
+Do not force a figure when the data cannot answer its question. Include no-shift/tie/negative findings, all prespecified groups and settings, and proper uncertainty. Select illustrative cases by a declared rule rather than the most dramatic result. Report practical magnitudes alongside p-values. Do not confuse any alert with correct group localization.
+
+Export each figure as SVG, vector PDF, 300-dpi PNG, source CSV, and a manifest tracing data hashes, role splits, configuration, seeds, source revision, plotting code, and execution time. Clearly label observed public data, constructed replay, or simulation. Check render readability; use meaningful group names rather than unexplained A/B codes. Do not create graph images with generative AI or alter raw data to improve appearance.
+
+## 8. Keep human decisions and explanations real
+
+Maintain records/AI_USE.md and prompt/response logs. Log actual student decisions only after I make them; do not invent approvals or backdate a research log. Public data was collected by its provider, not by me. Distinguish source-data provenance from who designed, coded, verified, and interpreted the analysis.
+
+Create short technical learning notes in basic English explaining each new method, dataset, and graph. Include one worked example I can verify, definitions of axes/denominators, what the code measures, and questions I should be able to answer. Label these notes AI-assisted; they are not my final scientific interpretation.
+
+Prepare mentor-review checkpoints and a list of results requiring human interpretation. Do not write a first-person paper or official research-plan amendment pretending to be my independent work. Record the technical changes so my mentor and I can decide how to document them.
+
+## 9. Deliver in stages before 26 October
+
+Priorities: matched accumulated-KS comparison; one sound temporal public-data study; a second compact observed-data check; then the age-cap extension only if it is justified and manageable. Do not let a website redesign or broad literature hunt consume the remaining time. Target a main-results freeze by 20 October, leaving 21–25 October for verification, my writing, mentor review, and presentation preparation.
+
+Use new folders such as docs/revision3/, configs/revision3/, results/raw/revision3/, and figures/revision3/. Deliver data cards, executable configurations, tested source, matched comparison tables, provenance, factual result tables, limitations, and plain-English technical notes. Reuse existing infrastructure rather than rewrite everything.
+
+Start now with repository inspection, relevant source reading, public-data access/schema/support checks, and the matched-KS implementation/tests. Do not inspect held-out comparison results to choose a favourable study. Then show me ONE consolidated plan containing the feasible datasets, exact periods/groups/labels, proposed methods, independence assumptions, compute estimate, and candidate contribution. Pause for my/mentor's methodological approval before freezing and running the main new evaluation. Do not ask repeatedly about minor coding choices.
+
+At each milestone report what actually changed, which commands ran, which tests passed or failed, where outputs were saved, and the main limitation. If no new method is justified, say that plainly and finish the strongest honest empirical study rather than manufacture novelty.

@@ -1,0 +1,32 @@
+acs/2015/csv_pma.zip 13836761 8d7acacbf600dd91132043fcafe8523d026479a18748fbdb0a7d341745235f2a 18.67 seconds
+acs/2016/csv_pma.zip 13953984 d8e1b1a36c02d495c86528fe78279d10d0c4d3d2af0adfeb24ff0ef8830f8849 34.28 seconds
+acs/2017/csv_pma.zip 13764767 9473b33a4cacaf223de376b595f809b808d3ae898b8a50858537686d3ba789c4 33.59 seconds
+acs/2018/csv_pma.zip 12508569 2b08c2d74bd8b782f8d9c602947bd0c058387b5b2c5a2237ad9fefc671a00570 13.9 seconds
+acs/2019/csv_pma.zip 12607466 b3d986e2d872eee455bf0c983ac916073dea9281c3781933bc40cffe1dc6447a 13.69 seconds
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision3/fetch_sources.py", line 28, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision3/fetch_sources.py", line 20, in main
+    while chunk:=response.read(1024*1024):f.write(chunk)
+                 ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/usr/lib64/python3.14/http/client.py", line 488, in read
+    return self._read_chunked(amt)
+           ~~~~~~~~~~~~~~~~~~^^^^^
+  File "/usr/lib64/python3.14/http/client.py", line 621, in _read_chunked
+    while (chunk_left := self._get_chunk_left()) is not None:
+                         ~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib64/python3.14/http/client.py", line 603, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/usr/lib64/python3.14/http/client.py", line 554, in _read_next_chunk_size
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/lib64/python3.14/socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib64/python3.14/ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.14/ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyboardInterrupt

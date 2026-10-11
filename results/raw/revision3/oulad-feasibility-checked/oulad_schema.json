@@ -1,0 +1,83 @@
+{
+  "source": {
+    "source_url": "https://archive.ics.uci.edu/static/public/349/open+university+learning+analytics+dataset.zip",
+    "accessed_utc": "2026-10-11T15:06:29.455912+00:00",
+    "download_method": "leading ZIP members; full-archive hash unavailable by design",
+    "prefix_bytes": 1546601,
+    "prefix_sha256": "5fc25d13e835d5c86300c8ec7d47591fc41568aaf06178e51ebc0f61c0c690f2",
+    "members": [
+      {
+        "name": "courses.csv",
+        "offset": 1324,
+        "compressed_bytes": 159,
+        "bytes": 526,
+        "crc32": 2289001821,
+        "sha256": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75"
+      },
+      {
+        "name": "studentInfo.csv",
+        "offset": 1033173,
+        "compressed_bytes": 306059,
+        "bytes": 3462763,
+        "crc32": 3217310957,
+        "sha256": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60"
+      },
+      {
+        "name": "studentRegistration.csv",
+        "offset": 1339277,
+        "compressed_bytes": 207271,
+        "bytes": 1132550,
+        "crc32": 2218423696,
+        "sha256": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47"
+      }
+    ],
+    "purpose": "compact schema/support study; no clicks/assessment values read as research features"
+  },
+  "member_hashes": {
+    "courses.csv": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+    "studentInfo.csv": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60",
+    "studentRegistration.csv": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47"
+  },
+  "raw_rows": 32593,
+  "unique_students": 28785,
+  "repeat_enrolment_rows": 3808,
+  "selected_module": "BBB",
+  "selection_rule": "alphabetically first module with >=500 in each 2013J/2014J, chosen without outcomes",
+  "pair_raw_rows": 4529,
+  "pair_repeated_students": 47,
+  "excluded_day0_ineligible": 650,
+  "excluded_later_repeat_rows": 44,
+  "retained_rows": 3835,
+  "unknown_results": [],
+  "missing": {
+    "gender": 0,
+    "disability": 0,
+    "num_of_prev_attempts": 0,
+    "studied_credits": 0,
+    "final_result": 0
+  },
+  "presentations": [
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013J",
+      "module_presentation_length": 268
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014J",
+      "module_presentation_length": 262
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2013B",
+      "module_presentation_length": 240
+    },
+    {
+      "code_module": "BBB",
+      "code_presentation": "2014B",
+      "module_presentation_length": 234
+    }
+  ],
+  "role_lineage_sha256": "77e517dd40bad2c1ce152b4bdad5f78976ea5400fb7591ce4a0e39c7ab322415",
+  "time_basis": "presentation year and J season; day 0 prediction; no invented timestamps; no VLE clicks read"
+}

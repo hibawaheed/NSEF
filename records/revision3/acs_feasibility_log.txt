@@ -1,0 +1,5 @@
+ACS 2015 68785 raw; 57131 age 16–90; {'calibration': 14422, 'design': 14320, 'fit': 28389}
+ACS 2016 69126 raw; 57403 age 16–90; {'audit': 28813, 'reference': 28590}
+ACS 2017 69635 raw; 57806 age 16–90; {'audit': 29306, 'monitor': 28500}
+ACS 2018 70131 raw; 58502 age 16–90; {'audit': 29228, 'monitor': 29274}
+ACS 2019 70579 raw; 59139 age 16–90; {'audit': 29569, 'monitor': 29570}

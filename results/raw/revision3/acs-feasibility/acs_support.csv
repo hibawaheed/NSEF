@@ -1,0 +1,481 @@
+dataset,period,role,group,level,n,positive_n,negative_n,support50,support100,label_support20
+ACS_MA,2015,all_eligible,Everyone,aggregate,57131,34096,23035,True,True,True
+ACS_MA,2015,all_eligible,SEX=1,single,27311,17039,10272,True,True,True
+ACS_MA,2015,all_eligible,SEX=2,single,29820,17057,12763,True,True,True
+ACS_MA,2015,all_eligible,RAC1P=1,single,47286,28482,18804,True,True,True
+ACS_MA,2015,all_eligible,RAC1P=2,single,3317,1772,1545,True,True,True
+ACS_MA,2015,all_eligible,RAC1P=3,single,58,27,31,True,False,True
+ACS_MA,2015,all_eligible,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2015,all_eligible,RAC1P=5,single,40,20,20,False,False,True
+ACS_MA,2015,all_eligible,RAC1P=6,single,3475,2122,1353,True,True,True
+ACS_MA,2015,all_eligible,RAC1P=7,single,14,9,5,False,False,False
+ACS_MA,2015,all_eligible,RAC1P=8,single,1803,1004,799,True,True,True
+ACS_MA,2015,all_eligible,RAC1P=9,single,1137,659,478,True,True,True
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=1,intersection,22577,14282,8295,True,True,True
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=2,intersection,1599,807,792,True,True,True
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=3,intersection,33,17,16,False,False,False
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=5,intersection,25,16,9,False,False,False
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=6,intersection,1611,1082,529,True,True,True
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=7,intersection,4,2,2,False,False,False
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=8,intersection,876,502,374,True,True,True
+ACS_MA,2015,all_eligible,SEX=1 & RAC1P=9,intersection,586,331,255,True,True,True
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=1,intersection,24709,14200,10509,True,True,True
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=2,intersection,1718,965,753,True,True,True
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=3,intersection,25,10,15,False,False,False
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=5,intersection,15,4,11,False,False,False
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=6,intersection,1864,1040,824,True,True,True
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=7,intersection,10,7,3,False,False,False
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=8,intersection,927,502,425,True,True,True
+ACS_MA,2015,all_eligible,SEX=2 & RAC1P=9,intersection,551,328,223,True,True,True
+ACS_MA,2015,calibration,Everyone,aggregate,14422,8601,5821,True,True,True
+ACS_MA,2015,calibration,SEX=1,single,6883,4282,2601,True,True,True
+ACS_MA,2015,calibration,SEX=2,single,7539,4319,3220,True,True,True
+ACS_MA,2015,calibration,RAC1P=1,single,11890,7156,4734,True,True,True
+ACS_MA,2015,calibration,RAC1P=2,single,843,453,390,True,True,True
+ACS_MA,2015,calibration,RAC1P=3,single,19,7,12,False,False,False
+ACS_MA,2015,calibration,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2015,calibration,RAC1P=5,single,14,8,6,False,False,False
+ACS_MA,2015,calibration,RAC1P=6,single,874,542,332,True,True,True
+ACS_MA,2015,calibration,RAC1P=7,single,3,2,1,False,False,False
+ACS_MA,2015,calibration,RAC1P=8,single,460,252,208,True,True,True
+ACS_MA,2015,calibration,RAC1P=9,single,319,181,138,True,True,True
+ACS_MA,2015,calibration,SEX=1 & RAC1P=1,intersection,5694,3598,2096,True,True,True
+ACS_MA,2015,calibration,SEX=1 & RAC1P=2,intersection,391,194,197,True,True,True
+ACS_MA,2015,calibration,SEX=1 & RAC1P=3,intersection,11,4,7,False,False,False
+ACS_MA,2015,calibration,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2015,calibration,SEX=1 & RAC1P=5,intersection,8,5,3,False,False,False
+ACS_MA,2015,calibration,SEX=1 & RAC1P=6,intersection,390,267,123,True,True,True
+ACS_MA,2015,calibration,SEX=1 & RAC1P=7,intersection,1,0,1,False,False,False
+ACS_MA,2015,calibration,SEX=1 & RAC1P=8,intersection,225,118,107,True,True,True
+ACS_MA,2015,calibration,SEX=1 & RAC1P=9,intersection,163,96,67,True,True,True
+ACS_MA,2015,calibration,SEX=2 & RAC1P=1,intersection,6196,3558,2638,True,True,True
+ACS_MA,2015,calibration,SEX=2 & RAC1P=2,intersection,452,259,193,True,True,True
+ACS_MA,2015,calibration,SEX=2 & RAC1P=3,intersection,8,3,5,False,False,False
+ACS_MA,2015,calibration,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2015,calibration,SEX=2 & RAC1P=5,intersection,6,3,3,False,False,False
+ACS_MA,2015,calibration,SEX=2 & RAC1P=6,intersection,484,275,209,True,True,True
+ACS_MA,2015,calibration,SEX=2 & RAC1P=7,intersection,2,2,0,False,False,False
+ACS_MA,2015,calibration,SEX=2 & RAC1P=8,intersection,235,134,101,True,True,True
+ACS_MA,2015,calibration,SEX=2 & RAC1P=9,intersection,156,85,71,True,True,True
+ACS_MA,2015,design,Everyone,aggregate,14320,8522,5798,True,True,True
+ACS_MA,2015,design,SEX=1,single,6834,4234,2600,True,True,True
+ACS_MA,2015,design,SEX=2,single,7486,4288,3198,True,True,True
+ACS_MA,2015,design,RAC1P=1,single,11811,7086,4725,True,True,True
+ACS_MA,2015,design,RAC1P=2,single,868,481,387,True,True,True
+ACS_MA,2015,design,RAC1P=3,single,12,5,7,False,False,False
+ACS_MA,2015,design,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2015,design,RAC1P=5,single,8,2,6,False,False,False
+ACS_MA,2015,design,RAC1P=6,single,840,521,319,True,True,True
+ACS_MA,2015,design,RAC1P=7,single,10,6,4,False,False,False
+ACS_MA,2015,design,RAC1P=8,single,478,259,219,True,True,True
+ACS_MA,2015,design,RAC1P=9,single,293,162,131,True,True,True
+ACS_MA,2015,design,SEX=1 & RAC1P=1,intersection,5624,3542,2082,True,True,True
+ACS_MA,2015,design,SEX=1 & RAC1P=2,intersection,405,209,196,True,True,True
+ACS_MA,2015,design,SEX=1 & RAC1P=3,intersection,8,3,5,False,False,False
+ACS_MA,2015,design,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2015,design,SEX=1 & RAC1P=5,intersection,3,2,1,False,False,False
+ACS_MA,2015,design,SEX=1 & RAC1P=6,intersection,402,268,134,True,True,True
+ACS_MA,2015,design,SEX=1 & RAC1P=7,intersection,3,2,1,False,False,False
+ACS_MA,2015,design,SEX=1 & RAC1P=8,intersection,248,135,113,True,True,True
+ACS_MA,2015,design,SEX=1 & RAC1P=9,intersection,141,73,68,True,True,True
+ACS_MA,2015,design,SEX=2 & RAC1P=1,intersection,6187,3544,2643,True,True,True
+ACS_MA,2015,design,SEX=2 & RAC1P=2,intersection,463,272,191,True,True,True
+ACS_MA,2015,design,SEX=2 & RAC1P=3,intersection,4,2,2,False,False,False
+ACS_MA,2015,design,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2015,design,SEX=2 & RAC1P=5,intersection,5,0,5,False,False,False
+ACS_MA,2015,design,SEX=2 & RAC1P=6,intersection,438,253,185,True,True,True
+ACS_MA,2015,design,SEX=2 & RAC1P=7,intersection,7,4,3,False,False,False
+ACS_MA,2015,design,SEX=2 & RAC1P=8,intersection,230,124,106,True,True,True
+ACS_MA,2015,design,SEX=2 & RAC1P=9,intersection,152,89,63,True,True,True
+ACS_MA,2015,fit,Everyone,aggregate,28389,16973,11416,True,True,True
+ACS_MA,2015,fit,SEX=1,single,13594,8523,5071,True,True,True
+ACS_MA,2015,fit,SEX=2,single,14795,8450,6345,True,True,True
+ACS_MA,2015,fit,RAC1P=1,single,23585,14240,9345,True,True,True
+ACS_MA,2015,fit,RAC1P=2,single,1606,838,768,True,True,True
+ACS_MA,2015,fit,RAC1P=3,single,27,15,12,False,False,False
+ACS_MA,2015,fit,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2015,fit,RAC1P=5,single,18,10,8,False,False,False
+ACS_MA,2015,fit,RAC1P=6,single,1761,1059,702,True,True,True
+ACS_MA,2015,fit,RAC1P=7,single,1,1,0,False,False,False
+ACS_MA,2015,fit,RAC1P=8,single,865,493,372,True,True,True
+ACS_MA,2015,fit,RAC1P=9,single,525,316,209,True,True,True
+ACS_MA,2015,fit,SEX=1 & RAC1P=1,intersection,11259,7142,4117,True,True,True
+ACS_MA,2015,fit,SEX=1 & RAC1P=2,intersection,803,404,399,True,True,True
+ACS_MA,2015,fit,SEX=1 & RAC1P=3,intersection,14,10,4,False,False,False
+ACS_MA,2015,fit,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2015,fit,SEX=1 & RAC1P=5,intersection,14,9,5,False,False,False
+ACS_MA,2015,fit,SEX=1 & RAC1P=6,intersection,819,547,272,True,True,True
+ACS_MA,2015,fit,SEX=1 & RAC1P=7,intersection,0,0,0,False,False,False
+ACS_MA,2015,fit,SEX=1 & RAC1P=8,intersection,403,249,154,True,True,True
+ACS_MA,2015,fit,SEX=1 & RAC1P=9,intersection,282,162,120,True,True,True
+ACS_MA,2015,fit,SEX=2 & RAC1P=1,intersection,12326,7098,5228,True,True,True
+ACS_MA,2015,fit,SEX=2 & RAC1P=2,intersection,803,434,369,True,True,True
+ACS_MA,2015,fit,SEX=2 & RAC1P=3,intersection,13,5,8,False,False,False
+ACS_MA,2015,fit,SEX=2 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2015,fit,SEX=2 & RAC1P=5,intersection,4,1,3,False,False,False
+ACS_MA,2015,fit,SEX=2 & RAC1P=6,intersection,942,512,430,True,True,True
+ACS_MA,2015,fit,SEX=2 & RAC1P=7,intersection,1,1,0,False,False,False
+ACS_MA,2015,fit,SEX=2 & RAC1P=8,intersection,462,244,218,True,True,True
+ACS_MA,2015,fit,SEX=2 & RAC1P=9,intersection,243,154,89,True,True,True
+ACS_MA,2016,all_eligible,Everyone,aggregate,57403,34625,22778,True,True,True
+ACS_MA,2016,all_eligible,SEX=1,single,27316,17222,10094,True,True,True
+ACS_MA,2016,all_eligible,SEX=2,single,30087,17403,12684,True,True,True
+ACS_MA,2016,all_eligible,RAC1P=1,single,47591,28885,18706,True,True,True
+ACS_MA,2016,all_eligible,RAC1P=2,single,3393,1898,1495,True,True,True
+ACS_MA,2016,all_eligible,RAC1P=3,single,63,36,27,True,False,True
+ACS_MA,2016,all_eligible,RAC1P=4,single,2,1,1,False,False,False
+ACS_MA,2016,all_eligible,RAC1P=5,single,39,22,17,False,False,False
+ACS_MA,2016,all_eligible,RAC1P=6,single,3425,2067,1358,True,True,True
+ACS_MA,2016,all_eligible,RAC1P=7,single,24,16,8,False,False,False
+ACS_MA,2016,all_eligible,RAC1P=8,single,1597,919,678,True,True,True
+ACS_MA,2016,all_eligible,RAC1P=9,single,1269,781,488,True,True,True
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=1,intersection,22601,14400,8201,True,True,True
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=2,intersection,1627,879,748,True,True,True
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=3,intersection,33,15,18,False,False,False
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=4,intersection,1,0,1,False,False,False
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=5,intersection,21,13,8,False,False,False
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=6,intersection,1608,1056,552,True,True,True
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=7,intersection,14,12,2,False,False,False
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=8,intersection,802,457,345,True,True,True
+ACS_MA,2016,all_eligible,SEX=1 & RAC1P=9,intersection,609,390,219,True,True,True
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=1,intersection,24990,14485,10505,True,True,True
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=2,intersection,1766,1019,747,True,True,True
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=3,intersection,30,21,9,False,False,False
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=5,intersection,18,9,9,False,False,False
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=6,intersection,1817,1011,806,True,True,True
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=7,intersection,10,4,6,False,False,False
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=8,intersection,795,462,333,True,True,True
+ACS_MA,2016,all_eligible,SEX=2 & RAC1P=9,intersection,660,391,269,True,True,True
+ACS_MA,2016,audit,Everyone,aggregate,28813,17395,11418,True,True,True
+ACS_MA,2016,audit,SEX=1,single,13672,8638,5034,True,True,True
+ACS_MA,2016,audit,SEX=2,single,15141,8757,6384,True,True,True
+ACS_MA,2016,audit,RAC1P=1,single,23856,14496,9360,True,True,True
+ACS_MA,2016,audit,RAC1P=2,single,1727,998,729,True,True,True
+ACS_MA,2016,audit,RAC1P=3,single,29,18,11,False,False,False
+ACS_MA,2016,audit,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2016,audit,RAC1P=5,single,20,11,9,False,False,False
+ACS_MA,2016,audit,RAC1P=6,single,1719,1026,693,True,True,True
+ACS_MA,2016,audit,RAC1P=7,single,10,6,4,False,False,False
+ACS_MA,2016,audit,RAC1P=8,single,773,426,347,True,True,True
+ACS_MA,2016,audit,RAC1P=9,single,678,413,265,True,True,True
+ACS_MA,2016,audit,SEX=1 & RAC1P=1,intersection,11289,7220,4069,True,True,True
+ACS_MA,2016,audit,SEX=1 & RAC1P=2,intersection,830,459,371,True,True,True
+ACS_MA,2016,audit,SEX=1 & RAC1P=3,intersection,13,6,7,False,False,False
+ACS_MA,2016,audit,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2016,audit,SEX=1 & RAC1P=5,intersection,12,7,5,False,False,False
+ACS_MA,2016,audit,SEX=1 & RAC1P=6,intersection,815,526,289,True,True,True
+ACS_MA,2016,audit,SEX=1 & RAC1P=7,intersection,4,3,1,False,False,False
+ACS_MA,2016,audit,SEX=1 & RAC1P=8,intersection,377,210,167,True,True,True
+ACS_MA,2016,audit,SEX=1 & RAC1P=9,intersection,332,207,125,True,True,True
+ACS_MA,2016,audit,SEX=2 & RAC1P=1,intersection,12567,7276,5291,True,True,True
+ACS_MA,2016,audit,SEX=2 & RAC1P=2,intersection,897,539,358,True,True,True
+ACS_MA,2016,audit,SEX=2 & RAC1P=3,intersection,16,12,4,False,False,False
+ACS_MA,2016,audit,SEX=2 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2016,audit,SEX=2 & RAC1P=5,intersection,8,4,4,False,False,False
+ACS_MA,2016,audit,SEX=2 & RAC1P=6,intersection,904,500,404,True,True,True
+ACS_MA,2016,audit,SEX=2 & RAC1P=7,intersection,6,3,3,False,False,False
+ACS_MA,2016,audit,SEX=2 & RAC1P=8,intersection,396,216,180,True,True,True
+ACS_MA,2016,audit,SEX=2 & RAC1P=9,intersection,346,206,140,True,True,True
+ACS_MA,2016,reference,Everyone,aggregate,28590,17230,11360,True,True,True
+ACS_MA,2016,reference,SEX=1,single,13644,8584,5060,True,True,True
+ACS_MA,2016,reference,SEX=2,single,14946,8646,6300,True,True,True
+ACS_MA,2016,reference,RAC1P=1,single,23735,14389,9346,True,True,True
+ACS_MA,2016,reference,RAC1P=2,single,1666,900,766,True,True,True
+ACS_MA,2016,reference,RAC1P=3,single,34,18,16,False,False,False
+ACS_MA,2016,reference,RAC1P=4,single,1,0,1,False,False,False
+ACS_MA,2016,reference,RAC1P=5,single,19,11,8,False,False,False
+ACS_MA,2016,reference,RAC1P=6,single,1706,1041,665,True,True,True
+ACS_MA,2016,reference,RAC1P=7,single,14,10,4,False,False,False
+ACS_MA,2016,reference,RAC1P=8,single,824,493,331,True,True,True
+ACS_MA,2016,reference,RAC1P=9,single,591,368,223,True,True,True
+ACS_MA,2016,reference,SEX=1 & RAC1P=1,intersection,11312,7180,4132,True,True,True
+ACS_MA,2016,reference,SEX=1 & RAC1P=2,intersection,797,420,377,True,True,True
+ACS_MA,2016,reference,SEX=1 & RAC1P=3,intersection,20,9,11,False,False,False
+ACS_MA,2016,reference,SEX=1 & RAC1P=4,intersection,1,0,1,False,False,False
+ACS_MA,2016,reference,SEX=1 & RAC1P=5,intersection,9,6,3,False,False,False
+ACS_MA,2016,reference,SEX=1 & RAC1P=6,intersection,793,530,263,True,True,True
+ACS_MA,2016,reference,SEX=1 & RAC1P=7,intersection,10,9,1,False,False,False
+ACS_MA,2016,reference,SEX=1 & RAC1P=8,intersection,425,247,178,True,True,True
+ACS_MA,2016,reference,SEX=1 & RAC1P=9,intersection,277,183,94,True,True,True
+ACS_MA,2016,reference,SEX=2 & RAC1P=1,intersection,12423,7209,5214,True,True,True
+ACS_MA,2016,reference,SEX=2 & RAC1P=2,intersection,869,480,389,True,True,True
+ACS_MA,2016,reference,SEX=2 & RAC1P=3,intersection,14,9,5,False,False,False
+ACS_MA,2016,reference,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2016,reference,SEX=2 & RAC1P=5,intersection,10,5,5,False,False,False
+ACS_MA,2016,reference,SEX=2 & RAC1P=6,intersection,913,511,402,True,True,True
+ACS_MA,2016,reference,SEX=2 & RAC1P=7,intersection,4,1,3,False,False,False
+ACS_MA,2016,reference,SEX=2 & RAC1P=8,intersection,399,246,153,True,True,True
+ACS_MA,2016,reference,SEX=2 & RAC1P=9,intersection,314,185,129,True,True,True
+ACS_MA,2017,all_eligible,Everyone,aggregate,57806,35025,22781,True,True,True
+ACS_MA,2017,all_eligible,SEX=1,single,27685,17619,10066,True,True,True
+ACS_MA,2017,all_eligible,SEX=2,single,30121,17406,12715,True,True,True
+ACS_MA,2017,all_eligible,RAC1P=1,single,47952,29237,18715,True,True,True
+ACS_MA,2017,all_eligible,RAC1P=2,single,3400,1957,1443,True,True,True
+ACS_MA,2017,all_eligible,RAC1P=3,single,63,34,29,True,False,True
+ACS_MA,2017,all_eligible,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2017,all_eligible,RAC1P=5,single,27,13,14,False,False,False
+ACS_MA,2017,all_eligible,RAC1P=6,single,3588,2169,1419,True,True,True
+ACS_MA,2017,all_eligible,RAC1P=7,single,13,8,5,False,False,False
+ACS_MA,2017,all_eligible,RAC1P=8,single,1537,901,636,True,True,True
+ACS_MA,2017,all_eligible,RAC1P=9,single,1226,706,520,True,True,True
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=1,intersection,23029,14781,8248,True,True,True
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=2,intersection,1574,914,660,True,True,True
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=3,intersection,33,16,17,False,False,False
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=5,intersection,10,5,5,False,False,False
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=6,intersection,1657,1073,584,True,True,True
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=7,intersection,3,2,1,False,False,False
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=8,intersection,767,461,306,True,True,True
+ACS_MA,2017,all_eligible,SEX=1 & RAC1P=9,intersection,612,367,245,True,True,True
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=1,intersection,24923,14456,10467,True,True,True
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=2,intersection,1826,1043,783,True,True,True
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=3,intersection,30,18,12,False,False,False
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=5,intersection,17,8,9,False,False,False
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=6,intersection,1931,1096,835,True,True,True
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=7,intersection,10,6,4,False,False,False
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=8,intersection,770,440,330,True,True,True
+ACS_MA,2017,all_eligible,SEX=2 & RAC1P=9,intersection,614,339,275,True,True,True
+ACS_MA,2017,audit,Everyone,aggregate,29306,17800,11506,True,True,True
+ACS_MA,2017,audit,SEX=1,single,14065,8966,5099,True,True,True
+ACS_MA,2017,audit,SEX=2,single,15241,8834,6407,True,True,True
+ACS_MA,2017,audit,RAC1P=1,single,24182,14750,9432,True,True,True
+ACS_MA,2017,audit,RAC1P=2,single,1768,1037,731,True,True,True
+ACS_MA,2017,audit,RAC1P=3,single,33,23,10,False,False,False
+ACS_MA,2017,audit,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2017,audit,RAC1P=5,single,14,8,6,False,False,False
+ACS_MA,2017,audit,RAC1P=6,single,1844,1140,704,True,True,True
+ACS_MA,2017,audit,RAC1P=7,single,9,6,3,False,False,False
+ACS_MA,2017,audit,RAC1P=8,single,825,483,342,True,True,True
+ACS_MA,2017,audit,RAC1P=9,single,631,353,278,True,True,True
+ACS_MA,2017,audit,SEX=1 & RAC1P=1,intersection,11622,7462,4160,True,True,True
+ACS_MA,2017,audit,SEX=1 & RAC1P=2,intersection,820,484,336,True,True,True
+ACS_MA,2017,audit,SEX=1 & RAC1P=3,intersection,17,12,5,False,False,False
+ACS_MA,2017,audit,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2017,audit,SEX=1 & RAC1P=5,intersection,7,4,3,False,False,False
+ACS_MA,2017,audit,SEX=1 & RAC1P=6,intersection,866,572,294,True,True,True
+ACS_MA,2017,audit,SEX=1 & RAC1P=7,intersection,3,2,1,False,False,False
+ACS_MA,2017,audit,SEX=1 & RAC1P=8,intersection,415,243,172,True,True,True
+ACS_MA,2017,audit,SEX=1 & RAC1P=9,intersection,315,187,128,True,True,True
+ACS_MA,2017,audit,SEX=2 & RAC1P=1,intersection,12560,7288,5272,True,True,True
+ACS_MA,2017,audit,SEX=2 & RAC1P=2,intersection,948,553,395,True,True,True
+ACS_MA,2017,audit,SEX=2 & RAC1P=3,intersection,16,11,5,False,False,False
+ACS_MA,2017,audit,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2017,audit,SEX=2 & RAC1P=5,intersection,7,4,3,False,False,False
+ACS_MA,2017,audit,SEX=2 & RAC1P=6,intersection,978,568,410,True,True,True
+ACS_MA,2017,audit,SEX=2 & RAC1P=7,intersection,6,4,2,False,False,False
+ACS_MA,2017,audit,SEX=2 & RAC1P=8,intersection,410,240,170,True,True,True
+ACS_MA,2017,audit,SEX=2 & RAC1P=9,intersection,316,166,150,True,True,True
+ACS_MA,2017,monitor,Everyone,aggregate,28500,17225,11275,True,True,True
+ACS_MA,2017,monitor,SEX=1,single,13620,8653,4967,True,True,True
+ACS_MA,2017,monitor,SEX=2,single,14880,8572,6308,True,True,True
+ACS_MA,2017,monitor,RAC1P=1,single,23770,14487,9283,True,True,True
+ACS_MA,2017,monitor,RAC1P=2,single,1632,920,712,True,True,True
+ACS_MA,2017,monitor,RAC1P=3,single,30,11,19,False,False,False
+ACS_MA,2017,monitor,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2017,monitor,RAC1P=5,single,13,5,8,False,False,False
+ACS_MA,2017,monitor,RAC1P=6,single,1744,1029,715,True,True,True
+ACS_MA,2017,monitor,RAC1P=7,single,4,2,2,False,False,False
+ACS_MA,2017,monitor,RAC1P=8,single,712,418,294,True,True,True
+ACS_MA,2017,monitor,RAC1P=9,single,595,353,242,True,True,True
+ACS_MA,2017,monitor,SEX=1 & RAC1P=1,intersection,11407,7319,4088,True,True,True
+ACS_MA,2017,monitor,SEX=1 & RAC1P=2,intersection,754,430,324,True,True,True
+ACS_MA,2017,monitor,SEX=1 & RAC1P=3,intersection,16,4,12,False,False,False
+ACS_MA,2017,monitor,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2017,monitor,SEX=1 & RAC1P=5,intersection,3,1,2,False,False,False
+ACS_MA,2017,monitor,SEX=1 & RAC1P=6,intersection,791,501,290,True,True,True
+ACS_MA,2017,monitor,SEX=1 & RAC1P=7,intersection,0,0,0,False,False,False
+ACS_MA,2017,monitor,SEX=1 & RAC1P=8,intersection,352,218,134,True,True,True
+ACS_MA,2017,monitor,SEX=1 & RAC1P=9,intersection,297,180,117,True,True,True
+ACS_MA,2017,monitor,SEX=2 & RAC1P=1,intersection,12363,7168,5195,True,True,True
+ACS_MA,2017,monitor,SEX=2 & RAC1P=2,intersection,878,490,388,True,True,True
+ACS_MA,2017,monitor,SEX=2 & RAC1P=3,intersection,14,7,7,False,False,False
+ACS_MA,2017,monitor,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2017,monitor,SEX=2 & RAC1P=5,intersection,10,4,6,False,False,False
+ACS_MA,2017,monitor,SEX=2 & RAC1P=6,intersection,953,528,425,True,True,True
+ACS_MA,2017,monitor,SEX=2 & RAC1P=7,intersection,4,2,2,False,False,False
+ACS_MA,2017,monitor,SEX=2 & RAC1P=8,intersection,360,200,160,True,True,True
+ACS_MA,2017,monitor,SEX=2 & RAC1P=9,intersection,298,173,125,True,True,True
+ACS_MA,2018,all_eligible,Everyone,aggregate,58502,35414,23088,True,True,True
+ACS_MA,2018,all_eligible,SEX=1,single,28123,17744,10379,True,True,True
+ACS_MA,2018,all_eligible,SEX=2,single,30379,17670,12709,True,True,True
+ACS_MA,2018,all_eligible,RAC1P=1,single,48214,29256,18958,True,True,True
+ACS_MA,2018,all_eligible,RAC1P=2,single,3359,1938,1421,True,True,True
+ACS_MA,2018,all_eligible,RAC1P=3,single,69,39,30,True,False,True
+ACS_MA,2018,all_eligible,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2018,all_eligible,RAC1P=5,single,36,19,17,False,False,False
+ACS_MA,2018,all_eligible,RAC1P=6,single,3903,2369,1534,True,True,True
+ACS_MA,2018,all_eligible,RAC1P=7,single,22,17,5,False,False,False
+ACS_MA,2018,all_eligible,RAC1P=8,single,1663,1017,646,True,True,True
+ACS_MA,2018,all_eligible,RAC1P=9,single,1235,758,477,True,True,True
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=1,intersection,23196,14748,8448,True,True,True
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=2,intersection,1676,904,772,True,True,True
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=3,intersection,27,13,14,False,False,False
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=5,intersection,20,10,10,False,False,False
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=6,intersection,1791,1184,607,True,True,True
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=7,intersection,10,8,2,False,False,False
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=8,intersection,846,531,315,True,True,True
+ACS_MA,2018,all_eligible,SEX=1 & RAC1P=9,intersection,556,345,211,True,True,True
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=1,intersection,25018,14508,10510,True,True,True
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=2,intersection,1683,1034,649,True,True,True
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=3,intersection,42,26,16,False,False,False
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=5,intersection,16,9,7,False,False,False
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=6,intersection,2112,1185,927,True,True,True
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=7,intersection,12,9,3,False,False,False
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=8,intersection,817,486,331,True,True,True
+ACS_MA,2018,all_eligible,SEX=2 & RAC1P=9,intersection,679,413,266,True,True,True
+ACS_MA,2018,audit,Everyone,aggregate,29228,17688,11540,True,True,True
+ACS_MA,2018,audit,SEX=1,single,14088,8844,5244,True,True,True
+ACS_MA,2018,audit,SEX=2,single,15140,8844,6296,True,True,True
+ACS_MA,2018,audit,RAC1P=1,single,24060,14619,9441,True,True,True
+ACS_MA,2018,audit,RAC1P=2,single,1734,983,751,True,True,True
+ACS_MA,2018,audit,RAC1P=3,single,30,15,15,False,False,False
+ACS_MA,2018,audit,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2018,audit,RAC1P=5,single,27,13,14,False,False,False
+ACS_MA,2018,audit,RAC1P=6,single,1971,1209,762,True,True,True
+ACS_MA,2018,audit,RAC1P=7,single,15,12,3,False,False,False
+ACS_MA,2018,audit,RAC1P=8,single,781,465,316,True,True,True
+ACS_MA,2018,audit,RAC1P=9,single,610,372,238,True,True,True
+ACS_MA,2018,audit,SEX=1 & RAC1P=1,intersection,11607,7359,4248,True,True,True
+ACS_MA,2018,audit,SEX=1 & RAC1P=2,intersection,858,452,406,True,True,True
+ACS_MA,2018,audit,SEX=1 & RAC1P=3,intersection,13,5,8,False,False,False
+ACS_MA,2018,audit,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2018,audit,SEX=1 & RAC1P=5,intersection,17,9,8,False,False,False
+ACS_MA,2018,audit,SEX=1 & RAC1P=6,intersection,909,598,311,True,True,True
+ACS_MA,2018,audit,SEX=1 & RAC1P=7,intersection,9,8,1,False,False,False
+ACS_MA,2018,audit,SEX=1 & RAC1P=8,intersection,410,250,160,True,True,True
+ACS_MA,2018,audit,SEX=1 & RAC1P=9,intersection,265,163,102,True,True,True
+ACS_MA,2018,audit,SEX=2 & RAC1P=1,intersection,12453,7260,5193,True,True,True
+ACS_MA,2018,audit,SEX=2 & RAC1P=2,intersection,876,531,345,True,True,True
+ACS_MA,2018,audit,SEX=2 & RAC1P=3,intersection,17,10,7,False,False,False
+ACS_MA,2018,audit,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2018,audit,SEX=2 & RAC1P=5,intersection,10,4,6,False,False,False
+ACS_MA,2018,audit,SEX=2 & RAC1P=6,intersection,1062,611,451,True,True,True
+ACS_MA,2018,audit,SEX=2 & RAC1P=7,intersection,6,4,2,False,False,False
+ACS_MA,2018,audit,SEX=2 & RAC1P=8,intersection,371,215,156,True,True,True
+ACS_MA,2018,audit,SEX=2 & RAC1P=9,intersection,345,209,136,True,True,True
+ACS_MA,2018,monitor,Everyone,aggregate,29274,17726,11548,True,True,True
+ACS_MA,2018,monitor,SEX=1,single,14035,8900,5135,True,True,True
+ACS_MA,2018,monitor,SEX=2,single,15239,8826,6413,True,True,True
+ACS_MA,2018,monitor,RAC1P=1,single,24154,14637,9517,True,True,True
+ACS_MA,2018,monitor,RAC1P=2,single,1625,955,670,True,True,True
+ACS_MA,2018,monitor,RAC1P=3,single,39,24,15,False,False,False
+ACS_MA,2018,monitor,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2018,monitor,RAC1P=5,single,9,6,3,False,False,False
+ACS_MA,2018,monitor,RAC1P=6,single,1932,1160,772,True,True,True
+ACS_MA,2018,monitor,RAC1P=7,single,7,5,2,False,False,False
+ACS_MA,2018,monitor,RAC1P=8,single,882,552,330,True,True,True
+ACS_MA,2018,monitor,RAC1P=9,single,625,386,239,True,True,True
+ACS_MA,2018,monitor,SEX=1 & RAC1P=1,intersection,11589,7389,4200,True,True,True
+ACS_MA,2018,monitor,SEX=1 & RAC1P=2,intersection,818,452,366,True,True,True
+ACS_MA,2018,monitor,SEX=1 & RAC1P=3,intersection,14,8,6,False,False,False
+ACS_MA,2018,monitor,SEX=1 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2018,monitor,SEX=1 & RAC1P=5,intersection,3,1,2,False,False,False
+ACS_MA,2018,monitor,SEX=1 & RAC1P=6,intersection,882,586,296,True,True,True
+ACS_MA,2018,monitor,SEX=1 & RAC1P=7,intersection,1,0,1,False,False,False
+ACS_MA,2018,monitor,SEX=1 & RAC1P=8,intersection,436,281,155,True,True,True
+ACS_MA,2018,monitor,SEX=1 & RAC1P=9,intersection,291,182,109,True,True,True
+ACS_MA,2018,monitor,SEX=2 & RAC1P=1,intersection,12565,7248,5317,True,True,True
+ACS_MA,2018,monitor,SEX=2 & RAC1P=2,intersection,807,503,304,True,True,True
+ACS_MA,2018,monitor,SEX=2 & RAC1P=3,intersection,25,16,9,False,False,False
+ACS_MA,2018,monitor,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2018,monitor,SEX=2 & RAC1P=5,intersection,6,5,1,False,False,False
+ACS_MA,2018,monitor,SEX=2 & RAC1P=6,intersection,1050,574,476,True,True,True
+ACS_MA,2018,monitor,SEX=2 & RAC1P=7,intersection,6,5,1,False,False,False
+ACS_MA,2018,monitor,SEX=2 & RAC1P=8,intersection,446,271,175,True,True,True
+ACS_MA,2018,monitor,SEX=2 & RAC1P=9,intersection,334,204,130,True,True,True
+ACS_MA,2019,all_eligible,Everyone,aggregate,59139,36505,22634,True,True,True
+ACS_MA,2019,all_eligible,SEX=1,single,28437,18399,10038,True,True,True
+ACS_MA,2019,all_eligible,SEX=2,single,30702,18106,12596,True,True,True
+ACS_MA,2019,all_eligible,RAC1P=1,single,48591,29985,18606,True,True,True
+ACS_MA,2019,all_eligible,RAC1P=2,single,3304,1920,1384,True,True,True
+ACS_MA,2019,all_eligible,RAC1P=3,single,71,36,35,True,False,True
+ACS_MA,2019,all_eligible,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2019,all_eligible,RAC1P=5,single,24,8,16,False,False,False
+ACS_MA,2019,all_eligible,RAC1P=6,single,4136,2676,1460,True,True,True
+ACS_MA,2019,all_eligible,RAC1P=7,single,37,26,11,False,False,False
+ACS_MA,2019,all_eligible,RAC1P=8,single,1642,1009,633,True,True,True
+ACS_MA,2019,all_eligible,RAC1P=9,single,1333,844,489,True,True,True
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=1,intersection,23414,15205,8209,True,True,True
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=2,intersection,1602,906,696,True,True,True
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=3,intersection,36,20,16,False,False,False
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=5,intersection,13,4,9,False,False,False
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=6,intersection,1904,1322,582,True,True,True
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=7,intersection,16,12,4,False,False,False
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=8,intersection,805,528,277,True,True,True
+ACS_MA,2019,all_eligible,SEX=1 & RAC1P=9,intersection,647,402,245,True,True,True
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=1,intersection,25177,14780,10397,True,True,True
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=2,intersection,1702,1014,688,True,True,True
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=3,intersection,35,16,19,False,False,False
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=5,intersection,11,4,7,False,False,False
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=6,intersection,2232,1354,878,True,True,True
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=7,intersection,21,14,7,False,False,False
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=8,intersection,837,481,356,True,True,True
+ACS_MA,2019,all_eligible,SEX=2 & RAC1P=9,intersection,686,442,244,True,True,True
+ACS_MA,2019,audit,Everyone,aggregate,29569,18229,11340,True,True,True
+ACS_MA,2019,audit,SEX=1,single,14288,9222,5066,True,True,True
+ACS_MA,2019,audit,SEX=2,single,15281,9007,6274,True,True,True
+ACS_MA,2019,audit,RAC1P=1,single,24268,14946,9322,True,True,True
+ACS_MA,2019,audit,RAC1P=2,single,1651,966,685,True,True,True
+ACS_MA,2019,audit,RAC1P=3,single,32,20,12,False,False,False
+ACS_MA,2019,audit,RAC1P=4,single,0,0,0,False,False,False
+ACS_MA,2019,audit,RAC1P=5,single,11,3,8,False,False,False
+ACS_MA,2019,audit,RAC1P=6,single,2053,1328,725,True,True,True
+ACS_MA,2019,audit,RAC1P=7,single,17,11,6,False,False,False
+ACS_MA,2019,audit,RAC1P=8,single,843,516,327,True,True,True
+ACS_MA,2019,audit,RAC1P=9,single,694,439,255,True,True,True
+ACS_MA,2019,audit,SEX=1 & RAC1P=1,intersection,11729,7553,4176,True,True,True
+ACS_MA,2019,audit,SEX=1 & RAC1P=2,intersection,821,477,344,True,True,True
+ACS_MA,2019,audit,SEX=1 & RAC1P=3,intersection,15,11,4,False,False,False
+ACS_MA,2019,audit,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2019,audit,SEX=1 & RAC1P=5,intersection,6,2,4,False,False,False
+ACS_MA,2019,audit,SEX=1 & RAC1P=6,intersection,950,679,271,True,True,True
+ACS_MA,2019,audit,SEX=1 & RAC1P=7,intersection,8,5,3,False,False,False
+ACS_MA,2019,audit,SEX=1 & RAC1P=8,intersection,427,287,140,True,True,True
+ACS_MA,2019,audit,SEX=1 & RAC1P=9,intersection,332,208,124,True,True,True
+ACS_MA,2019,audit,SEX=2 & RAC1P=1,intersection,12539,7393,5146,True,True,True
+ACS_MA,2019,audit,SEX=2 & RAC1P=2,intersection,830,489,341,True,True,True
+ACS_MA,2019,audit,SEX=2 & RAC1P=3,intersection,17,9,8,False,False,False
+ACS_MA,2019,audit,SEX=2 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2019,audit,SEX=2 & RAC1P=5,intersection,5,1,4,False,False,False
+ACS_MA,2019,audit,SEX=2 & RAC1P=6,intersection,1103,649,454,True,True,True
+ACS_MA,2019,audit,SEX=2 & RAC1P=7,intersection,9,6,3,False,False,False
+ACS_MA,2019,audit,SEX=2 & RAC1P=8,intersection,416,229,187,True,True,True
+ACS_MA,2019,audit,SEX=2 & RAC1P=9,intersection,362,231,131,True,True,True
+ACS_MA,2019,monitor,Everyone,aggregate,29570,18276,11294,True,True,True
+ACS_MA,2019,monitor,SEX=1,single,14149,9177,4972,True,True,True
+ACS_MA,2019,monitor,SEX=2,single,15421,9099,6322,True,True,True
+ACS_MA,2019,monitor,RAC1P=1,single,24323,15039,9284,True,True,True
+ACS_MA,2019,monitor,RAC1P=2,single,1653,954,699,True,True,True
+ACS_MA,2019,monitor,RAC1P=3,single,39,16,23,False,False,False
+ACS_MA,2019,monitor,RAC1P=4,single,1,1,0,False,False,False
+ACS_MA,2019,monitor,RAC1P=5,single,13,5,8,False,False,False
+ACS_MA,2019,monitor,RAC1P=6,single,2083,1348,735,True,True,True
+ACS_MA,2019,monitor,RAC1P=7,single,20,15,5,False,False,False
+ACS_MA,2019,monitor,RAC1P=8,single,799,493,306,True,True,True
+ACS_MA,2019,monitor,RAC1P=9,single,639,405,234,True,True,True
+ACS_MA,2019,monitor,SEX=1 & RAC1P=1,intersection,11685,7652,4033,True,True,True
+ACS_MA,2019,monitor,SEX=1 & RAC1P=2,intersection,781,429,352,True,True,True
+ACS_MA,2019,monitor,SEX=1 & RAC1P=3,intersection,21,9,12,False,False,False
+ACS_MA,2019,monitor,SEX=1 & RAC1P=4,intersection,0,0,0,False,False,False
+ACS_MA,2019,monitor,SEX=1 & RAC1P=5,intersection,7,2,5,False,False,False
+ACS_MA,2019,monitor,SEX=1 & RAC1P=6,intersection,954,643,311,True,True,True
+ACS_MA,2019,monitor,SEX=1 & RAC1P=7,intersection,8,7,1,False,False,False
+ACS_MA,2019,monitor,SEX=1 & RAC1P=8,intersection,378,241,137,True,True,True
+ACS_MA,2019,monitor,SEX=1 & RAC1P=9,intersection,315,194,121,True,True,True
+ACS_MA,2019,monitor,SEX=2 & RAC1P=1,intersection,12638,7387,5251,True,True,True
+ACS_MA,2019,monitor,SEX=2 & RAC1P=2,intersection,872,525,347,True,True,True
+ACS_MA,2019,monitor,SEX=2 & RAC1P=3,intersection,18,7,11,False,False,False
+ACS_MA,2019,monitor,SEX=2 & RAC1P=4,intersection,1,1,0,False,False,False
+ACS_MA,2019,monitor,SEX=2 & RAC1P=5,intersection,6,3,3,False,False,False
+ACS_MA,2019,monitor,SEX=2 & RAC1P=6,intersection,1129,705,424,True,True,True
+ACS_MA,2019,monitor,SEX=2 & RAC1P=7,intersection,12,8,4,False,False,False
+ACS_MA,2019,monitor,SEX=2 & RAC1P=8,intersection,421,252,169,True,True,True
+ACS_MA,2019,monitor,SEX=2 & RAC1P=9,intersection,324,211,113,True,True,True

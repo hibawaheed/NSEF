@@ -1,0 +1,4 @@
+revision2 1820 raw runs, hashes and source snapshot verified
+revision2-public 120 raw runs, hashes and source snapshot verified
+10 figure tables, manifests, images and combined PDF pages verified
+5 preselected smoke streams reproduced all numerical results in main evaluation (timings and repeat-count metadata excluded)

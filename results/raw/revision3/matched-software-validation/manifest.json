@@ -1,0 +1,58 @@
+{
+  "purpose": "software validation only, no main evaluation or new detection-rate estimate",
+  "preselected_sources": [
+    "null_n250_0000.json.gz",
+    "grid_n250_s0.05_m1.4_0000.json.gz",
+    "correlation_0000.json.gz"
+  ],
+  "checks": [
+    {
+      "source": "null_n250_0000.json.gz",
+      "source_sha256": "72921a317e0337ffa6b21e341567877af7e097d18047265dcda97d76d3d0cedb",
+      "checks": "all accumulation counts, support, block starts, PSI scores and PSI alert group sets match v2",
+      "matched_tests": 180,
+      "runtime_seconds_with_tracemalloc": 0.8194197220000206,
+      "tracemalloc_engine_peak_bytes": 2951896
+    },
+    {
+      "source": "grid_n250_s0.05_m1.4_0000.json.gz",
+      "source_sha256": "1670d1d23ac0f38b568af7e04165f23c08f806b05fa6c1e2eaef9c60f8b9b1f6",
+      "checks": "all accumulation counts, support, block starts, PSI scores and PSI alert group sets match v2",
+      "matched_tests": 180,
+      "runtime_seconds_with_tracemalloc": 0.9885395880010037,
+      "tracemalloc_engine_peak_bytes": 2871075
+    },
+    {
+      "source": "correlation_0000.json.gz",
+      "source_sha256": "8e47ae62dfb89e3a45114731b97f9a13c95387649186c1493e9e258a85104997",
+      "checks": "all accumulation counts, support, block starts, PSI scores and PSI alert group sets match v2",
+      "matched_tests": 360,
+      "runtime_seconds_with_tracemalloc": 2.0375333709998813,
+      "tracemalloc_engine_peak_bytes": 5643113
+    }
+  ],
+  "files": {
+    "null_n250_0000.json.gz": "c11bde7edea8c0cc4376f4d0e80a63014a9c360dc09209a7d74d0300f88d4ac9",
+    "grid_n250_s0.05_m1.4_0000.json.gz": "f16670c8dd1686e45a6b4973de7c0e3bb97f6839979d26867b3d9434a6ec9c50",
+    "correlation_0000.json.gz": "9f41df23936730048cf878600b7c17f9b58358fe8ced420fb4cc8e68db69a585",
+    "test_cost_validation.csv": "fb81709be79e239d656d9d29488ba94fc95c5a9f8660a20ae437941901e4d62e"
+  },
+  "source_snapshot_sha256": "a240ae9b34c2e1adea44f8ce1113a466151e0996b67d7a4245f584709a50854c",
+  "git_base": "7fffe23b59f59fd0003718ecdbe76b775a055297",
+  "environment": {
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "versions": {
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2",
+      "pytest": "9.1.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "wall_seconds": 3.948938088000432,
+  "peak_process_rss_kib": 162776,
+  "memory_caveat": "Linux peak RSS covers complete validation process; tracemalloc may miss native allocations. Logical PSI histogram versus KS raw-array bytes are not total deployment memory."
+}

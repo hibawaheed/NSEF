@@ -1,0 +1,21 @@
+{
+  "kind": "pre-evaluation schema/support check; no algorithmic result",
+  "created_utc": "2026-10-11T15:11:30.645301+00:00",
+  "source_files": {
+    "results/raw/revision3/acs-feasibility/acs_support.csv": "ed33a60cc63edf2625ed8bc378afe66d34b8334786e662b508a4087c0be161c3",
+    "results/raw/revision3/oulad-feasibility-checked/oulad_support.csv": "76fb47f6afb6d5270ff5619808c51aa521a63960612614155edaaea2b0467cb7"
+  },
+  "plot_code_sha256": "05a4b4dba0533e2456fb344f20bb3b7a4838059edf1a1da63594e3b57999167c",
+  "git_base": "7fffe23b59f59fd0003718ecdbe76b775a055297",
+  "configuration": "proposed roles, seed string r3-role-31721 / r3-oulad-31721; see support script and review plan",
+  "files": {
+    "01_support_feasibility.png": "df8d22241dee2faf2b4ab1bf9c6812cd89a5a89ba986129f0e9ef2203e0938fd",
+    "01_support_feasibility.pdf": "0066ec2cec2713ab0f30e94626e0daf8f8ec15790375e48f8e2352d6e619c028",
+    "01_support_feasibility.svg": "37c7d9f5ea5acaef66600d584b13d21f235ae8ee3289438995b77605248e1612",
+    "01_support_feasibility.csv": "e9f19c689c8a9f45c6c0550aa5914af03ac737db68c67fd80c4c45c9d7a3b587"
+  },
+  "uncertainty": "none: complete selected-file counts, not an estimated population probability",
+  "source_check_scripts": {
+    "inspect_support.py": "dfd31d61d527fc0820d62704ce370b24c2a2476296c3917a36480e7760c26908"
+  }
+}

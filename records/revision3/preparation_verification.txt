@@ -1,0 +1,9 @@
+2662 pre-revision tracked files remain byte-identical
+synthetic-v1 360 original raw hashes and source snapshot verified
+adult-v1 80 original raw hashes and source snapshot verified
+acs-feasibility saved files verified
+oulad-feasibility-checked saved files verified
+matched-software-validation saved files verified
+Feasibility figure, CSV, plot code and source tables verified; PNG >=300dpi nominal
+Main evaluation approval remains false; proposed control permutation resolution sufficient
+Local ACS archives and compact original OULAD source bytes verified

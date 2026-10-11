@@ -1,0 +1,6 @@
+{
+  "status": "FAILED_NOT_A_RESULT_SET",
+  "reason": "UCI missing-date token ? initially unparsed; fixed in a fresh directory",
+  "replacement": "../oulad-feasibility-checked",
+  "log": "records/revision3/oulad_feasibility_log.txt"
+}

@@ -1,0 +1,11 @@
+# Revision 3 AI-use and contribution record
+
+Date:11 October 2026. This is a factual assistant work record, not a backdated student laboratory notebook.
+
+**User contribution evidenced in this conversation:** supplied the revision specification; selected improvement of existing SubPSI rather than a new project; required genuine public records, a matched accumulated-KS comparison, careful provenance, honest negative results and one mentor-review plan; supplied the26 October 2026deadline; explicitly required approval before the main evaluation and separate permission for push/deploy/submit/purchase. Earlier permissions to publish or proceed without a protocol do not override that latest gate.
+
+**AI-assisted contributions completed:** read the full specification; inspected the current repository and authenticated read-only remote metadata; created the local revision branch; inventoried existing evidence; checked old tests/results/figures; implemented the metadata-only matched scheduler and PSI/KS evaluation; authored new tests and a small v2 software replay; retrieved public archives/documentation; inspected source schemas/roles/support; identified the Folktables filter/label discrepancy and Census field changes; identified/handled OULAD missing-date encoding and repeated students; reviewed methods in specified and closely related prior work; generated the feasibility support chart; wrote technical data cards, learning notes, logs and a proposed consolidated plan.
+
+**Not completed or claimed:** student-made research choices, mentor approval, independent authorship, new main evaluation, new drift accuracy on natural data, new algorithmic novelty, final paper/poster/abstract, website revision, GitHub publication, deployment or competition submission for revision3. Raw records are original third-party records; mathematical simulation replays are explicitly labelled software validation.
+
+All proposed roles/filters/model choices in the plan are assistant proposals pending review. No student decision or approval is inferred from their existence in code/configuration. The student should explain and check the work and author submission materials themselves. This record does not certify fair eligibility or compliance.
