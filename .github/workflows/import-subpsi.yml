@@ -1,0 +1,11 @@
+name: Import prepared SubPSI project
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  prepared:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Await verified project bundle
+        run: echo 'Import is being prepared; no project data changed.'
