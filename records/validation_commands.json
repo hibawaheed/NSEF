@@ -1,0 +1,188 @@
+[
+  {
+    "started_at_utc": "2026-10-11T11:34:19.793956+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.3590153230002215
+  },
+  {
+    "started_at_utc": "2026-10-11T11:34:40.881034+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/audit_original.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.3744412729997748
+  },
+  {
+    "started_at_utc": "2026-10-11T11:34:41.328021+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/run_synthetic.py",
+      "--config",
+      "configs/smoke.json",
+      "--out",
+      "results/raw/smoke-v1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.334399466999912
+  },
+  {
+    "started_at_utc": "2026-10-11T11:35:22.533774+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/run_adult.py",
+      "--config",
+      "configs/adult.json",
+      "--out",
+      "results/raw/adult-v1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 13.017165681000279
+  },
+  {
+    "started_at_utc": "2026-10-11T11:36:22.117048+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/summarize_diagnostics.py",
+      "--runs",
+      "results/raw/adult-v1",
+      "--out",
+      "results/summary/adult-v1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.743698319000032
+  },
+  {
+    "started_at_utc": "2026-10-11T11:35:22.546077+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/run_synthetic.py",
+      "--config",
+      "configs/synthetic.json",
+      "--out",
+      "results/raw/synthetic-v1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 96.87447624600009
+  },
+  {
+    "started_at_utc": "2026-10-11T11:37:09.566464+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/summarize_diagnostics.py",
+      "--runs",
+      "results/raw/synthetic-v1",
+      "--out",
+      "results/summary/synthetic-v1"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.249274931999935
+  },
+  {
+    "started_at_utc": "2026-10-11T11:37:10.741810+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/make_figures.py",
+      "--synthetic",
+      "results/raw/synthetic-v1",
+      "--adult",
+      "results/raw/adult-v1",
+      "--out",
+      "figures/report"
+    ],
+    "exit_code": 1,
+    "elapsed_seconds": 2.7445920240002124
+  },
+  {
+    "started_at_utc": "2026-10-11T11:45:33.792643+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.2817980809995788
+  },
+  {
+    "started_at_utc": "2026-10-11T11:46:06.139441+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/make_figures.py",
+      "--synthetic",
+      "results/raw/synthetic-v1",
+      "--adult",
+      "results/raw/adult-v1",
+      "--out",
+      "figures/report"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.377474615999745
+  },
+  {
+    "started_at_utc": "2026-10-11T11:46:46.702072+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/validate_assets.py",
+      "--figures",
+      "figures/report"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.28230578300008347
+  },
+  {
+    "started_at_utc": "2026-10-11T11:48:08.181313+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/make_figures.py",
+      "--synthetic",
+      "results/raw/synthetic-v1",
+      "--adult",
+      "results/raw/adult-v1",
+      "--out",
+      "figures/report"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.481541645000107
+  },
+  {
+    "started_at_utc": "2026-10-11T11:50:46.773613+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/validate_assets.py",
+      "--figures",
+      "figures/report"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.2731041449997065
+  },
+  {
+    "started_at_utc": "2026-10-11T11:50:47.080746+00:00",
+    "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF",
+    "argv": [
+      "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python",
+      "scripts/check_replay.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.020904719000100158
+  }
+]

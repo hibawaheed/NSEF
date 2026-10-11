@@ -1,0 +1,14 @@
+{
+  "caption": "Each point is one fixed method, not a threshold-swept ROC curve. Detection averages the 12 equally weighted group-share/shift cells at the stated batch size (480 streams); false alarms use 250 null streams. Real-world case frequencies may differ. Point overlap is possible; all values are in the CSV.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "f85109bc2526235399dce22a89b823c276ed253105997e44d0228600a0b38471",
+  "formats": {
+    "pdf": "8b14f21e8373060beb2bdf5a61b003740f75ba3eeed7d981491c51d2964d1a87",
+    "png": "df6ae29f0c7fbd828be0e10c4e3c09439bc11ae78e9b95f013b065434e49112a",
+    "svg": "6be4cd483e9ed5ec2ab6e43414bcc4cfb8ff715a5d81418d6af9b00ccfca0f71"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "A high alert rate is useful only with a low false-alarm cost"
+}

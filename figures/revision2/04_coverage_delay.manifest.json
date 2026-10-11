@@ -1,0 +1,14 @@
+{
+  "caption": "Batch n=250, shift=1.4 SD; 40 streams per share. Ordinary tests require 50 records per batch; accumulation requires 100 per block. Undetected targets are assigned the 15-batch horizon, not dropped. Delay intervals describe a restricted mean; coverage uses Wilson intervals.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "f8e3db58077d6ed08f4cecfdafff9836d0b1faa1d042e146f97d6a834ae91c7b",
+  "formats": {
+    "pdf": "2aac4dcf15d19e22e6da6eaf96cd101b6af632abea3c8140a3e7dc22d08d93bb",
+    "png": "edf6126f5c2721938aba81df2d770ecb8580abc999e1e7eeebe996c3a9059b0c",
+    "svg": "a4c6c9d6090cb91226ca2579809cb78b41e3f77da844ef55821d0eefd9127895"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "More small-group coverage can come with a delay"
+}

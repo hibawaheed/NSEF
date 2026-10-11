@@ -1,0 +1,11 @@
+scenario,method,estimate,low,high,n,k,interval
+null,A0,0,0,0.0876216011973,40,0,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+female_hours_tilt,A0,0,0,0.0876216011973,40,0,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+null,A1,0.15,0.0706118771732,0.290723243665,40,6,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+female_hours_tilt,A1,1,0.912378398803,1,40,40,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+null,B0,0,0,0.0876216011973,40,0,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+female_hours_tilt,B0,1,0.912378398803,1,40,40,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+null,B1,0.05,0.0138206673861,0.165038773691,40,2,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+female_hours_tilt,B1,1,0.912378398803,1,40,40,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+null,B2,0.125,0.0545950025095,0.261121198389,40,5,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"
+female_hours_tilt,B2,1,0.912378398803,1,40,40,"95% Wilson, independent run-level indicators (conditional on fixed Adult pool where applicable)"

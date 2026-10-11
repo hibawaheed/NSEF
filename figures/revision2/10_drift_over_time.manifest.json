@@ -1,0 +1,14 @@
+{
+  "caption": "First saved repeat (0) from each named scenario, selected by index rather than outcome. Shading begins at the batch-6 intervention. Filled markers: corrected alerts; hollow: no alert. These are two illustrative trajectories, not detection-rate estimates. Panel y-scales differ; all observations are generated.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "114a90e0083a750446bc4abcad7529719f8ccaf4b209f684c5f276d2ca1ddcb7",
+  "formats": {
+    "pdf": "5ef07d00a50633892ed41d2a89c21cd403713eac7a05eb5a553f735049bd63fb",
+    "png": "ede18e6b199f92d7786c5c15a484fe9644ce0dbc1bc3961d73f58f558924fb6f",
+    "svg": "18f46eafab276666cca15749697b617ca21023b82270e45289dd9f773ba48619"
+  },
+  "kind": "Illustration \u00b7 two saved generated streams",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Watch a hidden shift appear over time"
+}

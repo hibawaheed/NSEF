@@ -1,0 +1,150 @@
+{"started_at_utc": "2026-10-11T11:34:19.793956+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "-m", "pytest", "-q"], "exit_code": 0, "elapsed_seconds": 1.3590153230002215}
+...................................                                      [100%]
+35 passed in 0.94s
+
+{"started_at_utc": "2026-10-11T11:34:40.881034+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/audit_original.py"], "exit_code": 0, "elapsed_seconds": 0.3744412729997748}
+{
+  "original_outlier_fixture": {
+    "reference": [
+      0.0,
+      1.0,
+      2.0,
+      3.0
+    ],
+    "current": [
+      100.0,
+      101.0,
+      102.0,
+      103.0
+    ],
+    "counted_current": 0,
+    "actual_current": 4,
+    "psi": 8.515489752777954
+  },
+  "empty_reference_exception": "IndexError('index -1 is out of bounds for axis 0 with size 0')",
+  "zero_pvalue_fixture": 0.0
+}
+
+{"started_at_utc": "2026-10-11T11:34:41.328021+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/run_synthetic.py", "--config", "configs/smoke.json", "--out", "results/raw/smoke-v1"], "exit_code": 0, "elapsed_seconds": 2.334399466999912}
+S0 1 / 1 0.5s
+S1 1 / 1 0.7s
+S2 1 / 1 1.0s
+S3 1 / 1 1.2s
+S4 1 / 1 1.5s
+S5 1 / 1 1.7s
+{"started_at_utc": "2026-10-11T11:35:22.533774+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/run_adult.py", "--config", "configs/adult.json", "--out", "results/raw/adult-v1"], "exit_code": 0, "elapsed_seconds": 13.017165681000279}
+null 1 / 40 0.2s
+null 10 / 40 1.5s
+null 20 / 40 3.0s
+null 30 / 40 4.5s
+null 40 / 40 6.0s
+female_hours_tilt 1 / 40 6.2s
+female_hours_tilt 10 / 40 7.5s
+female_hours_tilt 20 / 40 9.1s
+female_hours_tilt 30 / 40 10.6s
+female_hours_tilt 40 / 40 12.1s
+{"started_at_utc": "2026-10-11T11:36:22.117048+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/summarize_diagnostics.py", "--runs", "results/raw/adult-v1", "--out", "results/summary/adult-v1"], "exit_code": 0, "elapsed_seconds": 1.743698319000032}
+{
+  "runs": 80,
+  "planned_runs": 80,
+  "failed_runs": 0,
+  "runtime_seconds": 12.089113563999945,
+  "input_comparisons": 5760,
+  "unsupported_comparisons": 0,
+  "minimum_reference_group_n": 662,
+  "minimum_current_group_n": 219,
+  "smallest_outcome_positive_n": 19,
+  "smallest_outcome_negative_n": 177,
+  "label_access": "Detector receives no outcomes. Outcome measurements do not alter alerts/model/reference.",
+  "source_manifest_sha256": "aacd19e8c03e283ab349022386850a954bef3cdf74e2f9565f8e83285d196b42"
+}
+{"started_at_utc": "2026-10-11T11:35:22.546077+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/run_synthetic.py", "--config", "configs/synthetic.json", "--out", "results/raw/synthetic-v1"], "exit_code": 0, "elapsed_seconds": 96.87447624600009}
+S0 1 / 60 0.4s
+S0 10 / 60 3.0s
+S0 20 / 60 5.9s
+S0 30 / 60 8.8s
+S0 40 / 60 11.7s
+S0 50 / 60 14.4s
+S0 60 / 60 17.0s
+S1 1 / 60 17.2s
+S1 10 / 60 19.5s
+S1 20 / 60 22.0s
+S1 30 / 60 24.6s
+S1 40 / 60 27.2s
+S1 50 / 60 29.7s
+S1 60 / 60 32.2s
+S2 1 / 60 32.5s
+S2 10 / 60 34.8s
+S2 20 / 60 37.5s
+S2 30 / 60 40.0s
+S2 40 / 60 42.6s
+S2 50 / 60 45.3s
+S2 60 / 60 47.8s
+S3 1 / 60 48.1s
+S3 10 / 60 50.4s
+S3 20 / 60 53.5s
+S3 30 / 60 56.1s
+S3 40 / 60 58.8s
+S3 50 / 60 61.7s
+S3 60 / 60 64.4s
+S4 1 / 60 64.7s
+S4 10 / 60 67.2s
+S4 20 / 60 70.1s
+S4 30 / 60 72.9s
+S4 40 / 60 75.7s
+S4 50 / 60 78.2s
+S4 60 / 60 80.8s
+S5 1 / 60 81.1s
+S5 10 / 60 83.4s
+S5 20 / 60 86.0s
+S5 30 / 60 88.6s
+S5 40 / 60 91.2s
+S5 50 / 60 93.7s
+S5 60 / 60 96.2s
+{"started_at_utc": "2026-10-11T11:37:09.566464+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/summarize_diagnostics.py", "--runs", "results/raw/synthetic-v1", "--out", "results/summary/synthetic-v1"], "exit_code": 0, "elapsed_seconds": 2.249274931999935}
+{
+  "runs": 360,
+  "planned_runs": 360,
+  "failed_runs": 0,
+  "runtime_seconds": 96.2381411309998,
+  "input_comparisons": 38880,
+  "unsupported_comparisons": 0,
+  "minimum_reference_group_n": 70,
+  "minimum_current_group_n": 63,
+  "smallest_outcome_positive_n": 17,
+  "smallest_outcome_negative_n": 11,
+  "label_access": "Detector receives no outcomes. Outcome measurements do not alter alerts/model/reference.",
+  "source_manifest_sha256": "4f6b5ac16a94f95a385ddd893cb0b82e80c984db1e839353b823fb5a93eb06fc"
+}
+{"started_at_utc": "2026-10-11T11:37:10.741810+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/make_figures.py", "--synthetic", "results/raw/synthetic-v1", "--adult", "results/raw/adult-v1", "--out", "figures/report"], "exit_code": 1, "elapsed_seconds": 2.7445920240002124}
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/make_figures.py", line 212, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/make_figures.py", line 107, in main
+    ax.errorbar(xs+(j-2)*.13,[v['estimate'] for v in vals],yerr=[[v['estimate']-v['low'] for v in vals],[v['high']-v['estimate'] for v in vals]],fmt=['o','s','^','D','P'][j],capsize=2,color=COLORS[method],label=LABELS[method],markersize=5)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/matplotlib/_api/deprecation.py", line 477, in wrapper
+    return func(*args, **kwargs)
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/matplotlib/__init__.py", line 1531, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/matplotlib/axes/_axes.py", line 4232, in errorbar
+    raise ValueError(
+        f"'{dep_axis}err' must not contain negative values")
+ValueError: 'yerr' must not contain negative values
+{"started_at_utc": "2026-10-11T11:45:33.792643+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "-m", "pytest", "-q"], "exit_code": 0, "elapsed_seconds": 1.2817980809995788}
+....................................                                     [100%]
+36 passed in 0.93s
+{"started_at_utc": "2026-10-11T11:46:06.139441+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/make_figures.py", "--synthetic", "results/raw/synthetic-v1", "--adult", "results/raw/adult-v1", "--out", "figures/report"], "exit_code": 0, "elapsed_seconds": 5.377474615999745}
+Exported 11 figures to /home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/figures/report
+{"started_at_utc": "2026-10-11T11:46:46.702072+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/validate_assets.py", "--figures", "figures/report"], "exit_code": 0, "elapsed_seconds": 0.28230578300008347}
+Validated 11 figures: PDF/SVG/300 dpi PNG, CSV, manifest and source-run hashes.
+{"started_at_utc": "2026-10-11T11:48:08.181313+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/make_figures.py", "--synthetic", "results/raw/synthetic-v1", "--adult", "results/raw/adult-v1", "--out", "figures/report"], "exit_code": 0, "elapsed_seconds": 5.481541645000107}
+Exported 11 figures to /home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/figures/report
+{"started_at_utc": "2026-10-11T11:50:46.773613+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/validate_assets.py", "--figures", "figures/report"], "exit_code": 0, "elapsed_seconds": 0.2731041449997065}
+Validated 11 figures: PDF/SVG/300 dpi PNG, CSV, manifest and source-run hashes.
+{"started_at_utc": "2026-10-11T11:50:47.080746+00:00", "cwd": "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF", "argv": ["/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/bin/python", "scripts/check_replay.py"], "exit_code": 0, "elapsed_seconds": 0.020904719000100158}
+All six separately executed smoke/main seed-0 outputs match exactly (excluding runtime).

@@ -1,0 +1,46 @@
+{
+  "alpha": 0.05,
+  "batch_sizes": [
+    250,
+    1000
+  ],
+  "bins": 6,
+  "cancellation": [
+    0,
+    0.5,
+    1
+  ],
+  "grid_repeats": 40,
+  "magnitudes": [
+    0.35,
+    0.7,
+    1.4
+  ],
+  "min_n": 50,
+  "n_audit": 10000,
+  "n_design": 3000,
+  "n_reference": 10000,
+  "notes": "All settings recorded before v2 evaluation. Independent roles and seeds; no hyperparameter search. PSI permutation budget resolves the 2-channel x 20-look x 18-test bound. Outcome min n is per relevant label denominator. No reference updates. Groups fixed: A/B singles and four intersections. Synthetic prediction rules fixed analytically, not fitted ML.",
+  "null_repeats": 250,
+  "onset": 6,
+  "outcome_min_n": 20,
+  "permutations": 15999,
+  "pool_n": 100,
+  "public_repeats_per_split": 20,
+  "public_split_seeds": [
+    31721,
+    48219,
+    75109
+  ],
+  "purpose": "Fixed-design evaluation; v1 results are prior exploratory evidence, not held-out validation",
+  "robustness_repeats": 40,
+  "seed": 1198317,
+  "shares": [
+    0.02,
+    0.05,
+    0.1,
+    0.25
+  ],
+  "version": "2.0",
+  "windows": 20
+}

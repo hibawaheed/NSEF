@@ -1,0 +1,38 @@
+{
+  "ai_role": "AI-assisted implementation and plotting; computed data, no invented measured values",
+  "caption": "Semi-synthetic Adult check, conditional on one deduplicated fixed split, classifier and monitoring pool. Within selected Female/age strata, records with hours>40 receive 6\u00d7 sampling weight after onset. Labels and records are unchanged; composition counts use the original pool proportions. Becker & Kohavi (1996), DOI 10.24432/C5XW20, CC BY 4.0.",
+  "config_hashes": {
+    "adult": "6f2dcab33fdcae368e27d603690e7d43f24cac7acfc68371de6d5c69150404a2",
+    "synthetic": "da7d349a13ed4897f7edc968b23aeecf1f8a4ed567a8218d513b425eaf1648e5"
+  },
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "failed_runs": {
+    "adult": 0,
+    "synthetic": 0
+  },
+  "figure": "10_public_data_check",
+  "files": {
+    "10_public_data_check.csv": "3df2091b015d35c0b88f5c15656b2a936a64d99a032f4ffab1e4a19bad310238",
+    "10_public_data_check.pdf": "4ebaf8f3f65d6ffed3cba447a003dbadb0ed866a3cd99db33df8c8246a2352e6",
+    "10_public_data_check.png": "39d673f13343c77ae6cf35c33e31f5fdd357dee78214a233ed31a8e6d8c8bf00",
+    "10_public_data_check.svg": "b237a4cc6293c3f1ab80e8fa3f0cf9380124761a264575d494b90218b1177a48"
+  },
+  "kind": "empirical",
+  "plot_script_sha256": "ffaebf5b8d82966fe415f5c1ef62406e9fea60cb1f7aaff9903824146dbc7452",
+  "source_run_manifests": {
+    "results/raw/adult-v1/manifest.json": "aacd19e8c03e283ab349022386850a954bef3cdf74e2f9565f8e83285d196b42",
+    "results/raw/synthetic-v1/manifest.json": "4f6b5ac16a94f95a385ddd893cb0b82e80c984db1e839353b823fb5a93eb06fc"
+  }
+}

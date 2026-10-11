@@ -1,0 +1,38 @@
+{
+  "ai_role": "AI-assisted implementation and plotting; computed data, no invented measured values",
+  "caption": "Run-level probability of any post-onset input alert. All methods see the same data and frozen bins. Fixed PSI thresholds are practical baselines, not matched-error tests; Holm families contain 2, 10 and 18 tests.",
+  "config_hashes": {
+    "adult": "6f2dcab33fdcae368e27d603690e7d43f24cac7acfc68371de6d5c69150404a2",
+    "synthetic": "da7d349a13ed4897f7edc968b23aeecf1f8a4ed567a8218d513b425eaf1648e5"
+  },
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "failed_runs": {
+    "adult": 0,
+    "synthetic": 0
+  },
+  "figure": "03_alert_probability",
+  "files": {
+    "03_alert_probability.csv": "732d8b9df43aec664680e452aff6a8085b78810a1aa72caa72574416ba34842a",
+    "03_alert_probability.pdf": "715185ad5f8e6b7a0437a1f0f701094d06dd74d0bede3d46a05c33d9476d0b39",
+    "03_alert_probability.png": "f47e16dbda97ffbd7e4225877a89a752b321d9f5d4fecf9c5d3d930caec74a9b",
+    "03_alert_probability.svg": "7f3c7da3cb0b107120dba17aa53cca667edd5c4577f1e1b3f407add4b4d51c01"
+  },
+  "kind": "empirical",
+  "plot_script_sha256": "ffaebf5b8d82966fe415f5c1ef62406e9fea60cb1f7aaff9903824146dbc7452",
+  "source_run_manifests": {
+    "results/raw/adult-v1/manifest.json": "aacd19e8c03e283ab349022386850a954bef3cdf74e2f9565f8e83285d196b42",
+    "results/raw/synthetic-v1/manifest.json": "4f6b5ac16a94f95a385ddd893cb0b82e80c984db1e839353b823fb5a93eb06fc"
+  }
+}

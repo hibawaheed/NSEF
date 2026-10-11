@@ -1,0 +1,223 @@
+# Revision 2: what was built and what the results mean
+
+AI-assisted research and technical explanation, 11 October 2026. This is evidence for the student's interpretation, not a student-authored submission or a claim of independent invention.
+
+## The answer in plain language
+
+The useful project is now a tested monitoring prototype: compare old and new data, look inside predefined groups and their intersections, keep small groups visible, limit repeated false alarms, and check prediction outcomes separately when labels exist. Subgrouping is implemented. For two binary attributes A and B there are nine views: everyone, A=0, A=1, B=0, B=1 and four A/B intersections.
+
+An example: the overall population can look unchanged if one group's values rise while another's fall. The group comparisons can expose that cancellation. This is a known phenomenon, not a discovery unique to this project. A distribution change also does not automatically mean unfairness or prediction failure.
+
+The revised software adds a complete-stream error budget, count-based accumulation for small groups, a KS comparator, and independent labelled outcome audits. It does not retrain or improve a production prediction model. The synthetic prediction rule is fixed; Adult uses a simple fitted logistic model. “Better detection” below means detecting introduced changes under specified experiments, not improved prediction accuracy or proven real-world fairness.
+
+## What was actually run
+
+The original 440-run exploratory study is preserved. Revision 2 adds **1,820 synthetic streams and 120 conditional Adult resampling streams**, each with 20 batches. The change starts at batch 6. Five software smoke streams are excluded from evidence. All 1,940 evaluation streams completed with zero failures.
+
+The synthetic study contains 500 unchanged streams, 960 grid streams spanning two batch sizes, four affected-group sizes and three shift strengths, 120 cancellation streams, and 240 robustness streams. Adult uses three fixed randomized role splits, each with 20 unchanged and 20 shifted resampling streams. Settings and seeds were recorded before the main evaluation; thresholds were not selected from the results.
+
+Runtime: 1,839.5 seconds synthetic and 212.3 seconds Adult on the local machine. These are execution times, not total development time. Full results, source/configuration snapshots, hashes, counts, decisions and timings are saved.
+
+## Findings, including unfavorable results
+
+### Repeated false alarms improved
+
+Among 250 unchanged streams at each batch size, horizon-controlled intersection PSI raised at least one alert in **10/250 (4.0%)** at n=250 and **12/250 (4.8%)** at n=1,000. Using a fresh 5% group correction at each batch without a horizon budget raised alerts in **105/250 (42.0%)** and **132/250 (52.8%)**. Fixed PSI ≥0.1 alerted in 250/250 and 249/250.
+
+The controlled estimates have 95% Wilson intervals of **2.19–7.21%** and **2.77–8.20%**. Their upper limits exceed 5%; this experiment does not empirically certify a population error rate below 5%. The theoretical finite-horizon bound depends on valid constituent tests, fixed groups, exchangeable independent samples and the declared monitoring horizon. This comparison is within revision 2, not a before/after comparison against v1's different six-batch experiment.
+
+### Accumulation helped, with a time and scope cost
+
+Post-change detection is any alert in the 15 batches beginning at the intervention. The benchmark gives equal weight to its 12 grid cells at each batch size; it is not an estimate of deployment case frequencies.
+
+| Method | n=250: detected / 480 | n=1,000: detected / 480 |
+|---|---:|---:|
+| Overall PSI | 125 (26.0%) | 215 (44.8%) |
+| Intersection PSI | 141 (29.4%) | 327 (68.1%) |
+| Intersection KS | 152 (31.7%) | 347 (72.3%) |
+| Accumulated PSI | 313 (65.2%) | 417 (86.9%) |
+
+Accumulation had the same observed synthetic complete-stream false-alert counts as ordinary intersection PSI: 10/250 and 12/250. This equality is an observation, not a universal property.
+
+Any alert is not the same as identifying the exact affected intersection. At n=250, a 5% target share and a 1.4-SD change, the ordinary method never had 50 target records in a batch and detected that target in **0/40** runs. Accumulation reached its 100-record block requirement and detected the target in **40/40**, with a mean first-alert delay of **7.325 batches after onset**. The 95% Wilson interval for 40/40 is 91.2–100%; observed perfection does not imply population perfection.
+
+For a 2% target under the same settings, accumulated target coverage/detection was only **19/40 (47.5%)**, with a restricted mean delay of **14.175** when missed targets are assigned the 15-batch horizon. Small groups remain difficult. Accumulated blocks can mix pre-change and post-change data, and the result has not been tested against accumulated KS or all other accumulation strategies.
+
+### PSI did not show general superiority
+
+Ordinary intersection KS detected more of the balanced grid than ordinary intersection PSI at both batch sizes. Figure 3 includes every declared grid cell and paired uncertainty. These results do not support a claim that PSI is generally the best statistic. Benefits from subgrouping or additional accumulated observations must not be credited automatically to PSI itself.
+
+### Cancellation works as an example, not a universal advantage
+
+At exact cancellation, intersection PSI, intersection KS and accumulated PSI each alerted in **40/40** runs. Overall PSI alerted in **1/40**; the overall input distribution is unchanged in that scenario, so that aggregate alert is a false alarm for its own target, not successful detection of aggregate drift. With no opposing shift or a half opposing shift, overall PSI also alerted in **40/40**. The striking separation therefore depends on the masking condition; the broader grid is needed to evaluate less idealized cases.
+
+### Input change and prediction deterioration differ
+
+When only the outcome relationship changed, the outcome audit and combined monitor alerted in **40/40** runs; ordinary intersection PSI alerted in **2/40** and never identified the altered target. Its monitored inputs had not changed. With only the correlation structure changed, both marginal input distributions stayed unchanged: the independent outcome audit and combined monitor again alerted in **40/40**, while intersection PSI had **0/40 post-onset** alerts.
+
+When an unused feature shifted, intersection PSI alerted in **40/40**, but the outcome audit alerted in **1/40**. The predictor does not use that shifted feature. Calling every such input alert harmful would be wrong. Outcome tests measure specified deterioration (TPR down, FPR up, accuracy down), not a complete definition of fairness. Immediate labels and known generated interventions make these tests easier than many deployment settings.
+
+### Public data do not establish superiority or real chronological drift
+
+All main input methods alerted in **60/60** introduced Adult shift streams. Overall PSI and the subgroup methods therefore tie on this coarse detection endpoint. On unchanged resampling streams, intersection/accumulated PSI alerted in **5/60 (8.3%)**, overall PSI in **3/60**, intersection KS in **0/60**, and the combined monitor in **3/60**. Figure 8 reports each split separately with wide intervals. The 8.3% estimate must not be hidden or described as observed control below 5%.
+
+These runs reuse a finite historical pool within fixed splits. Their uncertainty is conditional resampling uncertainty, not uncertainty across newly sampled populations. The weighted working-hours intervention is imposed; this is not evidence of real historical drift, causal discrimination, or applicability to Pakistan. No second real dataset has been validated.
+
+## How to read the chart pack
+
+1. **False alarms:** how often a complete unchanged stream triggers an alert. Lower is better here. The 5% line is a target, not an empirical certification.
+2. **Detection map:** how batch size, affected-group size and shift strength alter any-alert rates. Darker means more detections, not automatically more exact localization or fairness.
+3. **PSI versus KS:** positive differences favor PSI; negative differences favor KS. Identical paired outcomes can give zero-width bootstrap intervals without proving equality.
+4. **Coverage and delay:** whether the actual target was ever tested and how long target detection took. Misses remain in the calculation.
+5. **Cancellation:** when opposing shifts defeat an aggregate input monitor. Points are horizontally offset to expose overlap.
+6. **Input and outcomes:** why independent outcome checks matter and why a changed input can be harmless to the fixed predictor.
+7. **Group outcomes:** actual TPR, FPR and accuracy changes inside each group. These are labelled performance measures, not an automatic fairness score.
+8. **Adult splits:** what persisted under three conditional public-data resampling checks, including false alarms.
+9. **Operating tradeoff:** fixed methods' detection and false-alarm costs together. It is not an ROC curve or a threshold search.
+10. **Drift over time:** two first-index saved synthetic streams showing PSI before and after the intervention. Filled markers mark corrected alerts. These illustrations do not replace repeated-run evidence.
+
+Each figure has vector PDF/SVG, 300 dpi PNG, source CSV, caption and provenance hashes. Source tables retain precise values even where plotted percentages are rounded.
+
+## What is defensible to present
+
+A suitable working description is **“Subgroup drift monitoring under limited data: false alarms, coverage and outcome relevance.”** The defensible contribution is an implemented, reproducible evaluation and usable local-data web prototype. The most useful measured result is the coverage/detection tradeoff from accumulating small-group observations while allocating error across time, together with explicit limits of input-only monitoring.
+
+Novelty is **not established**. Subgroup auditing, accumulation, alpha spending and input/performance monitoring have prior art. No aligned comparison to Maximum Subgroup Discrepancy was implemented, and no claim of outperforming it is justified. The current results reject a broad claim that PSI uniquely detects unfairness or is generally superior. A narrow evidence-based engineering/research presentation remains possible; competition eligibility or acceptance has not been determined.
+
+Further research would need a prospectively fixed comparison against accumulated KS and a relevant established subgroup method, another genuinely temporal openly licensed dataset, delayed-label conditions, and tests with dependence. These are recorded next studies, not work represented as already completed. Do not change the current evaluation to hide an unfavorable result.
+
+## Website scope
+
+The website accepts reference/current CSVs, one monitored feature, up to two group columns and optional batches. It runs in a worker in the visitor's browser and generates charts and result exports. Uploaded records are not sent to a server. The website is an input-only analyzer; the research's outcome audits are not implemented as a visitor-facing feature.
+
+Browser and research procedures differ explicitly: the browser reserves 25% of reference rows for bin design and corrects one family across selected groups and batches; the research uses separate design data and an online allocation over 20 batches. Browser results are not interchangeable with research rates. The browser prototype cannot certify fairness or monitor an unlimited stream with a perpetual 5% bound.
+
+
+# Revision 2 implementation and evaluation record
+
+AI-assisted technical documentation, not a student-authored submission. This is a new evaluation after the exploratory v1 results. The original 440 runs and figures remain unchanged.
+
+## Fixed choices before evaluation
+
+Configuration: `configs/revision2.json`. Independent new seeds and generated data; no search for favorable thresholds. Smoke runs are software checks and are excluded from evidence. Synthetic model is a fixed threshold rule with known inputs; it is not a newly trained AI model. Adult uses the existing fixed logistic-regression fitting procedure with three independently randomized role splits. No reference is updated after an alert.
+
+- Twenty batches; change begins at batch 6. Alpha = 0.05 across the declared horizon.
+- 24 grid cells: affected intersection shares 2%, 5%, 10%, 25%; batches of 250 or 1,000; shifts of 0.35, 0.7, 1.4 baseline standard deviations; 40 independent repeats per cell.
+- 500 unchanged streams: 250 at each batch size. These estimate error rates, not tune parameters.
+- Three degrees of cancellation (0, 0.5, 1), plus gradual, missingness, irrelevant-feature, outcome-only, group-composition and correlation-only shifts; 40 repeats each.
+- Total synthetic evaluation: 1,820 independent streams. Public-data check planned: 3 fixed splits × 20 repeats × 2 conditions = 120 conditional resampling streams.
+- Fixed reference n=10,000, independent bin-design n=3,000, separate labelled audit n=10,000. Six requested quantile bins plus explicit missingness. Pseudocount 0.5; minimum 50 records on each side. Counts and support retained, not converted to “no drift.”
+- Main grid changes A=1,B=1. A's prevalence is twice the requested affected-intersection share; B has prevalence 0.5. Cancellation has equal intersections and swaps means at full cancellation.
+
+## Comparisons
+
+Overall PSI and intersection PSI use the same per-test permutation procedure; overall KS and intersection KS use the same KS procedure. Fixed-threshold PSI and per-batch Holm PSI are ablations without horizon-wide control, not equally controlled competitors. Nine fixed views: everyone, four single-attribute views, four intersections.
+
+For a family at each batch, apply Holm and compare with alpha/20. The union bound then bounds any null rejection over the horizon by alpha if each constituent p-value is valid. This does not require independent overlapping-group tests or independent comparisons to the shared reference. It DOES require exchangeable independent samples for each permutation test; arbitrary autocorrelated rows and adaptive value-based sampling are outside this guarantee. The declared 20-batch horizon cannot be reset repeatedly while retaining the same total error guarantee.
+
+The accumulated method buffers each group's observations until its count reaches 100, tests at that batch boundary, then resets that group's buffer. Different groups may test at different boundaries. Triggering uses group membership/counts only, never the monitored feature or labels; each group's current blocks do not overlap. Up to 20 potential tests still receive alpha/20, including skipped opportunities. Both baseline and current block must reach 100. A block may straddle the change point; that dilution is retained as a real delay cost. This is an application of existing ideas, not claimed invention of sample accumulation or alpha spending.
+
+Monte Carlo PSI uses 15,999 hypergeometric count permutations, plus-one p-values and inclusive ties. A conservative shortcut replaces p with 1 only when accumulated extreme draws already force the full-budget p above the largest decision threshold where it is used. This never creates a rejection. Reported p=1 can therefore be censored rather than an exact estimate. Permutation resolution covers the combined channel's smallest cutoff, including correlation's two features.
+
+KS tests nonmissing values using SciPy's exact continuous-null distribution. A separate two-sided Fisher test covers missingness; a fixed factor of 2 combines them. Continuous-null KS p-values are conservative with ties. No tuning of ties or missingness settings on results.
+
+## Outcomes and combined monitoring
+
+A separately scheduled labelled audit tests TPR decrease, FPR increase and accuracy decrease in each of nine views. Denominators of 20 required on each side for the relevant label class. One-sided Fisher tests; Holm over 27 tests and alpha/20 across time. These measure performance deterioration, not a universal definition of unfairness. Actual outcomes are available immediately in these experiments; delayed/missing labels are not validated.
+
+The combined monitor spends alpha/2 on ordinary intersection PSI and alpha/2 on outcome audits; each also spends across the horizon. It is evaluated separately from either standalone channel. A union of standalone alpha=.05 alerts would not inherit a .05 combined bound.
+
+## Estimands and charts
+
+Report complete-stream any-alert probability under no change, post-onset any alert, exact target-intersection recovery, delays including missed detections, support coverage, and subgroup outcome changes. Detection is not scored as success for a channel whose input distributions did not change (outcome-only and correlation-only marginal monitoring). Non-detection is not evidence of no change. Use Wilson intervals for stream-level proportions, and resample paired complete streams for method differences. Small 40-repeat cells have substantial uncertainty. Time-to-alert after onset remains descriptive if an earlier false alert occurred; separately report pre-onset alarms.
+
+Public Adult records are reused across repetitions; intervals and results are conditional on each finite split and are not independent new populations or natural chronological drift. Source: Becker & Kohavi, UCI Adult, CC BY 4.0, https://archive.ics.uci.edu/dataset/2/adult. No additional dataset is needed for this stage; generalization beyond Adult remains unestablished.
+
+## Prior work and novelty boundary
+
+Read: Maximum Subgroup Discrepancy (https://arxiv.org/html/2502.02221v2) already investigates intersectional masking, sample complexity and computational comparison. Statistically Valid Post-Deployment Monitoring (https://arxiv.org/html/2506.05701v3) distinguishes input and performance tests and discusses repeated testing and label efficiency. We do not claim subgroup auditing, sample-size analysis, alpha spending, or two-channel monitoring is new. This contribution is an implemented, reproducible evaluation of this particular monitor and its operating limits. No superiority to MSD is established; reproducing it with aligned targets is separate work. Study results may reject the proposed accumulation benefit.
+
+SciPy API references checked for KS and Fisher test conventions: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.ks_2samp.html and https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.fisher_exact.html.
+
+
+# Prior-work comparison and claim boundary
+
+AI-assisted technical comparison, 11 October 2026. These are verified links to primary sources, not a completed systematic review or a student submission bibliography.
+
+| Existing work | Overlap with this project | What this implementation actually evaluates |
+|---|---|---|
+| Němeček et al., Maximum Subgroup Discrepancy, KDD 2025, https://arxiv.org/html/2502.02221v2 | Intersectional masking, interpretable subgroups, sample complexity, empirical sample-size/runtime comparisons, optimization over group descriptions | Fixed low-order groups, per-feature PSI/KS, 20-batch error spending, count-triggered accumulation, known injected changes and held-out evaluation seeds |
+| Dolin et al., Statistically Valid Post-Deployment Monitoring Should Be Standard for AI-Based Digital Health, https://arxiv.org/html/2506.05701v3 | Separates input change from performance deterioration; statistically valid repeated monitoring; label-efficiency and subgroup tradeoffs | An executable comparison of ordinary versus accumulated subgroup tests, and a separately scheduled labelled audit; no medical deployment or new theorem |
+| Unveiling Group-Specific Distributed Concept Drift, https://arxiv.org/abs/2402.07586 | Group-specific drift and fairness questions | Centralized tabular data; no federated training, distributed detection, or attribution of changes to clients |
+
+PSI, KS, permutation tests, Holm correction, fixed-horizon Bonferroni spending, Fisher tests and accumulating samples are existing methods. The web interface is an implementation contribution, not evidence that the statistical idea is novel. The v2 benchmark can support narrow empirical findings and quantified operating limits. It does not establish a new universal bias detector or superiority to MSD.
+
+A head-to-head MSD implementation is not included because its reported discrepancy/search objective is not interchangeable with fixed-subgroup conditional feature PSI. Such a comparison needs an explicitly aligned target, access to the official implementation/solver and equivalent calibration. This is an outstanding comparison, not evidence that MSD is impractical.
+
+The tested accumulation rule was chosen before v2 results: buffer each fixed group until 100 current observations, assess only if its reference also has 100, and reset that group's buffer after the test. Its contribution must be assessed through coverage, power and delay; adding this rule does not by itself prove novelty.
+
+NSEF context checked: https://nsefpak.com/main/registration/ . The official page emphasizes experimental evidence, comparison with previous work and student ownership. ISEF judging and AI-use references are https://www.societyforscience.org/isef/grand-award/criteria/ and https://www.societyforscience.org/isef/international-rules/rules-for-all-projects/ . Competition eligibility, required paperwork and acceptance are not established by this software exercise. AI assistance must remain distinguishable from the student's own contribution.
+
+
+# Task change log — 11 October 2026
+
+1. Read the two user-supplied handoffs; searched for existing code, tests, figures and source papers. Connected GitHub API confirmed NSEF is empty.
+2. Initialized a local `codex/subpsi-foundation` branch with origin `hibawaheed/NSEF`; no remote write. Preserved original source and hashed inputs.
+3. User clarified to proceed without a protocol gate, record all work, and use freely reusable datasets with attribution. Recorded these choices; no mentor/fair approval inferred.
+4. Added fixed-bin numeric/categorical PSI, explicit missing/unknown handling, positive count smoothing and separate normalization.
+5. Added independent-sample exact/count-randomization tests, nonzero Monte Carlo p-values, multiplicity implementations and a p-value-resolution guard.
+6. Added fixed predefined groups, two-sided support checks, retained unsupported tests and comparison methods A0/A1/B0/B1/B2.
+7. Added synthetic scenarios S0–S5, independent random streams and separated data roles, a fixed logistic classifier, and labelled outcome audits excluded from detection.
+8. Downloaded openly licensed Adult from UCI; recorded CC BY 4.0 attribution and original-file hashes. Added deduplication, disjoint roles, finite-pool semi-synthetic sampling and conditional inference warnings.
+9. Added scientific unit/integration tests and original-code bug fixtures; test outcomes and experiment run results are recorded after execution.
+10. Added figure pipeline and per-figure tables/manifests, analytical planning examples clearly separated from empirical charts.
+11. Added starting-state report, explicit settings, source notes, additions/limitations tracker and AI-use log.
+
+Further validation fixes, measured runtimes and evidence findings are appended as they occur.
+12. Targeted reading of the supplied MSD paper identified overlapping prior contributions (intersectional masking, sample-size tradeoffs and computational evaluation). Flagged the novelty-framing risk to the user; no claim of superiority to MSD is made.
+13. All 35 initial unit/integration tests passed; six smoke runs completed with zero failures. Original-code fixtures reproduced lost outliers, empty-reference failure, and a zero random-permutation p-value.
+14. Completed 360 synthetic and 80 Adult configured runs with zero failures. Runtime recorded in manifests (~96 seconds synthetic, ~12 seconds Adult); setup/download time was much longer and is not experiment compute time.
+15. First plot build exposed floating-point endpoint rounding in a Wilson interval at a 100% rate, which matplotlib rejected as a tiny negative error-bar length. Corrected bounds to include exact 0/1 endpoints and added a regression test. No experiments or estimates changed. Partial failed plot files were moved to task scratch; failure traceback remains in the validation log.
+16. Added locking for concurrent validation-log appends. Main experiment settings were not retuned after viewing results.
+17. Final initial study findings: S2 intersection monitoring detected all changed intersections in 60/60 runs; the calibrated aggregate comparator matched subgroup horizon detection in S1 (60/60) and Adult injection (40/40). Flagged this limit to the user rather than selecting a weaker comparator or changing settings.
+18. Reported outcome-only failure and the 20% complete-stream null false-alert rate for B2 (12/60 six-window streams). These materially limit universal bias-warning and continuous-monitoring claims.
+19. Generated 11 figures with source CSVs, manifests, PDF/SVG/300 dpi PNG, combined PDF and local gallery. Visual review found crowding between two legends and footnotes; increased spacing and added explicit AI-production disclosure. Added visible rate intervals to the detection-delay chart. Numerical CSVs were retained unchanged.
+20. Compared every preselected smoke run with the corresponding main-run seed: all six numerical outputs reproduced exactly, excluding recorded runtime.
+21. Final asset validation passed for all 11 figure manifests, source-run hashes, CSVs and 300 dpi images; the combined vector PDF contains 11 pages. The layout revision left all 11 numerical CSVs byte-identical. Requested the chart PDF open in the app.
+22. Python dependencies were installed only in the task's local virtual environment; the exact versions are pinned. Slow/rejected download attempts were resolved by validating complete wheel SHA-256 hashes against public PyPI metadata before installation. No paid/cloud compute was used.
+23. Packaged the local repository, saved experiment outputs, charts and logs. The original script remains preserved. No remote push or submission was performed.
+24. User requested a public Vercel website with visitor CSV analysis and charts. Read the relevant hosting/deployment guidance and verified connected Vercel account/project access with read-only calls. The user redirected the conversation to research improvements before website implementation; no site/project creation or deployment has occurred.
+25. Reviewed possible research improvements against the saved findings and primary sources: Maximum Subgroup Discrepancy (https://arxiv.org/html/2502.02221v2), statistically valid post-deployment monitoring (https://arxiv.org/abs/2506.05701), NSEF Pakistan guidelines (https://nsefpak.com/main/registration/), and ISEF judging/AI-use guidance (https://www.societyforscience.org/isef/grand-award/criteria/ and https://www.societyforscience.org/isef/international-rules/rules-for-all-projects/). Proposed a matched-false-alarm evaluation of group size, sample size, shift strength and imperfect cancellation; optional sample-count-based accumulation and separate labelled-outcome checks remain unimplemented hypotheses. Subgrouping, sample-size analysis and statistical monitoring already have prior art; novelty remains unestablished. No new runs, changed chart values, or claims of improved performance were made.
+26. User authorized all proposed revisions and renewed the request for a complete change log. Preserved v1 files. Added `revision.py`, a frozen v2 configuration, revised runner, and targeted tests for conservative permutation stopping, missingness, outcome-test direction/denominators, and non-overlapping count-triggered accumulation.
+27. Recorded v2 choices and limitations in `docs/REVISION2_METHODS.md` before main evaluation. Added both per-batch ablations and horizon-controlled competitors, an independently scheduled outcome channel, and a combined monitor splitting its error budget between channels. No novelty or accuracy improvement is assumed.
+28. Python validation passed 43 tests; five smoke streams completed. Started the frozen 1,820-stream synthetic evaluation and 120-stream Adult evaluation. Adult uses three role splits and twenty batches per stream; source records remain unchanged.
+29. Implemented a dependency-free browser analyzer with numeric/categorical CSV parsing, predefined groups and intersections, independent reference bin-design split, missing/unseen bins, conservative permutation tests, Holm across selected batches, optional count accumulation, SVG/PNG/CSV/JSON downloads, and explicit limits. It sends no uploaded records to a server.
+30. Browser core validation found an incorrect hand-entered expected p-value in a new test fixture. Exhaustive Python enumeration established 5/35 (1/7), and the JavaScript Monte Carlo estimate was 0.14214; corrected the test expectation, not the algorithm. All eight browser-core tests then passed.
+31. Verified browser demo and actual CSV upload flows. The cancellation demo produced four intersection alerts; the concentrated-shift fixture identified the affected intersection and its enclosing groups. Reworked dynamic exports into native download links, verified the JSON payload has the computed results/settings/hashes, and checked a real example-CSV download. The in-app browser did not emit a completed download for generated blob/data URLs; this browser-specific verification limit remains recorded, rather than claiming those saves were verified.
+32. Mobile inspection found a navigation overflow at a 390-pixel viewport; wrapped navigation into a second row. Added generated example CSV downloads and kept real visitor files local to the browser.
+33. Created Vercel project `subpsi-lab` in the user's verified account through the connector's authenticated default scope; no deployment yet. An explicit team query failed, while the default-scope creation and readback succeeded with the intended account ID. No authentication secrets were read or stored.
+34. Completed all 1,820 synthetic and 120 public-data evaluation streams with zero failures; recorded runtimes 1,839.5 and 212.3 seconds. Verified every raw-run hash while constructing the new summary tables. Preserved original v1 results.
+35. The first revised plot attempt failed because pandas interpreted the scenario string `null` as a missing value. Set explicit missing-value parsing to preserve that scenario name and added an empty-selection guard. No raw experiment or summary value changed.
+36. Generated ten revised figures, including a first-index drift trajectory illustration, with source CSVs, provenance manifests, SVG/PDF/300 dpi PNG, and a combined chart pack. Visual inspection found two legends covering data/title and low caption spacing; corrected layout and offset coincident cancellation points without changing numerical source tables.
+37. Wrote the measured v2 findings and a plain-language chart guide. Reported accumulation benefits, the delay/coverage cost, KS's stronger ordinary-grid detection, the Adult null estimate of 8.3%, and input-only blind spots. Novelty and general superiority remain unestablished.
+38. Final validation passed 43 Python tests and 11 browser-core tests. Verified every v2 raw result and source snapshot, all ten figure manifests/formats/source tables and ten PDF pages. All five preselected smoke streams reproduced the corresponding main-run numerical outputs exactly, excluding timing/repeat-count metadata.
+39. Confirmed the mobile overflow fix (375-pixel content width and 375-pixel scroll width), loaded all ten research cards, and prepared a public-only evidence directory. Public assets include aggregate experiment tables, charts, methods, attribution and logs; no uploaded visitor records or raw Adult records are published.
+
+
+# AI assistance record
+
+Date: 11 October 2026. Tool: Codex in the user's local desktop workspace.
+
+The user requested implementation in NSEF, charts for a paper and judging panels, a log of additions, and candid reporting if the idea fails. The user then authorized proceeding without a protocol sign-off gate and approved freely reusable datasets requiring attribution.
+
+AI assistance in this task: repository audit; identifying software/statistical issues; implementation of estimators, tests, synthetic generators, a simple classifier and evaluation code; downloading a licensed public dataset; executing checks and experiments; figure generation; factual source checking; technical logs and captions. No student-authored paper, abstract or final conclusions were created. No signatures, approval dates or research history were invented.
+
+Measured results are computed by the saved executable code. Synthetic data are explicitly generated from documented distributions. Analytical teaching figures are explicitly labelled. AI-assisted graphics do not imply that empirical values were fabricated.
+
+The student should inspect the code, rerun the commands, understand the estimand and limitations, and disclose assistance according to the applicable fair rules. This log itself does not certify eligibility or compliance.
+
+`PROMPT_RESPONSE_LOG.json` records the user requests and a concise response/action summary. It is a task log, not a claimed verbatim transcript of all tool output or hidden reasoning.
+
+## Revision 2 and website
+
+The assistant proposed and implemented the v2 finite-horizon comparison, generated new synthetic evaluation streams, reused the openly licensed Adult data with new role splits, implemented count-triggered accumulation and labelled outcome audits, and authored plot and website code. The assistant also performed technical testing and drafted findings/limitations. These are AI-assisted contributions and must not be represented as unaided student work. The student remains responsible for understanding, choosing and explaining the research and for authoring submission materials under the applicable fair rules. No submission or claim of fair acceptance was made.

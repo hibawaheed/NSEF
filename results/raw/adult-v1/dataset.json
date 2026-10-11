@@ -1,0 +1,27 @@
+{
+  "duplicate_predictor_rows_removed": 57,
+  "identity_limit": "No personal subject IDs exist; duplicate predictor rows removed, same-person identity cannot be verified.",
+  "original_rows": 48842,
+  "retained_rows": 48785,
+  "role_sizes": {
+    "audit": 5000,
+    "design": 5000,
+    "fit": 12000,
+    "pool": 21785,
+    "reference": 5000
+  },
+  "source": {
+    "citation": "Becker, B. & Kohavi, R. (1996). Adult [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5XW20.",
+    "files": {
+      "adult.data": "5b00264637dbfec36bdeaab5676b0b309ff9eb788d63554ca0a249491c86603d",
+      "adult.names": "c248284c0b5de30c9e1958d6cdd168a34a654758b620e68f46aefa83fc0a576a",
+      "adult.test": "a2a9044bc167a35b2361efbabec64e89d69ce82d9790d2980119aac5fd7e9c05",
+      "adult.zip": "7537312dd56c2b98035880805ce99e68183a30ee468aa5329d6df0fbb3cc21bb"
+    },
+    "landing_page": "https://archive.ics.uci.edu/dataset/2/adult",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved_at_utc": "2026-10-11T11:10:10.121952+00:00",
+    "source": "https://archive.ics.uci.edu/static/public/2/adult.zip"
+  }
+}

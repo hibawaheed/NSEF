@@ -1,0 +1,17 @@
+{
+  "software_tests": "36 passed",
+  "configured_experiment_runs": 440,
+  "experiment_failures": 0,
+  "smoke_runs": 6,
+  "exact_smoke_main_replays": 6,
+  "validated_figures": 11,
+  "combined_pdf_pages": 11,
+  "formats": [
+    "pdf",
+    "svg",
+    "png_300dpi",
+    "csv",
+    "json_manifest"
+  ],
+  "remote_pushed": false
+}

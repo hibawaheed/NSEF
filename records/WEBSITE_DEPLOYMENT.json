@@ -1,0 +1,24 @@
+{
+  "project_name": "subpsi-lab",
+  "project_id": "prj_ypOuWwWITK5HizfzdtsqpSDyNRH6",
+  "account_id": "team_5o5wEoYqLt6Pwg85L1no17ku",
+  "status": "ready_public_verified",
+  "target": "production",
+  "notes": "Production deployment through the Vercel connector in the verified default account. No account credentials stored, no GitHub push, no paid domain purchase. Raw visitor and Adult records are not published. Website study record is the release snapshot; later verification entries remain in the repository change log.",
+  "url": "https://subpsi-lab.vercel.app",
+  "deployment_id": "dpl_HGnj8eCtER8RvWnz96oFCaaHF3yx",
+  "deployment_url": "https://subpsi-4jc15rn5d-hibas-projects-09cdb13e.vercel.app",
+  "source_commit": "53b1adb70b5c4bff7ac59b188d53ba2ae241ec09",
+  "verified_at_utc": "2026-10-11T13:23:23.780977+00:00",
+  "published_file_count": 56,
+  "public_http_verification": "All 56 unauthenticated HTTPS downloads matched recorded sizes and SHA-256 hashes.",
+  "browser_verification": {
+    "cancellation_demo": "9 assessed comparisons, 4 intersection alerts, 0.9 seconds",
+    "uploaded_csvs": "800 reference/current rows; expected affected intersection and enclosing groups alerted; 0.4 seconds",
+    "report_hashes": "Both input SHA-256 hashes matched actual fixture files",
+    "research_gallery": "10 figures loaded",
+    "console_errors": 0,
+    "responsive": "375px content width equals scroll width at mobile viewport",
+    "generated_export_limit": "JSON payload and ready SVG/PNG links verified. In-app browser did not report a completed generated-file download, including on production; actual save completion remains unverified in that browser."
+  }
+}

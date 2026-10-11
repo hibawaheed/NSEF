@@ -1,0 +1,66 @@
+{
+  "chart_pack_sha256": "29d9a249277b7bd5ade653b6c5e2fbf364ea5e5023f5afdb33448126eafab74b",
+  "figures": [
+    {
+      "caption": "No introduced change. Points show observed proportions; bars show 95% Wilson intervals. Dashed line: 5% target. Per-batch PSI and fixed PSI 0.1 are ablations without horizon control. Outcome and combined monitors include labels.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "01_stream_false_alarms",
+      "title": "Does a 20-batch monitoring run raise a false alarm?"
+    },
+    {
+      "caption": "Forty independent streams per cell; color is the probability of any alert during 15 post-change batches. A=1,B=1 alone shifts. Zero can reflect inadequate subgroup counts, weak effects, or the error-control cost. Cell intervals are in the source CSV.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "02_detection_map",
+      "title": "Where does input-drift monitoring work?"
+    },
+    {
+      "caption": "Paired complete streams; both methods use the same groups and a 5% horizon budget. Percentile bootstrap intervals use 5,000 paired resamples. Positive favors PSI; negative favors KS. Degenerate intervals at identical paired outcomes do not prove population equality.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "03_psi_vs_ks",
+      "title": "Does PSI add value beyond subgrouping?"
+    },
+    {
+      "caption": "Batch n=250, shift=1.4 SD; 40 streams per share. Ordinary tests require 50 records per batch; accumulation requires 100 per block. Undetected targets are assigned the 15-batch horizon, not dropped. Delay intervals describe a restricted mean; coverage uses Wilson intervals.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "04_coverage_delay",
+      "title": "More small-group coverage can come with a delay"
+    },
+    {
+      "caption": "Forty streams per condition; 95% Wilson intervals. Only the full swap preserves aggregate and single-attribute input distributions exactly. Aggregate alerts there are false alarms. Points are offset horizontally to expose overlap; lines only guide the eye.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "05_cancellation",
+      "title": "How much does the cancellation example matter?"
+    },
+    {
+      "caption": "250 no-change streams; 40 per other scenario. Outcome audits test TPR decrease, FPR increase and accuracy decrease even when input checks are quiet; labels arrive immediately. The combined monitor splits its 5% budget between channels. 95% Wilson intervals; no universal fairness verdict.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "06_input_and_outcome",
+      "title": "Input change and prediction deterioration are different signals"
+    },
+    {
+      "caption": "Average the 15 post-change batches within each stream, then estimate paired mean changes over 40 independent streams; bars are 95% t intervals, not simultaneous intervals. TPR: actual positives correctly predicted; FPR: actual negatives incorrectly predicted positive. Small denominators remain in the source table.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "07_group_outcomes",
+      "title": "Check what happened to predictions inside each group"
+    },
+    {
+      "caption": "UCI Adult (Becker & Kohavi, CC BY 4.0): 20 repeats per condition within each of three fixed role splits. Markers distinguish splits; 95% Wilson intervals are conditional resampling uncertainty. This is an injected sampling shift, not observed chronological drift or new independent populations.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "08_public_data",
+      "title": "Does the result persist across public-data splits?"
+    },
+    {
+      "caption": "Each point is one fixed method, not a threshold-swept ROC curve. Detection averages the 12 equally weighted group-share/shift cells at the stated batch size (480 streams); false alarms use 250 null streams. Real-world case frequencies may differ. Point overlap is possible; all values are in the CSV.",
+      "kind": "Empirical \u00b7 controlled evaluation",
+      "name": "09_operating_tradeoff",
+      "title": "A high alert rate is useful only with a low false-alarm cost"
+    },
+    {
+      "caption": "First saved repeat (0) from each named scenario, selected by index rather than outcome. Shading begins at the batch-6 intervention. Filled markers: corrected alerts; hollow: no alert. These are two illustrative trajectories, not detection-rate estimates. Panel y-scales differ; all observations are generated.",
+      "kind": "Illustration \u00b7 two saved generated streams",
+      "name": "10_drift_over_time",
+      "title": "Watch a hidden shift appear over time"
+    }
+  ],
+  "summary": "Revision 2: 1,820 synthetic streams and 120 conditional Adult streams; 20 batches per stream. Accumulation improved detection in the fixed grid; PSI did not outperform KS overall. Input drift alone did not establish prediction harm or fairness. Methods, uncertainty and failures remain visible."
+}

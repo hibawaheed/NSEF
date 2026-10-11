@@ -1,0 +1,14 @@
+{
+  "caption": "No introduced change. Points show observed proportions; bars show 95% Wilson intervals. Dashed line: 5% target. Per-batch PSI and fixed PSI 0.1 are ablations without horizon control. Outcome and combined monitors include labels.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "aa9d4a459176933806babf52e453a2f769cca567f69762e3fcf183be64e3a343",
+  "formats": {
+    "pdf": "0432a7c435bfd1a25829ad77ba4defdae96d7b8c7091ffd387cc758e64478f02",
+    "png": "014f551cdc77481529bbba1f6987ad37478ce5d19ee0d7d1321cc15fa2e44800",
+    "svg": "f0de93cb8aea3d7f24714349d1c08773b5767b70af6794382987e769eff668cd"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "Does a 20-batch monitoring run raise a false alarm?"
+}

@@ -1,0 +1,31 @@
+{
+  "affected_share": 0.1,
+  "alert_policy": "record every window; first post-onset alert defines delay; no cooldown or repair",
+  "alpha": 0.05,
+  "magnitude": 1.25,
+  "min_n": 50,
+  "n_audit": 4000,
+  "n_bins": 8,
+  "n_design": 3000,
+  "n_fit": 3000,
+  "n_reference": 2000,
+  "n_resamples": 1999,
+  "n_window": 2000,
+  "onset_window": 3,
+  "outcome_relevance": "increase of at least 0.05 in absolute A-group TPR gap versus an independent baseline audit",
+  "practical_threshold": 0.1,
+  "pseudocount": 0.5,
+  "purpose": "Software smoke run, not independent evidence from main configured runs",
+  "reference_policy": "fixed within each run",
+  "repeats": 1,
+  "scenarios": [
+    "S0",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5"
+  ],
+  "seed": 20261011,
+  "windows": 6
+}

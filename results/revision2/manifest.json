@@ -1,0 +1,12 @@
+{
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "files": {
+    "outcomes.csv": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+    "streams.csv": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+    "timing.csv": "cfbbf36d1cc23e0f1f0c8e9730cd5ab5e5918666b1a112c127116c6ceedbafa0"
+  },
+  "raw_manifests": {
+    "revision2": "ce00603a5357aab96d5136e244c627b3884b3863754e12badaed5d7aace51bcb",
+    "revision2-public": "84377a03db0ce5ed00537f8476478af7edbc1e1655cbc3813a8ad1f8858d85fe"
+  }
+}

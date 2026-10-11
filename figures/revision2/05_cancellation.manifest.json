@@ -1,0 +1,14 @@
+{
+  "caption": "Forty streams per condition; 95% Wilson intervals. Only the full swap preserves aggregate and single-attribute input distributions exactly. Aggregate alerts there are false alarms. Points are offset horizontally to expose overlap; lines only guide the eye.",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "csv_sha256": "33bf182e2488683d16421543739c8b9671469a6082dc2f03d716a7575e9bca6c",
+  "formats": {
+    "pdf": "00957194b900e946e31a9d4841306b73b85d6a15ad034a4c72c58099bd0ce5af",
+    "png": "e4556e1aecf3f1afbb66f2b1e603676e26d3ada155202a160b3cd81330c47541",
+    "svg": "1fd606b1f84ff1438b6904262f0b2d138532411fb2aba68903e58984b499b442"
+  },
+  "kind": "Empirical \u00b7 controlled evaluation",
+  "outcome_summary_sha256": "750848c9e632c4ea895aaab96517a4e519bfb744d0146fb005f5fe69f8c81215",
+  "source_summary_sha256": "e632e176213622e70731de92ede61205ba336af814662229c7237095c7370f9e",
+  "title": "How much does the cancellation example matter?"
+}

@@ -1,0 +1,52 @@
+{
+  "ai_role": "AI-assisted code, tests, and plotting; numbers computed by executable code",
+  "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+  "created_at_utc": "2026-10-11T12:34:04.473326+00:00",
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "failures": 0,
+  "git_head": "787c5f6046121492bdb203c78d5bab738afe527c",
+  "run_hashes": {
+    "benign_0000.json.gz": "f91b0fde89840bcc2e600c10375533474fb77aa2dcfcf4a26025714c33bfd65d",
+    "correlation_0000.json.gz": "3f8ca477031d510e56c688bd4cc8e12ebf21b639f81f288eaeb1ffd5ad08d20d",
+    "grid_n250_s0.25_m1.4_0000.json.gz": "e0f9840ffcefce01752b06ef75cfbc80d5dca2c938724c28949329146ea4fc9d",
+    "null_n250_0000.json.gz": "88670dd39d69029b83a73ad50872056d279dc128ea4243300c242c0fdc1030f9",
+    "outcome_0000.json.gz": "4c85aaeacab812ca8c437bea9492e0f812d3ecc6b79586d3594ffc00601a8737"
+  },
+  "runs": 5,
+  "runtime_seconds": 5.578020004999416,
+  "smoke": true,
+  "snapshot_sha256": "c1a62ad6edc0d06c0a0e2be7883321dbae14af5e46bda4f9d56198c9e43fac45",
+  "source_hashes": {
+    "configs/adult.json": "6f2dcab33fdcae368e27d603690e7d43f24cac7acfc68371de6d5c69150404a2",
+    "configs/revision2.json": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+    "configs/smoke.json": "deb69bf74a2ed825345bb6473966c86991e054aaf549ab257a198609df2f56c4",
+    "configs/synthetic.json": "da7d349a13ed4897f7edc968b23aeecf1f8a4ed567a8218d513b425eaf1648e5",
+    "scripts/audit_original.py": "ee862d63402d1c5a2bd82073f4a1700c4e64ccc1a7252eefd242d7e487dcc666",
+    "scripts/check_replay.py": "658d36c4bdd77ba48ab2bf500c192fe6bd9154eff60e542a2d9c105caa815267",
+    "scripts/fetch_adult.py": "bbc87ff30f750fa49c619ee54150acda4e3d4c47ed3b91fc6cdaed65528c4dd0",
+    "scripts/make_figures.py": "ffaebf5b8d82966fe415f5c1ef62406e9fea60cb1f7aaff9903824146dbc7452",
+    "scripts/record_command.py": "18ce251b5affa5c9bbb8349427e88296e89ce19b40fd7de0c5579f2fabd5fae2",
+    "scripts/run_adult.py": "49bb1390e8af5550d89f3b83ef02bbf8206fa511d358d4141aa8e4b0fb21c409",
+    "scripts/run_revision.py": "b0630e8df05686a0c4ecde616afade2a0a05667fd142b9019acb8112159f0544",
+    "scripts/run_synthetic.py": "28463b152a206ee76ef96ed4ad8b28754c9acf0e1b48922aa7121ebcb1d60b3b",
+    "scripts/summarize_diagnostics.py": "2a5b3c9bd711d24f620f642257145249a5c4ef62349e4a1662e7d28894349522",
+    "scripts/validate_assets.py": "3d299d287b9c23f42510f0e94d1aab18949b09a155f55a8b9ac8a605ba27b774",
+    "src/subpsi/__init__.py": "b4adde9d1198e3aa061308bb6ded4bb17f1a86615e6f5a0d804633fd88d264c9",
+    "src/subpsi/core.py": "b90b50153db9942b55b66c434a203965b4dd78a08309f825e52188c70163a41a",
+    "src/subpsi/provenance.py": "05eb44daf4be73c3f11dda69742b0d63dd82e008a31f35c47696a846cc0dac13",
+    "src/subpsi/revision.py": "13451b04a6cf6e240297a578a65ed14c7a6049f26c9bf2c3b1f36f4f84471d26",
+    "src/subpsi/scenarios.py": "86668658127306af982034cc6da92238bd8cde42b5c3e60a9081ccb60aedd3fb"
+  }
+}

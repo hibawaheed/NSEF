@@ -1,0 +1,64 @@
+{
+  "chart_pack_sha256": "7113fdda6c24df1aba5e0c72df1f1342279e1269fbed5113b77373ed6d4e23c0",
+  "figures": [
+    {
+      "caption": "Mean signal-feature PSI under S1. Reference is fixed within each run; bands summarize independent runs. The affected group is A=1; A=1,B=1 is a smaller intersection.",
+      "kind": "empirical",
+      "name": "01_drift_over_time"
+    },
+    {
+      "caption": "Empirical PSI under a predeclared constructed cancellation scenario. This stress test demonstrates a blind spot of aggregation, not its prevalence in real deployments.",
+      "kind": "empirical",
+      "name": "02_intersection_cancellation"
+    },
+    {
+      "caption": "Run-level probability of any post-onset input alert. All methods see the same data and frozen bins. Fixed PSI thresholds are practical baselines, not matched-error tests; Holm families contain 2, 10 and 18 tests.",
+      "kind": "empirical",
+      "name": "03_alert_probability"
+    },
+    {
+      "caption": "False alerts under S0, with the first window and complete stream estimated separately. Within-window Holm correction does not promise horizon-wide control.",
+      "kind": "empirical",
+      "name": "04_false_alerts"
+    },
+    {
+      "caption": "Full delay distribution under S1, including non-detections. Bars show proportions and Wilson intervals for each delay category; coverage is not simultaneous across categories.",
+      "kind": "empirical",
+      "name": "05_detection_delay"
+    },
+    {
+      "caption": "A-group true-positive-rate gap change relative to a separate baseline audit. First average post-onset windows within each run, then form a run-level interval. Positive means wider gap; a lower gap is not a general fairness guarantee.",
+      "kind": "empirical",
+      "name": "06_outcome_relevance"
+    },
+    {
+      "caption": "Exact binomial planning calculation for a predefined group in two independent equal-size samples. This figure is analytical and makes no empirical coverage claim.",
+      "kind": "analytical",
+      "name": "07_small_group_coverage"
+    },
+    {
+      "caption": "A teaching example calculated directly from two-bin population probabilities. There are no sample counts, seeds or uncertainty intervals because no random experiment is represented.",
+      "kind": "constructed analytical example",
+      "name": "08_explain_dilution"
+    },
+    {
+      "caption": "Difference between B2 and A1 post-onset any-alert proportions using the same simulated runs. Percentile bootstrap intervals resample paired complete runs, not windows; degeneracy at all-equal differences is a limitation.",
+      "kind": "empirical",
+      "name": "09_paired_comparison"
+    },
+    {
+      "caption": "Semi-synthetic Adult check, conditional on one deduplicated fixed split, classifier and monitoring pool. Within selected Female/age strata, records with hours>40 receive 6\u00d7 sampling weight after onset. Labels and records are unchanged; composition counts use the original pool proportions. Becker & Kohavi (1996), DOI 10.24432/C5XW20, CC BY 4.0.",
+      "kind": "empirical",
+      "name": "10_public_data_check"
+    },
+    {
+      "caption": "Baseline and post-onset TPR for aggregate, marginal A groups and intersections in S2. After averaging windows within each run, intervals use independent runs. Marginal outcome summaries alone can conceal large intersection differences.",
+      "kind": "empirical",
+      "name": "11_intersection_outcomes"
+    }
+  ],
+  "run_manifests": {
+    "results/raw/adult-v1/manifest.json": "aacd19e8c03e283ab349022386850a954bef3cdf74e2f9565f8e83285d196b42",
+    "results/raw/synthetic-v1/manifest.json": "4f6b5ac16a94f95a385ddd893cb0b82e80c984db1e839353b823fb5a93eb06fc"
+  }
+}
