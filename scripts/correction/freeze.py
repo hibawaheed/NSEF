@@ -4,6 +4,7 @@ import json,subprocess,sys
 from pathlib import Path
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src'))
+from subpsi.correction import read_table
 from subpsi.provenance import sha256,write_json
 
 
@@ -20,7 +21,7 @@ def main():
     original_main=json.loads((ROOT/'results/raw/revision3/main-approved/manifest.json').read_text())
     claims=[]
     def add(cid,statement,table,selector,fields,code,configuration=cfg,interpretation=''):
-        d=pd.read_csv(ROOT/table);selected=d.query(selector) if selector else d
+        d=read_table(ROOT/table);selected=d.query(selector) if selector else d
         if selected.empty:raise ValueError('Empty claim source: '+cid)
         rows=json.loads(selected[fields].to_json(orient='records',double_precision=15))
         claims.append({'claim_id':cid,'statement':statement,'source_table':table,'source_sha256':sha256(ROOT/table),
@@ -73,7 +74,7 @@ def main():
     for c in claims:
         index.append(f'| {c["claim_id"]} | {c["statement"]} {c["interpretation"]} | [{Path(c["source_table"]).name}](../../{c["source_table"]}) |')
     (ROOT/'docs/correction/CLAIM_EVIDENCE.md').write_text('\n'.join(index)+'\n')
-    a=pd.read_csv(ROOT/summary/'benchmark_aggregate.csv');cell=pd.read_csv(ROOT/summary/'all_cells.csv')
+    a=read_table(ROOT/summary/'benchmark_aggregate.csv');cell=read_table(ROOT/summary/'all_cells.csv')
     def row(n,kind,method,metric):return a[a.n.eq(n)&a.kind.eq(kind)&a.method.eq(method)&a.metric.eq(metric)].iloc[0]
     report=['# Bounded correction completed — evidence for review','',
             '**Status: corrected results frozen locally; original Versions 1, 2 and 3 preserved. This is post-result work, not untouched validation. The final project version has not been selected.**','',

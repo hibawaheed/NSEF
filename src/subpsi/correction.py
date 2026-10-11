@@ -8,6 +8,11 @@ from .revision import generate
 from .matched import declared_groups, run_matched
 
 
+def read_table(path):
+    """Keep the literal synthetic condition 'null'; only empty cells mean NA."""
+    return pd.read_csv(path, keep_default_na=False, na_values=[''])
+
+
 class AttemptBins(NumericBins):
     """Historical 2013J design rule: zero / one / two-or-more / missing.
 

@@ -1,6 +1,14 @@
 import importlib.util
 from pathlib import Path
 import pandas as pd
+from io import StringIO
+from subpsi.correction import read_table
+
+
+def test_null_scenario_is_not_csv_missingness():
+    table=read_table(StringIO('kind,magnitude\nnull,\nshift,1.4\n'))
+    assert table.kind.tolist()==['null','shift']
+    assert pd.isna(table.loc[0,'magnitude'])
 
 
 def test_stratified_paired_interval_handles_boolean_outcomes_and_keeps_cells_equal():

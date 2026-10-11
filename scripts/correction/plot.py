@@ -11,6 +11,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src'))
+from subpsi.correction import read_table
 from subpsi.provenance import manifest, sha256, write_json, save_snapshot
 
 BLUE='#176B98'; ORANGE='#C46A1A'; INK='#183047'; GRAY='#BBC5CD'
@@ -43,7 +44,7 @@ class Exporter:
 
 
 def natural_figures(e,ou,summary):
-    d=pd.read_csv(ou/'bin_counts.csv')
+    d=read_table(ou/'bin_counts.csv')
     p=d.query("period=='design_2013J' and group=='Everyone' and feature=='num_of_prev_attempts'")
     fig,axes=plt.subplots(1,2,figsize=(11,6))
     for ax,version,title in zip(axes,['original_v3','corrected'],['Original quantile rule','Corrected count rule']):
@@ -53,7 +54,7 @@ def natural_figures(e,ou,summary):
         ax.bar_label(bars);ax.set_ylim(0,415);ax.set_ylabel('Historical design students');ax.set_title(title)
     e.save(fig,'01_historical_bin_correction',p,'Keep zero, one and multiple attempts distinct',
            'POST-RESULT CORRECTION. Only the 372 historical design records chose the rule: 314 zero, 45 one, 13 two or more. The tail remains sparse. Future larger integers use the same tail. Missing values keep their own bin. This chart explains a measurement fix; it does not show detection accuracy.')
-    d=pd.read_csv(ou/'old_vs_corrected.csv').query("variant=='accum100'")
+    d=read_table(ou/'old_vs_corrected.csv').query("variant=='accum100'")
     groups=d.group.drop_duplicates().tolist();y=np.arange(len(groups))
     fig,axes=plt.subplots(2,2,figsize=(13,10))
     for row,feature in enumerate(['num_of_prev_attempts','studied_credits']):
@@ -72,7 +73,7 @@ def natural_figures(e,ou,summary):
             ax.legend(fontsize=8,loc='upper right')
     e.save(fig,'02_oulad_corrected_distances',d,'OULAD: changed bins, unchanged records and KS',
            'NATURAL OBSERVATIONAL COMPARISON; post-result correction. BBB 2013J reference → 2014J monitoring. Both statistics use exactly the same group records. Minimum support 100; four of nine views qualify. Batch-50, batch-100 and accumulated-100 yield the same supported scores here. PSI and KS have different scales. No drift onset, accuracy, significance or harm is established. The small original attempt PSI came from smoothing unequal sample sizes across empty bins, not separation of attempt counts.')
-    o=pd.read_csv(ou/'outcomes.csv');p=o.query("group=='Everyone'")
+    o=read_table(ou/'outcomes.csv');p=o.query("group=='Everyone'")
     fig,axes=plt.subplots(1,3,figsize=(13,6.5))
     for ax,metric in zip(axes,['Accuracy','TPR','FPR']):
         for i,(model,color) in enumerate([('Frozen logistic',BLUE),('Training-majority baseline',ORANGE)]):
@@ -95,7 +96,7 @@ def natural_figures(e,ou,summary):
     axes[0].legend(fontsize=8)
     e.save(fig,'04_outcome_gaps_with_baseline',o,'OULAD group outcome gaps, with a simple baseline',
            'DESCRIPTIVE, NOT CAUSAL. Each point is (group rate minus complement rate) in 2014J minus the same gap in 2013J. Both models use the same audit students. Gray crosses mean an insufficient relevant denominator (at least 20 is required in all four group/complement-period cells); they are not zero effects. The CSV retains every numerator and denominator, including Everyone. TPR/FPR gaps of an all-positive predictor are zero by construction; this does not establish fairness.')
-    d=pd.read_csv(summary/'oulad_input_outcome_pairs.csv');fig,axes=plt.subplots(1,2,figsize=(12,6.8))
+    d=read_table(summary/'oulad_input_outcome_pairs.csv');fig,axes=plt.subplots(1,2,figsize=(12,6.8))
     for ax,feature in zip(axes,['num_of_prev_attempts','studied_credits']):
         for model,color,marker in [('Frozen logistic',BLUE,'o'),('Training-majority baseline',ORANGE,'s')]:
             p=d[d.feature.eq(feature)&d.model.eq(model)&d.metric.eq('Accuracy')&d.status.eq('assessed')&d.gap_status.eq('assessed')]
@@ -107,7 +108,7 @@ def natural_figures(e,ou,summary):
 
 
 def benchmark_figures(e,summary):
-    cells=pd.read_csv(summary/'all_cells.csv');pairs=pd.read_csv(summary/'paired_cells.csv');a=pd.read_csv(summary/'benchmark_aggregate.csv')
+    cells=read_table(summary/'all_cells.csv');pairs=read_table(summary/'paired_cells.csv');a=read_table(summary/'benchmark_aggregate.csv')
     p=cells[cells.id.str.startswith('grid_') & cells.metric.eq('post_alert')]
     fig,axes=plt.subplots(2,2,figsize=(11,9))
     for row,n in enumerate([250,1000]):

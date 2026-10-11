@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src'))
 from subpsi.realdata import wilson, paired_interval
+from subpsi.correction import read_table
 from subpsi.provenance import manifest, sha256, write_json, save_snapshot
 
 BINARY=['stream_alert','pre_alert','post_alert','target_detected','target_ever_assessed']
@@ -20,6 +21,7 @@ def stratified_interval(frame, metric, method=None):
 
     method=None returns PSI minus KS. Individual intervals use the same draws.
     """
+    if frame.empty: raise ValueError('No complete cells selected for interval')
     rng=np.random.default_rng(948271); samples=[]; estimates=[]
     for _,cell in frame.groupby('id',sort=True):
         p=cell.pivot(index='repeat',columns='method',values=metric).sort_index().astype(float)
@@ -38,7 +40,7 @@ def summarize(raw, out):
         raise ValueError('Cannot summarize incomplete/smoke benchmark as evidence')
     for name,expected in m['files'].items():
         if sha256(raw/name)!=expected: raise ValueError('Raw result hash changed')
-    d=pd.read_csv(raw/'streams.csv')
+    d=read_table(raw/'streams.csv')
     if len(d)!=3640 or d.duplicated(['run','method']).any(): raise ValueError('Invalid stream pairs')
     cases=json.loads((ROOT/'results/raw/revision2/cases.json').read_text())
     rows=[]; paired=[]
@@ -77,7 +79,7 @@ def summarize(raw, out):
                                       'successes':int(part[metric].sum()) if metric in BINARY and method!='PSI minus KS' else None,**result})
     pd.DataFrame(aggregate).to_csv(out/'benchmark_aggregate.csv',index=False)
     # Direct comparison with the old reporting table, without rewriting it.
-    old=pd.read_csv(ROOT/'results/revision2/streams.csv')
+    old=read_table(ROOT/'results/revision2/streams.csv')
     old=old[old.run.str.startswith('revision2/') & old.method.eq('Accumulated PSI')].copy()
     old['run']=old.run.str.removeprefix('revision2/')
     pair=d[d.method.eq('PSI')].merge(old,on='run',validate='one_to_one',suffixes=('_new','_old'))
@@ -86,8 +88,8 @@ def summarize(raw, out):
             raise ValueError('Old reported metric differs: '+col)
     # Retain every natural group, both features and all three outcome metrics.
     ou=ROOT/'results/raw/correction/oulad'
-    inputs=pd.read_csv(ou/'natural_tests.csv').query("variant=='accum100'")
-    outcomes=pd.read_csv(ou/'outcomes.csv')
+    inputs=read_table(ou/'natural_tests.csv').query("variant=='accum100'")
+    outcomes=read_table(ou/'outcomes.csv')
     new=[]
     for feature,part in inputs.groupby('feature',sort=False):
         selected=part[['group','time','feature','psi','ks_d','status','n_reference','n_current']]
