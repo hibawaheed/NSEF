@@ -12,6 +12,8 @@ def main():
     if target.exists():raise ValueError('Frozen set already exists; a later change requires a new revision')
     verification=json.loads((ROOT/'records/correction/verification.json').read_text())
     if verification['status']!='PASS':raise ValueError('Unverified evidence')
+    for name,digest in verification['verified_manifests'].items():
+        if sha256(ROOT/name)!=digest:raise ValueError('Evidence changed after verification: '+name)
     cfg='configs/correction/frozen.json';v2cfg='configs/revision2.json';v3cfg='configs/revision3/approved.json'
     ou='results/raw/correction/oulad';summary='results/summary/correction';v2='results/raw/correction/v2-matched'
     om=json.loads((ROOT/ou/'manifest.json').read_text());vm=json.loads((ROOT/v2/'manifest.json').read_text())

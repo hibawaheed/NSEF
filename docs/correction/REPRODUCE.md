@@ -30,7 +30,7 @@ The correction runner enforces its 14 October 2026, 23:59:59 Asia/Karachi deadli
 python scripts/correction/plot.py --out figures/correction-replay
 ```
 
-`verify.py` performs four numerical replays, checks original-file preservation, tests equality of collection/support for both methods across all streams and compares ten plotted CSV selections with their source tables. It refuses to overwrite the original verification record. `profile.py` likewise refuses to overwrite the separately recorded alternating-order cost check.
+`verify.py` performs four numerical replays, checks original-file preservation, tests equality of collection/support for both methods across all streams and compares ten plotted CSV selections with their source tables. It refuses to overwrite the original verification record. To repeat this check, use `python scripts/correction/verify.py --out /tmp/subpsi-correction-reverification.json` with a new filename. `profile.py` likewise refuses to overwrite the separately recorded alternating-order cost check.
 
 ## Check the frozen bundle without modifying anything
 

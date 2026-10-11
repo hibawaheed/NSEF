@@ -1,5 +1,5 @@
 """Verify preservation, complete evidence, replays and plotted table selections."""
-import gzip,json,sys,tempfile
+import argparse,gzip,json,sys,tempfile
 from pathlib import Path
 import importlib.util
 import numpy as np
@@ -21,7 +21,8 @@ def table_equal(expected,actual):
 
 
 def main():
-    out=ROOT/'records/correction/verification.json'
+    parser=argparse.ArgumentParser();parser.add_argument('--out',default='records/correction/verification.json');args=parser.parse_args()
+    out=ROOT/args.out
     if out.exists():raise ValueError('Refuse to replace verification record')
     inventory=json.loads((ROOT/'records/correction/preserved_inventory.json').read_text())
     for name,digest in inventory.items():
@@ -73,6 +74,7 @@ def main():
         table_equal(frame,pd.read_csv(figures/f'{stem}.csv'))
     summary_manifest=json.loads((summary/'manifest.json').read_text())
     write_json(out,{'status':'PASS','original_files_preserved':len(inventory),'artifact_hashes_verified':count,
+                   'verified_manifests':{folder+'/manifest.json':sha256(ROOT/folder/'manifest.json') for folder in manifests},
                    'replayed_v2_streams':names,'replayed_oulad':'all policies, bins and both outcome models; exact counts and scores within 1e-12; timings excluded',
                    'figure_csvs_match_source_tables':list(expected),'matched_support_streams':1820,
                    'original_v2_reporting':summary_manifest['original_v2_report_parity'],
