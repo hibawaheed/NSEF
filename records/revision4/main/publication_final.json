@@ -1,0 +1,26 @@
+{
+  "event": "complete_revision4_results_publication_verified",
+  "verified_at_utc": "2026-10-11T20:10:06+00:00",
+  "verified_at_local": "2026-10-12T01:10:06+05:00",
+  "repository": "https://github.com/hibawaheed/NSEF",
+  "branch": "version-4",
+  "published_results_commit": "daf7a80bbf09b4e3891989e379e8aec9dc442696",
+  "published_results_tree": "6e34fde325272c46c9a0a87078d72f6a3177ae3e",
+  "tracked_file_count": 7814,
+  "workflow_run_id": 38170993880,
+  "workflow_url": "https://github.com/hibawaheed/NSEF/actions/runs/38170993880",
+  "workflow_conclusion": "success",
+  "transfer_bundle_sha256": "54ec986819fa598a9fdac0fdb1a023ee014e261bea2a6800d2ebb13045e21451",
+  "results_freeze_sha256": "7d264f8e214352d69acbf278d6939f6ec0bc851aa4e6b77b405f65690f5455d6",
+  "preserved_heads": {
+    "main": "646bfea7f30d3a52be8ab40cff99590baea4650a",
+    "version-1": "787c5f6046121492bdb203c78d5bab738afe527c",
+    "version-2": "646bfea7f30d3a52be8ab40cff99590baea4650a",
+    "version-3": "27288575028181baae90f68d30d4e3dc5e363a53"
+  },
+  "temporary_transfer_branch_removed": true,
+  "authorization": "User approved the proposed workflow and separately requested GitHub publication.",
+  "mentor_or_fair_approval_recorded": false,
+  "final_submission_version_selected": false,
+  "scope_note": "This receipt records publication of the complete scientific results. The receipt and read-only integrity helper are added in a later provenance-only commit; they do not modify the frozen evidence."
+}
