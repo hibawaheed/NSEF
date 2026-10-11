@@ -44,8 +44,8 @@ class Exporter:
                          plot_code_sha256=sha256(Path(__file__)),source_snapshot_sha256=save_snapshot(ROOT,out))
     def save(self,fig,name,title,data,note):
         fig.suptitle(title,fontsize=16,fontweight='bold',y=.985)
-        fig.text(.015,.008,'\n'.join(textwrap.wrap(note,150)),fontsize=9,va='bottom',color='#343b45')
-        fig.subplots_adjust(top=.90,bottom=.115)
+        fig.text(.015,.008,'\n'.join(textwrap.wrap(note,int(fig.get_figwidth()*11))),fontsize=9,va='bottom',color='#343b45')
+        fig.subplots_adjust(top=.90,bottom=max(.13,1.65/fig.get_figheight()))
         data.to_csv(self.out/f'{name}.csv',index=False)
         self.pdf.savefig(fig)
         for suffix in ['png','pdf','svg']:fig.savefig(self.out/f'{name}.{suffix}',dpi=300,facecolor='white')
@@ -70,18 +70,20 @@ def natural_figures(e):
         features=list(dict.fromkeys(d.feature));fig,axs=plt.subplots(1,4,figsize=(17,12 if dataset=='ACS_MA' else 7))
         for ax,(f,stat) in zip(axs,[(f,s) for f in features for s in ['psi','ks_d']]):
             t=d.loc[d.feature.eq(f)].pivot(index='group',columns='time',values=stat).reindex(groups)
+            if dataset=='OULAD_BBB':t.columns=[f'{v}J' for v in t.columns]
             im=heat(ax,t,f'{f} · {"PSI" if stat=="psi" else "KS distance"}',vmin=0,fmt='.3f' if len(groups)<10 else None)
             if ax!=axs[0]:ax.set_yticklabels([])
             fig.colorbar(im,ax=ax,fraction=.046,pad=.04)
         fig.subplots_adjust(left=.17,wspace=.30)
         e.save(fig,f'{no:02d}_natural_{dataset.lower()}',title,d,
-               'Natural observations; no known drift onset or detection accuracy. Both methods use the same records and require ≥100 on each side. Gray × = insufficient support. PSI and KS have different units; their color bars are separate. Calendar labels denote actual survey years/cohorts. All declared views are retained.')
+               'Natural observations; no known drift onset or detection accuracy. Both methods use the same records and require ≥100 on each side. Gray × = insufficient support. PSI and KS have different units; their color bars are separate. Calendar labels denote actual survey years/cohorts. All declared views are retained.' + (' Historical previous-attempt bins collapse all nonnegative counts; see the binning diagnostic.' if dataset=='OULAD_BBB' else ''))
     for no,dataset in [(3,'ACS_MA'),(4,'OULAD_BBB')]:
         d=outcomes.loc[outcomes.dataset.eq(dataset)];groups=group_order(d)
         fig,axs=plt.subplots(1,3,figsize=(15,12 if dataset=='ACS_MA' else 7))
         for ax,metric in zip(axs,['TPR','FPR','Accuracy']):
             sub=d.loc[d.metric.eq(metric)].copy();sub['pp']=100*sub.gap_change
             t=sub.pivot(index='group',columns='period',values='pp').reindex(groups)
+            if dataset=='OULAD_BBB':t.columns=[f'{v}J' for v in t.columns]
             im=heat(ax,t,f'Change in {metric} gap (percentage points)',diverging=True,fmt='.1f')
             if ax!=axs[0]:ax.set_yticklabels([])
             fig.colorbar(im,ax=ax,fraction=.046,pad=.04)
