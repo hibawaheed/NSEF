@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-10-11T11:03:55.478717+00:00",
+  "files": [
+    {
+      "name": "subgroup_psi.py",
+      "sha256": "63e7a7319ab2e9cc0abd63c71147fc43d45e858c451ff2da6eb5d7751460a6ac",
+      "size_bytes": 6908
+    },
+    {
+      "name": "CODEX_START_PROMPT.txt",
+      "sha256": "574d74fa79f9fbbf4e25f1ef76d2c86941da8bc361f0db7c74882bb8b2e4ee76",
+      "size_bytes": 2209
+    },
+    {
+      "name": "SUBPSI_CODEX_HANDOFF.md",
+      "sha256": "214139d8c4dd4d33c03258e3d6646bea12ddf350b1126ee5307b7dbb31241bc0",
+      "size_bytes": 25772
+    },
+    {
+      "name": "project_handoff_brief.md",
+      "sha256": "8cec786fb97c7cb00e1f989e863c64649becae9c15a00f7ccf9d3183e38930fa",
+      "size_bytes": 15490
+    },
+    {
+      "name": "2502.02221v2.pdf",
+      "sha256": "9c11e72b7d0e9d6b7d01f538431cf96f7d602b8f2b98c91f4f49451d29e95046",
+      "size_bytes": 1046943
+    },
+    {
+      "name": "2402.07586v4.pdf",
+      "sha256": "91d8371f76de6cd4a658a5752058b3fc05e2525e03c2bf5c379fc72d6e2cf7bf",
+      "size_bytes": 10715728
+    },
+    {
+      "name": "ocaf039.pdf",
+      "sha256": "ffa623c3a0188185615ba88420da8bd7ef8aed3415f03914ada41d174cb4371d",
+      "size_bytes": 1810789
+    },
+    {
+      "name": "applsci-14-08860.pdf",
+      "sha256": "54111e84dc68dddabbb0da11a79bcf968f880b370cb6538b4980c3971c3784c6",
+      "size_bytes": 2645782
+    },
+    {
+      "name": "SubPSI_Mentor_Brief.pdf",
+      "sha256": "008ce8607d828a8ef939bf8eab00c606ebdfa85ba9f8ee14a8f9795ec4d4a6de",
+      "size_bytes": 101645
+    }
+  ],
+  "missing": [
+    "FIGURE_SPEC.md",
+    "SUBMISSION_CHECKLIST.md",
+    "SOURCE_AND_NOVELTY_NOTES.md",
+    "subpsi_week1_validation"
+  ]
+}
