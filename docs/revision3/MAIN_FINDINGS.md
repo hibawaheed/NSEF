@@ -6,6 +6,8 @@ AI-assisted technical report, 11 October 2026. This is explanatory material for 
 
 Open the [12-chart PDF](../../figures/revision3/main-approved-checked/SubPSI_revision3_chart_pack.pdf) or the [local chart gallery](../../figures/revision3/main-approved-checked/index.html). The gallery is a local artifact, not a deployed website. Every chart has PNG, PDF, SVG and its exact source CSV. The earlier support-feasibility figure remains in `figures/revision3/feasibility/`.
 
+**Later publication update:** the user separately authorized pushing this work as version 3 while preserving versions 1 and 2, with final selection deferred. See [version choices](../../VERSIONS.md). Statements below about no push describe the earlier research-execution stage.
+
 ## What the software actually does
 
 1. It fixes named groups from the data documentation, including combinations such as recorded female sex and Black race. This is the subgrouping step: **declared categories and their intersections**, not a clustering model that discovers groups after seeing attractive results.

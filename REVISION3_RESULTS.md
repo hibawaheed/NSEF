@@ -10,4 +10,4 @@ The approved local real-data study is complete. **Accumulation improved small-gr
 - [Approved-execution change log](records/revision3/main/WORK_LOG.md)
 - [AI-use and contribution record](records/revision3/main/AI_USE_AND_CONTRIBUTIONS.md)
 
-Main results use genuine ACS survey years and OULAD cohorts, with separate constructed whole-record controls. No natural drift-detection accuracy is claimed. This revision has not been pushed, deployed or submitted. The supplied deadline is 26 October 2026.
+Main results use genuine ACS survey years and OULAD cohorts, with separate constructed whole-record controls. No natural drift-detection accuracy is claimed. The user has authorized publication as a separate version 3; see [version choices](VERSIONS.md) and the [publication record](records/revision3/publication/REQUEST.md). No version is designated final. The website has not been redeployed and nothing has been submitted. The supplied deadline is 26 October 2026.
