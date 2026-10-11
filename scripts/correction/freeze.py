@@ -111,9 +111,12 @@ def main():
     oldfig=ROOT/'figures/revision3/main-approved-checked'
     selected=[p for p in oldfig.iterdir() if p.name[:2] in {'01','03','05','06','07','08','09','10','12'}]
     entries={}
+    # The CLI stdout log may still be open while this manifest is assembled.
+    # Bind completed evidence only, excluding the manifest's own receipt/log.
+    excluded={target,target.with_suffix('.sha256'),ROOT/'records/correction/freeze_creation.txt'}
     for folder in ['configs/correction','src/subpsi','scripts/correction','tests','results/raw/correction','results/summary/correction','figures/correction','docs/correction','records/correction']:
         for p in (ROOT/folder).rglob('*'):
-            if p.is_file() and '__pycache__' not in str(p) and p!=target:
+            if p.is_file() and '__pycache__' not in str(p) and p not in excluded:
                 entries[str(p.relative_to(ROOT))]=sha256(p)
     for p in selected+[ROOT/'REVISION3_CORRECTION.md',ROOT/v2cfg,ROOT/v3cfg,ROOT/'results/summary/revision3/main-approved-checked/control_proportions.csv',ROOT/'results/raw/revision3/main-approved/manifest.json']:
         entries[str(p.relative_to(ROOT))]=sha256(p)
