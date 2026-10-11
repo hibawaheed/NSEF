@@ -1,0 +1,16 @@
+{
+  "recorded_utc": "2026-10-11T18:55:50.912722+00:00",
+  "recorded_local": "2026-10-11T23:55:50.912722+05:00",
+  "user_message": "yes i approve, pust it into github",
+  "approved_scope": [
+    "Execute the Revision 4 methodological protocol presented for approval",
+    "Publish the project and new charts on a separate GitHub version-4 branch, preserving versions 1\u20133"
+  ],
+  "proposal_config_sha256": "cafec453963d0459a55f542a7abed760ba2ebe4a133a34b8c4e32f74e7686565",
+  "protocol_sha256": "33dd0b058bc4c12d4f5eebc59abea220511c66661ccd1fca9bd63129524cf662",
+  "preparation_commit": "9281405ac965b1133e0c7731c22fe9ba4d17d8f0",
+  "mentor_approval_evidence": null,
+  "fair_approval_evidence": null,
+  "merge_deployment_purchase_submission_authorized": false,
+  "final_version_selected": false
+}
