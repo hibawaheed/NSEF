@@ -1,0 +1,29 @@
+{
+  "repository": "https://github.com/hibawaheed/NSEF",
+  "branch": "main",
+  "visibility": "private",
+  "imported_source_commit": "247c87fc353668ef0af408e20445607172950ea3",
+  "imported_source_tree": "a7506c749a4b1bd9753ba170ad968ae905217d96",
+  "initial_main_publication_commit": "ab344411b733518bceecedea9e7cb3be19d879ab",
+  "imported_project_files": 2661,
+  "original_history_branch": "codex/subpsi-foundation",
+  "import_run": "https://github.com/hibawaheed/NSEF/actions/runs/38145202748",
+  "import_job_conclusion": "success",
+  "bundle_sha256": "d54aef025b00cb48dfae4103b52be77a1d3c6091f9b8cfdb06c01a8ae21161d3",
+  "verified_transfer_chunks": 72,
+  "verification": "GitHub main's root Git tree matched the full local project tree exactly before this receipt and final log entry were added. All transfer chunk Git blob hashes and SHA-256 hashes were verified. The one-time import checked the complete bundle, source commit, tree, file count, and git fsck. Original history was retained; temporary transfer branch was removed.",
+  "included": [
+    "research and website source",
+    "tests and configurations",
+    "v1 and v2 experiment outputs",
+    "figures and their source tables",
+    "methods, findings, attribution and AI-use records",
+    "four unmodified UCI Adult source/download files"
+  ],
+  "excluded": [
+    "local caches",
+    "virtual environments",
+    "temporary transfer and rehearsal files"
+  ],
+  "note": "The website deployment remains the separately verified Vercel release. This receipt records repository publication; it does not change the scientific results."
+}
