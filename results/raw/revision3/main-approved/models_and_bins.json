@@ -1,0 +1,173 @@
+{
+  "ACS_MA": {
+    "audit_seconds": 0.13955386900124722,
+    "bins": {
+      "AGEP": {
+        "edges": [
+          "-inf",
+          25.0,
+          36.0,
+          48.0,
+          57.0,
+          67.0,
+          "inf"
+        ],
+        "effective_numeric_bins": 6,
+        "kind": "numeric",
+        "missing_bin": 6
+      },
+      "SCHL": {
+        "edges": [
+          "-inf",
+          16.0,
+          17.0,
+          19.0,
+          21.0,
+          22.0,
+          "inf"
+        ],
+        "effective_numeric_bins": 6,
+        "kind": "numeric",
+        "missing_bin": 6
+      }
+    },
+    "design_index_sha256": "4eb3938d6e7ddbe22ce28e0901d6ec012d4e5c75424ca608da3e922479236055",
+    "fit_index_sha256": "f5c3afd3638167c02330611bff743d94dd0aeab9b7592ee9cd723ea69e7561ef",
+    "model": {
+      "C": 1.0,
+      "coefficients": [
+        -0.05217298510186073,
+        4.24079950342522,
+        -5.1526845797425045,
+        -0.8011410641355333,
+        -0.007529667206840569,
+        -1.1683852121721994,
+        0.16767630417264437,
+        0.3844442505353656,
+        1.0234280801400755,
+        -0.3803181834143485,
+        -0.16552066035644303,
+        -0.09418291450814532,
+        -0.9806507410319706,
+        -0.778727124656886,
+        -0.9696832215955914,
+        -0.8137506402527889,
+        -0.5842105049142314,
+        -0.3114659813569493,
+        0.18291859467182886,
+        -0.3192674319299188,
+        0.14015072130118358,
+        0.33114825203439363,
+        0.6801989723095059,
+        0.85257439428237,
+        0.9054171035086032,
+        1.2469197368237352,
+        1.456844582839972
+      ],
+      "fit": {
+        "convergence": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "iterations": 209,
+        "max_abs_gradient": 0.0011829364080334082,
+        "n": 28389,
+        "objective": 14915.39750879137,
+        "positives": 16973
+      },
+      "kind": "acs",
+      "numeric_mean": [
+        47.39416675472894,
+        2615.365070978196
+      ],
+      "numeric_scale": [
+        19.213485592238037,
+        1901.331680266561
+      ],
+      "objective": "sum logistic loss + .5 * nonintercept squared norm",
+      "schooling_categories": [
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0,
+        11.0,
+        12.0,
+        13.0,
+        14.0,
+        15.0,
+        16.0,
+        17.0,
+        18.0,
+        19.0,
+        20.0,
+        21.0,
+        22.0,
+        23.0,
+        24.0
+      ],
+      "threshold": 0.5
+    },
+    "setup_seconds": 4.201192094002181
+  },
+  "OULAD_BBB": {
+    "audit_seconds": 0.003802649000135716,
+    "bins": {
+      "num_of_prev_attempts": {
+        "edges": [
+          "-inf",
+          0.0,
+          "inf"
+        ],
+        "effective_numeric_bins": 2,
+        "kind": "numeric",
+        "missing_bin": 2
+      },
+      "studied_credits": {
+        "edges": [
+          "-inf",
+          60.0,
+          90.0,
+          120.0,
+          "inf"
+        ],
+        "effective_numeric_bins": 4,
+        "kind": "numeric",
+        "missing_bin": 4
+      }
+    },
+    "design_index_sha256": "9016c33e7953cb9c31182448e5878a9e2a3ece59dbb16ac72736f2b12dbb0f18",
+    "fit_index_sha256": "60b644bc7128bf45c7da61427750af54a956ccb26f32f7d98c132d530afd25f2",
+    "model": {
+      "C": 1.0,
+      "coefficients": [
+        0.3149939341342277,
+        -0.43518964837772317,
+        -0.23353962248515608
+      ],
+      "fit": {
+        "convergence": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "iterations": 7,
+        "max_abs_gradient": 5.22195677477022e-07,
+        "n": 757,
+        "objective": 496.32859351520307,
+        "positives": 438
+      },
+      "kind": "oulad",
+      "numeric_mean": [
+        0.18626155878467635,
+        79.49141347424042
+      ],
+      "numeric_scale": [
+        0.5301194005872111,
+        32.3114220919753
+      ],
+      "objective": "sum logistic loss + .5 * nonintercept squared norm",
+      "schooling_categories": [],
+      "threshold": 0.5
+    },
+    "setup_seconds": 0.014851940002699848
+  }
+}

@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision3/summarize_main.py", line 98, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--raw',required=True);p.add_argument('--out',required=True);a=p.parse_args();summarize(ROOT/a.raw,ROOT/a.out)
+                                                                                                                             ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/revision3/summarize_main.py", line 88, in summarize
+    pairs=pairs.merge(no,on=['dataset','period','group','level'],how='left',validate='one_to_many')
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/core/frame.py", line 12902, in merge
+    return merge(
+        self,
+    ...<10 lines>...
+        validate=validate,
+    )
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/core/reshape/merge.py", line 385, in merge
+    op = _MergeOperation(
+        left_df,
+    ...<10 lines>...
+        validate=validate,
+    )
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/core/reshape/merge.py", line 1037, in __init__
+    self._validate_validate_kwd(validate)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/pandas/core/reshape/merge.py", line 2012, in _validate_validate_kwd
+    raise MergeError(
+    ...<2 lines>...
+    )
+pandas.errors.MergeError: Merge keys are not unique in left dataset; not a one-to-many merge
+Duplicates in left:
+ dataset  period    group     level
+ ACS_MA    2017 Everyone aggregate
+ ACS_MA    2017    SEX=1    single
+ ACS_MA    2017    SEX=2    single
+ ACS_MA    2017  RAC1P=1    single
+ ACS_MA    2017  RAC1P=2    single ...

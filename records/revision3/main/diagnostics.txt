@@ -1,0 +1,4 @@
+feature  reference_pool_n  substitution_pool_n      psi     ks_d  missing_rate_difference
+   AGEP               512                  526 0.017366 0.045286                      0.0
+   SCHL               512                  526 0.034867 0.046110                      0.0
+Diagnostics complete; original study unchanged.

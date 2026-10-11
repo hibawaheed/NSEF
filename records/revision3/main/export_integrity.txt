@@ -1,0 +1,2 @@
+PASS: 12 valid 300-dpi PNGs, 12 parseable SVGs, PDF structure, all gallery/document local links, diagnostic hashes and preserved initial-export hashes.
+Visual inspection: all 12 charts viewed in contact sheet; natural ACS heatmap and final full-family control chart inspected at larger size. Caption overlap corrected in checked exports; earlier files retained.

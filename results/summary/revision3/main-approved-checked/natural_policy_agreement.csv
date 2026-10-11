@@ -1,0 +1,199 @@
+dataset,period,group,feature,all_policies_assessed,same_record_block,psi_identical,ks_identical
+ACS_MA,2017,Everyone,AGEP,True,True,True,True
+ACS_MA,2017,Everyone,SCHL,True,True,True,True
+ACS_MA,2017,SEX=1,AGEP,True,True,True,True
+ACS_MA,2017,SEX=1,SCHL,True,True,True,True
+ACS_MA,2017,SEX=2,AGEP,True,True,True,True
+ACS_MA,2017,SEX=2,SCHL,True,True,True,True
+ACS_MA,2017,RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2017,RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2017,RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2017,RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2017,RAC1P=3,AGEP,False,True,False,False
+ACS_MA,2017,RAC1P=3,SCHL,False,True,False,False
+ACS_MA,2017,RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2017,RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2017,RAC1P=5,AGEP,False,True,False,False
+ACS_MA,2017,RAC1P=5,SCHL,False,True,False,False
+ACS_MA,2017,RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2017,RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2017,RAC1P=7,AGEP,False,True,False,False
+ACS_MA,2017,RAC1P=7,SCHL,False,True,False,False
+ACS_MA,2017,RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2017,RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2017,RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2017,RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=3,AGEP,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=3,SCHL,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=5,AGEP,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=5,SCHL,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=7,AGEP,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=7,SCHL,False,True,False,False
+ACS_MA,2017,SEX=1 & RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2017,SEX=1 & RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=3,AGEP,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=3,SCHL,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=5,AGEP,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=5,SCHL,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=7,AGEP,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=7,SCHL,False,True,False,False
+ACS_MA,2017,SEX=2 & RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2017,SEX=2 & RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2018,Everyone,AGEP,True,True,True,True
+ACS_MA,2018,Everyone,SCHL,True,True,True,True
+ACS_MA,2018,SEX=1,AGEP,True,True,True,True
+ACS_MA,2018,SEX=1,SCHL,True,True,True,True
+ACS_MA,2018,SEX=2,AGEP,True,True,True,True
+ACS_MA,2018,SEX=2,SCHL,True,True,True,True
+ACS_MA,2018,RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2018,RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2018,RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2018,RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2018,RAC1P=3,AGEP,False,False,False,False
+ACS_MA,2018,RAC1P=3,SCHL,False,False,False,False
+ACS_MA,2018,RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2018,RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2018,RAC1P=5,AGEP,False,False,False,False
+ACS_MA,2018,RAC1P=5,SCHL,False,False,False,False
+ACS_MA,2018,RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2018,RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2018,RAC1P=7,AGEP,False,False,False,False
+ACS_MA,2018,RAC1P=7,SCHL,False,False,False,False
+ACS_MA,2018,RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2018,RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2018,RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2018,RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=3,AGEP,False,False,False,False
+ACS_MA,2018,SEX=1 & RAC1P=3,SCHL,False,False,False,False
+ACS_MA,2018,SEX=1 & RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2018,SEX=1 & RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2018,SEX=1 & RAC1P=5,AGEP,False,False,False,False
+ACS_MA,2018,SEX=1 & RAC1P=5,SCHL,False,False,False,False
+ACS_MA,2018,SEX=1 & RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=7,AGEP,False,True,False,False
+ACS_MA,2018,SEX=1 & RAC1P=7,SCHL,False,True,False,False
+ACS_MA,2018,SEX=1 & RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2018,SEX=1 & RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=3,AGEP,False,False,False,False
+ACS_MA,2018,SEX=2 & RAC1P=3,SCHL,False,False,False,False
+ACS_MA,2018,SEX=2 & RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2018,SEX=2 & RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2018,SEX=2 & RAC1P=5,AGEP,False,False,False,False
+ACS_MA,2018,SEX=2 & RAC1P=5,SCHL,False,False,False,False
+ACS_MA,2018,SEX=2 & RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=7,AGEP,False,False,False,False
+ACS_MA,2018,SEX=2 & RAC1P=7,SCHL,False,False,False,False
+ACS_MA,2018,SEX=2 & RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2018,SEX=2 & RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2019,Everyone,AGEP,True,True,True,True
+ACS_MA,2019,Everyone,SCHL,True,True,True,True
+ACS_MA,2019,SEX=1,AGEP,True,True,True,True
+ACS_MA,2019,SEX=1,SCHL,True,True,True,True
+ACS_MA,2019,SEX=2,AGEP,True,True,True,True
+ACS_MA,2019,SEX=2,SCHL,True,True,True,True
+ACS_MA,2019,RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2019,RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2019,RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2019,RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2019,RAC1P=3,AGEP,False,False,False,False
+ACS_MA,2019,RAC1P=3,SCHL,False,False,False,False
+ACS_MA,2019,RAC1P=4,AGEP,False,False,False,False
+ACS_MA,2019,RAC1P=4,SCHL,False,False,False,False
+ACS_MA,2019,RAC1P=5,AGEP,False,False,False,False
+ACS_MA,2019,RAC1P=5,SCHL,False,False,False,False
+ACS_MA,2019,RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2019,RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2019,RAC1P=7,AGEP,False,False,False,False
+ACS_MA,2019,RAC1P=7,SCHL,False,False,False,False
+ACS_MA,2019,RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2019,RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2019,RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2019,RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=3,AGEP,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=3,SCHL,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=4,AGEP,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=4,SCHL,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=5,AGEP,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=5,SCHL,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=7,AGEP,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=7,SCHL,False,False,False,False
+ACS_MA,2019,SEX=1 & RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2019,SEX=1 & RAC1P=9,SCHL,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=1,AGEP,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=1,SCHL,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=2,AGEP,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=2,SCHL,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=3,AGEP,False,False,False,False
+ACS_MA,2019,SEX=2 & RAC1P=3,SCHL,False,False,False,False
+ACS_MA,2019,SEX=2 & RAC1P=4,AGEP,False,True,False,False
+ACS_MA,2019,SEX=2 & RAC1P=4,SCHL,False,True,False,False
+ACS_MA,2019,SEX=2 & RAC1P=5,AGEP,False,False,False,False
+ACS_MA,2019,SEX=2 & RAC1P=5,SCHL,False,False,False,False
+ACS_MA,2019,SEX=2 & RAC1P=6,AGEP,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=6,SCHL,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=7,AGEP,False,False,False,False
+ACS_MA,2019,SEX=2 & RAC1P=7,SCHL,False,False,False,False
+ACS_MA,2019,SEX=2 & RAC1P=8,AGEP,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=8,SCHL,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=9,AGEP,True,True,True,True
+ACS_MA,2019,SEX=2 & RAC1P=9,SCHL,True,True,True,True
+OULAD_BBB,2014,Everyone,num_of_prev_attempts,True,True,True,True
+OULAD_BBB,2014,Everyone,studied_credits,True,True,True,True
+OULAD_BBB,2014,gender='F',num_of_prev_attempts,True,True,True,True
+OULAD_BBB,2014,gender='F',studied_credits,True,True,True,True
+OULAD_BBB,2014,gender='M',num_of_prev_attempts,False,True,False,False
+OULAD_BBB,2014,gender='M',studied_credits,False,True,False,False
+OULAD_BBB,2014,disability='N',num_of_prev_attempts,True,True,True,True
+OULAD_BBB,2014,disability='N',studied_credits,True,True,True,True
+OULAD_BBB,2014,disability='Y',num_of_prev_attempts,False,True,False,False
+OULAD_BBB,2014,disability='Y',studied_credits,False,True,False,False
+OULAD_BBB,2014,gender='F' & disability='N',num_of_prev_attempts,True,True,True,True
+OULAD_BBB,2014,gender='F' & disability='N',studied_credits,True,True,True,True
+OULAD_BBB,2014,gender='F' & disability='Y',num_of_prev_attempts,False,True,False,False
+OULAD_BBB,2014,gender='F' & disability='Y',studied_credits,False,True,False,False
+OULAD_BBB,2014,gender='M' & disability='N',num_of_prev_attempts,False,True,False,False
+OULAD_BBB,2014,gender='M' & disability='N',studied_credits,False,True,False,False
+OULAD_BBB,2014,gender='M' & disability='Y',num_of_prev_attempts,False,True,False,False
+OULAD_BBB,2014,gender='M' & disability='Y',studied_credits,False,True,False,False

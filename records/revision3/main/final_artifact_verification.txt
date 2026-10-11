@@ -1,0 +1,3 @@
+Verified 190 artifact hashes, all input/private-lineage hashes, 2662 baseline files and all 61 preparation deliverables.
+Verified 120 streams, 432000 test opportunities, 336912 unsupported opportunities, all Holm decisions, matched support, descriptive natural outputs and outcome denominators.
+PASS: main-study verification; no remote writes.

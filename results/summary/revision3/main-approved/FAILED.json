@@ -1,0 +1,6 @@
+{
+  "status": "FAILED",
+  "recorded_utc": "2026-10-11T15:49:04.371981+00:00",
+  "reason": "Final descriptive input/outcome join incorrectly requested one-to-many across two input features. Raw results and completed earlier summary tables unchanged. Corrected by validating unique feature/metric keys and merging separately per feature.",
+  "replacement_directory": "results/summary/revision3/main-approved-checked"
+}

@@ -1,0 +1,30 @@
+# Reading the revision-3 charts in basic English
+
+These notes explain computed results; they are not a script claiming the student independently designed or wrote the work. Use the checked exports in `figures/revision3/main-approved-checked/`. Each CSV contains all plotted values plus the retained statuses/denominators needed to interpret them.
+
+| Chart | How to read it | What it supports | What it does not prove |
+|---|---|---|---|
+| 01 · ACS input differences | Rows are groups; columns are real later years. Brighter cells mean larger scores on that panel's own scale. Gray × means not enough records. | Some selected-record groups differ more than the aggregate; 12 of 30 views cannot be assessed. | Harm, bias, known drift onset or successful detection. PSI and KS colors are not interchangeable units. |
+| 02 · OULAD input differences | The later 2014J cohort is compared with the 2013J reference. Five of nine views lack input support. | A small, real cohort case with explicit missing coverage. | A long time-series experiment. The frozen previous-attempt PSI bins cannot distinguish nonnegative counts. |
+| 03–04 · Outcome-gap changes | Each color/number is the change in a group's prediction-rate gap against everyone outside that group. Units are percentage points. | Model outcome differences on separate audit records, with minimum denominators. | That input drift caused the outcome difference, or that a positive color always means harm. |
+| 05–07 · Constructed controls | Each point is an event proportion from 30 complete streams; the horizontal line is a 95% Wilson interval. Three charts retain all monitoring scopes. | No exact-target recovery in this specific source substitution; small numbers of null alerts are retained. | General accuracy on real-world drift, proof of equivalence, or zero risk when the count is zero. |
+| 08 · Collection, waiting and age | Left: how often a group can be tested. Middle: first test look; 21 is assigned when never tested by look 20. Right: age of the oldest collected record in a tested block. | Accumulating records can make more groups assessable, with waiting and older observations. Both statistics get the same benefit. | That being assessable means detecting a change. These ages are delivery blocks, not calendar days. |
+| 09 · Delays including misses | Each dot is a stream. Misses stay at 15 instead of disappearing from the average. | The specified target was not recovered; all misses remain visible. | That a method is fast simply because difficult streams were omitted. |
+| 10 · Runtime and memory | Three panels separately show kernel time, logical payload and measured temporary allocations on identical blocks. Smaller bars mean smaller measured costs. | A limited cost comparison with alternating timing order; one PSI timing case is slower. | A 112-byte complete monitor or universal superiority. Shared input, scheduler and setup costs are additional. |
+| 11 · Inputs versus outcomes | Each point pairs a subgroup input score with a separate outcome-gap change. Every feature/metric combination is shown. | These measurements answer different questions and may disagree. | A causal relationship or statistically established correlation. Unsupported pairs remain in CSV. |
+| 12 · Paired differences | Zero means the two methods matched on that summary; intervals resample complete paired streams. Diamonds flag a degenerate interval. | The observed differences/ties and conditional uncertainty under the fixed pools. | That a zero-width interval from 30 tied pairs proves equivalence. |
+
+## Terms on the axes
+
+- **PSI:** a comparison of the proportions falling into fixed historical bins. A larger number means a larger difference under this representation, not a percentage of biased people.
+- **KS distance:** the largest separation between two cumulative numeric distributions. It uses the original ordered feature values; it is not measured in PSI units.
+- **Ordinary:** compare each incoming batch separately. **Accumulated:** hold a group's batches until its current block and fixed reference both reach the minimum.
+- **Aggregate scope:** only Everyone. **Single scope:** Everyone plus each declared category separately. **Intersection scope:** all of those plus the category pairs. These are overlapping views and their results are not independent.
+- **TPR:** among records with the positive label, how many the model predicted positive. **FPR:** among records with the negative label, how many it incorrectly predicted positive. **Accuracy:** fraction of all labels predicted correctly.
+- **Conditional stream:** a resampling experiment from fixed public-record pools. A stream is the uncertainty unit; its 20 repeated looks are not 20 independent experiments.
+
+ACS `AGEP` means age; `SCHL` is educational-attainment code. Recorded `SEX=1` means male and `SEX=2` female; these fields do not measure gender identity. `RAC1P` documentation codes: 1 White alone; 2 Black or African American alone; 3 American Indian alone; 4 Alaska Native alone; 5 the combined/unspecified American Indian and Alaska Native category specified in the dictionary; 6 Asian alone; 7 Native Hawaiian and Other Pacific Islander alone; 8 Some Other Race alone; 9 Two or More Races. Do not combine the sparse categories merely to improve a graph. See the [Census source dictionaries](https://www.census.gov/programs-surveys/acs/microdata/documentation.html) for exact definitions.
+
+OULAD records gender as F/M and disability as Y/N. These are the published dataset categories, not inferred identities. BBB is an anonymized module code; 2013J and 2014J are its October presentations. No course title or fabricated calendar day is inferred.
+
+For a short discussion, start with 01 (real data and unsupported groups), 07 (the negative target-recovery result), 08 (the useful coverage result), and 04 (outcomes are a separate question). Keep the full pack available so the selection does not hide the other results. The defensible explanation is: **collection can improve whether a small group is assessable without establishing that PSI detects changes better than matched KS.**

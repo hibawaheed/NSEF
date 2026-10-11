@@ -1,0 +1,192 @@
+{
+  "ai_role": "AI-assisted code, tests, and plotting; numbers computed by executable code",
+  "charts": [
+    {
+      "name": "01_natural_acs_ma",
+      "note": "Natural observations; no known drift onset or detection accuracy. Both methods use the same records and require \u2265100 on each side. Gray \u00d7 = insufficient support. PSI and KS have different units; their color bars are separate. Calendar labels denote actual survey years/cohorts. All declared views are retained.",
+      "rows": 180,
+      "title": "ACS Massachusetts: observed input-distribution differences"
+    },
+    {
+      "name": "02_natural_oulad_bbb",
+      "note": "Natural observations; no known drift onset or detection accuracy. Both methods use the same records and require \u2265100 on each side. Gray \u00d7 = insufficient support. PSI and KS have different units; their color bars are separate. Calendar labels denote actual survey years/cohorts. All declared views are retained.",
+      "rows": 18,
+      "title": "OULAD BBB: observed input-distribution differences"
+    },
+    {
+      "name": "03_outcome_gaps_acs_ma",
+      "note": "Descriptive held-out audits, separate from monitored records. Gap = group rate minus its complement; change = later gap minus baseline gap. Positive means the signed gap increased, not necessarily harm. Gray \u00d7 includes unsupported denominators and the aggregate, which has no complement. Each relevant denominator must be \u226520. CSV includes baseline/current rates, gaps, numerators and denominators; no causal or population inference.",
+      "rows": 270,
+      "title": "ACS_MA: changes in frozen-model group-versus-complement gaps"
+    },
+    {
+      "name": "04_outcome_gaps_oulad_bbb",
+      "note": "Descriptive held-out audits, separate from monitored records. Gap = group rate minus its complement; change = later gap minus baseline gap. Positive means the signed gap increased, not necessarily harm. Gray \u00d7 includes unsupported denominators and the aggregate, which has no complement. Each relevant denominator must be \u226520. CSV includes baseline/current rates, gaps, numerators and denominators; no causal or population inference.",
+      "rows": 27,
+      "title": "OULAD_BBB: changes in frozen-model group-versus-complement gaps"
+    },
+    {
+      "name": "05_controls_aggregate",
+      "note": "30 paired streams per cell; points and 95% Wilson intervals. Source substitution begins at delivery block 6 and may cause only a small feature-distribution difference. Natural drift accuracy is not measured. Each standalone method has alpha .05 over 20 looks; scopes are separate comparisons. Zero observed events does not establish zero risk. Exact-target recovery is defined only for the intersection scope. CSV also retains pre-intervention alerts.",
+      "rows": 72,
+      "title": "Constructed controls \u00b7 aggregate scope \u00b7 matched PSI and KS"
+    },
+    {
+      "name": "06_controls_single",
+      "note": "30 paired streams per cell; points and 95% Wilson intervals. Source substitution begins at delivery block 6 and may cause only a small feature-distribution difference. Natural drift accuracy is not measured. Each standalone method has alpha .05 over 20 looks; scopes are separate comparisons. Zero observed events does not establish zero risk. Exact-target recovery is defined only for the intersection scope. CSV also retains pre-intervention alerts.",
+      "rows": 72,
+      "title": "Constructed controls \u00b7 single scope \u00b7 matched PSI and KS"
+    },
+    {
+      "name": "07_controls_intersection",
+      "note": "30 paired streams per cell; points and 95% Wilson intervals. Source substitution begins at delivery block 6 and may cause only a small feature-distribution difference. Natural drift accuracy is not measured. Each standalone method has alpha .05 over 20 looks; scopes are separate comparisons. Zero observed events does not establish zero risk. Exact-target recovery is defined only for the intersection scope. CSV also retains pre-intervention alerts.",
+      "rows": 96,
+      "title": "Constructed controls \u00b7 intersection scope \u00b7 matched PSI and KS"
+    },
+    {
+      "name": "08_collection_support_wait_age",
+      "note": "Means across 30 unchanged conditional streams. Paired substitution streams have identical group membership and coverage; both conditions are included in the CSV. PSI and KS share one scheduler, so their coverage is exactly identical. Waiting summaries assign 21 to streams never assessed by look 20. Gray \u00d7 in age means no assessed block; it does not mean fresh records. Ages are constructed delivery blocks, not calendar time.",
+      "rows": 10800,
+      "title": "Collection: coverage, waiting and record age for every declared group"
+    },
+    {
+      "name": "09_restricted_delay",
+      "note": "Intersection scope; 30 points per method/setting. Black diamond = mean restricted delay. An alert at block 6 has delay 0; no alert during blocks 6\u201320 is retained at 15, not dropped. Any-view recovery may be unrelated to the target; the right panels require an alert in SEX=2 & RAC1P=2. Zero alerts is a result, not evidence that the implementation is accurate.",
+      "rows": 2160,
+      "title": "Constructed intervention: delays with every missed recovery retained"
+    },
+    {
+      "name": "10_runtime_and_memory",
+      "note": "Medians of five repeats; timing order alternates. Allocation profiling is separate from native timing. PSI histogram construction and shared scheduling are additional costs. These null-block benchmarks use conservative early stopping and do not characterize every alternative. Whole offline study high-water RSS = 300.8 MiB, including retained frames/IDs. Histogram payload is not total monitor memory. Full engine timings are retained separately.",
+      "rows": 80,
+      "title": "Cost comparison on identical, prespecified real-record blocks"
+    },
+    {
+      "name": "11_input_outcome_pairs",
+      "note": "Every assessable declared group/period is shown, including negative and near-zero changes; unsupported and aggregate-without-complement rows remain in CSV. Each point pairs a descriptive input score with a separate held-out outcome audit. There is no fitted relationship, significance claim or causal interpretation. Repeated groups/years are dependent. All two-feature \u00d7 three-metric combinations are shown; no association was selected for appearance.",
+      "rows": 594,
+      "title": "Input differences and outcome-gap changes answer different questions"
+    },
+    {
+      "name": "12_paired_comparisons",
+      "note": "2,000 bootstrap resamples of 30 complete paired conditional streams per cell. Diamonds flag degenerate intervals (for example every pair tied); they do not prove equivalence or superiority. Full tables also retain the ordinary \u226550 comparison and all scopes. The finite source pools and small number of repeats limit generalization; no natural detection-accuracy interval is claimed.",
+      "rows": 588,
+      "title": "Paired comparisons preserve ties and uncertainty"
+    }
+  ],
+  "config_sha256": "74888cf1cf3e07c436b293f0a5474e4a4d5fe4ae174479f7d30d6637cb456a8b",
+  "created_at_utc": "2026-10-11T15:49:41.073287+00:00",
+  "elapsed_seconds": 14.525711240999954,
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "files": {
+    "01_natural_acs_ma.csv": "e35c106b50e698c0b936e6a88e54aa8e9c5e1faff476b78d86292361bf5a11dc",
+    "01_natural_acs_ma.pdf": "85f37b954292c25461b8500e4ab5bfb32edd9a85b96ea8f7e5a921bb1bb3550d",
+    "01_natural_acs_ma.png": "b183ba4afbc5237ef769718e8afac7a41d986f6ae6ef067c39a713e6ef571827",
+    "01_natural_acs_ma.svg": "9c6abd7b2d84e005abe82fcafedf07cdb023433af6e147370a6bcb2216c8a632",
+    "02_natural_oulad_bbb.csv": "ecb674382f5ee003849292cf03b7da78aa2f1f070d4cd3d3ebf2452faddaacd6",
+    "02_natural_oulad_bbb.pdf": "b208c47a92fdcdad63a8bc3b3e62b47fb585eaecb6df8807d6c5ca8561e12bc7",
+    "02_natural_oulad_bbb.png": "4998e7a013a4ea8bdabaeb97e282556e47200a799060022e0cde20a83a4e9769",
+    "02_natural_oulad_bbb.svg": "fdeaccd29a98a97887b17bf8cbb9a33a8af8e078a9723eaa16011a3f28d23e91",
+    "03_outcome_gaps_acs_ma.csv": "1a5e60c8e554731897d5a209d04a5c62990bcee26fe55b0e4eb3d44451d5d80c",
+    "03_outcome_gaps_acs_ma.pdf": "77d3de86312869f882a399b094a565230463c9b5c40885c8ed374b725b55c479",
+    "03_outcome_gaps_acs_ma.png": "3b5c17a537566edead6565cb46f1df93a3ddf6e81415d83962b426ea74ab5423",
+    "03_outcome_gaps_acs_ma.svg": "b2998965f927465650ca2c2c1e3713dddedb070b3110000a36c83ca04a533108",
+    "04_outcome_gaps_oulad_bbb.csv": "b3d4fe316f7466abb0b527604f0baaea74c22bee279dd843fdb898b17e0de0e0",
+    "04_outcome_gaps_oulad_bbb.pdf": "345c4092e2b41c6d3ba98c6eff3b8a7be13ebb1e79c13125bd1806abdddd5179",
+    "04_outcome_gaps_oulad_bbb.png": "04ba887d8b875b0e150cb3a7d17dbb930e176cd38513db54f33af4877b232665",
+    "04_outcome_gaps_oulad_bbb.svg": "573c3220364cb3a5a88c39e8924dd98a9b40f1670b16becb20ccc55fdc30857f",
+    "05_controls_aggregate.csv": "3371bebc398e98e0ea626f0e865ab6d7a821368a4d9325db8ec51e8521f30d3b",
+    "05_controls_aggregate.pdf": "7c1d8f8e92fe8784844cee0b4bc3b8ebd3d88328b02ea413d4b4e4f32993f112",
+    "05_controls_aggregate.png": "061dfc28ac303bb5043b3a8feac5d77d69c351d42a95d88e0664552b4520acd5",
+    "05_controls_aggregate.svg": "682613b599a56071e8f904c5b261ab67601572f47b8b6062c1da531eeae3fc17",
+    "06_controls_single.csv": "a3fcfc34a77dc406972931c89902802686e704ed74dd8b4443f311fe873f54bb",
+    "06_controls_single.pdf": "08aaeae96ad017f5bc82f4d2378f93318bf95300c5c20d0dbf9655d52c90be88",
+    "06_controls_single.png": "1c8ad46b10ef89716ee3a84b140c2e8ed0c16064c20131d91108a669d50bf45f",
+    "06_controls_single.svg": "8f0929aca4d96e04d8188985d87cd35940928753744886df54765292f9d51ed3",
+    "07_controls_intersection.csv": "3b89ca981d7999915f4d7c41608dfdf9d42daacff183e77bdf9181b57b27ec2e",
+    "07_controls_intersection.pdf": "1094130a12fb58b991d734cd6f2fde81bb24d024ed8f70775eaf6dc71d6566ac",
+    "07_controls_intersection.png": "23591c1117326dd4e9c597e7f169047cb3658032f2e790295a7e2368bc8ab8ed",
+    "07_controls_intersection.svg": "c0fbb7064bc744c8c4d32e54438b9ef7a516a41ab7ea595bce9ad6846b4ad601",
+    "08_collection_support_wait_age.csv": "0d293fd7b756425a51f7cd975404f2a285ae155f453fa7a7f814a88b6de533fc",
+    "08_collection_support_wait_age.pdf": "c23fdecafcbf7eab18816e076567ceb4d945b946034ba55c6d855eb2a5cfb84a",
+    "08_collection_support_wait_age.png": "3e2d232be703a14dd868046cec7cda9cf4776986d08afa05e374284f70647a87",
+    "08_collection_support_wait_age.svg": "7506b299b9f9d2c638495d2ec8a806f19fd43f6f39d6b6854bd6596246d5ddd6",
+    "09_restricted_delay.csv": "d8ee2931039402a0ab743afc9c13e8f908b8698481f8e0e26de24f3bc93fe102",
+    "09_restricted_delay.pdf": "36789ea56525d48cdfb95bc986673fc9b56587e6e9057a9c0da89b2bde44426f",
+    "09_restricted_delay.png": "b8716b94ba34f758c2054e5b8dc323bb9065cc41a4cc6cdd2e0689747ffab8b0",
+    "09_restricted_delay.svg": "026d82125016557946f95c5051636542086a2b6c85a11f17fa6a6f3e46ece5be",
+    "10_runtime_and_memory.csv": "a6eb3a54dcd2ff685c740702e4aed799f4c6023d34d6ea20f6c194db73c12a1e",
+    "10_runtime_and_memory.pdf": "713c08796bf5d2b93b9c2b436374012128cacffe6b460bb4b094a726d7728527",
+    "10_runtime_and_memory.png": "8ec283341efd242c4746d31255ea8bbaa44b07b7eb0474c399a033d1a87c9f29",
+    "10_runtime_and_memory.svg": "b98f53bf85f10e4512c5ef3ee43d6da9c268c37ec9a316f74d056338f1da790c",
+    "11_input_outcome_pairs.csv": "f32e5cc4710b016735b62a8c653b086c78fdca4559a8492b4d98115250355f14",
+    "11_input_outcome_pairs.pdf": "3aaf69bf1e18a6f0543b4f2279ecec3e024ccf9e56fc2b569b0e6e6163424b56",
+    "11_input_outcome_pairs.png": "3e074fe88cb03001bca06ced6d08f60f11fbc92d64a03cca91c799be50ca3ea3",
+    "11_input_outcome_pairs.svg": "fc1f2ebbec19a4a35d4712fcf18fce08b0c70fc0d151e7bb54de80e48f204ea4",
+    "12_paired_comparisons.csv": "05ae1b4230a31caf0babf53bd2415e2eb37a17246f514191fa11ded6abb19669",
+    "12_paired_comparisons.pdf": "c089218402b01ae5435eb2a77b29ed533b1ce1026f2576bf6991d810b294f00a",
+    "12_paired_comparisons.png": "daab6ac7ce0b1815572eaf1709b15564759f2f34353820443445afddf1cde41e",
+    "12_paired_comparisons.svg": "4911f93b9ab56aa7a8afe66026e6c7e3c92ab4467c940e56f8df5ca849198a81",
+    "SubPSI_revision3_chart_pack.pdf": "f9e9a00a09ff43f58f42f4ffd34107ee39efb43e6a6bd60be7aee734dcb9c85c",
+    "index.html": "a519cf0dd560a427343506f13a94754951be72c5237c28905010ad3065b103df",
+    "source_snapshot.zip": "83dd3bb1ddb27ecaf94ed5c5ff39b7a28993ca3e8ec0149a123d160581dcd35a"
+  },
+  "git_head": "3a21f2fe073fda94e7801d6eaf127f04245abaf0",
+  "plot_code_sha256": "ed32ba455062f75e34a34ae3ca2204f6a91ddbf9d4dc52afffcb72d7e4dfe605",
+  "raw_manifest_sha256": "2fa9b79c84d45156eaecf4dc76751634ebaefc05fdd0c734f637c0567951cbdb",
+  "source_hashes": {
+    "configs/adult.json": "6f2dcab33fdcae368e27d603690e7d43f24cac7acfc68371de6d5c69150404a2",
+    "configs/revision2.json": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+    "configs/revision3/approved.json": "74888cf1cf3e07c436b293f0a5474e4a4d5fe4ae174479f7d30d6637cb456a8b",
+    "configs/revision3/proposed.json": "ce7ec5507394aa86c29a6171ed30a5abdeff63bcdeb3e8533aa3e8aff378b73a",
+    "configs/smoke.json": "deb69bf74a2ed825345bb6473966c86991e054aaf549ab257a198609df2f56c4",
+    "configs/synthetic.json": "da7d349a13ed4897f7edc968b23aeecf1f8a4ed567a8218d513b425eaf1648e5",
+    "scripts/audit_original.py": "ee862d63402d1c5a2bd82073f4a1700c4e64ccc1a7252eefd242d7e487dcc666",
+    "scripts/check_replay.py": "658d36c4bdd77ba48ab2bf500c192fe6bd9154eff60e542a2d9c105caa815267",
+    "scripts/fetch_adult.py": "bbc87ff30f750fa49c619ee54150acda4e3d4c47ed3b91fc6cdaed65528c4dd0",
+    "scripts/make_figures.py": "ffaebf5b8d82966fe415f5c1ef62406e9fea60cb1f7aaff9903824146dbc7452",
+    "scripts/make_revision_figures.py": "33a5e0e2a2319bc2beba13aa135dac31782ef20e46a48dcf4d8eff52340c3c28",
+    "scripts/prepare_web_evidence.py": "88f4ea11c69d1ead3ab3b9cd7e8f90cccb517f4c29c3ced21977e15294980f31",
+    "scripts/record_command.py": "18ce251b5affa5c9bbb8349427e88296e89ce19b40fd7de0c5579f2fabd5fae2",
+    "scripts/revision3/extract_oulad_metadata.py": "46739e0758a7d7720fe69a92b4c0ff4712fc483be2b0e17dce990ee2475d4722",
+    "scripts/revision3/fetch_documentation.py": "178331a1bc2f623fed74ca026d8f4908c8ead743999e40fc735db24e8ea1b5ea",
+    "scripts/revision3/fetch_sources.py": "885661661bad7f66efd4700469eeefc61fb7540fadb33ebc962d2fcbf29a7173",
+    "scripts/revision3/inspect_support.py": "dfd31d61d527fc0820d62704ce370b24c2a2476296c3917a36480e7760c26908",
+    "scripts/revision3/plot_main.py": "ed32ba455062f75e34a34ae3ca2204f6a91ddbf9d4dc52afffcb72d7e4dfe605",
+    "scripts/revision3/plot_support.py": "05a4b4dba0533e2456fb344f20bb3b7a4838059edf1a1da63594e3b57999167c",
+    "scripts/revision3/run_main.py": "706c0d919ea4c984392df3f01321180df3c7130a20fece229277a1a4e8195528",
+    "scripts/revision3/summarize_main.py": "8412317f66b0687589546dec8cf1a41c3ce39f307e39a2559e2843978da08ecd",
+    "scripts/revision3/validate_matched_replay.py": "161b3618335471421be9eac70a41fbfe195ed378f91d48e96ed2133c1f55b733",
+    "scripts/revision3/verify_preparation.py": "c42f41fdcde51d9a6051bc1790f98c45d9a9e56a455b1cfa3615647c519a5b11",
+    "scripts/run_adult.py": "49bb1390e8af5550d89f3b83ef02bbf8206fa511d358d4141aa8e4b0fb21c409",
+    "scripts/run_revision.py": "b0630e8df05686a0c4ecde616afade2a0a05667fd142b9019acb8112159f0544",
+    "scripts/run_revision_public.py": "3c1baa50a9a986d91f17c6e252ef4969578dc295ec898043abc48a14ad96c8ac",
+    "scripts/run_synthetic.py": "28463b152a206ee76ef96ed4ad8b28754c9acf0e1b48922aa7121ebcb1d60b3b",
+    "scripts/summarize_diagnostics.py": "2a5b3c9bd711d24f620f642257145249a5c4ef62349e4a1662e7d28894349522",
+    "scripts/summarize_revision.py": "c5751c72f0e4779f82e41afb38733881e7b2663ab65c132ead69fde86f5f8d29",
+    "scripts/validate_assets.py": "3d299d287b9c23f42510f0e94d1aab18949b09a155f55a8b9ac8a605ba27b774",
+    "scripts/validate_revision.py": "8d904e92c3311f0f01cf377b99b3f54a90dc6ee879b663f3c32d8d40598683b7",
+    "src/subpsi/__init__.py": "b4adde9d1198e3aa061308bb6ded4bb17f1a86615e6f5a0d804633fd88d264c9",
+    "src/subpsi/core.py": "b90b50153db9942b55b66c434a203965b4dd78a08309f825e52188c70163a41a",
+    "src/subpsi/matched.py": "be63d07f68ff44eb03a27e1add1df42ebd2d90f3d5baa905a3d817b1059e8544",
+    "src/subpsi/provenance.py": "05eb44daf4be73c3f11dda69742b0d63dd82e008a31f35c47696a846cc0dac13",
+    "src/subpsi/realdata.py": "1a5b3940b3dde52f91b9d7c81f23eb127a0e1b2d3af81e50616b9ad807a9b606",
+    "src/subpsi/revision.py": "13451b04a6cf6e240297a578a65ed14c7a6049f26c9bf2c3b1f36f4f84471d26",
+    "src/subpsi/scenarios.py": "86668658127306af982034cc6da92238bd8cde42b5c3e60a9081ccb60aedd3fb"
+  },
+  "source_snapshot_sha256": "83dd3bb1ddb27ecaf94ed5c5ff39b7a28993ca3e8ec0149a123d160581dcd35a",
+  "status": "COMPLETE",
+  "table_manifest_sha256": "bb99c2a13ee23d173769a23aa64e410dccc7609a5ab27bcfe2aeb3e28e977a05"
+}

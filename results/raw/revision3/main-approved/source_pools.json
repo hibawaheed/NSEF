@@ -1,0 +1,12 @@
+{
+  "reference": {
+    "lineage_sha256": "96fff3191c77abe420588d80d015096fb544a5d51a0cd3d72885ed89b72430ce",
+    "n": 15584,
+    "path": "data/raw/revision3/main-approved/reference_pool.csv"
+  },
+  "replacement": {
+    "lineage_sha256": "9d49c52608da37c7709c3108d040b89a701f0e7563baa8cc746a399a9498a95f",
+    "n": 526,
+    "path": "data/raw/revision3/main-approved/replacement_pool.csv"
+  }
+}

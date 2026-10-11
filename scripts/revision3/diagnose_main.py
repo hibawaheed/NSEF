@@ -1,5 +1,5 @@
 """Post-run implementation diagnostics; no tuned replacements or extra main runs."""
-import json,sys,time
+import argparse,json,sys,time
 from pathlib import Path
 import pandas as pd
 ROOT=Path(__file__).resolve().parents[2];sys.path.insert(0,str(ROOT/'src'))
@@ -10,7 +10,8 @@ from subpsi.provenance import manifest,sha256,write_json,save_snapshot
 
 
 def main():
-    out=ROOT/'results/summary/revision3/postrun-diagnostics';out.mkdir(parents=True,exist_ok=False)
+    parser=argparse.ArgumentParser();parser.add_argument('--out',default='results/summary/revision3/postrun-diagnostics');args=parser.parse_args()
+    out=ROOT/args.out;out.mkdir(parents=True,exist_ok=False)
     config=ROOT/'configs/revision3/approved.json';datasets,sources=load_datasets(ROOT,json.loads(config.read_text()))
     rows=[];start=time.perf_counter()
     for ds in datasets:

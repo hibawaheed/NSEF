@@ -1,5 +1,5 @@
 """Read-only verification of the main study, plus deterministic numerical replays."""
-import argparse,gzip,json,runpy,sys,time
+import argparse,gzip,hashlib,json,runpy,sys,time,zipfile
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -22,6 +22,10 @@ def verify(raw,tables,figures,replay=True):
         m=json.loads((directory/'manifest.json').read_text());assert m['status']=='COMPLETE'
         for p,h in m['files'].items():assert sha256(directory/p)==h,(directory,p)
         checked+=len(m['files'])
+        assert sha256(directory/'source_snapshot.zip')==m['source_snapshot_sha256']
+        with zipfile.ZipFile(directory/'source_snapshot.zip') as archive:
+            for path,expected in m['source_hashes'].items():
+                assert hashlib.sha256(archive.read(path)).hexdigest()==expected,path
     m=json.loads((raw/'manifest.json').read_text())
     for p,h in {**m['input_hashes'],**m['private_lineage_hashes']}.items():assert sha256(ROOT/p)==h,p
     config=json.loads((ROOT/'configs/revision3/approved.json').read_text());assert m['config_sha256']==sha256(ROOT/'configs/revision3/approved.json')
@@ -100,5 +104,5 @@ def verify(raw,tables,figures,replay=True):
     print('PASS: main-study verification; no remote writes.')
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--raw',default='results/raw/revision3/main-approved');p.add_argument('--tables',default='results/summary/revision3/main-approved-checked');p.add_argument('--figures',default='figures/revision3/main-approved');p.add_argument('--no-replay',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--raw',default='results/raw/revision3/main-approved');p.add_argument('--tables',default='results/summary/revision3/main-approved-checked');p.add_argument('--figures',default='figures/revision3/main-approved-checked');p.add_argument('--no-replay',action='store_true');a=p.parse_args()
     verify(ROOT/a.raw,ROOT/a.tables,ROOT/a.figures,replay=not a.no_replay)
