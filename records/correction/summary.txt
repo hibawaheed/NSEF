@@ -1,0 +1,14 @@
+/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/numpy/_core/fromnumeric.py:3862: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/hiba_w/Documents/Codex/2026-10-11/hey/work/venv/lib64/python3.14/site-packages/numpy/_core/_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/correction/summarize.py", line 108, in <module>
+    out=ROOT/a.out;out.mkdir(parents=True,exist_ok=False);summarize(ROOT/a.raw,out)
+                                                          ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/correction/summarize.py", line 74, in summarize
+    result=stratified_interval(subset,metric,None if method=='PSI minus KS' else method)
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/correction/summarize.py", line 32, in stratified_interval
+    'degenerate':bool(np.all(means==means[0]))}
+                                    ~~~~~^^^
+IndexError: invalid index to scalar variable.

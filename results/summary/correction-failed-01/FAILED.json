@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_REPORTING_ONLY",
+  "reason": "Pandas default CSV NA vocabulary parsed literal synthetic kind null as missing; empty null subset stopped aggregation. Raw numerical results unaffected.",
+  "log": "records/correction/summary.txt",
+  "git_head": "a00b92a",
+  "retained": "Partial per-cell tables retained; excluded from frozen claims."
+}

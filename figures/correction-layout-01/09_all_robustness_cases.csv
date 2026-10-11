@@ -1,0 +1,19 @@
+id,kind,n,repeats,share,method,metric,n_streams,successes,estimate,low,high,minimum,maximum,interval,magnitude,cancel
+cancel_0,cancellation,1000,40,0.25,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.6,0.0
+cancel_0,cancellation,1000,40,0.25,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.6,0.0
+cancel_0.5,cancellation,1000,40,0.25,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.6,0.5
+cancel_0.5,cancellation,1000,40,0.25,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.6,0.5
+cancel_1,cancellation,1000,40,0.25,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.6,1.0
+cancel_1,cancellation,1000,40,0.25,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.6,1.0
+gradual,gradual,1000,40,0.1,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.4,
+gradual,gradual,1000,40,0.1,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.4,
+missing,missing,1000,40,0.1,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,0.4,
+missing,missing,1000,40,0.1,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,0.4,
+benign,benign,1000,40,0.1,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.4,
+benign,benign,1000,40,0.1,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.4,
+outcome,outcome,1000,40,0.1,PSI,post_alert,40,2.0,0.05,0.0138206673861483,0.1650387736914096,0.0,1.0,95% Wilson,1.0,
+outcome,outcome,1000,40,0.1,KS,post_alert,40,0.0,0.0,0.0,0.0876216011972866,0.0,0.0,95% Wilson,1.0,
+composition,composition,1000,40,0.1,PSI,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.0,
+composition,composition,1000,40,0.1,KS,post_alert,40,40.0,1.0,0.9123783988027137,1.0,1.0,1.0,95% Wilson,1.0,
+correlation,correlation,1000,40,0.1,PSI,post_alert,40,1.0,0.025,0.0044268315026814,0.1288136896347409,0.0,1.0,95% Wilson,1.0,
+correlation,correlation,1000,40,0.1,KS,post_alert,40,1.0,0.025,0.0044268315026814,0.1288136896347409,0.0,1.0,95% Wilson,1.0,

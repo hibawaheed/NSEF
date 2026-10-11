@@ -1,0 +1,7 @@
+model,time,group,level,metric,baseline_numerator,baseline_denominator,baseline_rate,baseline_complement_numerator,baseline_complement_denominator,baseline_complement_rate,current_numerator,current_denominator,current_rate,current_complement_numerator,current_complement_denominator,current_complement_rate,rate_status,rate_change,gap_status,baseline_gap,current_gap,gap_change
+Frozen logistic,2014,Everyone,aggregate,TPR,185,211,0.8767772511848341,0,0,,484,547,0.8848263254113345,0,0,,assessed,0.0080490742265004,not_applicable,,,
+Frozen logistic,2014,Everyone,aggregate,FPR,137,181,0.7569060773480663,0,0,,369,426,0.8661971830985915,0,0,,assessed,0.1092911057505252,not_applicable,,,
+Frozen logistic,2014,Everyone,aggregate,Accuracy,229,392,0.5841836734693877,0,0,,541,973,0.5560123329907503,0,0,,assessed,-0.0281713404786374,not_applicable,,,
+Training-majority baseline,2014,Everyone,aggregate,TPR,211,211,1.0,0,0,,547,547,1.0,0,0,,assessed,0.0,not_applicable,,,
+Training-majority baseline,2014,Everyone,aggregate,FPR,181,181,1.0,0,0,,426,426,1.0,0,0,,assessed,0.0,not_applicable,,,
+Training-majority baseline,2014,Everyone,aggregate,Accuracy,211,392,0.5382653061224489,0,0,,547,973,0.5621788283658787,0,0,,assessed,0.0239135222434297,not_applicable,,,

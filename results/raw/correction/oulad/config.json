@@ -1,0 +1,77 @@
+{
+  "authorized_by": "User request in this chat, 11 October 2026; no independent mentor approval inferred",
+  "base_commit": "27288575028181baae90f68d30d4e3dc5e363a53",
+  "deadline_local": "2026-10-14T23:59:59+05:00",
+  "freeze": "Freeze verified numerical set, code/config/source hashes and claims. Final choice among project versions remains the user\u2019s decision; no final submission drafted.",
+  "label": "Post-result Version 3 correction and retrospective matched Version 2 comparison",
+  "maximum_benchmark_seconds": 7200,
+  "oulad": {
+    "attempt_edges": [
+      "-inf",
+      0.5,
+      1.5,
+      "inf"
+    ],
+    "attempt_labels": [
+      "0",
+      "1",
+      "2 or more",
+      "missing"
+    ],
+    "baseline": "Constant training-majority class; tie predicts 0; never select from audit labels",
+    "design_counts": {
+      "0": 314,
+      "1": 45,
+      "2": 12,
+      "3": 1
+    },
+    "design_n": 372,
+    "expected_training_labels": {
+      "0": 319,
+      "1": 438
+    },
+    "original_config": "configs/revision3/approved.json",
+    "original_config_sha256": "74888cf1cf3e07c436b293f0a5474e4a4d5fe4ae174479f7d30d6637cb456a8b",
+    "original_results": "results/raw/revision3/main-approved",
+    "policies": [
+      [
+        "batch50",
+        "batch",
+        50
+      ],
+      [
+        "batch100",
+        "batch",
+        100
+      ],
+      [
+        "accum100",
+        "accumulate",
+        100
+      ]
+    ],
+    "rule_rationale": "Separate zero, one and multiple prior attempts. Pool 12 twos and one three into a historical tail; keep unseen higher integer counts in that tail. No tuning against later records or outcomes. Sparse tail limits interpretation.",
+    "unchanged": "Source records, split, cohort, groups, support, studied_credits bins, model coefficients, outcome thresholds; natural scores remain descriptive"
+  },
+  "status": "FROZEN_BEFORE_CORRECTED_RUNS",
+  "v2": {
+    "alpha_per_standalone_method": 0.05,
+    "bootstrap_draws": 2000,
+    "bootstrap_seed": 948271,
+    "comparison": "Single shared scheduler and same complete observation blocks, no truncation or extra observations. Original PSI scores, eligibility, starts and hit sets must replay. Censored non-significant Monte Carlo p-values may differ because the matched engine stops at the horizon cutoff.",
+    "config": "configs/revision2.json",
+    "config_sha256": "ee04bbd86b343c927031adcd13a4b229568bbc9eeec54cdaf09997a92eb9f03e",
+    "cost": "Same-block test costs and logical payload recorded; process peak RSS is shared; neither is a deployment memory claim",
+    "look_budget": "alpha / 20; not a combined PSI-or-KS monitor",
+    "methods": [
+      "Accumulated PSI",
+      "Accumulated KS"
+    ],
+    "minimum_reference_and_current": 100,
+    "original_results": "results/raw/revision2",
+    "permutations": 15999,
+    "scope": "All nine declared group views and all declared features; fixed Holm family at each look",
+    "selection": "All originally declared synthetic cases and repeats from saved cases.json; no Adult extension",
+    "streams": 1820
+  }
+}

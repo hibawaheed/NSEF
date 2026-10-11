@@ -1,0 +1,9 @@
+n,kind,metric,method,n_streams,successes,estimate,low,high,interval,degenerate
+250,null,stream_alert,PSI,250,10.0,0.04,0.0218699119545425,0.0720527235812664,95% Wilson,False
+250,null,stream_alert,KS,250,3.0,0.012,0.0040893198805342,0.0346807804270196,95% Wilson,False
+250,shift,post_alert,PSI,480,313.0,0.6520833333333333,0.625,0.6791666666666667,"fixed-cell stratified paired bootstrap, 2000 resamples",False
+250,shift,post_alert,KS,480,327.0,0.68125,0.65625,0.7062499999999999,"fixed-cell stratified paired bootstrap, 2000 resamples",False
+1000,null,stream_alert,PSI,250,12.0,0.048,0.0276682015306946,0.0820123012131872,95% Wilson,False
+1000,null,stream_alert,KS,250,4.0,0.016,0.0062392245704711,0.0404098093411191,95% Wilson,False
+1000,shift,post_alert,PSI,480,417.0,0.86875,0.8520833333333334,0.8854166666666666,"fixed-cell stratified paired bootstrap, 2000 resamples",False
+1000,shift,post_alert,KS,480,425.0,0.8854166666666666,0.8708333333333332,0.9,"fixed-cell stratified paired bootstrap, 2000 resamples",False

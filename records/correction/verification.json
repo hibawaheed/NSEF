@@ -1,0 +1,33 @@
+{
+  "artifact_hashes_verified": 1885,
+  "figure_csvs_match_source_tables": [
+    "01_historical_bin_correction",
+    "02_oulad_corrected_distances",
+    "03_prediction_baseline",
+    "04_outcome_gaps_with_baseline",
+    "05_input_and_outcome_context",
+    "06_all_original_grid_cells",
+    "07_matched_detection_and_null_alerts",
+    "08_target_coverage_and_wait",
+    "09_all_robustness_cases",
+    "10_costs_with_scope"
+  ],
+  "matched_support_streams": 1820,
+  "note": "No claims about natural drift truth or independent student authorship. Visual checks are recorded separately.",
+  "original_files_preserved": 3011,
+  "original_v2_reporting": "All 1820 accumulated-PSI stream endpoints match the saved V2 table",
+  "replayed_oulad": "all policies, bins and both outcome models; exact counts and scores within 1e-12; timings excluded",
+  "replayed_v2_streams": [
+    "null_n250_0000.json.gz",
+    "grid_n250_s0.05_m1.4_0000.json.gz",
+    "correlation_0000.json.gz"
+  ],
+  "status": "PASS",
+  "verified_manifests": {
+    "figures/correction/manifest.json": "a6f6cf0489651b3db3f8bfaf70de494e9ccaea9bc3166f5dd4a9f4cdda865ab6",
+    "results/raw/correction/cost-check/manifest.json": "2c44d1074b09b24f7bc08f5d9fdae7abd5b9395c300ab5ac2971c4eb5cccc623",
+    "results/raw/correction/oulad/manifest.json": "15c6f39793afdbfb955040376fa7121c956c63536553334232d92c683598dd45",
+    "results/raw/correction/v2-matched/manifest.json": "3931a87cd632a5179b6d9545ffc4ccce59587c7b886af6f981e2e478e730e9b7",
+    "results/summary/correction/manifest.json": "e5135a53355d1755eeb6de3ff08a6f6f8bd8b62eb7137e51a76b6d33e76dc7c5"
+  }
+}

@@ -1,0 +1,3103 @@
+[
+  {
+    "claim_id": "O1",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Post-result repair; design-only rule selection; sparse tail remains.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "period=='design_2013J' and group=='Everyone' and feature=='num_of_prev_attempts'",
+    "source_sha256": "da8b8e38633e5a74d40898a106446bde7bfb02f9ad2aaf705fb62003af3ba8da",
+    "source_table": "results/raw/correction/oulad/bin_counts.csv",
+    "statement": "Historical design counts justify 0 / 1 / 2+ bins; original rule collapsed all nonnegative counts.",
+    "values": [
+      {
+        "bin": 0,
+        "count": 0,
+        "label": "0",
+        "version": "original_v3"
+      },
+      {
+        "bin": 1,
+        "count": 372,
+        "label": "1",
+        "version": "original_v3"
+      },
+      {
+        "bin": 2,
+        "count": 0,
+        "label": "2",
+        "version": "original_v3"
+      },
+      {
+        "bin": 0,
+        "count": 314,
+        "label": "0",
+        "version": "corrected"
+      },
+      {
+        "bin": 1,
+        "count": 45,
+        "label": "1",
+        "version": "corrected"
+      },
+      {
+        "bin": 2,
+        "count": 13,
+        "label": "2 or more",
+        "version": "corrected"
+      },
+      {
+        "bin": 3,
+        "count": 0,
+        "label": "missing",
+        "version": "corrected"
+      }
+    ]
+  },
+  {
+    "claim_id": "O2",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Descriptive distance; no true drift onset, significance or detection accuracy claim.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "variant=='accum100' and group=='Everyone' and feature=='num_of_prev_attempts'",
+    "source_sha256": "4d1f69c7bdf5170e8443b26f40507d6336fb1bf6d1c60609747ae3e0d638bce5",
+    "source_table": "results/raw/correction/oulad/old_vs_corrected.csv",
+    "statement": "Overall previous-attempts PSI changes from 0.001721 to 0.029233; KS stays 0.044566.",
+    "values": [
+      {
+        "ks_d_new": 0.044565714253466,
+        "ks_d_old": 0.044565714253466,
+        "n_current_new": 979,
+        "n_reference_new": 362,
+        "psi_new": 0.029232604633748,
+        "psi_old": 0.001720787712039
+      }
+    ]
+  },
+  {
+    "claim_id": "O3",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "variant=='accum100' and feature=='num_of_prev_attempts'",
+    "source_sha256": "4d1f69c7bdf5170e8443b26f40507d6336fb1bf6d1c60609747ae3e0d638bce5",
+    "source_table": "results/raw/correction/oulad/old_vs_corrected.csv",
+    "statement": "Four of nine OULAD group views remain assessable; five retain insufficient reference support.",
+    "values": [
+      {
+        "eligible_new": true,
+        "group": "Everyone",
+        "n_current_new": 979,
+        "n_reference_new": 362
+      },
+      {
+        "eligible_new": true,
+        "group": "gender='F'",
+        "n_current_new": 863,
+        "n_reference_new": 325
+      },
+      {
+        "eligible_new": false,
+        "group": "gender='M'",
+        "n_current_new": 116,
+        "n_reference_new": 37
+      },
+      {
+        "eligible_new": true,
+        "group": "disability='N'",
+        "n_current_new": 908,
+        "n_reference_new": 317
+      },
+      {
+        "eligible_new": false,
+        "group": "disability='Y'",
+        "n_current_new": 71,
+        "n_reference_new": 45
+      },
+      {
+        "eligible_new": true,
+        "group": "gender='F' & disability='N'",
+        "n_current_new": 804,
+        "n_reference_new": 283
+      },
+      {
+        "eligible_new": false,
+        "group": "gender='F' & disability='Y'",
+        "n_current_new": 59,
+        "n_reference_new": 42
+      },
+      {
+        "eligible_new": false,
+        "group": "gender='M' & disability='N'",
+        "n_current_new": 104,
+        "n_reference_new": 34
+      },
+      {
+        "eligible_new": false,
+        "group": "gender='M' & disability='Y'",
+        "n_current_new": 12,
+        "n_reference_new": 3
+      }
+    ]
+  },
+  {
+    "claim_id": "O4",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "No retraining or search; no claim that the six-record accuracy difference is statistically significant.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "group=='Everyone' and metric=='Accuracy'",
+    "source_sha256": "abb06e59b6ee8da4d2aaa88a5d0deb130880504f866094b412fc62f50fb17660",
+    "source_table": "results/raw/correction/oulad/outcomes.csv",
+    "statement": "Later logistic accuracy is 541/973; training-majority accuracy is 547/973. Earlier logistic accuracy exceeds the baseline.",
+    "values": [
+      {
+        "baseline_denominator": 392,
+        "baseline_numerator": 229,
+        "baseline_rate": 0.584183673469388,
+        "current_denominator": 973,
+        "current_numerator": 541,
+        "current_rate": 0.55601233299075,
+        "model": "Frozen logistic"
+      },
+      {
+        "baseline_denominator": 392,
+        "baseline_numerator": 211,
+        "baseline_rate": 0.538265306122449,
+        "current_denominator": 973,
+        "current_numerator": 547,
+        "current_rate": 0.562178828365879,
+        "model": "Training-majority baseline"
+      }
+    ]
+  },
+  {
+    "claim_id": "O5",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "group=='Everyone' and metric!='Accuracy'",
+    "source_sha256": "abb06e59b6ee8da4d2aaa88a5d0deb130880504f866094b412fc62f50fb17660",
+    "source_table": "results/raw/correction/oulad/outcomes.csv",
+    "statement": "The all-positive baseline has both TPR and FPR equal to 100%; a zero rate gap does not establish fairness.",
+    "values": [
+      {
+        "current_denominator": 547,
+        "current_numerator": 484,
+        "current_rate": 0.884826325411334,
+        "metric": "TPR",
+        "model": "Frozen logistic"
+      },
+      {
+        "current_denominator": 426,
+        "current_numerator": 369,
+        "current_rate": 0.866197183098592,
+        "metric": "FPR",
+        "model": "Frozen logistic"
+      },
+      {
+        "current_denominator": 547,
+        "current_numerator": 547,
+        "current_rate": 1.0,
+        "metric": "TPR",
+        "model": "Training-majority baseline"
+      },
+      {
+        "current_denominator": 426,
+        "current_numerator": 426,
+        "current_rate": 1.0,
+        "metric": "FPR",
+        "model": "Training-majority baseline"
+      }
+    ]
+  },
+  {
+    "claim_id": "O6",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Natural cohort comparison; no independent ground truth for drift or causal explanation.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "version=='corrected' and group=='Everyone' and feature=='num_of_prev_attempts' and period!='design_2013J'",
+    "source_sha256": "da8b8e38633e5a74d40898a106446bde7bfb02f9ad2aaf705fb62003af3ba8da",
+    "source_table": "results/raw/correction/oulad/bin_counts.csv",
+    "statement": "The corrected bins expose the observed count proportions: zero previous attempts occurs in 310/362 reference records and 882/979 monitoring records.",
+    "values": [
+      {
+        "count": 310,
+        "label": "0",
+        "period": "reference_2013J"
+      },
+      {
+        "count": 34,
+        "label": "1",
+        "period": "reference_2013J"
+      },
+      {
+        "count": 18,
+        "label": "2 or more",
+        "period": "reference_2013J"
+      },
+      {
+        "count": 0,
+        "label": "missing",
+        "period": "reference_2013J"
+      },
+      {
+        "count": 882,
+        "label": "0",
+        "period": "monitor_2014J"
+      },
+      {
+        "count": 75,
+        "label": "1",
+        "period": "monitor_2014J"
+      },
+      {
+        "count": 22,
+        "label": "2 or more",
+        "period": "monitor_2014J"
+      },
+      {
+        "count": 0,
+        "label": "missing",
+        "period": "monitor_2014J"
+      }
+    ]
+  },
+  {
+    "claim_id": "S1",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Retrospective comparison on mathematical simulations. Grid averages weight all 12 fixed cells equally; any alert is not exact localization.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "kind=='shift' and metric=='post_alert'",
+    "source_sha256": "cd9bce4aff31e1c9f92118704de438e57c20667ebf4677a2927504d8594494ae",
+    "source_table": "results/summary/correction/benchmark_aggregate.csv",
+    "statement": "Matched synthetic grid comparison gives both methods the original records, support and standalone error budget.",
+    "values": [
+      {
+        "estimate": 0.652083333333333,
+        "high": 0.679166666666667,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": 0.625,
+        "method": "PSI",
+        "n": 250,
+        "n_streams": 480,
+        "successes": 313.0
+      },
+      {
+        "estimate": 0.68125,
+        "high": 0.70625,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": 0.65625,
+        "method": "KS",
+        "n": 250,
+        "n_streams": 480,
+        "successes": 327.0
+      },
+      {
+        "estimate": -0.029166666666667,
+        "high": -0.010416666666667,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": -0.05,
+        "method": "PSI minus KS",
+        "n": 250,
+        "n_streams": 480,
+        "successes": null
+      },
+      {
+        "estimate": 0.86875,
+        "high": 0.885416666666667,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": 0.852083333333333,
+        "method": "PSI",
+        "n": 1000,
+        "n_streams": 480,
+        "successes": 417.0
+      },
+      {
+        "estimate": 0.885416666666667,
+        "high": 0.9,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": 0.870833333333333,
+        "method": "KS",
+        "n": 1000,
+        "n_streams": 480,
+        "successes": 425.0
+      },
+      {
+        "estimate": -0.016666666666667,
+        "high": 0.0,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": -0.033333333333333,
+        "method": "PSI minus KS",
+        "n": 1000,
+        "n_streams": 480,
+        "successes": null
+      }
+    ]
+  },
+  {
+    "claim_id": "S2",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Standalone methods; union not guaranteed at 5%. Observed rates do not certify a universal error bound.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "kind=='null'",
+    "source_sha256": "cd9bce4aff31e1c9f92118704de438e57c20667ebf4677a2927504d8594494ae",
+    "source_table": "results/summary/correction/benchmark_aggregate.csv",
+    "statement": "Synthetic null alert rates must be reported alongside detection, including uncertainty.",
+    "values": [
+      {
+        "estimate": 0.04,
+        "high": 0.072052723581266,
+        "interval": "95% Wilson",
+        "low": 0.021869911954542,
+        "method": "PSI",
+        "n": 250,
+        "n_streams": 250,
+        "successes": 10.0
+      },
+      {
+        "estimate": 0.012,
+        "high": 0.03468078042702,
+        "interval": "95% Wilson",
+        "low": 0.004089319880534,
+        "method": "KS",
+        "n": 250,
+        "n_streams": 250,
+        "successes": 3.0
+      },
+      {
+        "estimate": 0.028,
+        "high": 0.056,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": 0.004,
+        "method": "PSI minus KS",
+        "n": 250,
+        "n_streams": 250,
+        "successes": null
+      },
+      {
+        "estimate": 0.048,
+        "high": 0.082012301213187,
+        "interval": "95% Wilson",
+        "low": 0.027668201530695,
+        "method": "PSI",
+        "n": 1000,
+        "n_streams": 250,
+        "successes": 12.0
+      },
+      {
+        "estimate": 0.016,
+        "high": 0.040409809341119,
+        "interval": "95% Wilson",
+        "low": 0.006239224570471,
+        "method": "KS",
+        "n": 1000,
+        "n_streams": 250,
+        "successes": 4.0
+      },
+      {
+        "estimate": 0.032,
+        "high": 0.06,
+        "interval": "fixed-cell stratified paired bootstrap, 2000 resamples",
+        "low": 0.008,
+        "method": "PSI minus KS",
+        "n": 1000,
+        "n_streams": 250,
+        "successes": null
+      }
+    ]
+  },
+  {
+    "claim_id": "S3",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Prespecified historical examples, not a search for favorable cases; all weaker shifts, other shares and batch sizes remain in tables.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "id in ['grid_n250_s0.05_m1.4','grid_n250_s0.02_m1.4'] and metric in ['target_detected','target_ever_assessed','target_restricted_delay','target_first_assessment_restricted']",
+    "source_sha256": "8966a4397bba2cd008fde1ec1867ab75a166f85e0770b98d87073a8835b5021f",
+    "source_table": "results/summary/correction/all_cells.csv",
+    "statement": "Revisit both the 5% and 2% target examples behind the original Version 2 accumulation claim.",
+    "values": [
+      {
+        "estimate": 0.475,
+        "high": 0.625026378933075,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.329354701126789,
+        "method": "PSI",
+        "metric": "target_detected",
+        "n_streams": 40,
+        "successes": 19.0
+      },
+      {
+        "estimate": 0.475,
+        "high": 0.625026378933075,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.329354701126789,
+        "method": "PSI",
+        "metric": "target_ever_assessed",
+        "n_streams": 40,
+        "successes": 19.0
+      },
+      {
+        "estimate": 14.175,
+        "high": null,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": null,
+        "method": "PSI",
+        "metric": "target_restricted_delay",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 14.175,
+        "high": null,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": null,
+        "method": "PSI",
+        "metric": "target_first_assessment_restricted",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 0.475,
+        "high": 0.625026378933075,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.329354701126789,
+        "method": "KS",
+        "metric": "target_detected",
+        "n_streams": 40,
+        "successes": 19.0
+      },
+      {
+        "estimate": 0.475,
+        "high": 0.625026378933075,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.329354701126789,
+        "method": "KS",
+        "metric": "target_ever_assessed",
+        "n_streams": 40,
+        "successes": 19.0
+      },
+      {
+        "estimate": 14.175,
+        "high": null,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": null,
+        "method": "KS",
+        "metric": "target_restricted_delay",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 14.175,
+        "high": null,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": null,
+        "method": "KS",
+        "metric": "target_first_assessment_restricted",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 1.0,
+        "high": 1.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.912378398802714,
+        "method": "PSI",
+        "metric": "target_detected",
+        "n_streams": 40,
+        "successes": 40.0
+      },
+      {
+        "estimate": 1.0,
+        "high": 1.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.912378398802714,
+        "method": "PSI",
+        "metric": "target_ever_assessed",
+        "n_streams": 40,
+        "successes": 40.0
+      },
+      {
+        "estimate": 7.325,
+        "high": null,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": null,
+        "method": "PSI",
+        "metric": "target_restricted_delay",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 2.4,
+        "high": null,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": null,
+        "method": "PSI",
+        "metric": "target_first_assessment_restricted",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 1.0,
+        "high": 1.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.912378398802714,
+        "method": "KS",
+        "metric": "target_detected",
+        "n_streams": 40,
+        "successes": 40.0
+      },
+      {
+        "estimate": 1.0,
+        "high": 1.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.912378398802714,
+        "method": "KS",
+        "metric": "target_ever_assessed",
+        "n_streams": 40,
+        "successes": 40.0
+      },
+      {
+        "estimate": 6.875,
+        "high": null,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": null,
+        "method": "KS",
+        "metric": "target_restricted_delay",
+        "n_streams": 40,
+        "successes": null
+      },
+      {
+        "estimate": 2.4,
+        "high": null,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": null,
+        "method": "KS",
+        "metric": "target_first_assessment_restricted",
+        "n_streams": 40,
+        "successes": null
+      }
+    ]
+  },
+  {
+    "claim_id": "S4",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Pointwise paired simulation intervals, not simultaneous significance claims. Degenerate intervals can arise from identical observed pairs.",
+    "numerical_code_commit": "22d6d439045ce6c25da59fc6c7c270e99edab1be",
+    "selector_pandas_query": "metric in ['post_alert','target_detected','eligible_fraction','target_first_assessment_restricted','target_restricted_delay']",
+    "source_sha256": "a23d3aad17caf35232ec8ad91a2976ed1a57dbe89ba00b3e7c3cfa36071ddb21",
+    "source_table": "results/summary/correction/paired_cells.csv",
+    "statement": "Across all 35 cases, show the paired detection, coverage, waiting and delay differences, including ties.",
+    "values": [
+      {
+        "degenerate": false,
+        "difference": 0.02,
+        "high": 0.044,
+        "id": "null_n250",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "null_n250",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "null_n250",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "null_n250",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "null_n250",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": false,
+        "difference": 0.02,
+        "high": 0.044,
+        "id": "null_n1000",
+        "low": -0.004,
+        "metric": "post_alert",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": false,
+        "difference": -0.004,
+        "high": 0.0,
+        "id": "null_n1000",
+        "low": -0.012,
+        "metric": "target_detected",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": false,
+        "difference": 0.056,
+        "high": 0.168,
+        "id": "null_n1000",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "null_n1000",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "null_n1000",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 250
+      },
+      {
+        "degenerate": false,
+        "difference": 0.075,
+        "high": 0.175,
+        "id": "grid_n250_s0.02_m0.35",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.025,
+        "high": 0.075,
+        "id": "grid_n250_s0.02_m0.35",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.125,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.35",
+        "low": -0.375,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.05,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.7",
+        "low": -0.125,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.05,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.7",
+        "low": -0.125,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.1,
+        "high": 0.275,
+        "id": "grid_n250_s0.02_m0.7",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.0,
+        "high": 0.1,
+        "id": "grid_n250_s0.05_m0.35",
+        "low": -0.1,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.0,
+        "high": 0.1,
+        "id": "grid_n250_s0.05_m0.35",
+        "low": -0.1,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.05,
+        "high": 0.525,
+        "id": "grid_n250_s0.05_m0.35",
+        "low": -0.35,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.05,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m0.7",
+        "low": -0.125,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m0.7",
+        "low": -0.075,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.525,
+        "high": 1.25,
+        "id": "grid_n250_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.45,
+        "high": 1.4,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": -0.45,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.1,
+        "high": 0.025,
+        "id": "grid_n250_s0.1_m0.35",
+        "low": -0.225,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.125,
+        "high": 0.000624999999996,
+        "id": "grid_n250_s0.1_m0.35",
+        "low": -0.250625,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.6,
+        "high": 1.725,
+        "id": "grid_n250_s0.1_m0.35",
+        "low": -0.475,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.5,
+        "high": 1.05,
+        "id": "grid_n250_s0.1_m0.7",
+        "low": -0.025625,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.225,
+        "high": -0.1,
+        "id": "grid_n250_s0.25_m0.35",
+        "low": -0.35,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.25,
+        "high": -0.125,
+        "id": "grid_n250_s0.25_m0.35",
+        "low": -0.375,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 2.35,
+        "high": 3.65,
+        "id": "grid_n250_s0.25_m0.35",
+        "low": 1.225,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.2,
+        "high": 0.45,
+        "id": "grid_n250_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.05,
+        "high": 0.15,
+        "id": "grid_n250_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n250_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.05,
+        "id": "grid_n1000_s0.02_m0.35",
+        "low": -0.100625,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.05,
+        "id": "grid_n1000_s0.02_m0.35",
+        "low": -0.100625,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.1,
+        "high": 0.85,
+        "id": "grid_n1000_s0.02_m0.35",
+        "low": -0.675,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m0.7",
+        "low": -0.075,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m0.7",
+        "low": -0.075,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.625,
+        "high": 1.25,
+        "id": "grid_n1000_s0.02_m0.7",
+        "low": 0.025,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.02_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.125,
+        "high": 0.025,
+        "id": "grid_n1000_s0.05_m0.35",
+        "low": -0.275625,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.1,
+        "high": 0.075,
+        "id": "grid_n1000_s0.05_m0.35",
+        "low": -0.275,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 1.125,
+        "high": 3.150624999999997,
+        "id": "grid_n1000_s0.05_m0.35",
+        "low": -0.75,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.025,
+        "high": 0.25,
+        "id": "grid_n1000_s0.05_m0.7",
+        "low": -0.2,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.125,
+        "high": 0.325,
+        "id": "grid_n1000_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.05_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.05,
+        "id": "grid_n1000_s0.1_m0.35",
+        "low": -0.100625,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.0,
+        "high": 0.1,
+        "id": "grid_n1000_s0.1_m0.35",
+        "low": -0.1,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.75,
+        "high": 2.15,
+        "id": "grid_n1000_s0.1_m0.35",
+        "low": -0.55,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.025,
+        "high": 0.15,
+        "id": "grid_n1000_s0.1_m0.7",
+        "low": -0.075,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.1_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.35",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.35",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.0,
+        "high": 0.1,
+        "id": "grid_n1000_s0.25_m0.35",
+        "low": -0.15,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.35",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.35",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m0.7",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "grid_n1000_s0.25_m1.4",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0.5",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0.5",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0.5",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0.5",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_0.5",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_1",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_1",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_1",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_1",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "cancel_1",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "gradual",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "gradual",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.225,
+        "high": 0.425,
+        "id": "gradual",
+        "low": 0.075,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "gradual",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "gradual",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "missing",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "missing",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "missing",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "missing",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "missing",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "benign",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "benign",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "benign",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "benign",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "benign",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.05,
+        "high": 0.125,
+        "id": "outcome",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "outcome",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "outcome",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "outcome",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "outcome",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "composition",
+        "low": 0.0,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.025,
+        "high": 0.075,
+        "id": "composition",
+        "low": 0.0,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.375,
+        "high": 0.0,
+        "id": "composition",
+        "low": -1.125,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "composition",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "composition",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.0,
+        "high": 0.075,
+        "id": "correlation",
+        "low": -0.075,
+        "metric": "post_alert",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": -0.025,
+        "high": 0.0,
+        "id": "correlation",
+        "low": -0.075,
+        "metric": "target_detected",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": false,
+        "difference": 0.3,
+        "high": 0.9,
+        "id": "correlation",
+        "low": 0.0,
+        "metric": "target_restricted_delay",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "correlation",
+        "low": 0.0,
+        "metric": "target_first_assessment_restricted",
+        "n_pairs": 40
+      },
+      {
+        "degenerate": true,
+        "difference": 0.0,
+        "high": 0.0,
+        "id": "correlation",
+        "low": 0.0,
+        "metric": "eligible_fraction",
+        "n_pairs": 40
+      }
+    ]
+  },
+  {
+    "claim_id": "R1",
+    "configuration": "configs/revision3/approved.json",
+    "configuration_sha256": "74888cf1cf3e07c436b293f0a5474e4a4d5fe4ae174479f7d30d6637cb456a8b",
+    "interpretation": "Constructed real-record resampling controls, not natural chronology or generated people. Preserved unchanged; no corrected OULAD result rescues this negative result.",
+    "numerical_code_commit": "efe9124eb8425ad4c7339b9c4a0373ac33ec0f1f",
+    "selector_pandas_query": "condition=='substitution' and variant=='accum100' and scope=='intersection' and metric=='target_post_alert'",
+    "source_sha256": "f2eb31215c1a6400b0da2add2adcb894cc82c5461cf72d7dc852b923037318cb",
+    "source_table": "results/summary/revision3/main-approved-checked/control_proportions.csv",
+    "statement": "The original real-record substitution controls did not recover the exact target in any of 30 streams per batch size for either accumulated method.",
+    "values": [
+      {
+        "batch_n": 250,
+        "estimate": 0.0,
+        "high": 0.113513393173969,
+        "low": 0.0,
+        "method": "PSI",
+        "n": 30,
+        "successes": 0
+      },
+      {
+        "batch_n": 250,
+        "estimate": 0.0,
+        "high": 0.113513393173969,
+        "low": 0.0,
+        "method": "KS",
+        "n": 30,
+        "successes": 0
+      },
+      {
+        "batch_n": 1000,
+        "estimate": 0.0,
+        "high": 0.113513393173969,
+        "low": 0.0,
+        "method": "PSI",
+        "n": 30,
+        "successes": 0
+      },
+      {
+        "batch_n": 1000,
+        "estimate": 0.0,
+        "high": 0.113513393173969,
+        "low": 0.0,
+        "method": "KS",
+        "n": 30,
+        "successes": 0
+      }
+    ]
+  },
+  {
+    "claim_id": "C1",
+    "configuration": "configs/correction/frozen.json",
+    "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+    "interpretation": "Six alternating-order repeats per fixed block, timed separately from allocation tracing. No universal speed or total-memory superiority claim.",
+    "numerical_code_commit": "1c7005308c997ea7b31dda28f6e52f6103bbb59a",
+    "selector_pandas_query": "",
+    "source_sha256": "5eebb13293fed4a03aa3d886db3235d51b72973ec279fc01e388e99ad3bb514b",
+    "source_table": "results/raw/correction/cost-check/costs.csv",
+    "statement": "Same-block cost checks separate test allocations and payload from total monitor memory.",
+    "values": [
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28648,
+        "repeat": 0,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.00022472099954,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 928326,
+        "repeat": 0,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.002594055000372,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 928326,
+        "repeat": 1,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.002037872000073,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 1,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000180794999324,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 2,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000129468997329,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 927795,
+        "repeat": 2,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.001994207999814,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 927799,
+        "repeat": 3,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.00196905300254,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 3,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000193074996787,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 4,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.00012468299974,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 927846,
+        "repeat": 4,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.002049397997325,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 927846,
+        "repeat": 5,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.002020789997914,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 5,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000172026997461,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 0,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000173573997017,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9176,
+        "method": "KS",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 108576,
+        "repeat": 0,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.00071362199742,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9176,
+        "method": "KS",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 108525,
+        "repeat": 1,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000658659999317,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 1,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000221811998926,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 2,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000130544998683,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9176,
+        "method": "KS",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 108576,
+        "repeat": 2,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000710051001079,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9176,
+        "method": "KS",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 108576,
+        "repeat": 3,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000668353000947,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 3,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000171894997038,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 4,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000132845001644,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9176,
+        "method": "KS",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 108576,
+        "repeat": 4,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000719505002053,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9176,
+        "method": "KS",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 108576,
+        "repeat": 5,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000644859999738,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 116,
+        "n_reference": 1031,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 5,
+        "run": "null_n250_0000.json.gz",
+        "seconds": 0.000159359999088,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 0,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000179414997547,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 927795,
+        "repeat": 0,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.002383610000834,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 927795,
+        "repeat": 1,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.002231074999145,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 1,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000170537998201,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 2,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000123543999507,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 927846,
+        "repeat": 2,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.002198867001425,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 927753,
+        "repeat": 3,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.00212378300057,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 3,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000173999000253,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 4,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000124458998471,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 927846,
+        "repeat": 4,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.002193410000473,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 82000,
+        "method": "KS",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 927656,
+        "repeat": 5,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.002200857001298,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 250,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 5,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000169097002072,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 0,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.015211907000776,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 4664,
+        "method": "KS",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 57816,
+        "repeat": 0,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.00085019999824,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 4664,
+        "method": "KS",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 57677,
+        "repeat": 1,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000595624002017,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 1,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.015379976000986,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 2,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.016492212998855,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 4664,
+        "method": "KS",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 57765,
+        "repeat": 2,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000789837999036,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 4664,
+        "method": "KS",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 57816,
+        "repeat": 3,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.00063801899887,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 3,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.015737814999738,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 4,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.015866412999458,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 4664,
+        "method": "KS",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 57816,
+        "repeat": 4,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000814844002889,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 4664,
+        "method": "KS",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 57724,
+        "repeat": 5,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.000633723000646,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 110,
+        "n_reference": 473,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 5,
+        "run": "grid_n250_s0.05_m1.4_0000.json.gz",
+        "seconds": 0.015074121998623,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 0,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000899107002624,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 88000,
+        "method": "KS",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 995254,
+        "repeat": 0,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.004472515000089,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 88000,
+        "method": "KS",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 995254,
+        "repeat": 1,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.003795967000769,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 1,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.00079000400001,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 2,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000692936999258,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 88000,
+        "method": "KS",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 995203,
+        "repeat": 2,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.003824813997198,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 88000,
+        "method": "KS",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 995203,
+        "repeat": 3,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.003765968998778,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 3,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000899253998796,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 4,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000805620999017,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 88000,
+        "method": "KS",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 995254,
+        "repeat": 4,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.004306396996981,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 88000,
+        "method": "KS",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 995203,
+        "repeat": 5,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.003773589000048,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 1000,
+        "n_reference": 10000,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 5,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000780160000431,
+        "selection": "last aggregate block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 0,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000237025000388,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9392,
+        "method": "KS",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 110914,
+        "repeat": 0,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000743366003007,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9392,
+        "method": "KS",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 110914,
+        "repeat": 1,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000690272998327,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 1,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000255964001553,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 2,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000201992999791,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9392,
+        "method": "KS",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 110960,
+        "repeat": 2,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000738910999644,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9392,
+        "method": "KS",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 110863,
+        "repeat": 3,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000689706997946,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 3,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000251524998021,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 28624,
+        "repeat": 4,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000194747000933,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9392,
+        "method": "KS",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 111006,
+        "repeat": 4,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000713273999281,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 9392,
+        "method": "KS",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 0,
+        "python_peak_allocated_bytes": 110913,
+        "repeat": 5,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000690594999469,
+        "selection": "first eligible target block"
+      },
+      {
+        "logical_payload_bytes": 112,
+        "method": "PSI",
+        "n_current": 184,
+        "n_reference": 990,
+        "order_position": 1,
+        "python_peak_allocated_bytes": 28580,
+        "repeat": 5,
+        "run": "correlation_0000.json.gz",
+        "seconds": 0.000235741001234,
+        "selection": "first eligible target block"
+      }
+    ]
+  }
+]

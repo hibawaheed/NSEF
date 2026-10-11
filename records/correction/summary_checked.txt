@@ -1,0 +1,13 @@
+   n  kind       metric       method  n_streams  successes  estimate       low      high                                               interval  degenerate
+ 250  null stream_alert          PSI        250       10.0  0.040000  0.021870  0.072053                                             95% Wilson       False
+ 250  null stream_alert           KS        250        3.0  0.012000  0.004089  0.034681                                             95% Wilson       False
+ 250  null stream_alert PSI minus KS        250        NaN  0.028000  0.004000  0.056000 fixed-cell stratified paired bootstrap, 2000 resamples       False
+ 250 shift   post_alert          PSI        480      313.0  0.652083  0.625000  0.679167 fixed-cell stratified paired bootstrap, 2000 resamples       False
+ 250 shift   post_alert           KS        480      327.0  0.681250  0.656250  0.706250 fixed-cell stratified paired bootstrap, 2000 resamples       False
+ 250 shift   post_alert PSI minus KS        480        NaN -0.029167 -0.050000 -0.010417 fixed-cell stratified paired bootstrap, 2000 resamples       False
+1000  null stream_alert          PSI        250       12.0  0.048000  0.027668  0.082012                                             95% Wilson       False
+1000  null stream_alert           KS        250        4.0  0.016000  0.006239  0.040410                                             95% Wilson       False
+1000  null stream_alert PSI minus KS        250        NaN  0.032000  0.008000  0.060000 fixed-cell stratified paired bootstrap, 2000 resamples       False
+1000 shift   post_alert          PSI        480      417.0  0.868750  0.852083  0.885417 fixed-cell stratified paired bootstrap, 2000 resamples       False
+1000 shift   post_alert           KS        480      425.0  0.885417  0.870833  0.900000 fixed-cell stratified paired bootstrap, 2000 resamples       False
+1000 shift   post_alert PSI minus KS        480        NaN -0.016667 -0.033333  0.000000 fixed-cell stratified paired bootstrap, 2000 resamples       False

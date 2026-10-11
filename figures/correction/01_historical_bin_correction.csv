@@ -1,0 +1,8 @@
+period,group,version,feature,bin,count,label
+design_2013J,Everyone,original_v3,num_of_prev_attempts,0,0,0
+design_2013J,Everyone,original_v3,num_of_prev_attempts,1,372,1
+design_2013J,Everyone,original_v3,num_of_prev_attempts,2,0,2
+design_2013J,Everyone,corrected,num_of_prev_attempts,0,314,0
+design_2013J,Everyone,corrected,num_of_prev_attempts,1,45,1
+design_2013J,Everyone,corrected,num_of_prev_attempts,2,13,2 or more
+design_2013J,Everyone,corrected,num_of_prev_attempts,3,0,missing

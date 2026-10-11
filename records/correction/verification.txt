@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/correction/verify.py", line 85, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/home/hiba_w/Documents/Codex/2026-10-11/hey/outputs/NSEF/scripts/correction/verify.py", line 45, in main
+    if clean(replay)!=clean({k:saved[k] for k in replay}):raise ValueError('Numerical replay differs: '+name)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Numerical replay differs: grid_n250_s0.05_m1.4_0000.json.gz

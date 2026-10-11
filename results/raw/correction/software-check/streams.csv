@@ -1,0 +1,7 @@
+run,id,kind,n,share,repeat,method,stream_alert,pre_alert,post_alert,target_detected,restricted_delay,target_restricted_delay,target_ever_assessed,target_first_assessment_restricted,target_assessed_fraction,eligible_fraction,maximum_block_age,test_seconds,maximum_logical_payload_bytes,shared_input_frame_bytes,magnitude
+null_n250_0000.json.gz,null_n250,null,250,0.1,0,PSI,False,False,False,False,15,15,True,2,0.2,0.6888888888888889,4,0.05655017198660062,112,542686,
+null_n250_0000.json.gz,null_n250,null,250,0.1,0,KS,False,False,False,False,15,15,True,2,0.2,0.6888888888888889,4,0.23682949598151026,82000,542686,
+grid_n250_s0.05_m1.4_0000.json.gz,grid_n250_s0.05_m1.4,shift,250,0.05,0,PSI,True,False,True,True,3,3,True,3,0.13333333333333333,0.6888888888888889,8,0.10943192500417354,112,542686,1.4
+grid_n250_s0.05_m1.4_0000.json.gz,grid_n250_s0.05_m1.4,shift,250,0.05,0,KS,True,False,True,True,3,3,True,3,0.13333333333333333,0.6888888888888889,8,0.1520968439981516,82000,542686,1.4
+correlation_0000.json.gz,correlation,correlation,1000,0.1,0,PSI,False,False,False,False,15,15,True,1,0.7333333333333333,0.9259259259259259,1,0.13325292299850844,112,2337224,1.0
+correlation_0000.json.gz,correlation,correlation,1000,0.1,0,KS,False,False,False,False,15,15,True,1,0.7333333333333333,0.9259259259259259,1,0.43803121900054975,88000,2337224,1.0
