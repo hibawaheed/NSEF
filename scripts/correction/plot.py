@@ -118,7 +118,7 @@ def benchmark_figures(e,summary):
             ax.set_xticks(range(3),q.columns);ax.set_yticks(range(4),[f'{s:.0%}' for s in q.index]);ax.set_xlabel('Introduced shift (standard deviations)');ax.set_ylabel('Affected intersection share');ax.set_title(f'Accumulated {method} · batch n={n}')
             for i in range(4):
                 for j in range(3):
-                    v=q.iloc[i,j];ax.text(j,i,f'{round(v*40)}/40\n{v:.0%}',ha='center',va='center',color='white' if v>.55 else INK)
+                    v=q.iloc[i,j];ax.text(j,i,f'{round(v*40)}/40\n{v:.1%}',ha='center',va='center',color='white' if v>.55 else INK)
     e.save(fig,'06_all_original_grid_cells',p,'The full Version 2 grid: matched accumulated PSI and KS',
            'MATHEMATICAL SIMULATIONS; retrospective comparator. Every original grid cell is shown, 40 streams per cell, same seeds and records. Endpoint is any post-onset alert in the full fixed group-feature family, not exact target recovery. Both methods accumulate to 100 using the same whole-batch blocks and standalone horizon budget. Color scale is identical. Source CSV supplies Wilson intervals; paired intervals for every cell are in paired_cells.csv. This is not evidence of natural-world detection accuracy.')
     fig,axes=plt.subplots(1,2,figsize=(12,6.5));plot=a[a.method.isin(['PSI','KS']) & a.metric.isin(['stream_alert','post_alert'])]
@@ -141,6 +141,7 @@ def benchmark_figures(e,summary):
                 scale=1 if metric=='target_restricted_delay' else 100
                 ax.plot(q.share*100,q.estimate*scale,ls=style,color=color,marker=marker,label=f'{method} n={n}')
         ax.set_title(title);ax.set_xlabel('Target share (%)');ax.set_ylabel('Batches after onset; misses=15' if metric=='target_restricted_delay' else 'Percent');ax.grid(alpha=.15);ax.legend(fontsize=8)
+        ax.set_ylim(0,15.5 if metric=='target_restricted_delay' else 105)
     e.save(fig,'08_target_coverage_and_wait',p,'Revisit the original small-group accumulation claim',
            'SYNTHETIC 1.4-SD shift slice used by the existing Version 2 claim, all four original shares and both batch sizes retained. Each point has 40 paired streams. Shared collection means PSI/KS support and waiting are identical, so those curves overlap. Exact-target detection and delay can differ. Delay includes misses at 15 batches; it is not an average only among successes. Full weaker-shift cells and paired intervals remain in the summary CSVs.')
     p=cells[~cells.id.str.startswith(('grid_','null_')) & cells.metric.eq('post_alert')]

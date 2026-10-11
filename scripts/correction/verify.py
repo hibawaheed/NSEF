@@ -12,7 +12,7 @@ from subpsi.provenance import sha256,write_json
 
 def clean(value):
     if isinstance(value,dict):return {k:clean(v) for k,v in value.items() if 'seconds' not in k}
-    if isinstance(value,list):return [clean(v) for v in value]
+    if isinstance(value,(list,tuple)):return [clean(v) for v in value]
     return value
 
 
