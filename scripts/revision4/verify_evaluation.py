@@ -91,7 +91,11 @@ def main():
   exact_global_group_tied_streams=ties,verified_source_inputs=source_inputs,private_lineage_hashes=private_hashes,
   key_stream_replays=replay,ks_warning_count=warning_count,wall_seconds=time.perf_counter()-started,
   limitation='Private year/household key disjointness is not a guarantee of distinct respondents across survey years.')
- write_json(ROOT/'records/revision4/main/evaluation_verification.json',checks)
+ target=ROOT/'records/revision4/main/evaluation_verification.json'
+ if target.exists():target=ROOT/'data/raw/revision4/verification-replays'/f'evaluation-{time.time_ns()}.json'
+ target.parent.mkdir(parents=True,exist_ok=True)
+ write_json(target,checks)
+ print('Verification report:',target)
  print(json.dumps({k:v for k,v in checks.items() if k not in ['private_lineage_hashes','verified_source_inputs']},indent=2))
 
 if __name__=='__main__':main()

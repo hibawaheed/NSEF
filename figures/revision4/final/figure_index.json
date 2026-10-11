@@ -1,0 +1,101 @@
+[
+  {
+    "explanation": "Each square reports how often a single block signalled under the declared constructed condition. Reference size, incoming size and statistic vary. Gray groups lack enough independent historical source households; they are not successful or failed tests.",
+    "source_csv": "01_sensitivity_unchanged.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/selection_cells.csv": "e50bfb103bbe2a64b2513c307aef37cff39b3f4ed579d05b3ab8b849ddd3f798"
+    },
+    "stem": "01_sensitivity_unchanged"
+  },
+  {
+    "explanation": "Each square reports how often a single block signalled under the declared constructed condition. Reference size, incoming size and statistic vary. Gray groups lack enough independent historical source households; they are not successful or failed tests.",
+    "source_csv": "01_sensitivity_age_up2.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/selection_cells.csv": "e50bfb103bbe2a64b2513c307aef37cff39b3f4ed579d05b3ab8b849ddd3f798"
+    },
+    "stem": "01_sensitivity_age_up2"
+  },
+  {
+    "explanation": "Each square reports how often a single block signalled under the declared constructed condition. Reference size, incoming size and statistic vary. Gray groups lack enough independent historical source households; they are not successful or failed tests.",
+    "source_csv": "01_sensitivity_age_up4.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/selection_cells.csv": "e50bfb103bbe2a64b2513c307aef37cff39b3f4ed579d05b3ab8b849ddd3f798"
+    },
+    "stem": "01_sensitivity_age_up4"
+  },
+  {
+    "explanation": "Dots show the worst lower confidence bound across the two statistics and both design changes at the frozen group target. The dashed line is the declared 80% criterion. Missing dots mean support shortage. This check does not certify stream detection probability.",
+    "source_csv": "02_frozen_targets_validation.csv",
+    "source_tables": {
+      "results/raw/revision4/main-approved/frozen_targets.json": "1bc04d126794a2764625be5bf029fba69c8591aa066388c2dd154ce4cbb579f0",
+      "results/summary/revision4/main-approved/selection_cells.csv": "e50bfb103bbe2a64b2513c307aef37cff39b3f4ed579d05b3ab8b849ddd3f798",
+      "results/summary/revision4/main-approved/validation_cells.csv": "b915e82562d5fb355bf89e49a3069252e02f35961ba7421486445a8ab881db96"
+    },
+    "stem": "02_frozen_targets_validation"
+  },
+  {
+    "explanation": "The null panel asks whether any intersection-family alert occurred. The alternative panels ask whether the prespecified target group was detected after onset. Every declared policy and both statistics are shown on identical streams, with misses included.",
+    "source_csv": "03_paired_policy_alerts.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/streams.csv": "4d49f478459c911cc9e90c51af656c2142baf038404ad459bc5695f006ff8fb0"
+    },
+    "stem": "03_paired_policy_alerts"
+  },
+  {
+    "explanation": "Paper-sized version of the complete four-condition policy comparison. It uses exactly the same rows, intervals, scale and methods as figure 03; neither favorable nor unfavorable conditions were omitted.",
+    "source_csv": "03b_paper_policy_alerts.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/streams.csv": "4d49f478459c911cc9e90c51af656c2142baf038404ad459bc5695f006ff8fb0"
+    },
+    "stem": "03b_paper_policy_alerts"
+  },
+  {
+    "explanation": "This chart shows whether a policy collected enough records to perform any test for each group. Low assessability and never-assessed groups remain visible. PSI and KS have exactly the same availability because their collection schedule is shared.",
+    "source_csv": "04_all_group_assessability.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/coverage.csv": "2dc008a2f3215f5aebcdd313ba78245f558690fc8f64143c7325ab6e1bea74ae"
+    },
+    "stem": "04_all_group_assessability"
+  },
+  {
+    "explanation": "A lower number means earlier detection. Undetected streams receive the full 15-look restricted waiting value, so a method cannot look fast by excluding its misses. These are constructed delivery looks, not days or survey years.",
+    "source_csv": "05_detection_wait_including_misses.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/streams.csv": "4d49f478459c911cc9e90c51af656c2142baf038404ad459bc5695f006ff8fb0"
+    },
+    "stem": "05_detection_wait_including_misses"
+  },
+  {
+    "explanation": "The simple majority baseline is slightly more accurate than the frozen model. Balanced accuracy is about 50.9% for the model and 50% for the baseline. This limits claims about outcome prediction; the input-monitoring comparison is a separate question.",
+    "source_csv": "06_oulad_model_baseline.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/oulad_outcomes_extended.csv": "754f129b25e852ddb20ed4324c6215d9750a63ca00984895051aaa8fbcf1caa8"
+    },
+    "stem": "06_oulad_model_baseline"
+  },
+  {
+    "explanation": "The left panel times the two statistic kernels separately. The right includes both statistics and shared setup. Memory columns distinguish small logical arrays from whole-process peak memory. Timing is hardware-dependent; no scaling guarantee is claimed.",
+    "source_csv": "07_compute_costs.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/costs.csv": "b0baeff966e5b1c4a28f8521a621367520c1d9b4cbfafd91f27293f29cddb2f4"
+    },
+    "stem": "07_compute_costs"
+  },
+  {
+    "explanation": "The correction separates zero, one and two-or-more previous attempts. This changes PSI because the old bins discarded that distinction. Original values are retained beside corrected values; neither gives natural drift-detection accuracy because the true onset is unknown.",
+    "source_csv": "08_oulad_corrected_psi.csv",
+    "source_tables": {
+      "results/raw/revision4/main-approved/oulad-replay/old_vs_corrected.csv": "4d1f69c7bdf5170e8443b26f40507d6336fb1bf6d1c60609747ae3e0d638bce5"
+    },
+    "stem": "08_oulad_corrected_psi"
+  },
+  {
+    "explanation": "Choosing targets takes computation too. The middle panel measures the complete shared process, while the right panel counts only the statistic input arrays. These are different quantities; the small PSI histogram is not evidence that the full deployed system uses that little memory.",
+    "source_csv": "09_pipeline_cost_and_memory.csv",
+    "source_tables": {
+      "results/summary/revision4/main-approved/calibration_costs.csv": "dc6defb7ec1d9cc70434c947b164d4047461282b268b0b478b8c48096afe0dde",
+      "results/summary/revision4/main-approved/costs.csv": "b0baeff966e5b1c4a28f8521a621367520c1d9b4cbfafd91f27293f29cddb2f4"
+    },
+    "stem": "09_pipeline_cost_and_memory"
+  }
+]

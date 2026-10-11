@@ -1,0 +1,95 @@
+{
+  "corrected_bins": {
+    "num_of_prev_attempts": {
+      "edges": [
+        "-inf",
+        0.5,
+        1.5,
+        "inf"
+      ],
+      "effective_numeric_bins": 3,
+      "kind": "numeric",
+      "labels": [
+        "0",
+        "1",
+        "2 or more",
+        "missing"
+      ],
+      "missing_bin": 3,
+      "rule": "historical OULAD correction: 0 / 1 / 2+"
+    },
+    "studied_credits": {
+      "edges": [
+        "-inf",
+        60.0,
+        90.0,
+        120.0,
+        "inf"
+      ],
+      "effective_numeric_bins": 4,
+      "kind": "numeric",
+      "missing_bin": 4
+    }
+  },
+  "frozen_model": {
+    "C": 1.0,
+    "coefficients": [
+      0.3149939341342277,
+      -0.43518964837772317,
+      -0.23353962248515608
+    ],
+    "fit": {
+      "convergence": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 7,
+      "max_abs_gradient": 5.22195677477022e-07,
+      "n": 757,
+      "objective": 496.32859351520307,
+      "positives": 438
+    },
+    "kind": "oulad",
+    "numeric_mean": [
+      0.18626155878467635,
+      79.49141347424042
+    ],
+    "numeric_scale": [
+      0.5301194005872111,
+      32.3114220919753
+    ],
+    "objective": "sum logistic loss + .5 * nonintercept squared norm",
+    "schooling_categories": [],
+    "threshold": 0.5
+  },
+  "old_bins": {
+    "num_of_prev_attempts": {
+      "edges": [
+        "-inf",
+        0.0,
+        "inf"
+      ],
+      "effective_numeric_bins": 2,
+      "kind": "numeric",
+      "missing_bin": 2
+    },
+    "studied_credits": {
+      "edges": [
+        "-inf",
+        60.0,
+        90.0,
+        120.0,
+        "inf"
+      ],
+      "effective_numeric_bins": 4,
+      "kind": "numeric",
+      "missing_bin": 4
+    }
+  },
+  "training_majority": {
+    "constant_prediction": 1,
+    "tie_rule": "predict 0",
+    "training_counts": [
+      319,
+      438
+    ],
+    "uses_audit_labels_for_selection": false
+  }
+}

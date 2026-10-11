@@ -1,0 +1,55 @@
+variant,group,feature,time,eligible_new,n_reference_new,n_current_new,psi_old,psi_new,ks_d_old,ks_d_new
+batch50,Everyone,num_of_prev_attempts,2014,True,362,979,0.0017207877120393,0.02923260463374789,0.0445657142534664,0.04456571425346645
+batch50,Everyone,studied_credits,2014,True,362,979,0.0310874260953154,0.031087426095315496,0.0376864429257501,0.037686442925750185
+batch50,gender='F',num_of_prev_attempts,2014,True,325,863,0.0018596014569396,0.03422068069588022,0.0491986808093413,0.04919868080934131
+batch50,gender='F',studied_credits,2014,True,325,863,0.0374157688702414,0.03741576887024143,0.0415010250467955,0.04150102504679554
+batch50,gender='M',num_of_prev_attempts,2014,False,37,116,,,,
+batch50,gender='M',studied_credits,2014,False,37,116,,,,
+batch50,disability='N',num_of_prev_attempts,2014,True,317,908,0.0021449099141939,0.023298150891965935,0.0376290665517864,0.03762906655178644
+batch50,disability='N',studied_credits,2014,True,317,908,0.0172614538367743,0.017261453836774323,0.024503536736197,0.024503536736197096
+batch50,disability='Y',num_of_prev_attempts,2014,False,45,71,,,,
+batch50,disability='Y',studied_credits,2014,False,45,71,,,,
+batch50,gender='F' & disability='N',num_of_prev_attempts,2014,True,283,804,0.0023712530279673,0.029231968097986415,0.0443278308106113,0.04432783081061131
+batch50,gender='F' & disability='N',studied_credits,2014,True,283,804,0.0210614056094927,0.021061405609492767,0.0298595362410561,0.029859536241056195
+batch50,gender='F' & disability='Y',num_of_prev_attempts,2014,False,42,59,,,,
+batch50,gender='F' & disability='Y',studied_credits,2014,False,42,59,,,,
+batch50,gender='M' & disability='N',num_of_prev_attempts,2014,False,34,104,,,,
+batch50,gender='M' & disability='N',studied_credits,2014,False,34,104,,,,
+batch50,gender='M' & disability='Y',num_of_prev_attempts,2014,False,3,12,,,,
+batch50,gender='M' & disability='Y',studied_credits,2014,False,3,12,,,,
+batch100,Everyone,num_of_prev_attempts,2014,True,362,979,0.0017207877120393,0.02923260463374789,0.0445657142534664,0.04456571425346645
+batch100,Everyone,studied_credits,2014,True,362,979,0.0310874260953154,0.031087426095315496,0.0376864429257501,0.037686442925750185
+batch100,gender='F',num_of_prev_attempts,2014,True,325,863,0.0018596014569396,0.03422068069588022,0.0491986808093413,0.04919868080934131
+batch100,gender='F',studied_credits,2014,True,325,863,0.0374157688702414,0.03741576887024143,0.0415010250467955,0.04150102504679554
+batch100,gender='M',num_of_prev_attempts,2014,False,37,116,,,,
+batch100,gender='M',studied_credits,2014,False,37,116,,,,
+batch100,disability='N',num_of_prev_attempts,2014,True,317,908,0.0021449099141939,0.023298150891965935,0.0376290665517864,0.03762906655178644
+batch100,disability='N',studied_credits,2014,True,317,908,0.0172614538367743,0.017261453836774323,0.024503536736197,0.024503536736197096
+batch100,disability='Y',num_of_prev_attempts,2014,False,45,71,,,,
+batch100,disability='Y',studied_credits,2014,False,45,71,,,,
+batch100,gender='F' & disability='N',num_of_prev_attempts,2014,True,283,804,0.0023712530279673,0.029231968097986415,0.0443278308106113,0.04432783081061131
+batch100,gender='F' & disability='N',studied_credits,2014,True,283,804,0.0210614056094927,0.021061405609492767,0.0298595362410561,0.029859536241056195
+batch100,gender='F' & disability='Y',num_of_prev_attempts,2014,False,42,59,,,,
+batch100,gender='F' & disability='Y',studied_credits,2014,False,42,59,,,,
+batch100,gender='M' & disability='N',num_of_prev_attempts,2014,False,34,104,,,,
+batch100,gender='M' & disability='N',studied_credits,2014,False,34,104,,,,
+batch100,gender='M' & disability='Y',num_of_prev_attempts,2014,False,3,12,,,,
+batch100,gender='M' & disability='Y',studied_credits,2014,False,3,12,,,,
+accum100,Everyone,num_of_prev_attempts,2014,True,362,979,0.0017207877120393,0.02923260463374789,0.0445657142534664,0.04456571425346645
+accum100,Everyone,studied_credits,2014,True,362,979,0.0310874260953154,0.031087426095315496,0.0376864429257501,0.037686442925750185
+accum100,gender='F',num_of_prev_attempts,2014,True,325,863,0.0018596014569396,0.03422068069588022,0.0491986808093413,0.04919868080934131
+accum100,gender='F',studied_credits,2014,True,325,863,0.0374157688702414,0.03741576887024143,0.0415010250467955,0.04150102504679554
+accum100,gender='M',num_of_prev_attempts,2014,False,37,116,,,,
+accum100,gender='M',studied_credits,2014,False,37,116,,,,
+accum100,disability='N',num_of_prev_attempts,2014,True,317,908,0.0021449099141939,0.023298150891965935,0.0376290665517864,0.03762906655178644
+accum100,disability='N',studied_credits,2014,True,317,908,0.0172614538367743,0.017261453836774323,0.024503536736197,0.024503536736197096
+accum100,disability='Y',num_of_prev_attempts,2014,False,45,71,,,,
+accum100,disability='Y',studied_credits,2014,False,45,71,,,,
+accum100,gender='F' & disability='N',num_of_prev_attempts,2014,True,283,804,0.0023712530279673,0.029231968097986415,0.0443278308106113,0.04432783081061131
+accum100,gender='F' & disability='N',studied_credits,2014,True,283,804,0.0210614056094927,0.021061405609492767,0.0298595362410561,0.029859536241056195
+accum100,gender='F' & disability='Y',num_of_prev_attempts,2014,False,42,59,,,,
+accum100,gender='F' & disability='Y',studied_credits,2014,False,42,59,,,,
+accum100,gender='M' & disability='N',num_of_prev_attempts,2014,False,34,104,,,,
+accum100,gender='M' & disability='N',studied_credits,2014,False,34,104,,,,
+accum100,gender='M' & disability='Y',num_of_prev_attempts,2014,False,3,12,,,,
+accum100,gender='M' & disability='Y',studied_credits,2014,False,3,12,,,,

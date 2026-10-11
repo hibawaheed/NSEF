@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-11T19:04:49.595554+00:00",
+  "environment": {
+    "platform": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "processor": "",
+    "python": "3.14.7 (main, Aug 10 2026, 00:00:00) [GCC 16.1.1 20260515 (Red Hat 16.1.1-2)]",
+    "versions": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.0.6",
+      "pytest": "9.1.1",
+      "scipy": "1.18.1",
+      "statsmodels": "0.15.0"
+    }
+  },
+  "git_head": "1b1509e8ec895208e75dc652b35504434f72b98a",
+  "label": "Constructed sampling experiments using genuine whole public records; no natural detection-accuracy claim",
+  "source_snapshot_sha256": "768f55c6f40abae51c7c30621b8765b1f4392becc39378ecc571685a716639e5"
+}

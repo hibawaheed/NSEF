@@ -1,0 +1,1082 @@
+[
+  {
+    "cell": 0,
+    "group": "Everyone",
+    "incoming_n": 800,
+    "level": "aggregate",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 1,
+    "group": "Everyone",
+    "incoming_n": 800,
+    "level": "aggregate",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 2,
+    "group": "Everyone",
+    "incoming_n": 800,
+    "level": "aggregate",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 3,
+    "group": "Everyone",
+    "incoming_n": 800,
+    "level": "aggregate",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 4,
+    "group": "SEX=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 5,
+    "group": "SEX=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 6,
+    "group": "SEX=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 7,
+    "group": "SEX=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 8,
+    "group": "SEX=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 9,
+    "group": "SEX=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 10,
+    "group": "SEX=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 11,
+    "group": "SEX=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 12,
+    "group": "RAC1P=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 13,
+    "group": "RAC1P=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 14,
+    "group": "RAC1P=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 15,
+    "group": "RAC1P=1",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 16,
+    "group": "RAC1P=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 17,
+    "group": "RAC1P=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 18,
+    "group": "RAC1P=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 19,
+    "group": "RAC1P=2",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 20,
+    "group": "RAC1P=3",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 21,
+    "group": "RAC1P=3",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 22,
+    "group": "RAC1P=3",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 23,
+    "group": "RAC1P=3",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 24,
+    "group": "RAC1P=4",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 25,
+    "group": "RAC1P=4",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 26,
+    "group": "RAC1P=4",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 27,
+    "group": "RAC1P=4",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 28,
+    "group": "RAC1P=5",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 29,
+    "group": "RAC1P=5",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 30,
+    "group": "RAC1P=5",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 31,
+    "group": "RAC1P=5",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 32,
+    "group": "RAC1P=6",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 33,
+    "group": "RAC1P=6",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 34,
+    "group": "RAC1P=6",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 35,
+    "group": "RAC1P=6",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 36,
+    "group": "RAC1P=7",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 37,
+    "group": "RAC1P=7",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 38,
+    "group": "RAC1P=7",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 39,
+    "group": "RAC1P=7",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 40,
+    "group": "RAC1P=8",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 41,
+    "group": "RAC1P=8",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 42,
+    "group": "RAC1P=8",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 43,
+    "group": "RAC1P=8",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 44,
+    "group": "RAC1P=9",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 45,
+    "group": "RAC1P=9",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 46,
+    "group": "RAC1P=9",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 47,
+    "group": "RAC1P=9",
+    "incoming_n": 800,
+    "level": "single",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 48,
+    "group": "SEX=1 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 49,
+    "group": "SEX=1 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 50,
+    "group": "SEX=1 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 51,
+    "group": "SEX=1 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 52,
+    "group": "SEX=1 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 53,
+    "group": "SEX=1 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 54,
+    "group": "SEX=1 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 55,
+    "group": "SEX=1 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 56,
+    "group": "SEX=1 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 57,
+    "group": "SEX=1 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 58,
+    "group": "SEX=1 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 59,
+    "group": "SEX=1 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 60,
+    "group": "SEX=1 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 61,
+    "group": "SEX=1 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 62,
+    "group": "SEX=1 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 63,
+    "group": "SEX=1 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 64,
+    "group": "SEX=1 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 65,
+    "group": "SEX=1 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 66,
+    "group": "SEX=1 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 67,
+    "group": "SEX=1 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 68,
+    "group": "SEX=1 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 69,
+    "group": "SEX=1 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 70,
+    "group": "SEX=1 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 71,
+    "group": "SEX=1 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 72,
+    "group": "SEX=1 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 73,
+    "group": "SEX=1 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 74,
+    "group": "SEX=1 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 75,
+    "group": "SEX=1 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 76,
+    "group": "SEX=1 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 77,
+    "group": "SEX=1 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 78,
+    "group": "SEX=1 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 79,
+    "group": "SEX=1 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 80,
+    "group": "SEX=1 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 81,
+    "group": "SEX=1 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 82,
+    "group": "SEX=1 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 83,
+    "group": "SEX=1 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 84,
+    "group": "SEX=2 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 85,
+    "group": "SEX=2 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 86,
+    "group": "SEX=2 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 87,
+    "group": "SEX=2 & RAC1P=1",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 88,
+    "group": "SEX=2 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 89,
+    "group": "SEX=2 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 90,
+    "group": "SEX=2 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 91,
+    "group": "SEX=2 & RAC1P=2",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 92,
+    "group": "SEX=2 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 93,
+    "group": "SEX=2 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 94,
+    "group": "SEX=2 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 95,
+    "group": "SEX=2 & RAC1P=3",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 96,
+    "group": "SEX=2 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 97,
+    "group": "SEX=2 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 98,
+    "group": "SEX=2 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 99,
+    "group": "SEX=2 & RAC1P=4",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 100,
+    "group": "SEX=2 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 101,
+    "group": "SEX=2 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 102,
+    "group": "SEX=2 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 103,
+    "group": "SEX=2 & RAC1P=5",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 104,
+    "group": "SEX=2 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 105,
+    "group": "SEX=2 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 106,
+    "group": "SEX=2 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 107,
+    "group": "SEX=2 & RAC1P=6",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 108,
+    "group": "SEX=2 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 109,
+    "group": "SEX=2 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 110,
+    "group": "SEX=2 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 111,
+    "group": "SEX=2 & RAC1P=7",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 112,
+    "group": "SEX=2 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 113,
+    "group": "SEX=2 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 114,
+    "group": "SEX=2 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 115,
+    "group": "SEX=2 & RAC1P=8",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  },
+  {
+    "cell": 116,
+    "group": "SEX=2 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "unchanged",
+    "stage": "validation"
+  },
+  {
+    "cell": 117,
+    "group": "SEX=2 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up2",
+    "stage": "validation"
+  },
+  {
+    "cell": 118,
+    "group": "SEX=2 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_up4",
+    "stage": "validation"
+  },
+  {
+    "cell": 119,
+    "group": "SEX=2 & RAC1P=9",
+    "incoming_n": 800,
+    "level": "intersection",
+    "reference_n": 400,
+    "scenario": "age_down4",
+    "stage": "validation"
+  }
+]

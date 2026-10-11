@@ -1,0 +1,6 @@
+{
+  "utc": "2026-10-11T19:34:14.932385+00:00",
+  "reason": "Floating-point roundoff in boundary Wilson intervals produced a tiny negative error-bar length; plotting failed before the main policy chart. Experimental counts, scores, p-values and decisions were not changed.",
+  "replacement_figures": "figures/revision4/main-approved-checked",
+  "retained_for_transparency": true
+}

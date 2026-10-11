@@ -1,0 +1,6 @@
+{
+  "configs/revision3/approved.json": "74888cf1cf3e07c436b293f0a5474e4a4d5fe4ae174479f7d30d6637cb456a8b",
+  "data/raw/revision3/acs/2016/csv_pma.zip": "d8e1b1a36c02d495c86528fe78279d10d0c4d3d2af0adfeb24ff0ef8830f8849",
+  "data/raw/revision3/lineage/acs_2016_proposed_roles.csv": "5efb4281fd2a110271eb8515dc8440a772afd08b84d6b27a4f3420c06b985271",
+  "results/raw/revision3/main-approved/models_and_bins.json": "5179492ecd91d9b3402f8c5f7e1443ffd4f87ae638caf417ef0e6eab715aeec7"
+}

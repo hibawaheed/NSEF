@@ -48,7 +48,11 @@ def main():
      if actual[field]!=expected[field]:raise ValueError(f'Replay changed {cell["cell"]} {repeat} {feature} {field}')
   replay.append(dict(cell=cell,raw_sha256=sha256(path),reproduced_repetitions=100,reproduced_feature_comparisons=200))
  checks.update(selection_replays=replay,wall_seconds=time.perf_counter()-start)
- write_json(ROOT/'records/revision4/main/key_run_verification.json',checks)
+ target=ROOT/'records/revision4/main/key_run_verification.json'
+ if target.exists():target=ROOT/'data/raw/revision4/verification-replays'/f'key-run-{time.time_ns()}.json'
+ target.parent.mkdir(parents=True,exist_ok=True)
+ write_json(target,checks)
+ print('Verification report:',target)
  print(json.dumps(checks,indent=2))
 
 if __name__=='__main__':main()

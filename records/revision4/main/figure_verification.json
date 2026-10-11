@@ -1,0 +1,8 @@
+{
+  "all_figure_source_csvs_match_tables": true,
+  "figure_manifest_sha256": "6911684cbe76eff2812a41f967d382f40be46a1af22b63120589f7c330ee7d27",
+  "figures": 12,
+  "layout_only_revisions_preserved_all_12_csv_hashes": true,
+  "metadata": "All prior raw experiments unchanged. Wilson endpoint display rounding and explicit missing representations are reporting repairs only.",
+  "utc": "2026-10-11T19:44:14.904453+00:00"
+}

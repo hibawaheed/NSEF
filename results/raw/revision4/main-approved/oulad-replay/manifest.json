@@ -1,0 +1,49 @@
+{
+  "checks": "Unchanged block IDs, counts, eligibility, KS, credit PSI and all frozen-model outcome counts match original V3",
+  "configuration_sha256": "ca78148401bedbfc9a3a3584cb940140d921f50cb9632cce35b5f8fab82d73db",
+  "cpu_seconds": 2.1369755659999994,
+  "design_counts": {
+    "0": 314,
+    "1": 45,
+    "2": 12,
+    "3": 1
+  },
+  "exact_replay_files": [
+    "outcomes.csv",
+    "bin_counts.csv",
+    "old_vs_corrected.csv",
+    "models_and_bins.json"
+  ],
+  "files": {
+    "bin_counts.csv": "da8b8e38633e5a74d40898a106446bde7bfb02f9ad2aaf705fb62003af3ba8da",
+    "models_and_bins.json": "8d44f453cdedf5bb3159183143b3dcfa9324aa9b967344ef2bf9e5f2efee595a",
+    "natural_decisions.json": "dcd01e0ad4de26aa75259d2fadd81adafb9b2be02f2842771508505c13923228",
+    "natural_schedule.csv": "7916609a03b7e62e1955f7b4630c91fdd210a3657344231def5b511444593f4a",
+    "natural_tests.csv": "995a2624dbd5a637f93ea9892c8421e4c4cc4fd6bb39b93782e16246a101e414",
+    "old_vs_corrected.csv": "4d1f69c7bdf5170e8443b26f40507d6336fb1bf6d1c60609747ae3e0d638bce5",
+    "outcomes.csv": "abb06e59b6ee8da4d2aaa88a5d0deb130880504f866094b412fc62f50fb17660"
+  },
+  "finished_utc": "2026-10-11T19:06:34.055818+00:00",
+  "git_head": "1b1509e8ec895208e75dc652b35504434f72b98a",
+  "label": "Post-result correction replay; not untouched validation",
+  "original_code_sha256": "849d488a487f0a243bd11b93eb436df0e274811900e778cd1722ef626f631bd6",
+  "original_models_sha256": "5179492ecd91d9b3402f8c5f7e1443ffd4f87ae638caf417ef0e6eab715aeec7",
+  "peak_rss_kib": 287328,
+  "sources": {
+    "data/raw/revision3/acs/2015/csv_pma.zip": "8d7acacbf600dd91132043fcafe8523d026479a18748fbdb0a7d341745235f2a",
+    "data/raw/revision3/acs/2016/csv_pma.zip": "d8e1b1a36c02d495c86528fe78279d10d0c4d3d2af0adfeb24ff0ef8830f8849",
+    "data/raw/revision3/acs/2017/csv_pma.zip": "9473b33a4cacaf223de376b595f809b808d3ae898b8a50858537686d3ba789c4",
+    "data/raw/revision3/acs/2018/csv_pma.zip": "2b08c2d74bd8b782f8d9c602947bd0c058387b5b2c5a2237ad9fefc671a00570",
+    "data/raw/revision3/acs/2019/csv_pma.zip": "b3d986e2d872eee455bf0c983ac916073dea9281c3781933bc40cffe1dc6447a",
+    "data/raw/revision3/lineage/acs_2015_proposed_roles.csv": "fbb9794784ff32e73e6c385b016ef3378a0705f11f13a6d049875372c94af7a6",
+    "data/raw/revision3/lineage/acs_2016_proposed_roles.csv": "5efb4281fd2a110271eb8515dc8440a772afd08b84d6b27a4f3420c06b985271",
+    "data/raw/revision3/lineage/acs_2017_proposed_roles.csv": "c74432af306b24e9dd99808c859fba84364bdd5ac4fcf752675b62989adc4c6d",
+    "data/raw/revision3/lineage/acs_2018_proposed_roles.csv": "da240c7f31083e74e939df8ea959ccbf338e3ea1991283daad2eb0d58c2e9743",
+    "data/raw/revision3/lineage/acs_2019_proposed_roles.csv": "f0daf7ed6f47f9376dbdbf103e8781bd8d7c92044b692fd7c73ce2dd7470cac4",
+    "data/raw/revision3/lineage/oulad_proposed_roles.csv": "77e517dd40bad2c1ce152b4bdad5f78976ea5400fb7591ce4a0e39c7ab322415",
+    "data/raw/revision3/oulad/metadata/courses.csv": "4f16eee7454b15e109b0a21a0e43be820e6846ed6f9301bb7feb5ab5ad737a75",
+    "data/raw/revision3/oulad/metadata/studentInfo.csv": "815fbc3e2de29f79900bc63f0345a35db62c9146afaa1d86e7107b8b3beffc60",
+    "data/raw/revision3/oulad/metadata/studentRegistration.csv": "bbc87a0de1fe2a9ec6decce1ca6c1a02cf17b54ad3bdcc673fc6413b41c61d47"
+  },
+  "wall_seconds": 2.1426768970013654
+}

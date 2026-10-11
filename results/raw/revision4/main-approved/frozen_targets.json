@@ -1,0 +1,170 @@
+{
+  "config_sha256": "a83bf012cbf2679cad81ca113044f6cf9383c9cb2f38344254a3bf072adc4129",
+  "evaluation_started": false,
+  "frozen_utc": "2026-10-11T19:15:28.632340+00:00",
+  "identity_sha256": "05e4820b60ca961df7321327656c2ebcecac402ad4ea7ec11c8222cce14e843b",
+  "map_sha256": "ef6683419ea14ebf1146e31a2be5d858bf61aa911fb5228b94adcd7ad10042ff",
+  "selection": {
+    "confidence": 0.95,
+    "criterion": 0.8,
+    "global_status": "criterion_unmet_fallback",
+    "global_target": 800,
+    "group_targets": [
+      {
+        "group": "Everyone",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=1",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=2",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=1",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=2",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=3",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=4",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=5",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=6",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=7",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=8",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "RAC1P=9",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=1",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=2",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=3",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=4",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=5",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=6",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=7",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=8",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=1 & RAC1P=9",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=1",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=2",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=3",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=4",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=5",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=6",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=7",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=8",
+        "status": "target_not_met_within_grid",
+        "target": 800
+      },
+      {
+        "group": "SEX=2 & RAC1P=9",
+        "status": "historical_calibration_shortage",
+        "target": 800
+      }
+    ],
+    "limitations": "Pointwise selected estimates are optimistic; independent validation required. No stream-power guarantee.",
+    "reference_n": 400,
+    "selection_input_sha256": "a4f958c1e52d00ef22c8a0af7bfbc5e228f6e2b1d9998cd4b04eab348a7bbfd3"
+  },
+  "selection_table_sha256": "e50bfb103bbe2a64b2513c307aef37cff39b3f4ed579d05b3ab8b849ddd3f798",
+  "validation_started": false
+}

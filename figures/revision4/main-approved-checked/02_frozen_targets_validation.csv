@@ -1,0 +1,61 @@
+stage,group,target,selection_status,minimum_rate,minimum_lower,criterion_met
+selection,Everyone,800,target_not_met_within_grid,0.63,0.532205295809429,False
+selection,SEX=1,800,target_not_met_within_grid,0.5,0.4038315303659957,False
+selection,SEX=2,800,target_not_met_within_grid,0.57,0.4721538954921231,False
+selection,RAC1P=1,800,target_not_met_within_grid,0.6,0.5020025867910618,False
+selection,RAC1P=2,800,target_not_met_within_grid,0.4,0.3094012864324589,False
+selection,RAC1P=3,800,historical_calibration_shortage,,,False
+selection,RAC1P=4,800,historical_calibration_shortage,,,False
+selection,RAC1P=5,800,historical_calibration_shortage,,,False
+selection,RAC1P=6,800,target_not_met_within_grid,0.11,0.0625419635706456,False
+selection,RAC1P=7,800,historical_calibration_shortage,,,False
+selection,RAC1P=8,800,target_not_met_within_grid,0.0,0.0,False
+selection,RAC1P=9,800,target_not_met_within_grid,0.4,0.3094012864324589,False
+selection,SEX=1 & RAC1P=1,800,target_not_met_within_grid,0.56,0.4622810465167698,False
+selection,SEX=1 & RAC1P=2,800,target_not_met_within_grid,0.32,0.2366914732499909,False
+selection,SEX=1 & RAC1P=3,800,historical_calibration_shortage,,,False
+selection,SEX=1 & RAC1P=4,800,historical_calibration_shortage,,,False
+selection,SEX=1 & RAC1P=5,800,historical_calibration_shortage,,,False
+selection,SEX=1 & RAC1P=6,800,target_not_met_within_grid,0.21,0.141656540619153,False
+selection,SEX=1 & RAC1P=7,800,historical_calibration_shortage,,,False
+selection,SEX=1 & RAC1P=8,800,historical_calibration_shortage,,,False
+selection,SEX=1 & RAC1P=9,800,historical_calibration_shortage,,,False
+selection,SEX=2 & RAC1P=1,800,target_not_met_within_grid,0.57,0.4721538954921231,False
+selection,SEX=2 & RAC1P=2,800,target_not_met_within_grid,0.49,0.3942199893044114,False
+selection,SEX=2 & RAC1P=3,800,historical_calibration_shortage,,,False
+selection,SEX=2 & RAC1P=4,800,historical_calibration_shortage,,,False
+selection,SEX=2 & RAC1P=5,800,historical_calibration_shortage,,,False
+selection,SEX=2 & RAC1P=6,800,target_not_met_within_grid,0.04,0.0156633039915476,False
+selection,SEX=2 & RAC1P=7,800,historical_calibration_shortage,,,False
+selection,SEX=2 & RAC1P=8,800,target_not_met_within_grid,0.0,0.0,False
+selection,SEX=2 & RAC1P=9,800,historical_calibration_shortage,,,False
+validation,Everyone,800,target_not_met_within_grid,0.6,0.5020025867910618,False
+validation,SEX=1,800,target_not_met_within_grid,0.52,0.4231657776522396,False
+validation,SEX=2,800,target_not_met_within_grid,0.5,0.4038315303659957,False
+validation,RAC1P=1,800,target_not_met_within_grid,0.54,0.4426486032336822,False
+validation,RAC1P=2,800,target_not_met_within_grid,0.49,0.3942199893044114,False
+validation,RAC1P=3,800,historical_calibration_shortage,,,False
+validation,RAC1P=4,800,historical_calibration_shortage,,,False
+validation,RAC1P=5,800,historical_calibration_shortage,,,False
+validation,RAC1P=6,800,target_not_met_within_grid,0.18,0.1170022549894635,False
+validation,RAC1P=7,800,historical_calibration_shortage,,,False
+validation,RAC1P=8,800,target_not_met_within_grid,0.14,0.0852634365993913,False
+validation,RAC1P=9,800,target_not_met_within_grid,0.27,0.1926958414957634,False
+validation,SEX=1 & RAC1P=1,800,target_not_met_within_grid,0.46,0.365608083090241,False
+validation,SEX=1 & RAC1P=2,800,target_not_met_within_grid,0.35,0.2636424824309752,False
+validation,SEX=1 & RAC1P=3,800,historical_calibration_shortage,,,False
+validation,SEX=1 & RAC1P=4,800,historical_calibration_shortage,,,False
+validation,SEX=1 & RAC1P=5,800,historical_calibration_shortage,,,False
+validation,SEX=1 & RAC1P=6,800,target_not_met_within_grid,0.17,0.1089356611405993,False
+validation,SEX=1 & RAC1P=7,800,historical_calibration_shortage,,,False
+validation,SEX=1 & RAC1P=8,800,historical_calibration_shortage,,,False
+validation,SEX=1 & RAC1P=9,800,historical_calibration_shortage,,,False
+validation,SEX=2 & RAC1P=1,800,target_not_met_within_grid,0.57,0.4721538954921231,False
+validation,SEX=2 & RAC1P=2,800,target_not_met_within_grid,0.52,0.4231657776522396,False
+validation,SEX=2 & RAC1P=3,800,historical_calibration_shortage,,,False
+validation,SEX=2 & RAC1P=4,800,historical_calibration_shortage,,,False
+validation,SEX=2 & RAC1P=5,800,historical_calibration_shortage,,,False
+validation,SEX=2 & RAC1P=6,800,target_not_met_within_grid,0.07,0.0343192610672726,False
+validation,SEX=2 & RAC1P=7,800,historical_calibration_shortage,,,False
+validation,SEX=2 & RAC1P=8,800,target_not_met_within_grid,0.01,0.0017674320641406,False
+validation,SEX=2 & RAC1P=9,800,historical_calibration_shortage,,,False

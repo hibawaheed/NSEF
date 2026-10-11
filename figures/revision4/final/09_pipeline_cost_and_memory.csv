@@ -1,0 +1,6 @@
+stage,cpu_seconds,wall_seconds,peak_process_rss_kib,record_type,method,bytes
+selection,522.6735004590007,635.6062630109664,194352.0,stage,,
+validation,99.22519881300104,105.98371382000187,201816.0,stage,,
+evaluation,862.1695028900027,865.636353513044,217088.0,stage,,
+,,,,payload,PSI,112.0
+,,,,payload,KS,88000.0
