@@ -1,0 +1,1 @@
+Public HTTPS verification: all 56 files downloaded without authentication and matched release sizes and SHA-256 hashes.
