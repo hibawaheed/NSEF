@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "variant": "batch50",
+      "rows": 18,
+      "exact": true,
+      "max_psi_difference": 0
+    },
+    {
+      "variant": "batch100",
+      "rows": 18,
+      "exact": true,
+      "max_psi_difference": 0
+    },
+    {
+      "variant": "accum100",
+      "rows": 18,
+      "exact": true,
+      "max_psi_difference": 0
+    }
+  ],
+  "source_csv": "results/raw/revision4/main-approved/oulad-replay/natural_tests.csv",
+  "source_sha256": "995a2624dbd5a637f93ea9892c8421e4c4cc4fd6bb39b93782e16246a101e414",
+  "note": "Natural cohort scores remain descriptive. Corrected 0/1/2+ bins, groups, support and records unchanged. No classifier refit or prediction change."
+}

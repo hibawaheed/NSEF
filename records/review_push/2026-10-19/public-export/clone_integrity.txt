@@ -1,0 +1,8 @@
+Checked at 2026-10-19T20:30:46.037833+05:00
+Public export without profiler binaries; exit 0
+Unchanged Version 1-4 files: 7817
+Public low-compute package files: 203
+Local-only profiler binaries excluded from public package: 8 (present locally: 0 )
+Measured code files: 19
+Claim-source and configuration hashes verified: 13
+PASS: 96 process receipts, 80 timed processes, 24 exact scientific replays. No files changed.

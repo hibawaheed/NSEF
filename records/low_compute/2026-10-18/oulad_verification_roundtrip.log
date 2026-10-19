@@ -1,0 +1,1 @@
+OULAD natural replay exact [{'variant': 'batch50', 'rows': 18, 'exact': True, 'max_psi_difference': 0}, {'variant': 'batch100', 'rows': 18, 'exact': True, 'max_psi_difference': 0}, {'variant': 'accum100', 'rows': 18, 'exact': True, 'max_psi_difference': 0}]

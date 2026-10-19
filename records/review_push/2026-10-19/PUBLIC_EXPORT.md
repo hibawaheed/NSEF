@@ -1,0 +1,11 @@
+# Public review export — 19 October 2026
+
+Recorded 2026-10-19T20:30:00.969998+05:00. The user explicitly chose “Keep profiler binaries local.” All eight `results/raw/low_compute/2026-10-18/profile/*.prof` files remain in the local working directory and preserved local history, and are excluded from the review branch's new tree and new commit ancestry. The readable `functions.csv` and `runs.csv`, eight numerical `.json.gz` diagnostic outputs, all timing and equivalence results, and all charts remain in the public package. No measured code or numerical result changed.
+
+One redacted `baseline_psi-0.prof` had already transferred as an unreferenced Git blob/tree before this reply. No remote branch or commit referenced that intermediate tree. The final branch excludes that file; this record does not claim the earlier object was deleted from GitHub. Uploads of another binary were blocked by automatic approval review; no profiler binary upload was retried after the user's choice.
+
+Original local commits are preserved under `refs/local-only/subpsi-low-compute-original-20261019`; the pre-export review state is under `refs/local-only/subpsi-low-compute-pre-export-20261019`. These refs are not published. The public export is based directly on the unchanged Version 4 commit, avoiding unpublished intermediate history that contained these files. The original and redacted profile hashes remain in the retained manifests for provenance.
+
+The public frozen manifest now requires 203 files, with eight local-only exclusions listed separately. Its checker works with or without the local binaries and verifies them when present. The LC13 hash was corrected to match the already redacted `functions.csv`; only diagnostic file paths were redacted, with no timing/count changes. All 13 claim-source/configuration hashes are now checked. The 19 measured code hashes and 7,817 starting files remain unchanged. Fresh export checks are under `public-export/`; the final privacy receipt is `PUBLIC_EXPORT_AUDIT.json`.
+
+Publication is authorized only to the named review branch after deployment checks. No merge, website change, submission or new scientific development is authorized. The final remote commit SHA and unchanged production status will be reported after verification.

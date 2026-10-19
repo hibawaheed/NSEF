@@ -1,0 +1,20 @@
+{
+  "checked_local": "2026-10-19T00:21:46.036033+05:00",
+  "pdfs_rendered_and_visually_inspected": [
+    "01_runtime",
+    "02_memory",
+    "03_equivalence_and_tradeoff"
+  ],
+  "each_pdf_pages": 1,
+  "final_layout": "No clipped labels or annotation overlaps in inspected Poppler renders. Final CSVs byte-identical to first layout.",
+  "benchmark_code_unchanged": true,
+  "methodological_limitations": "Small one-host technical benchmark; original whole-stream ID validation remains growing; no energy measurement; historical 220-stream rates not relabelled as full optimized-engine validation.",
+  "original_files_preserved": 7817,
+  "new_python_tests_total": 137,
+  "oulad_descriptive_rows_exact": 54,
+  "selected_replays_exact": 24,
+  "feature_comparisons_exact": 28800,
+  "permutation_draws_exact": 5958957,
+  "timed_AB_output_digest_pairs_exact": 156,
+  "aggregate_feature_comparisons_exact": 800
+}

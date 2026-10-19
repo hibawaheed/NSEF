@@ -1,0 +1,102 @@
+[
+  {
+    "cell": 0,
+    "condition": "unchanged",
+    "repeat": 0
+  },
+  {
+    "cell": 100,
+    "condition": "age_up2",
+    "repeat": 0
+  },
+  {
+    "cell": 140,
+    "condition": "age_up4",
+    "repeat": 0
+  },
+  {
+    "cell": 180,
+    "condition": "age_down4",
+    "repeat": 0
+  },
+  {
+    "cell": 1,
+    "condition": "unchanged",
+    "repeat": 1
+  },
+  {
+    "cell": 101,
+    "condition": "age_up2",
+    "repeat": 1
+  },
+  {
+    "cell": 141,
+    "condition": "age_up4",
+    "repeat": 1
+  },
+  {
+    "cell": 181,
+    "condition": "age_down4",
+    "repeat": 1
+  },
+  {
+    "cell": 2,
+    "condition": "unchanged",
+    "repeat": 2
+  },
+  {
+    "cell": 102,
+    "condition": "age_up2",
+    "repeat": 2
+  },
+  {
+    "cell": 142,
+    "condition": "age_up4",
+    "repeat": 2
+  },
+  {
+    "cell": 182,
+    "condition": "age_down4",
+    "repeat": 2
+  },
+  {
+    "cell": 3,
+    "condition": "unchanged",
+    "repeat": 3
+  },
+  {
+    "cell": 103,
+    "condition": "age_up2",
+    "repeat": 3
+  },
+  {
+    "cell": 143,
+    "condition": "age_up4",
+    "repeat": 3
+  },
+  {
+    "cell": 183,
+    "condition": "age_down4",
+    "repeat": 3
+  },
+  {
+    "cell": 4,
+    "condition": "unchanged",
+    "repeat": 4
+  },
+  {
+    "cell": 104,
+    "condition": "age_up2",
+    "repeat": 4
+  },
+  {
+    "cell": 144,
+    "condition": "age_up4",
+    "repeat": 4
+  },
+  {
+    "cell": 184,
+    "condition": "age_down4",
+    "repeat": 4
+  }
+]

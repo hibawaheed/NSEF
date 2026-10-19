@@ -1,0 +1,27 @@
+{
+  "cpu_reduction_percent": 40.56958730099532,
+  "wall_reduction_percent": 37.80217449632074,
+  "rss_reduction_percent": 0.6685050555694794,
+  "rss_difference_mib": 0.9375,
+  "baseline_complete_cpu": 15.406534564,
+  "optimized_complete_cpu": 9.156167074,
+  "baseline_peak_mib": 140.23828125,
+  "optimized_peak_mib": 139.30078125
+}
+workload variant         metric     median    minimum    maximum  repeats               source_csv
+ primary       A   complete_cpu  15.406535  14.045999  15.940359        5 process_measurements.csv
+ primary       A  complete_wall  16.497309  15.216403  16.991595        5 process_measurements.csv
+ primary       A monitoring_cpu  13.384658  12.073071  14.011544        5 process_measurements.csv
+ primary       A   peak_rss_mib 140.238281 140.093750 140.519531        5 process_measurements.csv
+ primary       B   complete_cpu   9.156167   8.213081  11.830178        5 process_measurements.csv
+ primary       B  complete_wall  10.260967   9.009858  12.792030        5 process_measurements.csv
+ primary       B monitoring_cpu   6.871673   6.071057   9.340534        5 process_measurements.csv
+ primary       B   peak_rss_mib 139.300781 138.820312 139.375000        5 process_measurements.csv
+ primary       C   complete_cpu  10.903746  10.578111  13.650631        5 process_measurements.csv
+ primary       C  complete_wall  12.171929  11.570932  14.174087        5 process_measurements.csv
+ primary       C monitoring_cpu   8.626620   8.377262  11.396724        5 process_measurements.csv
+ primary       C   peak_rss_mib 141.414062 141.167969 141.539062        5 process_measurements.csv
+ primary       D   complete_cpu   3.738376   3.557062   3.809508        5 process_measurements.csv
+ primary       D  complete_wall   4.615414   3.990525   5.095038        5 process_measurements.csv
+ primary       D monitoring_cpu   1.198700   1.177543   1.202217        5 process_measurements.csv
+ primary       D   peak_rss_mib 137.957031 137.617188 138.207031        5 process_measurements.csv

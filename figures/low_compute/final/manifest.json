@@ -1,0 +1,33 @@
+{
+  "figures": {
+    "figures/low_compute/final/01_runtime.csv": "67809c66117726990633b9031a2f913fbd0d75a903126862ebcafd5ac425a24a",
+    "figures/low_compute/final/01_runtime.pdf": "2a8f8fcf78d5036d39fe81eadf0fda2fd43bdf99403f1921b272c457b18bbec2",
+    "figures/low_compute/final/01_runtime.png": "3a29438b39cbed3ec70d0d2229a3eff51b67fb28e2acdbb9b4959ba48e19696f",
+    "figures/low_compute/final/01_runtime.svg": "e6bd6a3973829528183b9b39b86f79fc1afecb7df15cf9eeac27a9152b55e4c0",
+    "figures/low_compute/final/02_memory.csv": "ab1da2b34d6eaf1cb4e9f43589261469a7f892f6c0617610892aa2fd6b7dcfce",
+    "figures/low_compute/final/02_memory.pdf": "174a02e1ea91b6be85da8d2683e5d68abca7f36b0d366652fc62d4f77bb4cf26",
+    "figures/low_compute/final/02_memory.png": "10b7d8588157af217a8643a5d9ef33d7e7d560657238bb32c34024eba083a1eb",
+    "figures/low_compute/final/02_memory.svg": "2a93c900f3a55ab39de1f34a0b12c851f30f695eede345d9fdade93a0f5fb399",
+    "figures/low_compute/final/03_equivalence_and_tradeoff.csv": "08e141c4f0de81dff7bd5a5569500987f370646bc94c05d7021a9f42db555dbb",
+    "figures/low_compute/final/03_equivalence_and_tradeoff.pdf": "8287fce518735fbfc4bf892f242aa20442fa653e6c7f241a0bda489d4961df10",
+    "figures/low_compute/final/03_equivalence_and_tradeoff.png": "fd19d180885cc9a556b28c3da27a1eb1224af44d1311bace2818f46286f41c6a",
+    "figures/low_compute/final/03_equivalence_and_tradeoff.svg": "ffe8dc8949677fd5af4e7d0539255aa52b7ebfb544f1a70f8922aaed4351207f"
+  },
+  "source_csvs": {
+    "results/summary/low_compute/2026-10-18/batch_latency.csv": "e631ebee514b5ed610f581072751091c8ebef956901ff79258033471112afbdf",
+    "results/summary/low_compute/2026-10-18/condition_timings.csv": "e03dd9172f10d5ae7c5a476e720abfa71e06b04b48a726e9d68637012dee93b4",
+    "results/summary/low_compute/2026-10-18/cost_summary.csv": "9529c84d081ad1ec66273ed103900595e80e2c317a7380b12ca131cf2fae32b9",
+    "results/summary/low_compute/2026-10-18/equivalence.csv": "ce12b9ebe37fb428ff7bd60b20922c37ef9a05a9e01dc41514b41fbfcd98e344",
+    "results/summary/low_compute/2026-10-18/historical_tradeoff.csv": "fb2dae2aba68c6cb823e3eef3d44dca703e2f989e070776c271a1f1a1110959f",
+    "results/summary/low_compute/2026-10-18/process_measurements.csv": "adaf64126cb22e04db0c2579c93e4708fa0d1720d1ba0d5e39359a34b34ef0d0",
+    "results/summary/low_compute/2026-10-18/stream_measurements.csv": "e420a467b704c98e56ba1addc52148ada49facf04ce671d594dbf46dfefc19cf",
+    "results/summary/low_compute/2026-10-18/verified_subset_endpoints.csv": "004118da0d27547aba75c8c259d9fb48c794c855e9992cb33ac3d0076e97e8dc"
+  },
+  "benchmark_outputs_AB_exact_checks": 156,
+  "aggregate_feature_comparisons": 800,
+  "original_source_sha256": {
+    "results/summary/revision4/main-approved/rates.csv": "3bb81b971195d7fb04ed08bd1ceb4dd288468fd1b27fcceead82f6d7b7952098",
+    "results/summary/revision4/main-approved/streams.csv": "4d49f478459c911cc9e90c51af656c2142baf038404ad459bc5695f006ff8fb0"
+  },
+  "report_code_sha256": "4390be78f46ea9c1441ea2ca707a41ac84484c2bc93ac59a3ddcd129b9e1991b"
+}

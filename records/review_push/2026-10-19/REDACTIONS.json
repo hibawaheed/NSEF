@@ -1,0 +1,68 @@
+{
+  "checked_local": "2026-10-19T04:19:52.547610+05:00",
+  "original_head": "0c156cb9b515dcacb6b974c1095c7923302f9abe",
+  "original_local_backup_ref": "refs/local-only/subpsi-low-compute-original-20261019",
+  "original_final_manifest_sha256": "1a486655258d066547cd450bbd2fcae19f96d2b552a9e41aa2f110a18cf151c6",
+  "changes": [
+    {
+      "path": "records/low_compute/2026-10-18/oulad_verification.log",
+      "original_sha256": "2b7473e3f2bcc6a35e2a8682a0b8adf2cf757f13f3674069221698c95b1629b9",
+      "public_sha256": "85e93c8dad46adcce2cc61537bb04be911e7818a93e3810b89b38ae2a4c35909",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/functions.csv",
+      "original_sha256": "512562f4e286a3f37939b2278c5f7b6648506a55f84d18e1c239994aa5a4a824",
+      "public_sha256": "fbd4a54aa3f7a9c75aeacbfff66ce2b6b78aefe2a62c91f03d70359cf52faccc",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/baseline_psi-0.prof",
+      "original_sha256": "33041ac2782d19da09f486f78d469d5926f5c5401603d0fd65f4326ee8bb7a46",
+      "public_sha256": "9a256c881f8a99e19dcb7f528c9f134eb3ca8dad7cf9bd489550c9c11ee24f76",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/baseline_psi-100.prof",
+      "original_sha256": "8f100f2a14881ba873797b69791fde82e26ae0577f8c84a30d16985bc95cb24e",
+      "public_sha256": "c64579cf6318d61a266986ee00733e932dc7f64e3fb129196e685dc1a99e7851",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/baseline_psi-140.prof",
+      "original_sha256": "5f98c2ccab7ae5854ca965473e4a1efcb9499698a3a62a327a8800c88eff219c",
+      "public_sha256": "912563106a908d2c8ebfe3368c0bb6ada3d375e363fec44e7848263759cf72f0",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/baseline_psi-180.prof",
+      "original_sha256": "65df10979310c93d784a5bf9dee91298efa9c386d56bf09fc6f506d78eeed07b",
+      "public_sha256": "172520d7f7e279159876ef8ffc1411cadbaa04f349a4b905e7bad6d991cd7144",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/joint_original-0.prof",
+      "original_sha256": "4b9fd7d998dbadd2461c39cd4fc84dda7d31dd2bad49720bf8fd9b53a4c7c25d",
+      "public_sha256": "76cfe383127eeb09b3e55b8ae2df46471f2cb70746a62de0bfa99b1712e217f6",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/joint_original-100.prof",
+      "original_sha256": "438bb10b0870fb7bea0e63ae887b096999de040487389f513a5bd186985e3357",
+      "public_sha256": "ae6d4c905a53d064ea1a644bef65db9842ddf1fccf45828b608158233f7a819a",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/joint_original-140.prof",
+      "original_sha256": "e1c62fafa9b06311022145c90896963984e6b928a15b8a00ab32a1ce443995ea",
+      "public_sha256": "11927b97ada69ddd72c8c43d4d07da2359eecf984f1106fca253c2e3c77fc192",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    },
+    {
+      "path": "results/raw/low_compute/2026-10-18/profile/joint_original-180.prof",
+      "original_sha256": "d9d9e8d551e0121531239517a5d1c086854c4d5ce8016f2cb89821d7f80fb953",
+      "public_sha256": "b2d1fcac5ac0b12ea73b71e9687312683c132d47c42771e8bba1fa35b86d380d",
+      "change": "Replace local home-directory prefix with <HOME>; numeric values unchanged"
+    }
+  ]
+}

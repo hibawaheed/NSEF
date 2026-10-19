@@ -1,0 +1,172 @@
+Read SubPSI_One_Day_Low_Compute_Codex_Prompt.txt in full. Follow it as
+the specification for ONE final day of work on my existing project.
+
+Repository: https://github.com/hibawaheed/NSEF
+
+IMPORTANT: The main topic is subgroup-decomposed PSI as a LOW-COMPUTE
+approach to data-drift monitoring. Do not replace that topic with
+fairness repair, a new sample-size algorithm, or deadline-aware
+monitoring.
+
+Keep my registered title unchanged:
+“SubPSI: Detecting Hidden Bias Drift in Machine Learning Through
+Subgroup-Decomposed Population Stability Analysis.”
+
+We have one working day before moving to the research paper.
+Use actual dates. The submission deadline is 26 October 2026.
+
+STARTING POINT
+
+Inspect the actual Version 4 branch and working tree. The last
+reviewed commit was:
+39014345b53f4ff7fe8481e6aa9a996d00c10b5b
+
+Protect uncommitted work. Use a separate local branch and separate
+output directories. Preserve all Version 1–4 code snapshots,
+results, figures, hypotheses, and negative findings.
+
+Read the current methods, source code, approved configurations,
+tests, provenance records, and Version 4 findings. Run the
+available existing tests rather than repeat a README pass count.
+
+THE TASK
+
+Make the existing SubPSI implementation more computationally
+efficient WITHOUT changing its scientific decisions.
+
+1. PROFILE THE CURRENT IMPLEMENTATION
+
+Identify where CPU time and memory actually go: loading, grouping,
+histogram construction, collection, statistical tests, provenance,
+and output writing.
+
+Do not assume that PSI's arithmetic is the main bottleneck.
+
+2. IMPLEMENT THE SIMPLEST SAFE EFFICIENCY IMPROVEMENTS
+
+Prioritize:
+- Caching fixed-reference histograms.
+- Encoding incoming features once per batch.
+- Reusing group membership calculations.
+- Accumulating integer bin counts instead of repeatedly rebuilding
+  histograms from stored raw observations.
+- Processing batches incrementally where feasible.
+- Keeping the compact detector state separate from the research
+  harness and its source-identity/provenance storage.
+
+Apply smoothing only to the completed counts, not separately to
+each batch before accumulation.
+
+Keep the existing bins, corrected OULAD count categories, group
+definitions, block boundaries, sample requirements, randomization,
+permutation budget, and multiple-testing rules.
+
+Do not reduce computation by removing groups, dropping records,
+shortening the experiment, reducing permutations, or disabling
+statistical safeguards.
+
+Do not silently remove duplicate-record or role-separation checks.
+Report the memory cost of any retained validation state.
+
+3. PROVE THAT THE OPTIMIZATION PRESERVES THE RESULTS
+
+Compare old and optimized PSI on identical inputs:
+histogram counts, support decisions, block boundaries, PSI values,
+p-values, corrected decisions, alerted group-feature pairs, and
+first-alert times.
+
+Keep random seeds and their mapping consistent. Investigate
+differences instead of hiding them behind loose tolerances.
+
+A faster implementation with different, unexplained alerts is
+not a successful optimization.
+
+4. BENCHMARK IT FAIRLY
+
+Compare:
+A. The existing calculation in a faithful PSI-only baseline.
+B. The optimized PSI implementation.
+C. An efficient matched KS-only implementation.
+D. Aggregate PSI as a clearly labelled lower-scope cost reference.
+
+The current research harness calculates both PSI and KS.
+DO NOT claim a speedup by comparing that combined workload with
+new PSI-only execution.
+
+Use identical underlying records and collection settings for
+the matched comparisons. Include unchanged, modest-change,
+strong-change and downward-change conditions, not just the
+easiest or fastest runs.
+
+Save the benchmark selection before timing. Prefer a small,
+deterministic set of existing replay runs rather than a new
+large experiment.
+
+Measure wall time, CPU time, throughput and peak process memory.
+Separate setup, monitoring, validation, and output costs.
+Measure repeated timings under comparable conditions.
+
+Histogram-array bytes are NOT the memory use of the full system.
+CPU time is NOT an energy measurement.
+
+5. PRESERVE THE SCIENTIFIC FINDINGS
+
+Do not rerun calibration to find better-looking targets.
+Do not replace the unsuccessful 800-record policies.
+Do not add new datasets, generated respondents, new classifiers,
+bias mitigation, or another proposed detector.
+
+Use existing real records and reproducible replay inputs.
+Keep natural observations, constructed real-record experiments,
+and earlier mathematical simulations clearly distinguished.
+
+Preserve the findings where KS performs better and where
+SubPSI misses changes. A low-compute claim must be shown
+alongside detection, false alarms, coverage and waiting.
+
+Reusing histograms is an implementation technique, not
+automatically a new statistical invention.
+
+6. DELIVER A SMALL, COMPLETE EVIDENCE PACKAGE
+
+Produce:
+- The implementation improvement and regression tests.
+- A numerical-equivalence report.
+- Raw benchmark CSVs and reproducibility records.
+- A short basic-English explanation of what improved.
+- A claim-to-evidence table with limitations.
+- No more than three main figure groups:
+  runtime/throughput, measured memory, and the corresponding
+  scientific-equivalence/detection trade-off.
+
+Generate numerical graphs from saved data, not image generation.
+Export readable PNG and vector PDF/SVG with the source CSVs.
+
+Do not write my initial paper or invent my personal research
+decisions. Prepare technical evidence that I can understand,
+discuss with my mentor, and use in my own writing.
+
+STOPPING RULE
+
+Begin with a short checklist, then implement and verify.
+Do not stop after planning.
+
+By the middle of the day, prefer a verified smaller optimization
+over an unfinished streaming rewrite.
+
+If the optimization fails equivalence, retain the original
+implementation. If memory improves but CPU time does not,
+report that accurately. Do not manufacture a success.
+
+Finish with:
+- What changed?
+- What stayed scientifically identical?
+- What CPU/RAM savings were actually measured?
+- Which figures should I use?
+- What limitations must I explain?
+
+Then stop development so we can move to the paper.
+
+Do not push, merge, deploy, purchase, email, or submit anything
+without separate authorization. Ask only about genuine blockers
+or changes outside this agreed scope.

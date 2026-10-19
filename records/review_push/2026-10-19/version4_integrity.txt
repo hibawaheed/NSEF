@@ -1,0 +1,5 @@
+PASS: 2874 file hashes in records/revision4/RESULTS_FREEZE.json
+PASS: 55 file hashes in records/revision4/PREPARATION_MANIFEST.json
+PASS: 1990 file hashes in records/correction/FREEZE.json
+PASS: 4997 file hashes in results/summary/revision4/preparation-02/preserved_inventory.json
+Integrity verified without changing files. Numerical replay and source-cache checks are separate.

@@ -1,0 +1,8 @@
+{
+  "verified_runs": 24,
+  "wall_seconds": 52.80798197200056,
+  "config_sha256": "97a3615dccb7aa6385d0684269d5fcf64c8d1d9748f391565b04598ee3cd5ff4",
+  "scope": "20 fixed-100 plus 4 fixed-400 saved runs; not all 220 streams",
+  "psi_difference": 0,
+  "exact": true
+}

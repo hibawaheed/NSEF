@@ -1,0 +1,41 @@
+[
+  {
+    "command": [
+      "python",
+      "-m",
+      "pytest",
+      "-q"
+    ],
+    "exit_code": 0,
+    "output": "python_tests.txt",
+    "checked_local": "2026-10-19T04:29:35.570833+05:00"
+  },
+  {
+    "command": [
+      "node",
+      "--test",
+      "web/core.test.mjs"
+    ],
+    "exit_code": 0,
+    "output": "browser_tests.txt",
+    "checked_local": "2026-10-19T04:29:35.707316+05:00"
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/low_compute/verify_package.py"
+    ],
+    "exit_code": 0,
+    "output": "package_integrity.txt",
+    "checked_local": "2026-10-19T04:29:36.092471+05:00"
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/revision4/verify_snapshot.py"
+    ],
+    "exit_code": 0,
+    "output": "version4_integrity.txt",
+    "checked_local": "2026-10-19T04:29:36.542155+05:00"
+  }
+]

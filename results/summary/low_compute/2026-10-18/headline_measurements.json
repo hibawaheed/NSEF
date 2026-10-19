@@ -1,0 +1,10 @@
+{
+  "cpu_reduction_percent": 40.56958730099532,
+  "wall_reduction_percent": 37.80217449632074,
+  "rss_reduction_percent": 0.6685050555694794,
+  "rss_difference_mib": 0.9375,
+  "baseline_complete_cpu": 15.406534564,
+  "optimized_complete_cpu": 9.156167074,
+  "baseline_peak_mib": 140.23828125,
+  "optimized_peak_mib": 139.30078125
+}

@@ -1,0 +1,154 @@
+SUBPSI — ONE-DAY LOW-COMPUTE IMPROVEMENT PASS
+
+PROJECT AND TIME LIMIT
+
+Work in my existing repository: https://github.com/hibawaheed/NSEF
+
+Keep my registered title unchanged:
+“SubPSI: Detecting Hidden Bias Drift in Machine Learning Through Subgroup-Decomposed Population Stability Analysis.”
+
+My stated main focus is subgroup-decomposed PSI as a LOW-COMPUTE approach to data-drift monitoring. Treat low compute as a claim to evaluate, not an already demonstrated advantage. Do not turn the project into a new fairness-repair system, sample-size research project, or deadline-aware detection algorithm.
+
+We have ONE working day for this engineering and verification pass. Then we move to the research paper. Use actual dates; do not reuse or backdate earlier October schedules. The submission deadline remains 26 October 2026.
+
+The last reviewed version-4 commit was 39014345b53f4ff7fe8481e6aa9a996d00c10b5b. Verify the actual checkout rather than assuming this is still current. This request authorizes local optimization, tests, and a bounded benchmark of the existing methods. It does not authorize publication, deployment, paid compute, submission, or changes to scientific decision rules.
+
+GOAL
+
+Reduce avoidable CPU work and memory use in the existing SubPSI implementation while preserving its statistical calculation and monitoring decisions. Produce evidence showing whether the implementation is actually cheaper, and what that costs relative to aggregate PSI and a matched KS comparator.
+
+A successful outcome is a validated efficiency improvement or a well-supported finding that the remaining cost is dominated by the existing statistical tests. Do not promise a speedup or manufacture novelty.
+
+1. INSPECT AND PROTECT THE CURRENT PROJECT
+
+Inspect HEAD, branches, working tree, environment, source cache, and result manifests. Work on a separate LOCAL branch based on the verified Version 4; protect uncommitted work and preserve versions 1–4. Never reset, clean, force-push, overwrite historical outputs, or modify old snapshots to make tests pass.
+
+Read the current equivalents of:
+- REVISION4_STATUS.md;
+- docs/revision4/MAIN_FINDINGS.md, REPRODUCE_MAIN.md, GRAPH_GUIDE.md and the final claim ledger;
+- configs/revision4/approved.json;
+- src/subpsi/core.py, revision.py, matched.py, revision4.py, revision4_study.py and correction.py;
+- the experiment/verification scripts, relevant tests, and saved benchmark inputs/results.
+
+Run the available existing tests. State what actually ran, what passed, and what cannot run without a source cache. An old README pass count is not a new verification.
+
+Write a short task checklist, then proceed with the work. Do not stop after a plan. Ask a consolidated question only for a genuine blocker, a proposed methodological change, or missing authorization.
+
+2. PROFILE BEFORE OPTIMIZING
+
+Locate the actual bottlenecks on a small, fixed set of existing replay inputs. Separate reference setup, input encoding/grouping, collection, PSI scoring, permutation testing, multiple-testing adjustment, KS, validation/provenance, and output writing.
+
+The reviewed implementation concatenates current frames, retains row IDs, slices historical records repeatedly, and rebuilds histograms for comparisons. Verify which of these still occur. These are potential optimization targets, not measured bottlenecks until profiled.
+
+Version 4 already uses histogram-count permutation tests and conservative early stopping. Do not claim to invent these, replace them unnecessarily, or measure a fictional row-shuffling baseline that the repository never used.
+
+3. PRIMARY IMPLEMENTATION CHANGE: REUSE COUNTS, NOT REPEATED RAW-DATA SCANS
+
+Add a separate lightweight PSI execution path beside the frozen research implementation.
+
+Prioritize:
+- Compute and cache fixed-reference histograms once per declared group and feature.
+- Encode each incoming feature once per batch, and compute group membership once per batch where practical.
+- Accumulate INTEGER histogram counts and group counts across whole batches rather than repeatedly collecting raw feature arrays and reconstructing their histograms.
+- Add counts first; apply the existing smoothing and normalization only when comparing the complete reference/current block. Do not add separately smoothed proportions.
+- Keep the existing block boundaries, whole-batch overshoot, reset rules, reference gate and group-specific target map. One group may reset independently of another, exactly as before.
+- Reuse the existing count-test implementation and its randomization. Cache reusable quantities without caching an answer to a different test.
+- Where feasible, consume batches through an iterator instead of concatenating the entire stream, and write results incrementally rather than retaining every result in memory.
+
+Preserve tails, missingness, corrected OULAD attempt categories, fixed bins, overlapping groups, unsupported groups, and integer-count conservation. Never obtain a speedup by dropping groups, discarding observations, shortening the horizon, reducing permutations, removing safeguards, or skipping difficult comparisons.
+
+Separate the compact PSI scoring state from research input/provenance storage. Keep source/draw identity auditing in a documented disk-backed or separately measured validation layer. Do not silently remove duplicate-ID or role checks and call that an equivalent optimization. If exact global ID checking or another component still grows with stream length, retain and report that cost. A digest is useful for verification but is not a substitute for exact duplicate detection.
+
+Aim for compact count state, not an unsupported claim of constant total memory. Include bin metadata, counters, current batch, validation storage, output buffering, and permutation temporaries in the accounting.
+
+If a fully streaming path threatens the one-day limit, finish cached-reference and per-batch histogram reuse first. Explicitly label any remaining full-stream retention. Do not spend the day rewriting the entire framework.
+
+4. PROVE SCIENTIFIC EQUIVALENCE
+
+Use the existing Version 4 implementation as the reference for PSI behavior, not as unquestioned proof of statistical validity.
+
+On identical inputs and configurations compare:
+- integer histograms and sample counts;
+- group support/status decisions;
+- collection boundaries and reset times;
+- PSI values within a declared floating-point tolerance;
+- permutation seeds, draws, extreme counts/p-values and conservative stopping;
+- adjusted p-values, exact alerted group-feature pairs, and first-alert times.
+
+Keep the same RNG mapping and test parameters so p-values and alerts reproduce. Investigate mismatches; do not loosen tolerances or change seeds to make them disappear. Document any unavoidable non-scientific difference in serialization or provenance format separately.
+
+Add tests for zero/one/multiple attempts, missing values, tied values, constant historical features, out-of-range values, overlapping groups, insufficient reference data, empty batches, target overshoot, and record-count accumulation. Verify that changing labels does not change the detector, and that changing batch feature values does not change a count-only collection schedule when memberships/counts are fixed.
+
+Keep all declared multiple-testing families, unsupported p=1 entries, finite-horizon budgets, p-value-resolution guards, and no-alpha-reset behavior unchanged. Do not introduce a cheap pre-screen that removes tests from the correction family.
+
+Natural ACS/OULAD comparisons remain descriptive. Do not add calibrated natural-data alarms or natural drift-detection accuracy claims.
+
+5. RUN A FAIR, SMALL COMPUTE BENCHMARK
+
+Compare these clearly named implementations:
+A. A faithful, unoptimized PSI-only execution of the existing calculation.
+B. The optimized count-reuse/streaming PSI path, with identical statistical work.
+C. An efficient matched KS-only path using the existing KS test, same groups, observations, block schedule, horizon and nominal error budget.
+D. Aggregate PSI as a scope/cost reference, clearly labelled as checking fewer groups rather than an equivalent subgroup method.
+
+The old research runner computes PSI and KS together. Do NOT compare that joint runtime with new PSI-only runtime and attribute all savings to optimization. Exclude unrelated model training and calibration from per-monitor timing; report their costs separately when reporting the whole study.
+
+Do not deliberately make KS inefficient. Use reasonable caching of fixed reference state for each comparator. State differences in representation, tie handling, and realized false-alert rates. Sharing a nominal error budget does not make the detectors identical in sensitivity or actual false-alarm behavior.
+
+Before timing, save a bounded benchmark manifest: input IDs/hashes, configurations, chosen runs, implementation paths, timing boundaries, repeat count, and environment. Use a deterministic balanced selection, such as the first five saved runs in each of the four Version 4 conditions. Include unchanged, modest-change, strong-change and downward-change streams, and unsupported groups; do not benchmark only fast non-significant tests.
+
+Use fixed-100 accumulation as the primary implementation workload because it is an existing declared baseline, not a newly claimed optimum. Include fixed-400 as a secondary workload if time permits. Preserve the failed 800-target policies in the historical findings; do not erase or retune them.
+
+Measure wall time, CPU time, throughput, current-batch latency, setup time, and peak resident process memory. Report persistent histogram bytes separately. Use fresh comparable processes for peak-memory measurements, consistent interpreter/dependencies/thread counts and the same hardware. Use one warm-up and at least five alternating-order timed repeats for the bounded workload where feasible. Report medians and timing spread as repeated measurements on this machine, not independent populations.
+
+Report both monitoring-only costs and complete execution costs with clearly defined loading/validation/output boundaries. Do not preload every record into the optimized process and then describe its whole-process memory as bounded streaming memory. Conversely, do not exclude raw loading only from the optimized end-to-end measurement.
+
+Use a few prespecified increasing prefixes of existing inputs for a descriptive scaling check when feasible. Do not change alert horizons or repeatedly duplicate records to create apparently larger independent datasets. Distinguish replayed throughput workload from statistical evidence.
+
+Timing runs do not add new detection trials. Use existing verified detection and false-alert counts for the corresponding exact methods. Link old rates to the new PSI engine only where equivalence has been established. Otherwise label performance unverified for that scope.
+
+6. KEEP THE ORIGINAL EVIDENCE AND CLAIMS HONEST
+
+This is a low-compute implementation pass within SubPSI, not a fresh search for a winning scientific result.
+
+Do not rerun target-selection calibration, invent a new deadline-aware policy, add bias repair, change the classifier or dataset, tune bins further, lower significance requirements, or select conditions because PSI wins. Keep ACS and OULAD; do not generate respondents or edit recorded feature values. Existing mathematical simulations remain labelled simulations, and whole-record resampling remains labelled constructed evidence.
+
+Retain the findings that the calibrated targets fell back to 800, the target was not assessed under that rule, and PSI did not dominate KS across conditions. Low compute must be discussed alongside detection, false alarms, coverage and waiting—not as a replacement for those measurements.
+
+Do not use “97.5% bias-detection accuracy,” “guaranteed fairness,” “new PSI theorem,” “first-ever subgroup monitoring,” or “only 112 bytes” as unsupported headlines. Reusing histograms is an engineering technique, not automatically a new statistical invention. Claims of efficiency must name the comparator, workload, measured quantity, setup exclusions and limitations.
+
+Use a brief source-supported explanation of the computation, without launching another open-ended novelty review. Verify relevant NumPy histogram/count-sampling and Python timing documentation for the installed versions. Distinguish measured CPU time, RAM and wall time from unmeasured energy use, battery life or deployment suitability.
+
+7. FINISH WITH EVIDENCE READY FOR MY WRITING
+
+Save new work under clearly separate low_compute directories, not on top of Version 4 evidence. Produce:
+- the optimized implementation and regression tests;
+- an equivalence report with exact pass/fail coverage;
+- raw timing/memory CSVs and the benchmark manifest;
+- a short LOW_COMPUTE_FINDINGS.md explaining results in basic English;
+- a claim-to-source table identifying which statements are demonstrated, unsupported, or limited to a workload;
+- concise reproduction commands and actual AI-use/change records.
+
+Create no more than THREE main figure groups:
+1. Runtime/throughput: old PSI-only versus optimized PSI versus matched KS; aggregate as a clearly distinguished scope reference.
+2. Measured peak memory and/or compact state versus workload, with those quantities separated.
+3. Scientific-equivalence summary plus the existing matched detection/false-alert trade-off, clearly separating unchanged old evidence from new timing measurements.
+
+Export each numerical plot from saved CSV data as readable PNG and vector PDF/SVG. Inspect labels, units, scales and uncertainty. Reuse existing scientific figures where clearer; do not regenerate the whole chart pack unnecessarily. No image generation for numerical evidence.
+
+The technical notes should help me write my own paper. Do not write the initial submission in my voice, invent student decisions, conceal AI assistance, or fabricate approvals. Preserve the registered title. Record implementation differences so my mentor can assess any required documentation; do not claim unchanged title automatically establishes procedural approval.
+
+8. ONE-DAY STOPPING RULE
+
+Spend roughly the first hour on inspection/profiling, the next few hours on the simplest safe implementation improvement, and the remaining time on equivalence, bounded benchmarks and final evidence. By the middle of the working day, prefer a verified smaller optimization to an unfinished streaming rewrite.
+
+Once the bounded implementation and evidence package are complete, stop. No further major versions or experiments. If optimization fails equivalence, keep the original as the usable implementation and report the failure. If CPU savings are small or memory improves more than runtime, say exactly that.
+
+End with a short handoff answering:
+- What changed without changing the scientific method?
+- Which numerical outputs and decisions were verified unchanged?
+- What CPU/RAM savings were actually measured, and against what?
+- Which three figures should I use?
+- What limitations must I explain to my mentor?
+
+Do not push, merge, deploy, send email, purchase anything or submit to NSEF without separate authorization. Begin the local inspection and implementation work; do not just return another proposed research direction.
